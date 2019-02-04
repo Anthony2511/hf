@@ -26,7 +26,11 @@ class AthleteRequest extends FormRequest
     public function rules()
     {
         return [
-            'firstname' => 'required|min:2|max:255'
+            'firstname' => 'required|min:2|max:255',
+            'lastname' => 'required|min:2|max:255',
+            'status' => 'required|min:2|max:50',
+            'date_of_birth' => 'required|date',
+            'slug' => 'unique:athletes,slug,' . \Request::get('id'),
         ];
     }
 

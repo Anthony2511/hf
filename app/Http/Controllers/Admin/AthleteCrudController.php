@@ -34,10 +34,74 @@ class AthleteCrudController extends CrudController
         */
 
         // Columns
-        $this->crud->addColumn(['name' => 'firstname', 'type' => 'text', 'label' => 'Prénom']);
+
+        // Firstname Column
+        $this->crud->addColumn(
+            [
+                'name' => 'firstname',
+                'type' => 'text',
+                'label' => 'Prénom'
+            ]
+        );
+
+        // Lastname Column
+        $this->crud->addColumn(
+            [
+                'name' => 'lastname',
+                'type' => 'text',
+                'label' => 'Nom'
+            ]
+        );
 
         // Fields
-        $this->crud->addField(['name' => 'firstname', 'type' => 'text', 'label' => 'Prénom']);
+
+        // Firstname Field
+        $this->crud->addField(
+            [
+                'name' => 'firstname',
+                'type' => 'text',
+                'label' => 'Prénom'
+            ]
+        );
+
+        // Lastname Field
+        $this->crud->addField(
+            [
+                'name' => 'lastname',
+                'type' => 'text',
+                'label' => 'Nom'
+            ]
+        );
+
+        // Date of birth Field
+        $this->crud->addField([
+            'name' => 'date_of_birth',
+            'label' => "Date de naissance",
+            'type' => 'date_picker',
+            // optional:
+            'date_picker_options' => [
+                'todayBtn' => true,
+                'format' => 'dd-mm-yyyy',
+                'language' => 'fr'
+            ],
+        ]);
+
+        // Status Field
+        $this->crud->addField(
+            [
+                'name' => 'status',
+                'type' => 'text',
+                'label' => 'Statut'
+            ]
+        );
+
+        //Slug Field
+        $this->crud->addField([
+            'name' => 'slug',
+            'label' => "Slug (URL)",
+            'type' => 'text',
+            'hint' => 'Est automatiquement généré à partir du nom-prénom si pas remplit.'
+        ]);
 
         // add asterisk for fields that are required in AthleteRequest
         $this->crud->setRequiredFields(StoreRequest::class, 'create');
