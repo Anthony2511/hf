@@ -16,10 +16,16 @@ class Athlete extends Model
     */
 
     protected $table = 'athletes';
-    // protected $primaryKey = 'id';
-    // public $timestamps = false;
+    protected $primaryKey = 'id';
+    public $timestamps = true;
     // protected $guarded = ['id'];
-    protected $fillable = [];
+    protected $fillable = array(
+        'firstname',
+        'lastname',
+        'date_of_birth',
+        'status',
+        'slug'
+    );
     // protected $hidden = [];
     // protected $dates = [];
 
