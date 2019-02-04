@@ -33,8 +33,11 @@ class AthleteCrudController extends CrudController
         |--------------------------------------------------------------------------
         */
 
-        // TODO: remove setFromDb() and manually define Fields and Columns
-        $this->crud->setFromDb();
+        // Columns
+        $this->crud->addColumn(['name' => 'firstname', 'type' => 'text', 'label' => 'Prénom']);
+
+        // Fields
+        $this->crud->addField(['name' => 'firstname', 'type' => 'text', 'label' => 'Prénom']);
 
         // add asterisk for fields that are required in AthleteRequest
         $this->crud->setRequiredFields(StoreRequest::class, 'create');
