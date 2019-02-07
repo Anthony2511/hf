@@ -1,0 +1,36 @@
+.title
+  font-family 'montserrat'
+  font-size s(40,16)
+  font-weight: 600
+  position relative
+  text-align left
+  &__blue
+    color $cDarkBlue
+  &__white
+    color $cWhite
+  &__center
+    text-align center
+    &:after
+      content ''
+      display block
+      background-color $cOrange
+      width s(50,40)
+      height s(2,40)
+      margin 0 auto
+  &__left
+    &:after
+      content ''
+      display block
+      background-color $cOrange
+      width s(50,40)
+      height s(2,40)
+  &__left-white
+    &:after
+      content ''
+      display block
+      background-color $cWhite
+      width s(50,40)
+      height s(2,40)
+
+
+
