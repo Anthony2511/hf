@@ -13,3 +13,5 @@
 
 
 Route::get('/', 'HomeController@index')->name('home');
+Route::get('athletes', 'AthleteController@index')->name('athletes');
+

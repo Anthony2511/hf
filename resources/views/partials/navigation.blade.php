@@ -19,7 +19,7 @@
                 </a>
             </li>
             <li class="menu__item">
-                <a href="#">
+                <a href="{{ route('athletes') }}">
                     <span>Athlètes</span>
                 </a>
             </li>

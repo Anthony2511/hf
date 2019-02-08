@@ -11,7 +11,7 @@ class AthleteController extends Controller
     {
         $athletes = Athlete::orderBy('lastname', 'ASC')->get();
 
-        return view('pages.athletes_index', [
+        return view('pages.athletes.athletes_index', [
             'athletes' => $athletes
         ]);
     }
