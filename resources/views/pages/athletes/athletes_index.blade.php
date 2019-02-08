@@ -8,7 +8,9 @@
         Bonjour tout le monde !
 
         @foreach($athletes as $athlete)
-            <p>{{$athlete->firstname}}</p>
+            <a href="{{url('athletes/' . $athlete->slug )}}">
+                <p>{{$athlete->firstname}}</p>
+            </a>
         @endforeach
     </div>
 @endsection

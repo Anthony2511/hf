@@ -15,4 +15,11 @@ class AthleteController extends Controller
             'athletes' => $athletes
         ]);
     }
+
+    public function show(Athlete $athlete)
+    {
+        return view('pages.athletes.athletes_show', [
+            'athletes' => $athlete
+        ]);
+    }
 }
