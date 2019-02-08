@@ -45,7 +45,7 @@
                 <a href="#" class="home-athletes__link" title="Vers la page de l'athlète : Eliott Crestan"></a>
             </div>
         </div>
-        <a href="#" class="button" title="Vers tous les athlètes">
+        <a href="{{ route('athletes') }}" class="button" title="Vers tous les athlètes">
             <span class="button-blue__left">Voir tous les athlètes</span>
             <i class="button-blue__right"></i>
         </a>
