@@ -19,7 +19,7 @@ class AthleteController extends Controller
     public function show(Athlete $athlete)
     {
         return view('pages.athletes.athletes_show', [
-            'athletes' => $athlete
+            'athlete' => $athlete
         ]);
     }
 }

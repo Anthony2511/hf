@@ -5,6 +5,6 @@
 
 @section('content')
     <div>
-       Page d'un athlète,ICI
+       Page de l'athlete {{ $athlete->firstname }}
     </div>
 @endsection
