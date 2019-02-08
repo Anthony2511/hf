@@ -9,13 +9,17 @@
                     d'une semaine, ont lieu à Stavelot et Verviers, et sont généralement ouverts
                     aux affiliés comme aux non-affiliés.
                 </p>
-                <a href="#" class="button">
+                <a href="#" class="button" title="Vers les stages">
                     <span class="button-white__left">En savoir plus</span>
                     <i class="button-white__right"></i>
                 </a>
             </div>
             <figure class="trainee-home__figure">
-                <img src="../img/photo.png" alt="" width="516" height="345">
+                <img src="../img/photo.jpg"
+                     srcset="../img/photo.jpg 2x"
+                     alt="Image de stage"
+                     width="516"
+                     height="345">
             </figure>
         </div>
     </section>

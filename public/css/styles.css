@@ -29,7 +29,7 @@ img {
   left: -9999px;
 }
 .background-home {
-  background: url("/img/background-home.png") no-repeat top center/cover;
+  background: url("/img/background-home.jpg") no-repeat top center/cover;
   padding-bottom: 150px;
 }
 /* ******************
@@ -274,11 +274,11 @@ input[type="search"]::-webkit-search-decoration {
    ******************* */
 /*****HOME*****/
 .header-home {
-  background: url("/img/Background.png") no-repeat top center/cover;
+  background: url("/img/Background.jpg") no-repeat top center/cover;
   background-position: 50% 50%;
   height: 46em;
   position: relative;
-  z-index: 50;
+  z-index: 5;
 }
 .header-home__bloc {
   color: #fff;
