@@ -82,10 +82,11 @@ class Athlete extends Model
         if ($this->slug != '') {
             return $this->slug;
         }
-        return $this->title;
-        $firstname = $this->firstname();
-        $lastname = $this->lastname();
-        return $firstname . '_' . $lastname;
+
+        $lastname = $this->lastname;
+        $firstname = $this->firstname;
+
+        return $firstname . '-' . $lastname;
     }
 
     /*
