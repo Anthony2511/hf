@@ -1,5 +1,5 @@
 .compet-home
-  padding s(50,16) 0
+  padding s($paddingContainer,16) 0
   &__container
     display flex
     flex-direction row
@@ -9,7 +9,7 @@
     color $cDarkBlue
     margin-top s(50,16)
   &__bloc-left
-    padding s(30,16)
+    padding s($paddingBloc,16)
     width 49%
     background-color $cWhite
     border-radius 10px
@@ -19,7 +19,7 @@
     clearfix()
   &__bloc
     background-color $cWhite
-    padding s(30,16)
+    padding s($paddingBloc,16)
     border-radius 10px
     margin-bottom s(20,16)
     position relative
@@ -64,10 +64,10 @@
     line-height 1.6
     margin-bottom s(20,16)
   &__bloc-date
-    font-size s(30,16)
+    font-size s($mediumTitle,16)
     font-weight: 700
     background-color $cOrange
-    padding s(15,30) s(20,30)
+    padding s(15,$mediumTitle) s(20,$mediumTitle)
     color $cWhite
     font-family 'opensans'
     border-radius 10px
@@ -76,7 +76,7 @@
     & span
       text-transform: uppercase
       display block
-      font-size s(16,30)
+      font-size s($fontBase,$mediumTitle)
   &__bloc-title
     font-family 'montserrat'
     font-size s(20,16)

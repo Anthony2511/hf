@@ -1,6 +1,6 @@
 <div class="news-home">
     <section class="wrap">
-        <h3 class="title title__blue title__center" aria-level="3" role="heading">Dernières actualités</h3>
+        <h2 class="title title__blue title__center" aria-level="2" role="heading">Dernières actualités</h2>
         <div>
             <div class="news-home__container">
                 <div class="news-home__bloc">
@@ -25,7 +25,7 @@
                             </figure>
                             <span class="news-home__author-name">par <span>Anthony Beaumecker</span></span>
                         </div>
-                        <h4 aria-level="4" role="heading" class="news-home__title">Record du club Martin Reip</h4>
+                        <h3 aria-level="3" role="heading" class="news-home__title">Record du club Martin Reip</h3>
                         <p class="news-home__text">
                             Bravo à Martin Reip qui termine son octathlon, à
                             Schaerbeek le we dernier, avec un total de 4622 points.
@@ -58,7 +58,7 @@
                             </figure>
                             <span class="news-home__author-name">par <span>Anthony Beaumecker</span></span>
                         </div>
-                        <h4 aria-level="4" role="heading" class="news-home__title">Record du club Martin Reip</h4>
+                        <h3 aria-level="3" role="heading" class="news-home__title">Record du club Martin Reip</h3>
                         <p class="news-home__text">
                             Bravo à Martin Reip qui termine son octathlon, à
                             Schaerbeek le we dernier, avec un total de 4622 points.

@@ -1,6 +1,6 @@
 <div class="background-home">
     <div class="home-athletes wrap">
-        <h3 class="title title__blue title__left" aria-level="3" role="heading">Nos athlètes</h3>
+        <h2 class="title title__blue title__left" aria-level="2" role="heading">Nos athlètes</h2>
         <div class="home-athletes__container">
             <div class="home-athletes__bloc">
                 <figure class="home-athletes__figure">
@@ -25,7 +25,7 @@
                          height="457">
                 </figure>
                 <section class="home-athletes__infos">
-                    <h4 class="home-athletes__infos-title">Arnaud <span>Art</span></h4>
+                    <h3 class="home-athletes__infos-title" role="heading" aria-level="3">Arnaud <span>Art</span></h3>
                     <span class="home-athletes__disciplines">Perche</span>
                 </section>
                 <a href="#" class="home-athletes__link" title="Vers la page de l'athlète : Arnaud Art"></a>
@@ -39,7 +39,7 @@
                          height="457">
                 </figure>
                 <section class="home-athletes__infos">
-                    <h4 class="home-athletes__infos-title">Eliott <span>Crestan</span></h4>
+                    <h3 class="home-athletes__infos-title" role="heading" aria-level="3">Eliott <span>Crestan</span></h3>
                     <span class="home-athletes__disciplines">800m</span>
                 </section>
                 <a href="#" class="home-athletes__link" title="Vers la page de l'athlète : Eliott Crestan"></a>

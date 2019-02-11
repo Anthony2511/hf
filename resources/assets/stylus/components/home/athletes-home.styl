@@ -1,12 +1,12 @@
 .home-athletes
-  padding s(50,16) 0
+  padding s($paddingContainer,16) 0
   text-align center
   &__container
     display flex
     flex-direction row
     justify-content space-between
     align-items center
-    margin s(50,16) 0
+    margin s($marginTitle,16) 0
   &__bloc
     position relative
   &__figure
@@ -33,11 +33,11 @@
     z-index: 20
   &__infos-title
     font-family 'montserrat'
-    font-size s(30,16)
+    font-size s($mediumTitle,16)
     font-weight: 600
     line-height 1.3
-    padding-left s(30,30)
-    margin-bottom s(20,30)
+    padding-left s($paddingBloc,$mediumTitle)
+    margin-bottom s(20,$mediumTitle)
     & span
       text-transform: uppercase
       display block
