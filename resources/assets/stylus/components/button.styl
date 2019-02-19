@@ -75,6 +75,43 @@
   transform translateX(5px)
   transition .5s ease-in-out
 
+/*****ORANGE*****/
+.button-orange
+  &__left
+    background-color $cOrange
+    text-transform: uppercase
+    color $cWhite
+    font-weight: 800
+    padding s($paddingSmallButton, 16) s($paddingLargeButton,16)
+    border-radius 10px 0 0 10px
+    letter-spacing 0.5px
+    transition .5s ease-in-out
+  &__right
+    background-color $cDarkOrange
+    border-radius 0 10px 10px 0
+    display flex
+    justify-content center
+    align-items center
+    padding 0 s($paddingSmallButton,16)
+    color $cWhite
+    transition .5s ease-in-out
+    &:before
+      icon('search')
+      transition .5s ease-in-out
+
+.button:hover .button-orange__left
+  background-color $cDarkOrange
+  transition .5s ease-in-out
+
+.button:hover .button-orange__right
+  background-color $cOrange
+  transition .5s ease-in-out
+
+.button:hover .button-orange__right:before
+  transform translateX(5px)
+  transition .5s ease-in-out
+
+
 .button-simple
   font-size s(25,16)
   font-weight 700

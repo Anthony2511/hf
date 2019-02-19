@@ -16,7 +16,7 @@
                     <figure class="home-athletes__figure">
                         <img src="{{ $athlete->getImageProfile('_profile.jpg') }}"
                              srcset="../img/jeroen-dhoedt.jpg 2x"
-                             alt="Image de l'athlète : Jeroen D'Hoedt"
+                             alt="Image de l'athlète : {{$athlete->firstname}} {{$athlete->lastname}}"
                              width="335"
                              height="457">
                     </figure>
