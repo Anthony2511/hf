@@ -59,7 +59,7 @@ trait PageTemplates
                     ]);
     }
 
-    private function athletes()
+    private function athletes_index()
     {
         $this->crud->addField([
                         'name' => 'content',
