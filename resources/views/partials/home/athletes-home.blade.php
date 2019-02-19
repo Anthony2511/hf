@@ -11,7 +11,7 @@
                      height="457">
             </figure>
             <section class="home-athletes__infos">
-                <h4 class="home-athletes__infos-title">Jeroen <span>D'hoedt</span></h4>
+                <h3 class="home-athletes__infos-title" role="heading" aria-level="3">Jeroen <span>D'hoedt</span></h3>
                 <span class="home-athletes__disciplines">1500m, 5000m</span>
             </section>
             <a href="#" class="home-athletes__link" title="Vers la page de l'athlète : Jeroen D'Hoedt"></a>

@@ -1,0 +1,18 @@
+.breadcrumb
+  margin-top s($marginTitle,16)
+  &__item
+    text-transform uppercase
+    color $cDarkBlue
+    font-family 'montserrat'
+    font-weight: 600
+    &:before
+      icon('arrowRight')
+      display inline-block
+      font-size s(14,16)
+      margin-right s(10,14)
+      transform rotate(180deg)
+      transition 0.3s ease-in-out
+    &:hover
+      &:before
+        transform translateX(-5px) rotate(180deg)
+        transition 0.3s ease-in-out

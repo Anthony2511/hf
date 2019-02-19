@@ -61,11 +61,13 @@ trait PageTemplates
 
     private function athletes_index()
     {
-        $this->crud->addField([
-                        'name' => 'content',
-                        'label' => trans('backpack::pagemanager.content'),
-                        'type' => 'wysiwyg',
-                        'placeholder' => trans('backpack::pagemanager.content_placeholder'),
-                    ]);
+        $this->crud->addField(
+            [
+                'name' => 'content_text',
+                'type' => 'wysiwyg',
+                'label' => 'Texte d\'introduction',
+                'tab' => 'Section d\'introduction'
+            ]
+        );
     }
 }

@@ -727,6 +727,13 @@ input[type="search"]::-webkit-search-decoration {
   transition: 0.3s ease-in-out;
   background-color: rgba(52,73,94,0.5);
 }
+/*****SINGLE*****/
+.athlete__container {
+  margin-top: 3.125em;
+}
+.athlete__figure img {
+  border-radius: 10px;
+}
 .nav__container {
   display: flex;
   flex-direction: row;
@@ -1151,6 +1158,38 @@ input[type="search"]::-webkit-search-decoration {
 }
 .switcher__bloc + .switcher__bloc {
   margin-left: 3.125em;
+}
+.breadcrumb {
+  margin-top: 3.125em;
+}
+.breadcrumb__item {
+  text-transform: uppercase;
+  color: #2c3e50;
+  font-family: 'montserrat';
+  font-weight: 600;
+}
+.breadcrumb__item:before {
+  font-family: 'iconfont';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\E902";
+  display: inline-block;
+  font-size: 0.875em;
+  margin-right: 0.714285714285714em;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  transition: 0.3s ease-in-out;
+}
+.breadcrumb__item:hover:before {
+  -webkit-transform: translateX(-5px) rotate(180deg);
+          transform: translateX(-5px) rotate(180deg);
+  transition: 0.3s ease-in-out;
 }
 /* ******************
  * Trumps
