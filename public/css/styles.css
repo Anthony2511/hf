@@ -377,6 +377,7 @@ input[type="search"]::-webkit-search-decoration {
   height: 100%;
   display: block;
   transition: 0.3s 0s ease-in-out;
+  text-align: center;
 }
 .home-athletes__link:hover {
   background-color: rgba(52,73,94,0.8);
@@ -1036,6 +1037,46 @@ input[type="search"]::-webkit-search-decoration {
 }
 .footer__social {
   display: flex;
+}
+.index_athletes {
+  background-color: #f4f4f4;
+}
+.intro {
+  padding: 3.125em 0;
+  display: flex;
+  position: relative;
+  background-color: #fff;
+  margin-bottom: 3.125em;
+}
+.intro__bloc {
+  display: flex;
+}
+.intro__bloc:before {
+  content: '';
+  width: 78%;
+  height: 50px;
+  background: 0 0;
+}
+.intro__bloc-text {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  margin-left: 6.25em;
+}
+.intro__bloc-img {
+  position: absolute;
+  left: 0;
+  width: 45%;
+  height: 100%;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.intro__text {
+  padding: 1.875em 0;
+  font-family: 'opensans';
+  color: #34495e;
+  line-height: 1.6;
 }
 /* ******************
  * Trumps

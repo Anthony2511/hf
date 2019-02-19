@@ -1,0 +1,33 @@
+.index_athletes
+  background-color $cLightGrey
+.intro
+  padding s($marginTitle,16) 0
+  display flex
+  position relative
+  background-color $cWhite
+  margin-bottom s($marginTitle,16)
+  &__bloc
+    display flex
+    &:before
+      content ''
+      width 78%
+      height 50px
+      background 0 0
+  &__bloc-text
+    position relative
+    z-index 10
+    width 100%
+    margin-left s(100,16)
+  &__bloc-img
+    position absolute
+    left 0
+    width 45%
+    height 100%
+    background-position center center
+    background-size cover
+    background-repeat no-repeat
+  &__text
+    padding s($paddingBloc,16) 0
+    font-family 'opensans'
+    color $cBlue
+    line-height 1.6
