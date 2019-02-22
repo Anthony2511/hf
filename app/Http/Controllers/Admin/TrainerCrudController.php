@@ -33,8 +33,48 @@ class TrainerCrudController extends CrudController
         |--------------------------------------------------------------------------
         */
 
-        // TODO: remove setFromDb() and manually define Fields and Columns
-        $this->crud->setFromDb();
+        // Columns
+
+        // Firstname Column
+        $this->crud->addColumn(
+            [
+                'name' => 'firstname',
+                'type' => 'text',
+                'label' => 'Prénom'
+            ]
+        );
+
+        // Lastname Column
+        $this->crud->addColumn(
+            [
+                'name' => 'lastname',
+                'type' => 'text',
+                'label' => 'Nom'
+            ]
+        );
+
+        // Fields
+
+        // Firstname Field
+        $this->crud->addField(
+            [
+                'name' => 'firstname',
+                'type' => 'text',
+                'label' => 'Prénom'
+            ]
+        );
+
+        // Lastname Field
+        $this->crud->addField(
+            [
+                'name' => 'lastname',
+                'type' => 'text',
+                'label' => 'Nom'
+            ]
+        );
+
+
+
 
         // add asterisk for fields that are required in TrainerRequest
         $this->crud->setRequiredFields(StoreRequest::class, 'create');
