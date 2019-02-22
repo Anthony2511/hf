@@ -803,6 +803,34 @@ input[type="search"]::-webkit-search-decoration {
   border-radius: 50%;
   margin-right: 0.625em;
 }
+.athlete-record {
+  padding-top: 3.125em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.athlete-record__bloc {
+  width: 47.5%;
+}
+.athlete-record__table {
+  margin-top: 1.875em;
+  font-family: 'opensans';
+  color: #34495e;
+}
+.athlete-record__table-title {
+  font-weight: 700;
+  font-size: 1.125em;
+  text-align: left;
+  padding: 0.555555555555556em 1.111111111111111em;
+}
+.athlete-record__table-row td {
+  padding: 0.625em 1.25em;
+  font-weight: 300;
+  text-align: center;
+}
+.athlete-record__table-tbody tr:nth-child(odd) {
+  background-color: rgba(250,153,38,0.3);
+}
 .nav__container {
   display: flex;
   flex-direction: row;
