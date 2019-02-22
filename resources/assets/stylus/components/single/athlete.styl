@@ -1,6 +1,61 @@
 .athlete
+  background-color $cLightGrey
+  font-family 'opensans'
+  margin-top s(100)
   &__container
-    margin-top s($marginTitle)
+    display: flex
+    flex-direction row
+  &__bloc
+    margin-left s($paddingBloc)
+    width 73%
+    color $cBlue
   &__figure
+    position relative
+    top s(-50)
+    width 27%
     & img
       border-radius 10px
+  &__name
+    font-family 'montserrat'
+    font-size s(40,16)
+    font-weight: 600
+    color $cDarkBlue
+  &__division
+    background-color $cDarkOrange
+    text-transform: uppercase
+    color $cWhite
+    font-style italic
+    padding s(10,16) s(20,16)
+    font-weight: 300
+    border-radius 10px
+    margin-left s(30,16)
+  &__title
+    display flex
+    flex-direction row
+    align-items center
+    margin s($paddingBloc) 0
+  &__content-bloc
+    margin-top s($paddingBloc)
+    display flex
+    flex-direction row
+    justify-content flex-start
+    flex-wrap wrap
+  &__content-title
+    display block
+    font-size s(18,16)
+    font-weight: 300
+    margin-bottom s(10,18)
+  &__content-text
+    font-size s(18,16)
+    font-weight 700
+  &__content
+    width 33.3333%
+    margin-bottom s(30,16)
+  &__trainer
+    display flex
+    flex-direction row
+    align-items center
+  &__trainer-figure
+    & img
+      border-radius 50%
+      margin-right s(10,16)

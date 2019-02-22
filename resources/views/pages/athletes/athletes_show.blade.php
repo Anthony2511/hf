@@ -11,6 +11,6 @@
         <div class="breadcrumb">
             <a href="{{ route('athletes') }}" class="breadcrumb__item">Retour aux athlètes</a>
         </div>
-        @include('partials.single.athlete.intro_athlete')
     </div>
+    @include('partials.single.athlete.intro_athlete')
 @endsection
