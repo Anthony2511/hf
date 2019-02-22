@@ -1,0 +1,20 @@
+.athlete-trophies
+  padding-top s($marginTitle)
+  &__container
+    margin-top s($paddingBloc)
+    font-family 'opensans'
+    display flex
+    flex-flow row wrap
+    justify-content space-between
+  &__bloc
+    color $cBlue
+    font-size s(20,16)
+    font-weight 300
+    width 47.5%
+    margin-bottom s($paddingBloc,20)
+  &__date
+    font-weight 700
+    &:before
+      icon('trophy')
+      color $cOrange
+      margin-right s(10,20)

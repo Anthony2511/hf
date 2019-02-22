@@ -842,6 +842,40 @@ input[type="search"]::-webkit-search-decoration {
   justify-content: space-between;
   margin-top: 3.125em;
 }
+.athlete-trophies {
+  padding-top: 3.125em;
+}
+.athlete-trophies__container {
+  margin-top: 1.875em;
+  font-family: 'opensans';
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.athlete-trophies__bloc {
+  color: #34495e;
+  font-size: 1.25em;
+  font-weight: 300;
+  width: 47.5%;
+  margin-bottom: 1.5em;
+}
+.athlete-trophies__date {
+  font-weight: 700;
+}
+.athlete-trophies__date:before {
+  font-family: 'iconfont';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\E904";
+  color: #fa9926;
+  margin-right: 0.5em;
+}
 .nav__container {
   display: flex;
   flex-direction: row;
