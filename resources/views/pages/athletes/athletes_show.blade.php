@@ -15,4 +15,5 @@
     @include('partials.single.athlete.intro_athlete')
     @include('partials.single.athlete.records_athlete')
     @include('partials.single.athlete.gallery_athlete')
+    @include('partials.single.athlete.trophies_athlete')
 @endsection
