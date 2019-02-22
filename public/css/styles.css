@@ -789,6 +789,7 @@ input[type="search"]::-webkit-search-decoration {
 .athlete-intro__content-text {
   font-size: 1.125em;
   font-weight: 700;
+  transition: 0.3s ease-in-out;
 }
 .athlete-intro__content {
   width: 33.3333%;
@@ -802,6 +803,10 @@ input[type="search"]::-webkit-search-decoration {
 .athlete-intro__trainer-figure img {
   border-radius: 50%;
   margin-right: 0.625em;
+}
+.athlete-intro__trainer-link:hover .athlete-intro__content-text {
+  color: #fe712a;
+  transition: 0.3s ease-in-out;
 }
 .athlete-record {
   padding-top: 3.125em;
@@ -830,6 +835,12 @@ input[type="search"]::-webkit-search-decoration {
 }
 .athlete-record__table-tbody tr:nth-child(odd) {
   background-color: rgba(250,153,38,0.3);
+}
+.athlete-gallery {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin-top: 3.125em;
 }
 .nav__container {
   display: flex;

@@ -14,7 +14,8 @@
                 <span class="athlete-intro__division">Senior</span>
             </section>
             <section class="athlete-intro__info">
-                <h4 class="title title__blue title__left title-size" aria-level="4" role="heading">Informations générales</h4>
+                <h4 class="title title__blue title__left title-size" aria-level="4" role="heading">Informations
+                    générales</h4>
                 <div class="athlete-intro__content-bloc">
                     <div class="athlete-intro__content">
                         <span class="athlete-intro__content-title">Discipline(s)</span>
@@ -22,7 +23,8 @@
                     </div>
                     <div class="athlete-intro__content">
                         <span class="athlete-intro__content-title">Date de naissance</span>
-                        <datetime class="athlete-intro__content-text" time="{{$athlete->date_of_birth}}">{{$athlete->date_of_birth}}</datetime>
+                        <datetime class="athlete-intro__content-text"
+                                  time="{{$athlete->date_of_birth}}">{{$athlete->date_of_birth}}</datetime>
                     </div>
                     <div class="athlete-intro__content">
                         <span class="athlete-intro__content-title">Statut</span>
@@ -34,16 +36,18 @@
                     </div>
                     <div class="athlete-intro__content">
                         <span class="athlete-intro__content-title">Entraîneur</span>
-                        <div class="athlete-intro__trainer">
-                            <figure class="athlete-intro__trainer-figure">
-                                <img src="../img/author.jpg"
-                                     srcset="../img/author.jpg 2x"
-                                     alt="Photo de l'entraîneur : Jean Dupont"
-                                     width="30"
-                                     height="30">
-                            </figure>
-                            <span class="athlete-intro__content-text">Jean Dupont</span>
-                        </div>
+                        <a href="" class="athlete-intro__trainer-link">
+                            <div class="athlete-intro__trainer">
+                                <figure class="athlete-intro__trainer-figure">
+                                    <img src="../img/author.jpg"
+                                         srcset="../img/author.jpg 2x"
+                                         alt="Photo de l'entraîneur : Jean Dupont"
+                                         width="30"
+                                         height="30">
+                                </figure>
+                                <span class="athlete-intro__content-text">Jean Dupont</span>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </section>

@@ -48,6 +48,7 @@
   &__content-text
     font-size s(18,16)
     font-weight 700
+    transition .3s ease-in-out
   &__content
     width 33.3333%
     margin-bottom s(30,16)
@@ -59,3 +60,8 @@
     & img
       border-radius 50%
       margin-right s(10,16)
+
+
+.athlete-intro__trainer-link:hover .athlete-intro__content-text
+  color $cDarkOrange
+  transition .3s ease-in-out
