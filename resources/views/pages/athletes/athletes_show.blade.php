@@ -13,4 +13,5 @@
         </div>
     </div>
     @include('partials.single.athlete.intro_athlete')
+    @include('partials.single.athlete.records_athlete')
 @endsection

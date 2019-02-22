@@ -728,35 +728,36 @@ input[type="search"]::-webkit-search-decoration {
   background-color: rgba(52,73,94,0.5);
 }
 /*****SINGLE*****/
-.athlete {
+/*****ATHLETE*****/
+.athlete-intro {
   background-color: #f4f4f4;
   font-family: 'opensans';
   margin-top: 6.25em;
 }
-.athlete__container {
+.athlete-intro__container {
   display: flex;
   flex-direction: row;
 }
-.athlete__bloc {
+.athlete-intro__bloc {
   margin-left: 1.875em;
   width: 73%;
   color: #34495e;
 }
-.athlete__figure {
+.athlete-intro__figure {
   position: relative;
   top: -3.125em;
   width: 27%;
 }
-.athlete__figure img {
+.athlete-intro__figure img {
   border-radius: 10px;
 }
-.athlete__name {
+.athlete-intro__name {
   font-family: 'montserrat';
   font-size: 2.5em;
   font-weight: 600;
   color: #2c3e50;
 }
-.athlete__division {
+.athlete-intro__division {
   background-color: #fe712a;
   text-transform: uppercase;
   color: #fff;
@@ -766,39 +767,39 @@ input[type="search"]::-webkit-search-decoration {
   border-radius: 10px;
   margin-left: 1.875em;
 }
-.athlete__title {
+.athlete-intro__title {
   display: flex;
   flex-direction: row;
   align-items: center;
   margin: 1.875em 0;
 }
-.athlete__content-bloc {
+.athlete-intro__content-bloc {
   margin-top: 1.875em;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   flex-wrap: wrap;
 }
-.athlete__content-title {
+.athlete-intro__content-title {
   display: block;
   font-size: 1.125em;
   font-weight: 300;
   margin-bottom: 0.555555555555556em;
 }
-.athlete__content-text {
+.athlete-intro__content-text {
   font-size: 1.125em;
   font-weight: 700;
 }
-.athlete__content {
+.athlete-intro__content {
   width: 33.3333%;
   margin-bottom: 1.875em;
 }
-.athlete__trainer {
+.athlete-intro__trainer {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-.athlete__trainer-figure img {
+.athlete-intro__trainer-figure img {
   border-radius: 50%;
   margin-right: 0.625em;
 }
@@ -1262,6 +1263,3 @@ input[type="search"]::-webkit-search-decoration {
           transform: translateX(-5px) rotate(180deg);
   transition: 0.3s ease-in-out;
 }
-/* ******************
- * Trumps
-   ******************* */
