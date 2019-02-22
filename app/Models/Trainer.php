@@ -16,10 +16,17 @@ class Trainer extends Model
     */
 
     protected $table = 'trainers';
-    // protected $primaryKey = 'id';
-    // public $timestamps = false;
+    protected $primaryKey = 'id';
+    public $timestamps = true;
     // protected $guarded = ['id'];
-    protected $fillable = [];
+    protected $fillable = array(
+        'firstname',
+        'lastname',
+        'image',
+        'date_of_birth',
+        'status',
+        'slug'
+    );
     // protected $hidden = [];
     // protected $dates = [];
 
