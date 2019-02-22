@@ -26,7 +26,12 @@ class TrainerRequest extends FormRequest
     public function rules()
     {
         return [
-            // 'name' => 'required|min:5|max:255'
+            'firstname' => 'required|min:2|max:255',
+            'lastname' => 'required|min:2|max:255',
+            'image' => 'required',
+            'status' => 'required|min:2|max:50',
+            'date_of_birth' => 'required|date',
+            'slug' => 'unique:athletes,slug,' . \Request::get('id'),
         ];
     }
 
