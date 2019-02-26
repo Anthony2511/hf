@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b0b97a5d-6dca-40c8-a8f7-cc4d5e556a82" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AthleteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AthleteController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TrainerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TrainerController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partials/navigation.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/navigation.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/athletes/athletes_index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/athletes/athletes_index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/trainers/trainers_index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/trainers/trainers_index.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -64,11 +62,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="navigation.blade.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/partials/navigation.blade.php">
+      <file leaf-file-name="athletes_index.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/pages/athletes/athletes_index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="26" column="50" lean-forward="true" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="50" />
+            <state relative-caret-position="276">
+              <caret line="16" column="82" selection-start-line="16" selection-start-column="82" selection-end-line="16" selection-end-column="82" />
             </state>
           </provider>
         </entry>
@@ -82,11 +80,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="trainers_index.blade.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="trainers_index.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/pages/trainers/trainers_index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="8" column="19" lean-forward="true" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+            <state relative-caret-position="191">
+              <caret line="16" column="82" selection-start-line="16" selection-start-column="82" selection-end-line="16" selection-end-column="82" />
             </state>
           </provider>
         </entry>
@@ -136,7 +134,6 @@
         <option value="$PROJECT_DIR$/resources/assets/stylus/components/intro.styl" />
         <option value="$PROJECT_DIR$/resources/assets/stylus/components/home/athletes-home.styl" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/AthleteCrudController.php" />
-        <option value="$PROJECT_DIR$/resources/views/pages/athletes/athletes_index.blade.php" />
         <option value="$PROJECT_DIR$/resources/assets/stylus/components/button.styl" />
         <option value="$PROJECT_DIR$/resources/views/partials/switchers/switcher-athletes.blade.php" />
         <option value="$PROJECT_DIR$/resources/assets/stylus/components/switcher.styl" />
@@ -161,12 +158,13 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/TrainerCrudController.php" />
         <option value="$PROJECT_DIR$/app/Http/Requests/TrainerRequest.php" />
         <option value="$PROJECT_DIR$/app/Models/Trainer.php" />
-        <option value="$PROJECT_DIR$/resources/views/pages/trainers/trainers_index.blade.php" />
         <option value="$PROJECT_DIR$/app/PageTemplates.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/AthleteController.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/TrainerController.php" />
         <option value="$PROJECT_DIR$/resources/views/partials/navigation.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/pages/athletes/athletes_index.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/pages/trainers/trainers_index.blade.php" />
       </list>
     </option>
   </component>
@@ -550,12 +548,12 @@
       <workItem from="1550483760769" duration="10891000" />
       <workItem from="1550567943314" duration="9822000" />
       <workItem from="1550829472241" duration="8944000" />
-      <workItem from="1551173452129" duration="1927000" />
+      <workItem from="1551173452129" duration="2364000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64985000" />
+    <option name="totallyTimeSpent" value="65422000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1548" height="832" extended-state="0" />
@@ -908,13 +906,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/pages/athletes/athletes_index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="33" column="10" lean-forward="true" selection-end-line="34" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AthleteController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
@@ -922,13 +913,6 @@
           <folding>
             <element signature="e#40#68#0#PHP" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/pages/trainers/trainers_index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="19" lean-forward="true" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -958,8 +942,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/partials/navigation.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="26" column="50" lean-forward="true" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="50" />
+        <state relative-caret-position="115">
+          <caret line="21" column="50" lean-forward="true" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/athletes/athletes_index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="16" column="82" selection-start-line="16" selection-start-column="82" selection-end-line="16" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/trainers/trainers_index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="16" column="82" selection-start-line="16" selection-start-column="82" selection-end-line="16" selection-end-column="82" />
         </state>
       </provider>
     </entry>
