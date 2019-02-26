@@ -13,4 +13,5 @@
         </div>
     </div>
     @include('partials.single.trainer.intro_trainer')
+    @include('partials.single.trainer.records_trainer')
 @endsection
