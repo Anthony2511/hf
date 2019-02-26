@@ -3,6 +3,7 @@
         <div class="home-athletes__bloc">
             <figure class="home-athletes__figure">
                 <img src="{{ $athlete->getImageProfile('_profile.jpg') }}"
+                     srcset="{{ $athlete->getImageProfile('_profile.jpg') }} 2x"
                      alt="Image de l'athlète : {{$athlete->firstname}} {{$athlete->lastname}}"
                      width="335"
                      height="457">

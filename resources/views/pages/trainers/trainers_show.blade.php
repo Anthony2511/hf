@@ -12,7 +12,5 @@
             <a href="{{ route('trainers') }}" class="breadcrumb__item">Retour aux entraîneurs</a>
         </div>
     </div>
-    <div>
-        Page d'un entraineur,ICI
-    </div>
+    @include('partials.single.trainer.intro_trainer')
 @endsection
