@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b0b97a5d-6dca-40c8-a8f7-cc4d5e556a82" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/trainers/trainers_show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/trainers/trainers_show.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/partials/listing/listing-athletes.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/athletes/athletes_index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/athletes/athletes_index.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -49,11 +51,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="athletes_index.blade.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="athletes_index.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/pages/athletes/athletes_index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="16" column="82" selection-start-line="16" selection-start-column="82" selection-end-line="16" selection-end-column="82" />
+            <state relative-caret-position="322">
+              <caret line="14" column="11" lean-forward="true" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="listing-athletes.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/partials/listing/listing-athletes.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="437">
+              <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -61,8 +72,8 @@
       <file leaf-file-name="athletes_show.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/pages/athletes/athletes_show.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="9" column="4" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="13" selection-end-column="10" />
+            <state relative-caret-position="299">
+              <caret line="13" column="10" lean-forward="true" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -70,13 +81,13 @@
       <file leaf-file-name="trainers_index.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/pages/trainers/trainers_index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
+            <state relative-caret-position="368">
               <caret line="16" column="82" selection-start-line="16" selection-start-column="82" selection-end-line="16" selection-end-column="82" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="trainers_show.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="trainers_show.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/pages/trainers/trainers_show.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="253">
@@ -98,7 +109,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/lang/fr/pagination.php" />
         <option value="$PROJECT_DIR$/resources/lang/fr/passwords.php" />
         <option value="$PROJECT_DIR$/resources/lang/fr/validation.php" />
         <option value="$PROJECT_DIR$/resources/views/partials/header-home.blade.php" />
@@ -143,12 +153,13 @@
         <option value="$PROJECT_DIR$/app/Models/Trainer.php" />
         <option value="$PROJECT_DIR$/app/PageTemplates.php" />
         <option value="$PROJECT_DIR$/resources/views/partials/navigation.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/pages/athletes/athletes_index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/pages/trainers/trainers_index.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/AthleteController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/TrainerController.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/resources/views/pages/trainers/trainers_show.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/partials/listing/listing-athletes.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/pages/athletes/athletes_index.blade.php" />
       </list>
     </option>
   </component>
@@ -532,12 +543,12 @@
       <workItem from="1550483760769" duration="10891000" />
       <workItem from="1550567943314" duration="9822000" />
       <workItem from="1550829472241" duration="8944000" />
-      <workItem from="1551173452129" duration="3142000" />
+      <workItem from="1551173452129" duration="3444000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66200000" />
+    <option name="totallyTimeSpent" value="66502000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1548" height="832" extended-state="0" />
@@ -549,8 +560,8 @@
       <window_info anchor="bottom" id="Version Control" order="5" />
       <window_info anchor="bottom" id="Run" order="1" />
       <window_info id="npm" order="0" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="4" visible="true" weight="0.2561151" />
-      <window_info active="true" content_ui="combo" id="Project" order="3" visible="true" weight="0.26174498" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="4" visible="true" weight="0.2561151" />
+      <window_info content_ui="combo" id="Project" order="3" visible="true" weight="0.26174498" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="0" />
       <window_info id="Structure" order="1" side_tool="true" />
@@ -582,13 +593,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/assets/stylus/components/home/news-home.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/assets/stylus/components/home/compet-home.styl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
@@ -890,13 +894,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/pages/trainers/trainers_index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="16" column="82" selection-start-line="16" selection-start-column="82" selection-end-line="16" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AthleteController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
@@ -924,24 +921,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/pages/athletes/athletes_index.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/trainers/trainers_show.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="16" column="82" selection-start-line="16" selection-start-column="82" selection-end-line="16" selection-end-column="82" />
+        <state relative-caret-position="253">
+          <caret line="11" column="93" selection-start-line="11" selection-start-column="93" selection-end-line="11" selection-end-column="93" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/pages/athletes/athletes_show.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="4" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="13" selection-end-column="10" />
+        <state relative-caret-position="299">
+          <caret line="13" column="10" lean-forward="true" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/pages/trainers/trainers_show.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/trainers/trainers_index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="93" selection-start-line="11" selection-start-column="93" selection-end-line="11" selection-end-column="93" />
+        <state relative-caret-position="368">
+          <caret line="16" column="82" selection-start-line="16" selection-start-column="82" selection-end-line="16" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/partials/listing/listing-athletes.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/athletes/athletes_index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="11" lean-forward="true" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
         </state>
       </provider>
     </entry>
