@@ -9,7 +9,7 @@
 @section('content')
     @include('partials.intro-page')
     <div class="wrap">
-        <p>Salut tout le monde</p>
+        @include('partials.switchers.switcher-trainers')
         <div class="home-athletes__container">
             @foreach($trainers as $trainer)
                 <div class="home-athletes__bloc">
