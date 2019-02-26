@@ -18,4 +18,5 @@ Route::get('trainers', 'TrainerController@index')->name('trainers');
 
 //POST
 Route::get('athletes/{athlete}', 'AthleteController@show');
+Route::get('trainers/{trainer}', 'TrainerController@show');
 

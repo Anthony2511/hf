@@ -19,4 +19,11 @@ class TrainerController extends Controller
 
         return view('pages.trainers.' . $page->template, $this->data);
     }
+
+    public function show(Trainer $trainer)
+    {
+        return view('pages.trainers.trainers_show', [
+            'trainer' => $trainer
+        ]);
+    }
 }

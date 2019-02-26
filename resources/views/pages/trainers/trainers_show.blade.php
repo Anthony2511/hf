@@ -1,7 +1,10 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: Anthony
- * Date: 26/02/2019
- * Time: 11:24
- */
+@extends('layout')
+
+
+@section('class', 'index_athletes')
+
+@section('content')
+    <div>
+        Page d'un entraineur,ICI
+    </div>
+@endsection
