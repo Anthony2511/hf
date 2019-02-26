@@ -15,4 +15,5 @@
     @include('partials.single.trainer.intro_trainer')
     @include('partials.single.trainer.records_trainer')
     @include('partials.single.trainer.gallery_trainer')
+    @include('partials.single.trainer.trophies_trainer')
 @endsection
