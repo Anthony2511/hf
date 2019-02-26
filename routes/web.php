@@ -14,6 +14,7 @@
 
 Route::get('/', 'HomeController@index')->name('home');
 Route::get('athletes', 'AthleteController@index')->name('athletes');
+Route::get('trainers', 'TrainerController@index')->name('trainers');
 
 //POST
 Route::get('athletes/{athlete}', 'AthleteController@show');

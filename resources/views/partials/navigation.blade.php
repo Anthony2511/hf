@@ -24,7 +24,7 @@
                 </a>
             </li>
             <li class="menu__item">
-                <a href="#">
+                <a href="{{ route('trainers') }}">
                     <span>Entraineurs</span>
                 </a>
             </li>
