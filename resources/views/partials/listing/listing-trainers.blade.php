@@ -1,3 +1,4 @@
+<p class="switcher__result">Résultat de la recherche : 3</p>
 <div class="home-athletes__container">
     @foreach($trainers as $trainer)
         <div class="home-athletes__bloc">

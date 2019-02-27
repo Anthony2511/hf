@@ -13,10 +13,17 @@ class CreateAthletesTable extends Migration {
 			$table->softDeletes();
 			$table->string('firstname', 255);
 			$table->string('lastname', 255);
-            $table->string('image', 255)->nullable();
 			$table->date('date_of_birth');
 			$table->string('status', 255);
+			$table->string('image', 255)->nullable();
 			$table->string('slug', 255);
+			$table->integer('record_id')->unsigned();
+			$table->integer('trainer_id')->unsigned();
+			$table->integer('discipline_id')->unsigned();
+			$table->integer('trophy_id')->unsigned();
+			$table->integer('division_id')->unsigned();
+			$table->boolean('active');
+			$table->integer('evolution_id')->unsigned();
 		});
 	}
 

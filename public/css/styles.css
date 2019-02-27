@@ -1304,6 +1304,13 @@ input[type="search"]::-webkit-search-decoration {
 .switcher__bloc + .switcher__bloc {
   margin-left: 3.125em;
 }
+.switcher__result {
+  font-family: 'montserrat';
+  font-size: 1.5625em;
+  margin-top: 2em;
+  color: #2c3e50;
+  font-weight: 700;
+}
 .breadcrumb {
   margin-top: 3.125em;
 }

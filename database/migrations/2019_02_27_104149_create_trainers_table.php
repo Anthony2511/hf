@@ -17,6 +17,9 @@ class CreateTrainersTable extends Migration {
 			$table->string('image', 255)->nullable();
 			$table->string('status', 255);
 			$table->string('slug', 255);
+			$table->integer('record_id')->unsigned();
+			$table->integer('athlete_id')->unsigned();
+			$table->integer('training_id')->unsigned();
 		});
 	}
 
