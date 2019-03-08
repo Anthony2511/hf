@@ -79,8 +79,9 @@ class Discipline extends Model
         }
 
         $name = $this->name;
+        $gender = $this->gender;
 
-        return $name;
+        return $name . '-' . $gender;
     }
 
     /*
