@@ -13,6 +13,7 @@ class CreateDisciplinesTable extends Migration {
 			$table->softDeletes();
 			$table->string('name', 255);
 			$table->string('slug', 255);
+			$table->string('gender', 255);
 		});
 	}
 

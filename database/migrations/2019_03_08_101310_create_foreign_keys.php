@@ -9,11 +9,6 @@ class CreateForeignKeys extends Migration {
 	public function up()
 	{
 		Schema::table('athletes', function(Blueprint $table) {
-			$table->foreign('record_id')->references('id')->on('records')
-						->onDelete('restrict')
-						->onUpdate('restrict');
-		});
-		Schema::table('athletes', function(Blueprint $table) {
 			$table->foreign('trainer_id')->references('id')->on('trainers')
 						->onDelete('restrict')
 						->onUpdate('restrict');
@@ -30,16 +25,6 @@ class CreateForeignKeys extends Migration {
 		});
 		Schema::table('athletes', function(Blueprint $table) {
 			$table->foreign('division_id')->references('id')->on('division')
-						->onDelete('restrict')
-						->onUpdate('restrict');
-		});
-		Schema::table('athletes', function(Blueprint $table) {
-			$table->foreign('evolution_id')->references('id')->on('evolutions')
-						->onDelete('restrict')
-						->onUpdate('restrict');
-		});
-		Schema::table('trainers', function(Blueprint $table) {
-			$table->foreign('record_id')->references('id')->on('records')
 						->onDelete('restrict')
 						->onUpdate('restrict');
 		});
@@ -123,9 +108,6 @@ class CreateForeignKeys extends Migration {
 	public function down()
 	{
 		Schema::table('athletes', function(Blueprint $table) {
-			$table->dropForeign('athletes_record_id_foreign');
-		});
-		Schema::table('athletes', function(Blueprint $table) {
 			$table->dropForeign('athletes_trainer_id_foreign');
 		});
 		Schema::table('athletes', function(Blueprint $table) {
@@ -136,12 +118,6 @@ class CreateForeignKeys extends Migration {
 		});
 		Schema::table('athletes', function(Blueprint $table) {
 			$table->dropForeign('athletes_division_id_foreign');
-		});
-		Schema::table('athletes', function(Blueprint $table) {
-			$table->dropForeign('athletes_evolution_id_foreign');
-		});
-		Schema::table('trainers', function(Blueprint $table) {
-			$table->dropForeign('trainers_record_id_foreign');
 		});
 		Schema::table('trainers', function(Blueprint $table) {
 			$table->dropForeign('trainers_athlete_id_foreign');
