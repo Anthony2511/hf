@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b0b97a5d-6dca-40c8-a8f7-cc4d5e556a82" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/resources/views/vendor/backpack/base/inc/sidebar_content.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/backpack/base/inc/sidebar_content.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/backpack/custom.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/backpack/custom.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Discipline.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Discipline.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -38,20 +37,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sidebar_content.blade.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/vendor/backpack/base/inc/sidebar_content.blade.php">
+      <file leaf-file-name="Trainer.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Models/Trainer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="7" column="90" selection-start-line="7" selection-start-column="90" selection-end-line="7" selection-end-column="90" />
+            <state relative-caret-position="-269">
+              <caret line="95" column="4" lean-forward="true" selection-start-line="95" selection-start-column="4" selection-end-line="106" selection-end-column="5" />
+              <folding>
+                <element signature="e#30#69#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Trainer.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Models/Trainer.php">
+      <file leaf-file-name="2019_03_08_101259_create_disciplines_table.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2019_03_08_101259_create_disciplines_table.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="Discipline.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Models/Discipline.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1794">
-              <caret line="81" column="5" selection-start-line="81" selection-start-column="5" selection-end-line="81" selection-end-column="5" />
+            <state relative-caret-position="276">
+              <caret line="12" column="41" lean-forward="true" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
               <folding>
                 <element signature="e#30#69#0#PHP" expanded="true" />
               </folding>
@@ -72,7 +79,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/views/partials/header.php" />
         <option value="$PROJECT_DIR$/resources/views/partials/header.blade.php" />
         <option value="$PROJECT_DIR$/resources/assets/stylus/components/home/header-home.styl" />
         <option value="$PROJECT_DIR$/resources/views/partials/athletes/intro-athletes.blade.php" />
@@ -123,6 +129,7 @@
         <option value="$PROJECT_DIR$/app/Models/Trainer.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_02_04_110653_create_foreign_keys.php" />
         <option value="$PROJECT_DIR$/resources/views/vendor/backpack/base/inc/sidebar_content.blade.php" />
+        <option value="$PROJECT_DIR$/app/Models/Discipline.php" />
       </list>
     </option>
   </component>
@@ -538,12 +545,12 @@
       <workItem from="1550829472241" duration="8944000" />
       <workItem from="1551173452129" duration="8182000" />
       <workItem from="1551192913064" duration="4241000" />
-      <workItem from="1552040014292" duration="855000" />
+      <workItem from="1552040014292" duration="1092000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76336000" />
+    <option name="totallyTimeSpent" value="76573000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1548" height="832" extended-state="0" />
@@ -588,20 +595,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/views/partials/home/news-home.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="26" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/stylus/settings/colors.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/assets/stylus/settings/sizes.styl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
@@ -877,16 +870,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Trainer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1794">
-          <caret line="81" column="5" selection-start-line="81" selection-start-column="5" selection-end-line="81" selection-end-column="5" />
-          <folding>
-            <element signature="e#30#69#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_04_110642_create_trainers_table.php" />
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_04_110653_create_foreign_keys.php" />
     <entry file="file://$PROJECT_DIR$/app/Models/Athlete.php">
@@ -899,6 +882,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/vendor/backpack/base/inc/sidebar_content.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="90" selection-start-line="7" selection-start-column="90" selection-end-line="7" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/routes/backpack/custom.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
@@ -906,10 +896,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/vendor/backpack/base/inc/sidebar_content.blade.php">
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_03_08_101259_create_disciplines_table.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Trainer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="90" selection-start-line="7" selection-start-column="90" selection-end-line="7" selection-end-column="90" />
+        <state relative-caret-position="-269">
+          <caret line="95" column="4" lean-forward="true" selection-start-line="95" selection-start-column="4" selection-end-line="106" selection-end-column="5" />
+          <folding>
+            <element signature="e#30#69#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Discipline.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="41" lean-forward="true" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
+          <folding>
+            <element signature="e#30#69#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
