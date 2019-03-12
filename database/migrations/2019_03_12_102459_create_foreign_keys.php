@@ -9,27 +9,12 @@ class CreateForeignKeys extends Migration {
 	public function up()
 	{
 		Schema::table('athletes', function(Blueprint $table) {
-			$table->foreign('trainer_id')->references('id')->on('trainers')
-						->onDelete('restrict')
-						->onUpdate('restrict');
-		});
-		Schema::table('athletes', function(Blueprint $table) {
-			$table->foreign('discipline_id')->references('id')->on('disciplines')
-						->onDelete('restrict')
-						->onUpdate('restrict');
-		});
-		Schema::table('athletes', function(Blueprint $table) {
 			$table->foreign('trophy_id')->references('id')->on('trophies')
 						->onDelete('restrict')
 						->onUpdate('restrict');
 		});
 		Schema::table('athletes', function(Blueprint $table) {
-			$table->foreign('division_id')->references('id')->on('division')
-						->onDelete('restrict')
-						->onUpdate('restrict');
-		});
-		Schema::table('trainers', function(Blueprint $table) {
-			$table->foreign('athlete_id')->references('id')->on('athletes')
+			$table->foreign('division_id')->references('id')->on('divisions')
 						->onDelete('restrict')
 						->onUpdate('restrict');
 		});
@@ -64,7 +49,7 @@ class CreateForeignKeys extends Migration {
 						->onUpdate('restrict');
 		});
 		Schema::table('trainer_division', function(Blueprint $table) {
-			$table->foreign('division_id')->references('id')->on('division')
+			$table->foreign('division_id')->references('id')->on('divisions')
 						->onDelete('restrict')
 						->onUpdate('restrict');
 		});
@@ -103,24 +88,25 @@ class CreateForeignKeys extends Migration {
 						->onDelete('restrict')
 						->onUpdate('restrict');
 		});
+		Schema::table('athlete_discipline', function(Blueprint $table) {
+			$table->foreign('athlete_id')->references('id')->on('athletes')
+						->onDelete('restrict')
+						->onUpdate('restrict');
+		});
+		Schema::table('athlete_discipline', function(Blueprint $table) {
+			$table->foreign('discipline_id')->references('id')->on('disciplines')
+						->onDelete('restrict')
+						->onUpdate('restrict');
+		});
 	}
 
 	public function down()
 	{
 		Schema::table('athletes', function(Blueprint $table) {
-			$table->dropForeign('athletes_trainer_id_foreign');
-		});
-		Schema::table('athletes', function(Blueprint $table) {
-			$table->dropForeign('athletes_discipline_id_foreign');
-		});
-		Schema::table('athletes', function(Blueprint $table) {
 			$table->dropForeign('athletes_trophy_id_foreign');
 		});
 		Schema::table('athletes', function(Blueprint $table) {
 			$table->dropForeign('athletes_division_id_foreign');
-		});
-		Schema::table('trainers', function(Blueprint $table) {
-			$table->dropForeign('trainers_athlete_id_foreign');
 		});
 		Schema::table('trainers', function(Blueprint $table) {
 			$table->dropForeign('trainers_training_id_foreign');
@@ -163,6 +149,12 @@ class CreateForeignKeys extends Migration {
 		});
 		Schema::table('comments', function(Blueprint $table) {
 			$table->dropForeign('comments_post_id_foreign');
+		});
+		Schema::table('athlete_discipline', function(Blueprint $table) {
+			$table->dropForeign('athlete_discipline_athlete_id_foreign');
+		});
+		Schema::table('athlete_discipline', function(Blueprint $table) {
+			$table->dropForeign('athlete_discipline_discipline_id_foreign');
 		});
 	}
 }

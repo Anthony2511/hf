@@ -3,11 +3,11 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 
-class CreateDivisionTable extends Migration {
+class CreateDivisionsTable extends Migration {
 
 	public function up()
 	{
-		Schema::create('division', function(Blueprint $table) {
+		Schema::create('divisions', function(Blueprint $table) {
 			$table->increments('id');
 			$table->timestamps();
 			$table->softDeletes();
@@ -19,6 +19,6 @@ class CreateDivisionTable extends Migration {
 
 	public function down()
 	{
-		Schema::drop('division');
+		Schema::drop('divisions');
 	}
 }
