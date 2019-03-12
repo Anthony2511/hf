@@ -28,6 +28,7 @@ class DisciplineRequest extends FormRequest
         return [
                 'name' => 'required|min:2|max:255',
                 'gender' => 'required|min:2|max:255',
+                'type' => 'required|min:2|max:255',
                 'slug' => 'unique:disciplines,slug,' . \Request::get('id'),
         ];
     }

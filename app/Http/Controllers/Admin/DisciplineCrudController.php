@@ -44,12 +44,21 @@ class DisciplineCrudController extends CrudController
             ]
         );
 
-        // Name Column
+        // Gender Column
         $this->crud->addColumn(
             [
                 'name' => 'gender',
                 'type' => 'text',
                 'label' => 'Genre'
+            ]
+        );
+
+        // Type Column
+        $this->crud->addColumn(
+            [
+                'name' => 'type',
+                'type' => 'text',
+                'label' => 'Type'
             ]
         );
 
@@ -73,6 +82,23 @@ class DisciplineCrudController extends CrudController
                 'allows_null' => false,
                 'default' => 'hommes',
                 'label' => 'Genre de la discipline'
+            ]
+        );
+
+        // Type Field
+        $this->crud->addField(
+            [
+                'name' => 'type',
+                'type' => 'select_from_array',
+                'options' => [
+                    'courses' => 'Courses',
+                    'sauts' => 'Sauts',
+                    'lancers' => 'Lancers',
+                    'épreuves combinées' => 'Épreuves combinées',
+                    'marche' => 'Marche'],
+                'allows_null' => false,
+                'default' => 'courses',
+                'label' => 'Type de la discipline'
             ]
         );
 

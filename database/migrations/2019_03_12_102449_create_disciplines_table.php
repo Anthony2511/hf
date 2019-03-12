@@ -14,6 +14,7 @@ class CreateDisciplinesTable extends Migration {
 			$table->string('name', 255);
 			$table->string('slug', 255);
 			$table->string('gender', 255);
+			$table->string('type', 255);
 		});
 	}
 

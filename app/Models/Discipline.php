@@ -25,7 +25,8 @@ class Discipline extends Model
     protected $fillable = array(
         'name',
         'slug',
-        'gender'
+        'gender',
+        'type'
     );
     // protected $hidden = [];
     // protected $dates = [];
