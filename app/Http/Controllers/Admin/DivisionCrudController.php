@@ -33,8 +33,52 @@ class DivisionCrudController extends CrudController
         |--------------------------------------------------------------------------
         */
 
-        // TODO: remove setFromDb() and manually define Fields and Columns
-        $this->crud->setFromDb();
+        [
+            'name' => 'name',
+            'type' => 'text',
+            'label' => 'Nom de la division'
+        ]
+        );
+
+        // Gender Column
+        $this->crud->addColumn(
+            [
+                'name' => 'gender',
+                'type' => 'text',
+                'label' => 'Genre'
+            ]
+        );
+
+        // Fields
+
+        // Name Field
+        $this->crud->addField(
+            [
+                'name' => 'name',
+                'type' => 'text',
+                'label' => 'Nom de la division'
+            ]
+        );
+
+        // Gender Field
+        $this->crud->addField(
+            [
+                'name' => 'gender',
+                'type' => 'select_from_array',
+                'options' => ['hommes' => 'Hommes', 'femmes' => 'Femmes'],
+                'allows_null' => false,
+                'default' => 'hommes',
+                'label' => 'Genre de la division'
+            ]
+        );
+        
+        //Slug Field
+        $this->crud->addField([
+            'name' => 'slug',
+            'label' => "Slug (URL)",
+            'type' => 'text',
+            'hint' => 'Est automatiquement généré à partir du nom-genre si pas remplit.'
+        ]);
 
         // add asterisk for fields that are required in DivisionRequest
         $this->crud->setRequiredFields(StoreRequest::class, 'create');
