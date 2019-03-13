@@ -883,9 +883,6 @@ input[type="search"]::-webkit-search-decoration {
   align-items: center;
   margin-top: 3.125em;
 }
-.menu__item + .menu__item {
-  margin-left: 3.125em;
-}
 .nav-menu {
   display: inline-block;
   position: relative;

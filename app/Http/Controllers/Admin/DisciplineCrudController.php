@@ -91,13 +91,15 @@ class DisciplineCrudController extends CrudController
                 'name' => 'type',
                 'type' => 'select_from_array',
                 'options' => [
-                    'courses' => 'Courses',
-                    'sauts' => 'Sauts',
-                    'lancers' => 'Lancers',
+                    'sprint' => 'Sprint',
+                    'demi-fond' => 'Demi-fond',
+                    'fond' => 'Fond',
+                    'saut' => 'Saut',
+                    'lancer' => 'Lancer',
                     'épreuves combinées' => 'Épreuves combinées',
                     'marche' => 'Marche'],
                 'allows_null' => false,
-                'default' => 'courses',
+                'default' => 'sprint',
                 'label' => 'Type de la discipline'
             ]
         );
