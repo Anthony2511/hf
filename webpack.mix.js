@@ -17,6 +17,7 @@ mix
     .js('resources/assets/js/app.js', 'public/js')
     .copy('resources/assets/fonts/', 'public/fonts/')
 
+
     .browserSync({
         proxy: 'hf.test'
     });
