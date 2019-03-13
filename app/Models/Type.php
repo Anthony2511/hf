@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use Backpack\CRUD\CrudTrait;
 
-class Place extends Model
+class Type extends Model
 {
     use CrudTrait;
 
@@ -15,21 +15,13 @@ class Place extends Model
     |--------------------------------------------------------------------------
     */
 
-    protected $table = 'places';
-    protected $primaryKey = 'id';
-    public $timestamps = true;
+    protected $table = 'types';
+    // protected $primaryKey = 'id';
+    // public $timestamps = false;
     // protected $guarded = ['id'];
-    protected $fillable = array(
-        'name',
-    );
+    protected $fillable = [];
     // protected $hidden = [];
     // protected $dates = [];
-
-    /**
-     * Return the sluggable configuration array for this model.
-     *
-     * @return array
-     */
 
     /*
     |--------------------------------------------------------------------------

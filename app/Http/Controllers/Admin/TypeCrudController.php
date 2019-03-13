@@ -5,16 +5,16 @@ namespace App\Http\Controllers\Admin;
 use Backpack\CRUD\app\Http\Controllers\CrudController;
 
 // VALIDATION: change the requests to match your own file names if you need form validation
-use App\Http\Requests\PlaceRequest as StoreRequest;
-use App\Http\Requests\PlaceRequest as UpdateRequest;
+use App\Http\Requests\TypeRequest as StoreRequest;
+use App\Http\Requests\TypeRequest as UpdateRequest;
 use Backpack\CRUD\CrudPanel;
 
 /**
- * Class PlaceCrudController
+ * Class TypeCrudController
  * @package App\Http\Controllers\Admin
  * @property-read CrudPanel $crud
  */
-class PlaceCrudController extends CrudController
+class TypeCrudController extends CrudController
 {
     public function setup()
     {
@@ -23,9 +23,9 @@ class PlaceCrudController extends CrudController
         | CrudPanel Basic Information
         |--------------------------------------------------------------------------
         */
-        $this->crud->setModel('App\Models\Place');
-        $this->crud->setRoute(config('backpack.base.route_prefix') . '/place');
-        $this->crud->setEntityNameStrings('place', 'places');
+        $this->crud->setModel('App\Models\Type');
+        $this->crud->setRoute(config('backpack.base.route_prefix') . '/type');
+        $this->crud->setEntityNameStrings('type', 'types');
 
         /*
         |--------------------------------------------------------------------------
@@ -33,27 +33,10 @@ class PlaceCrudController extends CrudController
         |--------------------------------------------------------------------------
         */
 
-        // Name Column
-        $this->crud->addColumn(
-            [
-                'name' => 'name',
-                'type' => 'text',
-                'label' => 'Nom du lieu'
-            ]
-        );
+        // TODO: remove setFromDb() and manually define Fields and Columns
+        $this->crud->setFromDb();
 
-        // Fields
-
-        // Name Field
-        $this->crud->addField(
-            [
-                'name' => 'name',
-                'type' => 'text',
-                'label' => 'Nom du lieu'
-            ]
-        );
-
-        // add asterisk for fields that are required in PlaceRequest
+        // add asterisk for fields that are required in TypeRequest
         $this->crud->setRequiredFields(StoreRequest::class, 'create');
         $this->crud->setRequiredFields(UpdateRequest::class, 'edit');
     }
