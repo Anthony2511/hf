@@ -33,6 +33,8 @@ class DivisionCrudController extends CrudController
         |--------------------------------------------------------------------------
         */
 
+        // Name Column
+        $this->crud->addColumn(
         [
             'name' => 'name',
             'type' => 'text',
@@ -71,7 +73,7 @@ class DivisionCrudController extends CrudController
                 'label' => 'Genre de la division'
             ]
         );
-        
+
         //Slug Field
         $this->crud->addField([
             'name' => 'slug',
