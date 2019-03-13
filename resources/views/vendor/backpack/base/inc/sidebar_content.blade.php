@@ -14,6 +14,7 @@
         </ul>
 </li>
 <li><a href='{{ backpack_url('place') }}'><i class='fa fa-map-marker'></i> <span>Lieux</span></a></li>
+<li><a href='{{ backpack_url('type') }}'><i class='fa fa-list'></i> <span>Types</span></a></li>
 
 <li><a href="{{ url(config('backpack.base.route_prefix').'/page') }}"><i class="fa fa-file-o"></i>
         <span>Pages</span></a></li>
