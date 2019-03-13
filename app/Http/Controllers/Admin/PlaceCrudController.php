@@ -33,8 +33,33 @@ class PlaceCrudController extends CrudController
         |--------------------------------------------------------------------------
         */
 
-        // TODO: remove setFromDb() and manually define Fields and Columns
-        $this->crud->setFromDb();
+        // Name Column
+        $this->crud->addColumn(
+            [
+                'name' => 'name',
+                'type' => 'text',
+                'label' => 'Nom du lieu'
+            ]
+        );
+
+        // Fields
+
+        // Name Field
+        $this->crud->addField(
+            [
+                'name' => 'name',
+                'type' => 'text',
+                'label' => 'Nom du lieu'
+            ]
+        );
+
+        //Slug Field
+        $this->crud->addField([
+            'name' => 'slug',
+            'label' => "Slug (URL)",
+            'type' => 'text',
+            'hint' => 'Est automatiquement généré à partir du nom-genre si pas remplit.'
+        ]);
 
         // add asterisk for fields that are required in PlaceRequest
         $this->crud->setRequiredFields(StoreRequest::class, 'create');
