@@ -33,8 +33,25 @@ class TypeCrudController extends CrudController
         |--------------------------------------------------------------------------
         */
 
-        // TODO: remove setFromDb() and manually define Fields and Columns
-        $this->crud->setFromDb();
+        // Name Column
+        $this->crud->addColumn(
+            [
+                'name' => 'name',
+                'type' => 'text',
+                'label' => 'Type d\'entraînement'
+            ]
+        );
+
+        // Fields
+
+        // Name Field
+        $this->crud->addField(
+            [
+                'name' => 'name',
+                'type' => 'text',
+                'label' => 'Type d\'entraînement'
+            ]
+        );
 
         // add asterisk for fields that are required in TypeRequest
         $this->crud->setRequiredFields(StoreRequest::class, 'create');

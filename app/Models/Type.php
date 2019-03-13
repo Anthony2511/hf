@@ -16,10 +16,12 @@ class Type extends Model
     */
 
     protected $table = 'types';
-    // protected $primaryKey = 'id';
-    // public $timestamps = false;
+    protected $primaryKey = 'id';
+    public $timestamps = true;
     // protected $guarded = ['id'];
-    protected $fillable = [];
+    protected $fillable = array(
+        'name'
+    );
     // protected $hidden = [];
     // protected $dates = [];
 
