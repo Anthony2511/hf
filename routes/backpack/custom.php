@@ -14,4 +14,5 @@ Route::group([
     CRUD::resource('athlete', 'AthleteCrudController');
     CRUD::resource('trainer','TrainerCrudController');
     CRUD::resource('discipline','DisciplineCrudController');
+    CRUD::resource('division','DivisionCrudController');
 }); // this should be the absolute last line of this file

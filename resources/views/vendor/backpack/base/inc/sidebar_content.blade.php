@@ -6,5 +6,6 @@
 <li><a href='{{ backpack_url('athlete') }}'><i class='fa fa-running'></i> <span>Athlètes</span></a></li>
 <li><a href='{{ backpack_url('trainer') }}'><i class='fa fa-tag'></i> <span>Entraîneurs</span></a></li>
 <li><a href='{{ backpack_url('discipline') }}'><i class='fa fa-tag'></i> <span>Disciplines</span></a></li>
+<li><a href='{{ backpack_url('division') }}'><i class='fa fa-tag'></i> <span>Divisions</span></a></li>
 <li><a href="{{ url(config('backpack.base.route_prefix').'/page') }}"><i class="fa fa-file-o"></i>
         <span>Pages</span></a></li>
