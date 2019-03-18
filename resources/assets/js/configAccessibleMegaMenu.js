@@ -1,4 +1,4 @@
-$("nav:first").accessibleMegaMenu({
+$(".nav-menu__bloc").accessibleMegaMenu({
     /* prefix for generated unique id attributes, which are required
        to indicate aria-owns, aria-controls and aria-labelledby */
     uuidPrefix: "accessible-megamenu",

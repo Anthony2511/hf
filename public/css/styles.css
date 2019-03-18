@@ -938,6 +938,7 @@ input[type="search"]::-webkit-search-decoration {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  color: #2c3e50;
 }
 .button {
   display: inline-flex;
