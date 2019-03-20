@@ -13,6 +13,7 @@
                 <li><a href='{{ backpack_url('division') }}'><i class='fa fa-list'></i> <span>Divisions</span></a></li>
         </ul>
 </li>
+<li><a href='{{ backpack_url('training') }}'><i class='fa fa-list'></i> <span>Entraînements</span></a></li>
 <li><a href='{{ backpack_url('place') }}'><i class='fa fa-map-marker'></i> <span>Lieux</span></a></li>
 <li><a href='{{ backpack_url('type') }}'><i class='fa fa-list'></i> <span>Types</span></a></li>
 
