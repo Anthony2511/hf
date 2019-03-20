@@ -36,6 +36,10 @@ class Type extends Model
     | RELATIONS
     |--------------------------------------------------------------------------
     */
+    public function trainings()
+    {
+        return $this->hasMany('App\Models\Training');
+    }
 
     /*
     |--------------------------------------------------------------------------
