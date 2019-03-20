@@ -12,13 +12,13 @@
                 <img src="../img/logo.png" srcset="../img/logo@2x.png 2x" width="175" height="37" alt="Logo du site">
             </figure>
         </a>
-        <div class="nav-menu__bloc">
-            <ul class="nav-menu">
-                <li class="nav-item">
+        <div class="nav__menu-bloc">
+            <ul class="nav__menu">
+                <li class="nav__item">
                     <a href="?union">
                         <span>Union Athlétique</span>
                     </a>
-                    <div class="sub-nav">
+                    <div class="nav__sub-nav">
                         <ul class="sub-nav-group">
                             <li>
                                 <a href="#">&Aacute; Propos</a>
@@ -29,26 +29,26 @@
                         </ul>
                     </div>
                 </li>
-                <li class="nav-item">
+                <li class="nav__item">
                     <a href="{{ route('athletes') }}">
                         <span>Athlètes</span>
                     </a>
                 </li>
-                <li class="nav-item">
+                <li class="nav__item">
                     <a href="{{ route('trainers') }}">
                         <span>Entraineurs</span>
                     </a>
                 </li>
-                <li class="nav-item">
+                <li class="nav__item">
                     <a href="#">
                         <span>Actualités</span>
                     </a>
                 </li>
-                <li class="nav-item">
+                <li class="nav__item">
                     <a href="?agenda">
                         <span>Agenda</span>
                     </a>
-                    <div class="sub-nav">
+                    <div class="nav__sub-nav">
                         <ul class="sub-nav-group">
                             <li><a href="#">Compétitions</a></li>
                             <li><a href="#">Entraînements</a></li>
@@ -56,7 +56,7 @@
                         </ul>
                     </div>
                 </li>
-                <li class="nav-item">
+                <li class="nav__item">
                     <a href="#">
                         <span>Contact</span>
                     </a>

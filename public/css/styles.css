@@ -883,7 +883,7 @@ input[type="search"]::-webkit-search-decoration {
   align-items: center;
   margin-top: 3.125em;
 }
-.nav-menu {
+.nav__menu {
   display: inline-block;
   position: relative;
   list-style: none;
@@ -893,47 +893,42 @@ input[type="search"]::-webkit-search-decoration {
   padding: 0;
   z-index: 15;
 }
-.nav-item {
+.nav__item {
   list-style: none;
   display: inline-block;
   padding: 0;
   margin: 0;
 }
-.nav-item > a {
+.nav__item > a {
   position: relative;
   display: inline-block;
   padding: 0.5em 1em;
   margin: 0 0 -1px 0;
   border: 1px solid transparent;
 }
-.nav-item > a:focus,
-.nav-item > a.open {
+.nav__item > a:focus,
+.nav__item > a:hover {
   border: 1px solid #dedede;
 }
-.nav-item > a.open {
-  background-color: #fff;
-  border-bottom: none;
-  z-index: 1;
-}
-.sub-nav {
+.nav__sub-nav {
   position: absolute;
   display: none;
   top: 2.2em;
   margin-top: -1px;
   padding: 0.5em 1em;
-  border: 1px solid #dedede;
   background-color: #fff;
+  border-radius: 10px;
 }
-.sub-nav.open {
+.nav__sub-nav.open {
   display: block;
 }
-.sub-nav ul {
+.nav__sub-nav ul {
   display: inline-block;
   vertical-align: top;
   margin: 0 1em 0 0;
   padding: 0;
 }
-.sub-nav li {
+.nav__sub-nav li {
   display: block;
   list-style-type: none;
   margin: 0;
