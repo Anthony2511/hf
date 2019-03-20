@@ -17,6 +17,7 @@ class CreateTrainingsTable extends Migration {
 			$table->time('startHour');
 			$table->time('endHour');
 			$table->text('content')->nullable();
+            $table->string('slug', 255);
 		});
 	}
 
