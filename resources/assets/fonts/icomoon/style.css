@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?7zuhde');
-  src:  url('fonts/icomoon.eot?7zuhde#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?7zuhde') format('truetype'),
-    url('fonts/icomoon.woff?7zuhde') format('woff'),
-    url('fonts/icomoon.svg?7zuhde#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?ckid2l');
+  src:  url('fonts/icomoon.eot?ckid2l#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?ckid2l') format('truetype'),
+    url('fonts/icomoon.woff?ckid2l') format('woff'),
+    url('fonts/icomoon.svg?ckid2l#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,43 +24,69 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-iconArrowRight:before {
-  content: "\e902";
-  color: #34495e;
-}
-.icon-document:before {
-  content: "\e903";
-}
-.icon-star-trophy:before {
-  content: "\e904";
-}
-.icon-iconArrow:before {
-  content: "\e905";
-  color: #fff;
-}
-.icon-doubleArrow:before {
+.icon-attachment:before {
   content: "\e906";
-  color: #fff;
 }
-.icon-iconSearch:before {
+.icon-stars:before {
+  content: "\e900";
+}
+.icon-calendar:before {
+  content: "\e901";
+}
+.icon-time:before {
   content: "\e907";
-  color: #fff;
 }
-.icon-add-button:before {
+.icon-send:before {
+  content: "\e902";
+}
+.icon-phone:before {
   content: "\e908";
-  color: #34495e;
 }
-.icon-messaging-two:before {
+.icon-user:before {
   content: "\e909";
 }
-.icon-left-8:before {
+.icon-instagram:before {
   content: "\e90a";
-  color: #34495e;
+}
+.icon-facebook:before {
+  content: "\e903";
+}
+.icon-lancer:before {
+  content: "\e904";
+}
+.icon-course:before {
+  content: "\e905";
 }
 .icon-add:before {
-  content: "\e900";
-  color: #fff;
+  content: "\e90b";
 }
 .icon-location-sign:before {
-  content: "\e901";
+  content: "\e90c";
+}
+.icon-iconArrowRight:before {
+  content: "\e90d";
+}
+.icon-document:before {
+  content: "\e90e";
+}
+.icon-star-trophy:before {
+  content: "\e90f";
+}
+.icon-iconArrow:before {
+  content: "\e910";
+}
+.icon-doubleArrow:before {
+  content: "\e911";
+}
+.icon-iconSearch:before {
+  content: "\e912";
+}
+.icon-add-button:before {
+  content: "\e913";
+}
+.icon-messaging-two:before {
+  content: "\e914";
+}
+.icon-left-8:before {
+  content: "\e915";
 }

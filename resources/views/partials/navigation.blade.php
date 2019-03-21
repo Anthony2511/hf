@@ -26,6 +26,9 @@
                             <li>
                                 <a href="#">&Eacute;quipements et tarifs</a>
                             </li>
+                            <li>
+                                <a href="#">Nous rejoindre</a>
+                            </li>
                         </ul>
                     </div>
                 </li>
