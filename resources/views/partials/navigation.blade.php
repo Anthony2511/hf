@@ -21,7 +21,7 @@
                     <div class="nav__sub-nav">
                         <ul class="sub-nav-group">
                             <li>
-                                <a href="#">&Aacute; Propos</a>
+                                <a href="{{ route('a-propos') }}">&Aacute; Propos</a>
                             </li>
                             <li>
                                 <a href="#">&Eacute;quipements et tarifs</a>
@@ -35,7 +35,7 @@
                     </a>
                 </li>
                 <li class="nav__item">
-                    <a href="{{ route('trainers') }}">
+                    <a href="{{ route('entraineurs') }}">
                         <span>Entraineurs</span>
                     </a>
                 </li>

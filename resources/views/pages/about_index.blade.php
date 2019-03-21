@@ -7,7 +7,6 @@
 @section('class', 'index_about')
 
 @section('content')
-    @include('partials.intro-page')
     <div class="wrap">
         Page A Propos
     </div>
