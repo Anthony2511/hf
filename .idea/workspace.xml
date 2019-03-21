@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b0b97a5d-6dca-40c8-a8f7-cc4d5e556a82" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/pages/about_index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/PageTemplates.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/PageTemplates.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -50,11 +49,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="about_index.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="about_index.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/pages/about_index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="253">
               <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PageTemplates.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/PageTemplates.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="83" column="5" lean-forward="true" selection-start-line="83" selection-start-column="5" selection-end-line="83" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -81,7 +89,6 @@
       <list>
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/TrainerCrudController.php" />
         <option value="$PROJECT_DIR$/app/Http/Requests/TrainerRequest.php" />
-        <option value="$PROJECT_DIR$/app/PageTemplates.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/AthleteController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/TrainerController.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
@@ -130,6 +137,7 @@
         <option value="$PROJECT_DIR$/app/Models/Training.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/TrainingCrudController.php" />
         <option value="$PROJECT_DIR$/resources/views/pages/about_index.blade.php" />
+        <option value="$PROJECT_DIR$/app/PageTemplates.php" />
       </list>
     </option>
   </component>
@@ -520,12 +528,12 @@
       <workItem from="1552995868898" duration="6000" />
       <workItem from="1552996310953" duration="23000" />
       <workItem from="1553073323608" duration="2834000" />
-      <workItem from="1553161238323" duration="2483000" />
+      <workItem from="1553161238323" duration="2569000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="104213000" />
+    <option name="totallyTimeSpent" value="104299000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1548" height="832" extended-state="0" />
@@ -581,9 +589,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Models/AthleteTrainer.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://D:/TFE/app/Models/Athlete.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
@@ -895,6 +900,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
           <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/PageTemplates.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="83" column="5" lean-forward="true" selection-start-line="83" selection-start-column="5" selection-end-line="83" selection-end-column="5" />
         </state>
       </provider>
     </entry>
