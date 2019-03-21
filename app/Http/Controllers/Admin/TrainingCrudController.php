@@ -35,9 +35,24 @@ class TrainingCrudController extends CrudController
         // Location Column
         $this->crud->addColumn(
             [
-                'name' => 'place_id',
-                'type' => 'text',
-                'label' => 'Lieu'
+                'label' => 'Lieu', // Table column heading
+                'type' => 'select',
+                'name' => 'place_id', // the column that contains the ID of that connected entity;
+                'entity' => 'place', // the method that defines the relationship in your Model
+                'attribute' => 'name', // foreign key attribute that is shown to user
+                'model' => 'App\Models\Place', // foreign key model
+            ]
+        );
+
+        // Type Column
+        $this->crud->addColumn(
+            [
+                'label' => 'Type', // Table column heading
+                'type' => 'select',
+                'name' => 'type_id', // the column that contains the ID of that connected entity;
+                'entity' => 'type', // the method that defines the relationship in your Model
+                'attribute' => 'name', // foreign key attribute that is shown to user
+                'model' => 'App\Models\Type', // foreign key model
             ]
         );
 
