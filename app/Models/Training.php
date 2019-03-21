@@ -27,6 +27,8 @@ class Training extends Model
         'startHour',
         'endHour',
         'content',
+        'place_id',
+        'type_id',
         'slug'
     );
     // protected $hidden = [];
@@ -62,12 +64,12 @@ class Training extends Model
     | RELATIONS
     |--------------------------------------------------------------------------
     */
-    public function places()
+    public function place()
     {
         return $this->belongsTo('App\Models\Place');
     }
 
-    public function types()
+    public function type()
     {
         return $this->belongsTo('App\Models\Type');
     }
