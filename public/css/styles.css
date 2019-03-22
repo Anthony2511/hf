@@ -731,6 +731,9 @@ input[type="search"]::-webkit-search-decoration {
   background-color: rgba(52,73,94,0.5);
 }
 /*****ABOUT*****/
+.about__background {
+  background-color: #f4f4f4;
+}
 .about__intro {
   display: flex;
   flex-direction: row;
@@ -797,6 +800,18 @@ input[type="search"]::-webkit-search-decoration {
   font-weight: 500;
   width: 50%;
   margin: 0 auto;
+}
+.about__end {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 6.25em 0 3.125em;
+}
+.about__end-bloc {
+  width: 50%;
+}
+.about__end-bloc + .about__end-bloc {
+  width: 40%;
 }
 /*****SINGLE*****/
 /*****ATHLETE*****/

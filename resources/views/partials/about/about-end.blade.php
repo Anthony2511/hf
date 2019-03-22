@@ -9,7 +9,7 @@
         </p>
     </section>
     <div class="about__end-bloc">
-        <figure class="about__figure">
+        <figure class="about__end-figure">
             <img src="../img/trophy-lbfa.jpg"
                  srcset="../img/trophy-lbfa.jpg 2x"
                  alt="Remise du trophée LBFA"
