@@ -7,7 +7,7 @@
 @section('class', 'index_about')
 
 @section('content')
-    <div class="wrap">
+    <div class="background">
         @include('partials.about.about-intro')
     </div>
 @endsection
