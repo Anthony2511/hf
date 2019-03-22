@@ -8,6 +8,6 @@
 
 @section('content')
     <div class="wrap">
-        Page A Propos
+        @include('partials.about.about-intro')
     </div>
 @endsection
