@@ -26,16 +26,31 @@
       icon('arrowRight')
       font-size s(15,16)
       transition .5s ease-in-out
+  &__right-document
+    background-color $cLightGreyTwo
+    border-radius 0 10px 10px 0
+    display flex
+    justify-content center
+    align-items center
+    padding 0 s($paddingSmallButton,16)
+    color $cDarkBlue
+    transition .5s ease-in-out
+    &:before
+      icon('document')
+      font-size s(17,16)
+      transition .5s ease-in-out
 
 .button:hover .button-white__left
   background-color $cLightGreyTwo
   transition .5s ease-in-out
 
-.button:hover .button-white__right
+.button:hover .button-white__right,
+.button:hover .button-white__right-document
   background-color $cWhite
   transition .5s ease-in-out
 
-.button:hover .button-white__right:before
+.button:hover .button-white__right:before,
+.button:hover .button-white__right-document:before
   transform translateX(5px)
   transition .5s ease-in-out
 
