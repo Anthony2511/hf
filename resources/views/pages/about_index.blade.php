@@ -10,5 +10,6 @@
     <div class="background">
         @include('partials.about.about-intro')
         @include('partials.about.about-record')
+        @include('partials.about.about-end')
     </div>
 @endsection
