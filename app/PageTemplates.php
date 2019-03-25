@@ -94,4 +94,16 @@ trait PageTemplates
             ]
         );
     }
+
+    private function trainings_index()
+    {
+        $this->crud->addField(
+            [
+                'name' => 'content_text',
+                'type' => 'wysiwyg',
+                'label' => 'Texte d\'introduction',
+                'tab' => 'Section d\'introduction'
+            ]
+        );
+    }
 }
