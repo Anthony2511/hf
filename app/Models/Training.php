@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 use Backpack\CRUD\CrudTrait;
 use Cviebrock\EloquentSluggable\Sluggable;
 use Cviebrock\EloquentSluggable\SluggableScopeHelpers;
+use Carbon;
 
 class Training extends Model
 {
@@ -32,7 +33,7 @@ class Training extends Model
         'slug'
     );
     // protected $hidden = [];
-    // protected $dates = [];
+
 
     /**
      * Return the sluggable configuration array for this model.
@@ -58,6 +59,7 @@ class Training extends Model
     | FUNCTIONS
     |--------------------------------------------------------------------------
     */
+
 
     /*
     |--------------------------------------------------------------------------
