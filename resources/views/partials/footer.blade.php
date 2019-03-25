@@ -3,7 +3,7 @@
     <div class="footer__bloc-container">
         <div class="footer__container wrap">
             <section class="footer__bloc">
-                <h3 aria-level="3" role="heading" class="footer__title">Nous contactez</h3>
+                <h2 aria-level="2" role="heading" class="footer__title">Nous contactez</h2>
                 <ul class="footer__contact-list">
                     <li class="footer__contact-item"><a href="mailto:philippe.devel@unamur.be">Verviers
                             <span>philippe.devel@unamur.be</span></a>
@@ -20,7 +20,7 @@
                 </ul>
             </section>
             <section class="footer__bloc">
-                <h3 aria-level="3" role="heading" class="footer__title">Derniers résultats</h3>
+                <h2 aria-level="2" role="heading" class="footer__title">Derniers résultats</h2>
                 <ul>
                     <li class="footer__results-item"><a href="#" class="footer__results-link">Cross cup de Dour -
                             <time>12/11/2018</time>
@@ -34,7 +34,7 @@
                 </ul>
             </section>
             <section class="footer__bloc">
-                <h3 aria-level="3" role="heading" class="footer__title">Nous suivre</h3>
+                <h2 aria-level="2" role="heading" class="footer__title">Nous suivre</h2>
                 <ul class="footer__social">
                     <li><a href="#"><span>Facebook</span></a></li>
                     <li><a href="#"><span>Instagram</span></a></li>

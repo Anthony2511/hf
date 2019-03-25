@@ -1,5 +1,5 @@
 <nav class="nav">
-    <h2 class="hidden">Menu de navigation principal</h2>
+    <h1 class="hidden" aria-level="1" role="heading">Menu de navigation principal</h1>
     <button class="hamburger">
         <span></span>
         <span></span>

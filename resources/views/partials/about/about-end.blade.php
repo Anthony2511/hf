@@ -1,6 +1,6 @@
 <div class="about__end wrap">
     <section class="about__end-bloc">
-        <h4 aria-level="4" role="heading" class="title title__blue title__left">&Eacute;lu club francophone en 2009</h4>
+        <h2 aria-level="2" role="heading" class="title title__blue title__left">&Eacute;lu club francophone en 2009</h2>
         <p class="about__text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Duis nec odio velit. Morbi facilisis commodo leo, nec fermentum neque aliquam sit amet.
