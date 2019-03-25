@@ -1,7 +1,7 @@
 <div class="news-home">
     <section class="wrap">
         <h2 class="title title__blue title__center" aria-level="2" role="heading">Dernières actualités</h2>
-        <div>
+        <div class="news-home__margin">
             <div class="news-home__container">
                 <div class="news-home__bloc">
                     <figure class="news-home__figure">
