@@ -10,6 +10,6 @@
     @include('partials.intro-page')
     <div class="wrap">
         @include('partials.switchers.switcher-trainings')
-        <p>SLLTTTTTT</p>
+        @include('partials.listing.listing-trainings')
     </div>
 @endsection
