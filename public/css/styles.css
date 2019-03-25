@@ -971,7 +971,7 @@ input[type="search"]::-webkit-search-decoration {
 }
 .trainings__bloc {
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   justify-content: space-between;
   margin-top: 3.125em;
 }
@@ -982,6 +982,29 @@ input[type="search"]::-webkit-search-decoration {
   padding: 1.875em;
   color: #2c3e50;
   font-family: 'opensans';
+  margin-bottom: 3.125em;
+}
+.trainings__infos {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+.trainings__place {
+  font-weight: 600;
+}
+.trainings__place:before {
+  font-family: 'iconfont';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\E90C";
+  color: #fa9926;
+  margin-right: 0.625em;
 }
 .trainings__intro {
   display: flex;
@@ -1021,6 +1044,7 @@ input[type="search"]::-webkit-search-decoration {
   font-weight: 400;
   line-height: 1.7;
   margin: 1.25em 0;
+  min-height: 6.875em;
 }
 .trainings__trainers {
   display: flex;

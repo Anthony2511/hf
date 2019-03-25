@@ -3,7 +3,7 @@
 .trainings
   &__bloc
     display flex
-    flex-direction row
+    flex-flow row wrap
     justify-content:space-between
     margin-top s($marginTitle)
   &__single
@@ -13,6 +13,17 @@
     padding s($paddingBloc)
     color $cDarkBlue
     font-family 'opensans'
+    margin-bottom s(50,16)
+  &__infos
+    display flex
+    flex-flow row nowrap
+    justify-content space-between
+  &__place
+    font-weight:600
+    &:before
+      icon('location')
+      color $cOrange
+      margin-right s(10,16)
   &__intro
     display flex
     flex-flow row nowrap
@@ -38,6 +49,7 @@
     font-weight: 400
     line-height 1.7
     margin s(20,16) 0
+    min-height s(110,16)
   &__trainers
     display flex
     flex-flow row
