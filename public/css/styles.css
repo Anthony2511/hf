@@ -965,6 +965,78 @@ input[type="search"]::-webkit-search-decoration {
   color: #fa9926;
   margin-right: 0.5em;
 }
+/*****TRAINING*****/
+.index_training {
+  background-color: #f4f4f4;
+}
+.trainings__bloc {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 3.125em;
+}
+.trainings__single {
+  background-color: #fff;
+  width: 30%;
+  border-radius: 10px;
+  padding: 1.875em;
+  color: #2c3e50;
+  font-family: 'opensans';
+}
+.trainings__intro {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  font-family: 'montserrat';
+  margin-bottom: 1.25em;
+}
+.trainings__day {
+  font-size: 1.5625em;
+  font-weight: 300;
+}
+.trainings__hour {
+  font-size: 1.5625em;
+  font-weight: 600;
+}
+.trainings__type {
+  font-weight: 600;
+  display: block;
+}
+.trainings__type--sprint:before {
+  font-family: 'iconfont';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\E905";
+  color: #fa9926;
+  font-size: 1.125em;
+  margin-right: 0.555555555555556em;
+}
+.trainings__text {
+  font-weight: 400;
+  line-height: 1.7;
+  margin: 1.25em 0;
+}
+.trainings__trainers {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+}
+.trainings__figure {
+  margin-right: 0.625em;
+}
+.trainings__figure img {
+  border-radius: 50%;
+}
+.trainings__trainer-name {
+  font-size: 1.125em;
+  font-weight: 700;
+}
 .nav__container {
   display: flex;
   flex-direction: row;

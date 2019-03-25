@@ -5,14 +5,14 @@
             <div class="trainings__single">
                 <div class="trainings__intro">
                     <span class="trainings__day">Mardi</span>
-                    <span class="trainigs__hour">17h30 - 19h00</span>
+                    <span class="trainings__hour">17h30 - 19h00</span>
                 </div>
                 <span class="trainings__type trainings__type--sprint">Sprint</span>
                 <p class="trainings__text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing  elit. Duis nec odio velit.
                     Morbi facilisis commodo leo, nec fermentum neque aliquam sit amet.
                 </p>
-                <div class="trainings__trainers">
+                <a href="#" class="trainings__trainers">
                     <figure class="trainings__figure">
                         <img src="../img/author.jpg"
                              srcset="../img/author.jpg 2x"
@@ -21,19 +21,19 @@
                              height="30">
                     </figure>
                     <span class="trainings__trainer-name">Jean Dupont</span>
-                </div>
+                </a>
             </div>
             <div class="trainings__single">
                 <div class="trainings__intro">
                     <span class="trainings__day">Mardi</span>
-                    <span class="trainigs__hour">17h30 - 19h00</span>
+                    <span class="trainings__hour">17h30 - 19h00</span>
                 </div>
                 <span class="trainings__type trainings__type--sprint">Sprint</span>
                 <p class="trainings__text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing  elit. Duis nec odio velit.
                     Morbi facilisis commodo leo, nec fermentum neque aliquam sit amet.
                 </p>
-                <div class="trainings__trainers">
+                <a class="trainings__trainers">
                     <figure class="trainings__figure">
                         <img src="../img/author.jpg"
                              srcset="../img/author.jpg 2x"
@@ -42,19 +42,19 @@
                              height="30">
                     </figure>
                     <span class="trainings__trainer-name">Jean Dupont</span>
-                </div>
+                </a>
             </div>
             <div class="trainings__single">
                 <div class="trainings__intro">
                     <span class="trainings__day">Mardi</span>
-                    <span class="trainigs__hour">17h30 - 19h00</span>
+                    <span class="trainings__hour">17h30 - 19h00</span>
                 </div>
                 <span class="trainings__type trainings__type--sprint">Sprint</span>
                 <p class="trainings__text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing  elit. Duis nec odio velit.
                     Morbi facilisis commodo leo, nec fermentum neque aliquam sit amet.
                 </p>
-                <div class="trainings__trainers">
+                <a class="trainings__trainers">
                     <figure class="trainings__figure">
                         <img src="../img/author.jpg"
                              srcset="../img/author.jpg 2x"
@@ -63,7 +63,7 @@
                              height="30">
                     </figure>
                     <span class="trainings__trainer-name">Jean Dupont</span>
-                </div>
+                </a>
             </div>
         </div>
     </div>
