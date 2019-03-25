@@ -53,9 +53,15 @@
                     </a>
                     <div class="nav__sub-nav">
                         <ul class="sub-nav-group">
-                            <li><a href="#">Compétitions</a></li>
-                            <li><a href="#">Entraînements</a></li>
-                            <li><a href="#">Stages</a></li>
+                            <li>
+                                <a href="#">Compétitions</a>
+                            </li>
+                            <li>
+                                <a href="{{ route('entrainements') }}">Entraînements</a>
+                            </li>
+                            <li>
+                                <a href="#">Stages</a>
+                            </li>
                         </ul>
                     </div>
                 </li>

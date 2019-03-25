@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Training;
+use Backpack\PageManager\app\Models\Page;
 use Illuminate\Http\Request;
 
 class TrainingController extends Controller
