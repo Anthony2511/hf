@@ -119,7 +119,16 @@ class TrainingCrudController extends CrudController
                 'label' => 'Courte description'
             ]
         );
-
+        // Training field
+        $this->crud->addField
+        ([
+            'label' => 'Sélectionnez son entraîneur',
+            'type' => 'select2',
+            'name' => 'trainer_id',
+            'entity' => 'trainer',
+            'attribute' => 'firstname',
+            'model' => "App\Models\Trainer",
+        ]);
         // Type field
         $this->crud->addField
         ([

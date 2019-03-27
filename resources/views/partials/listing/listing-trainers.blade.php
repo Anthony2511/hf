@@ -13,7 +13,7 @@
                     <span>{{$trainer->lastname}}</span></h4>
                 <span class="home-athletes__disciplines">1500m, 5000m</span>
             </section>
-            <a href="{{url('trainers/' . $trainer->slug )}}"
+            <a href="{{url('entraineurs/' . $trainer->slug )}}"
                class="home-athletes__link"
                title="Vers la page de l'athlète : {{$trainer->firstname}} {{$trainer->lastname}}"></a>
         </div>

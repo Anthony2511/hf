@@ -5,7 +5,9 @@ namespace App\Http\Controllers;
 use App\Models\Trainer;
 use Illuminate\Http\Request;
 use Backpack\PageManager\app\Models\Page;
-use App\Models\Trainers;
+use App\Models\Training;
+use App\Models\Discipline;
+use App\Models\Division;
 
 class TrainerController extends Controller
 {

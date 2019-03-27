@@ -9,7 +9,7 @@
 @section('content')
     <div class="wrap">
         <div class="breadcrumb">
-            <a href="{{ route('trainers') }}" class="breadcrumb__item">Retour aux entraîneurs</a>
+            <a href="{{ route('entraineurs') }}" class="breadcrumb__item">Retour aux entraîneurs</a>
         </div>
     </div>
     @include('partials.single.trainer.intro_trainer')
