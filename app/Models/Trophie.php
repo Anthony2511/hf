@@ -16,10 +16,13 @@ class Trophie extends Model
     */
 
     protected $table = 'trophies';
-    // protected $primaryKey = 'id';
-    // public $timestamps = false;
+    protected $primaryKey = 'id';
+    public $timestamps = true;
     // protected $guarded = ['id'];
-    protected $fillable = [];
+    protected $fillable = array(
+        'year',
+        'name'
+    );
     // protected $hidden = [];
     // protected $dates = [];
 
