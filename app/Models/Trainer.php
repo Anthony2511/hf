@@ -87,6 +87,11 @@ class Trainer extends Model
         return $this->hasMany('App\Models\Training');
     }
 
+    public function disciplines()
+    {
+        return $this->belongsToMany('App\Models\Discipline');
+    }
+
     /*
     |--------------------------------------------------------------------------
     | SCOPES
