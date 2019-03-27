@@ -119,6 +119,18 @@ class TrainerCrudController extends CrudController
             'pivot' => true
         ]);
 
+        // Discipline field
+        $this->crud->addField
+        ([
+            'label' => 'Sélectionnez les disciplines entraînées',
+            'type' => 'select2_multiple',
+            'name' => 'disciplines',
+            'entity' => 'disciplines',
+            'attribute' => 'name',
+            'model' => "App\Models\Discipline",
+            'pivot' => true
+        ]);
+
         //Slug Field
         $this->crud->addField([
             'name' => 'slug',
