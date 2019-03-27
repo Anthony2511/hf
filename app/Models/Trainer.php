@@ -92,6 +92,11 @@ class Trainer extends Model
         return $this->belongsToMany('App\Models\Discipline');
     }
 
+    public function divisions()
+    {
+        return $this->belongsToMany('App\Models\Division');
+    }
+
     /*
     |--------------------------------------------------------------------------
     | SCOPES

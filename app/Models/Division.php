@@ -60,7 +60,10 @@ class Division extends Model
     | RELATIONS
     |--------------------------------------------------------------------------
     */
-
+    public function trainers()
+    {
+        return $this->belongsToMany('App\Models\Trainer');
+    }
     /*
     |--------------------------------------------------------------------------
     | SCOPES
