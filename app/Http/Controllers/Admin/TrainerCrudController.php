@@ -131,6 +131,18 @@ class TrainerCrudController extends CrudController
             'pivot' => true
         ]);
 
+        // Division field
+        $this->crud->addField
+        ([
+            'label' => 'Sélectionnez les divisions entraînées',
+            'type' => 'select2_multiple',
+            'name' => 'divisions',
+            'entity' => 'divisions',
+            'attribute' => 'name',
+            'model' => "App\Models\Division",
+            'pivot' => true
+        ]);
+
         //Slug Field
         $this->crud->addField([
             'name' => 'slug',
