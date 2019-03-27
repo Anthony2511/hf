@@ -3,8 +3,8 @@
 .trainings
   &__bloc
     display flex
-    flex-flow row wrap
-    justify-content:space-between
+    flex-wrap wrap
+    justify-content flex-start
     margin-top s($marginTitle)
   &__single
     background-color $cWhite
@@ -14,6 +14,9 @@
     color $cDarkBlue
     font-family 'opensans'
     margin-bottom s(50,16)
+    margin-right: 5%
+    &:nth-child(3n+3)
+      margin-right 0
   &__infos
     display flex
     flex-flow row nowrap
