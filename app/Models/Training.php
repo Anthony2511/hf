@@ -76,6 +76,11 @@ class Training extends Model
         return $this->belongsTo('App\Models\Type');
     }
 
+    public function trainer()
+    {
+        return $this->belongsTo('App\Models\Trainer');
+    }
+
     /*
     |--------------------------------------------------------------------------
     | SCOPES

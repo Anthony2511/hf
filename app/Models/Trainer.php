@@ -28,7 +28,8 @@ class Trainer extends Model
         'image',
         'date_of_birth',
         'status',
-        'slug'
+        'slug',
+        'training_id'
     );
     // protected $hidden = [];
     // protected $dates = [];
@@ -79,6 +80,11 @@ class Trainer extends Model
     public function athletes()
     {
         return $this->belongsToMany('App\Models\Athlete');
+    }
+
+    public function trainings()
+    {
+        return $this->hasMany('App\Models\Training');
     }
 
     /*
