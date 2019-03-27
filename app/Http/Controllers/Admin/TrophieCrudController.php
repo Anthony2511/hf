@@ -33,8 +33,45 @@ class TrophieCrudController extends CrudController
         |--------------------------------------------------------------------------
         */
 
-        // TODO: remove setFromDb() and manually define Fields and Columns
-        $this->crud->setFromDb();
+        //Columns
+
+        // Year Column
+        $this->crud->addColumn(
+            [
+                'name' => 'year',
+                'type' => 'integer',
+                'label' => 'Année'
+            ]
+        );
+
+        // Name Column
+        $this->crud->addColumn(
+            [
+                'name' => 'name',
+                'type' => 'text',
+                'label' => 'Titre du trophée'
+            ]
+        );
+
+        // Fields
+
+        // Year Field
+        $this->crud->addField(
+            [
+                'name' => 'year',
+                'type' => 'number',
+                'label' => 'Année du trophée'
+            ]
+        );
+
+        // Name Field
+        $this->crud->addField(
+            [
+                'name' => 'name',
+                'type' => 'text',
+                'label' => 'Titre du trophée'
+            ]
+        );
 
         // add asterisk for fields that are required in TrophieRequest
         $this->crud->setRequiredFields(StoreRequest::class, 'create');
