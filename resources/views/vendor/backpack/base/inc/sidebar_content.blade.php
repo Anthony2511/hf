@@ -11,6 +11,7 @@
                 <li><a href='{{ backpack_url('trainer') }}'><i class='fa fa-user'></i> <span>Entraîneurs</span></a></li>
                 <li><a href='{{ backpack_url('discipline') }}'><i class='fa fa-list'></i> <span>Disciplines</span></a></li>
                 <li><a href='{{ backpack_url('division') }}'><i class='fa fa-list'></i> <span>Divisions</span></a></li>
+                <li><a href='{{ backpack_url('trophie') }}'><i class='fa fa-list'></i> <span>Trophées</span></a></li>
         </ul>
 </li>
 <li><a href='{{ backpack_url('training') }}'><i class='fa fa-list'></i> <span>Entraînements</span></a></li>
