@@ -19,7 +19,9 @@
                 <div class="athlete-intro__content-bloc">
                     <div class="athlete-intro__content">
                         <span class="athlete-intro__content-title">Discipline(s)</span>
-                        <span class="athlete-intro__content-text">1500m, 5000m</span>
+                        @foreach($trainer->disciplines as $discipline)
+                            <span class="athlete-intro__content-text">{{$discipline->name}}</span>
+                        @endforeach
                     </div>
                     <div class="athlete-intro__content">
                         <span class="athlete-intro__content-title">Date de naissance</span>

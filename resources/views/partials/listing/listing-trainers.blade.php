@@ -11,7 +11,12 @@
             <section class="home-athletes__infos">
                 <h4 class="home-athletes__infos-title">{{$trainer->firstname}}
                     <span>{{$trainer->lastname}}</span></h4>
-                <span class="home-athletes__disciplines">1500m, 5000m</span>
+                    <span class="home-athletes__disciplines">
+                        @foreach($trainer->disciplines as $discipline)
+                        {{$discipline->name}}
+                        @endforeach
+                    </span>
+
             </section>
             <a href="{{url('entraineurs/' . $trainer->slug )}}"
                class="home-athletes__link"

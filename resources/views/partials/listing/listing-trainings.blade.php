@@ -18,7 +18,7 @@
                     <p class="trainings__text">
                         {{$training->content}}
                     </p>
-                    <a href="#" class="trainings__trainers">
+                    <a href="{{url('entraineurs/' . $training->trainer['slug'] )}}" class="trainings__trainers">
                         <figure class="trainings__figure">
                             <img src="../img/author.jpg"
                                  srcset="../img/author.jpg 2x"
@@ -26,7 +26,7 @@
                                  width="30"
                                  height="30">
                         </figure>
-                        <span class="trainings__trainer-name">Jean Dupont</span>
+                        <span class="trainings__trainer-name">{{$training->trainer['firstname']}}</span>
                     </a>
                 </div>
             @endforeach

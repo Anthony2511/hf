@@ -315,13 +315,14 @@ input[type="search"]::-webkit-search-decoration {
 }
 .home-athletes__container {
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
-  margin: 3.125em 0;
+  margin: 3.125em 0 0;
 }
 .home-athletes__bloc {
   position: relative;
+  margin-bottom: 3.125em;
 }
 .home-athletes__figure {
   position: relative;

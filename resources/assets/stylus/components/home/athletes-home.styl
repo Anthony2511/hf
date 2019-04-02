@@ -3,12 +3,13 @@
   text-align center
   &__container
     display flex
-    flex-direction row
+    flex-flow row wrap
     justify-content space-between
     align-items center
-    margin s($marginTitle,16) 0
+    margin s($marginTitle,16) 0 0
   &__bloc
     position relative
+    margin-bottom s(50,16)
   &__figure
     position relative
     &:before
