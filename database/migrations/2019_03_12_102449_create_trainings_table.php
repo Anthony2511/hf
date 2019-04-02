@@ -18,7 +18,9 @@ class CreateTrainingsTable extends Migration {
 			$table->time('endHour');
 			$table->text('content')->nullable();
             $table->string('slug', 255);
-		});
+            $table->integer('trainer_id')->unsigned();
+
+        });
 	}
 
 	public function down()
