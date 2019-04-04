@@ -64,6 +64,11 @@ class Discipline extends Model
     {
         return $this->belongsToMany('App\Models\Trainer');
     }
+
+    public function athletes()
+    {
+        return $this->belongsToMany('App\Models\Athlete');
+    }
     /*
     |--------------------------------------------------------------------------
     | SCOPES

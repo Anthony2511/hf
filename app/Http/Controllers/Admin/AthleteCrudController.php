@@ -131,6 +131,18 @@ class AthleteCrudController extends CrudController
             'model' => "App\Models\Division"
         ]);
 
+        // Trophies field
+        $this->crud->addField
+        ([
+            'label' => 'Sélectionnez ses trophées',
+            'type' => 'select2_multiple',
+            'name' => 'trophy_id',
+            'entity' => 'trophies',
+            'attribute' => 'name',
+            'model' => "App\Models\Trophie",
+            'pivot' => false
+        ]);
+
         //Slug Field
         $this->crud->addField([
             'name' => 'slug',

@@ -64,6 +64,11 @@ class Division extends Model
     {
         return $this->belongsToMany('App\Models\Trainer');
     }
+
+    public function athletes()
+    {
+        return $this->hasMany('App\Models\Athlete');
+    }
     /*
     |--------------------------------------------------------------------------
     | SCOPES

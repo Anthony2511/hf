@@ -29,7 +29,8 @@ class Athlete extends Model
         'date_of_birth',
         'status',
         'slug',
-        'division_id'
+        'division_id',
+        'trophy_id'
     );
     // protected $hidden = [];
     // protected $dates = [];
@@ -91,6 +92,11 @@ class Athlete extends Model
     public function division()
     {
         return $this->belongsTo('App\Models\Division');
+    }
+
+    public function trophies()
+    {
+        return $this->hasMany('App\Models\Trophy');
     }
 
     /*
