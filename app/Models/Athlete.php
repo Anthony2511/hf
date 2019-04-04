@@ -82,6 +82,11 @@ class Athlete extends Model
         return $this->belongsToMany('App\Models\Trainer');
     }
 
+    public function disciplines()
+    {
+        return $this->belongsToMany('App\Models\Discipline');
+    }
+
 
     /*
     |--------------------------------------------------------------------------

@@ -107,6 +107,18 @@ class AthleteCrudController extends CrudController
             ]
         );
 
+        // Discipline field
+        $this->crud->addField
+        ([
+            'label' => 'Sélectionnez ses disciplines',
+            'type' => 'select2_multiple',
+            'name' => 'disciplines',
+            'entity' => 'disciplines',
+            'attribute' => 'name',
+            'model' => "App\Models\Discipline",
+            'pivot' => true
+        ]);
+
         //Slug Field
         $this->crud->addField([
             'name' => 'slug',

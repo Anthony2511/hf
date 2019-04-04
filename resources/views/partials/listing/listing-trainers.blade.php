@@ -13,7 +13,7 @@
                     <span>{{$trainer->lastname}}</span></h4>
                     <span class="home-athletes__disciplines">
                         @foreach($trainer->disciplines as $discipline)
-                        {{$discipline->name}}
+                            {{$discipline->name}}
                         @endforeach
                     </span>
 
