@@ -30,6 +30,7 @@ class AthleteRequest extends FormRequest
             'lastname' => 'required|min:2|max:255',
             'image' => 'required',
             'status' => 'required|min:2|max:50',
+            'active' => 'required|min:2|max:50',
             'date_of_birth' => 'required|date',
             'slug' => 'unique:athletes,slug,' . \Request::get('id'),
         ];

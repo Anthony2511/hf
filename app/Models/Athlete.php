@@ -30,7 +30,8 @@ class Athlete extends Model
         'status',
         'slug',
         'division_id',
-        'trophy_id'
+        'trophie_id',
+        'active'
     );
     // protected $hidden = [];
     // protected $dates = [];
@@ -96,7 +97,7 @@ class Athlete extends Model
 
     public function trophies()
     {
-        return $this->hasMany('App\Models\Trophy');
+        return $this->hasMany('App\Models\Trophie');
     }
 
     public function trainings()

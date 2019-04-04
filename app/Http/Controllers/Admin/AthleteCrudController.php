@@ -107,6 +107,18 @@ class AthleteCrudController extends CrudController
             ]
         );
 
+        // Active Field
+        $this->crud->addField(
+            [
+                'name' => 'active',
+                'type' => 'select_from_array',
+                'options' => ['actif' => 'Actif', 'inactif' => 'Inactif'],
+                'allows_null' => false,
+                'default' => 'actif',
+                'label' => 'Activité de l\'athlète'
+            ]
+        );
+
         // Trainer field
         $this->crud->addField
         ([
@@ -160,7 +172,7 @@ class AthleteCrudController extends CrudController
         ([
             'label' => 'Sélectionnez ses trophées',
             'type' => 'select2_multiple',
-            'name' => 'trophy_id',
+            'name' => 'trophie_id',
             'entity' => 'trophies',
             'attribute' => 'name',
             'model' => "App\Models\Trophie",
