@@ -5,30 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b0b97a5d-6dca-40c8-a8f7-cc4d5e556a82" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/AthleteCrudController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/AthleteCrudController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Athlete.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Athlete.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/trainers/06e0ccf93d3c5e27f4147c36320f1cb1_profile.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/trainers/0a2aa4475fb2f88c0fff42c17c56d4be_profile.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/trainers/1ab583ab93b575c0bd534d92d2e37b75_profile.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/trainers/1d87641dd056b99346aef30700ad2f19_profile.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/trainers/282bd1613374c2a27eb00efff3f762a3_profile.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/trainers/2abee677ccb28ba6ff05b3fd10ca3370_profile.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/trainers/2d7588e1ed62381ff7e6640ef6c9e932_profile.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/trainers/4755986f288b871388554f36f5ecdde5_profile.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/trainers/48383d050d71de02cf9b81a02830562c_profile.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/trainers/4d2754b7c1ed63b1a1fa2d473f82dd30_profile.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/trainers/4d910e91e204d8787deb5c278a57383d_profile.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/trainers/4ea98bad2bb68f2437c31febde855a0c_profile.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/trainers/62712319aaa1cd92eec344d82f296d56_profile.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/trainers/68092dad73cd8c99f0162e2e33ae0b06_profile.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/trainers/8baaf106691184a501f50c5763d8f4a3_profile.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/trainers/adf496f8d006eba8c14dda4374b63529_profile.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/trainers/b7fc0a5dac41156ebe9b422c73d1230a_profile.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/trainers/e407639827b5c2731a1e0172cd65c3ba_profile.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/trainers/f8c9ef0cee0f57165b1a8505dbcdf3c1_profile.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/trainers/fab8476905266badf3edc0df03cdbc51_profile.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partials/listing/listing-trainers.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/listing/listing-trainers.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -46,17 +24,17 @@
       <file leaf-file-name="Athlete.php" pinned="false" current-in-tab="false">
         <entry file="file://D:/TFE/app/Models/Athlete.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="23" column="4" lean-forward="true" selection-start-line="23" selection-start-column="4" selection-end-line="26" selection-end-column="5" />
+            <state relative-caret-position="345">
+              <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="31" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Athlete.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Athlete.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Models/Athlete.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
+            <state relative-caret-position="322">
+              <caret line="90" column="30" lean-forward="true" selection-start-line="90" selection-start-column="30" selection-end-line="90" selection-end-column="30" />
               <folding>
                 <element signature="e#30#69#0#PHP" expanded="true" />
               </folding>
@@ -64,11 +42,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AthleteCrudController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AthleteCrudController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/AthleteCrudController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="114" column="36" lean-forward="true" selection-start-line="114" selection-start-column="36" selection-end-line="114" selection-end-column="36" />
+            <state relative-caret-position="235">
+              <caret line="128" column="35" lean-forward="true" selection-start-line="128" selection-start-column="35" selection-end-line="128" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -668,12 +646,12 @@
       <workItem from="1553850549637" duration="675000" />
       <workItem from="1554109695746" duration="5298000" />
       <workItem from="1554195843719" duration="4829000" />
-      <workItem from="1554214368650" duration="1654000" />
+      <workItem from="1554214368650" duration="2063000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="160558000" />
+    <option name="totallyTimeSpent" value="160967000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -912,13 +890,6 @@
     <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Training.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="644">
-          <caret line="32" column="14" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Models/Trainer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -1007,15 +978,15 @@
     </entry>
     <entry file="file://D:/TFE/app/Models/Athlete.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="23" column="4" lean-forward="true" selection-start-line="23" selection-start-column="4" selection-end-line="26" selection-end-column="5" />
+        <state relative-caret-position="345">
+          <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="31" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Athlete.php">
+    <entry file="file://$PROJECT_DIR$/app/Models/Training.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
+        <state relative-caret-position="-615">
+          <caret line="32" column="14" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="14" />
           <folding>
             <element signature="e#30#69#0#PHP" expanded="true" />
           </folding>
@@ -1024,8 +995,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/AthleteCrudController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="114" column="36" lean-forward="true" selection-start-line="114" selection-start-column="36" selection-end-line="114" selection-end-column="36" />
+        <state relative-caret-position="235">
+          <caret line="128" column="35" lean-forward="true" selection-start-line="128" selection-start-column="35" selection-end-line="128" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Athlete.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="90" column="30" lean-forward="true" selection-start-line="90" selection-start-column="30" selection-end-line="90" selection-end-column="30" />
+          <folding>
+            <element signature="e#30#69#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

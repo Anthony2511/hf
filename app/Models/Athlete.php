@@ -28,7 +28,8 @@ class Athlete extends Model
         'image',
         'date_of_birth',
         'status',
-        'slug'
+        'slug',
+        'division_id'
     );
     // protected $hidden = [];
     // protected $dates = [];
@@ -87,6 +88,10 @@ class Athlete extends Model
         return $this->belongsToMany('App\Models\Discipline');
     }
 
+    public function division()
+    {
+        return $this->belongsTo('App\Models\Division');
+    }
 
     /*
     |--------------------------------------------------------------------------

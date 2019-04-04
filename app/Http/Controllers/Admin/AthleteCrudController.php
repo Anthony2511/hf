@@ -119,6 +119,18 @@ class AthleteCrudController extends CrudController
             'pivot' => true
         ]);
 
+
+        // Division field
+        $this->crud->addField
+        ([
+            'label' => 'Sélectionnez sa division',
+            'type' => 'select',
+            'name' => 'division_id',
+            'entity' => 'division',
+            'attribute' => 'name',
+            'model' => "App\Models\Division"
+        ]);
+
         //Slug Field
         $this->crud->addField([
             'name' => 'slug',
