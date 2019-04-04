@@ -107,6 +107,30 @@ class AthleteCrudController extends CrudController
             ]
         );
 
+        // Trainer field
+        $this->crud->addField
+        ([
+            'label' => 'Sélectionnez ses entraîneurs',
+            'type' => 'select2_multiple',
+            'name' => 'trainers',
+            'entity' => 'trainers',
+            'attribute' => 'firstname',
+            'model' => "App\Models\Trainer",
+            'pivot' => true
+        ]);
+
+        // Training field
+        $this->crud->addField
+        ([
+            'label' => 'Sélectionnez ses entraînements',
+            'type' => 'select2_multiple',
+            'name' => 'trainings',
+            'entity' => 'trainings',
+            'attribute' => 'day',
+            'model' => "App\Models\Training",
+            'pivot' => true
+        ]);
+
         // Discipline field
         $this->crud->addField
         ([

@@ -99,6 +99,11 @@ class Athlete extends Model
         return $this->hasMany('App\Models\Trophy');
     }
 
+    public function trainings()
+    {
+        return $this->belongsToMany('App\Models\Training');
+    }
+
     /*
     |--------------------------------------------------------------------------
     | SCOPES

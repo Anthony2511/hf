@@ -81,6 +81,11 @@ class Training extends Model
         return $this->belongsTo('App\Models\Trainer');
     }
 
+    public function athletes()
+    {
+        return $this->belongsToMany('App\Models\Athlete');
+    }
+
     /*
     |--------------------------------------------------------------------------
     | SCOPES

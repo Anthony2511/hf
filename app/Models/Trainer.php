@@ -28,8 +28,7 @@ class Trainer extends Model
         'image',
         'date_of_birth',
         'status',
-        'slug',
-        'training_id'
+        'slug'
     );
     // protected $hidden = [];
     // protected $dates = [];
