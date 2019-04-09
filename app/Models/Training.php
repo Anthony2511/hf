@@ -110,6 +110,10 @@ class Training extends Model
         return $day . '-' . $startHour;
     }
 
+    public function getSpecificTrainingAttribute($value) {
+        return $this->place['name'] . ' : ' . $this->day . ' - ' . $this->startHour . ' - ' .$this->type['name'];
+    }
+
     /*
     |--------------------------------------------------------------------------
     | MUTATORS

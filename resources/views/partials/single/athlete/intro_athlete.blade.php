@@ -11,7 +11,7 @@
             <section class="athlete-intro__title">
                 <h3 aria-level="3" role="heading" class="athlete-intro__name">{{$athlete->firstname}}
                     <span>{{$athlete->lastname}}</span></h3>
-                <span class="athlete-intro__division">Senior</span>
+                <span class="athlete-intro__division">{{$athlete->division['name']}}</span>
             </section>
             <section class="athlete-intro__info">
                 <h4 class="title title__blue title__left title-size" aria-level="4" role="heading">Informations
@@ -19,7 +19,9 @@
                 <div class="athlete-intro__content-bloc">
                     <div class="athlete-intro__content">
                         <span class="athlete-intro__content-title">Discipline(s)</span>
-                        <span class="athlete-intro__content-text">1500m, 5000m</span>
+                        @foreach($athlete->disciplines as $discipline)
+                            <span class="athlete-intro__content-text">{{$discipline->name}}</span>
+                        @endforeach
                     </div>
                     <div class="athlete-intro__content">
                         <span class="athlete-intro__content-title">Date de naissance</span>

@@ -138,7 +138,7 @@ class AthleteCrudController extends CrudController
             'type' => 'select2_multiple',
             'name' => 'trainings',
             'entity' => 'trainings',
-            'attribute' => 'day',
+            'attribute' => 'specifictraining',
             'model' => "App\Models\Training",
             'pivot' => true
         ]);
@@ -155,7 +155,7 @@ class AthleteCrudController extends CrudController
             'pivot' => true
         ]);
 
-        // Discipline field
+        // Trophie field
         $this->crud->addField
         ([
             'label' => 'Sélectionnez ses trophées',
