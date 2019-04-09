@@ -37,9 +37,9 @@ class Trophie extends Model
     | RELATIONS
     |--------------------------------------------------------------------------
     */
-    public function athlete()
+    public function athletes()
     {
-        return $this->belongsTo('App\Models\Athlete');
+        return $this->belongsToMany('App\Models\Athlete');
     }
 
     /*

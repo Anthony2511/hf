@@ -97,7 +97,7 @@ class Athlete extends Model
 
     public function trophies()
     {
-        return $this->hasMany('App\Models\Trophie');
+        return $this->belongsToMany('App\Models\Trophie');
     }
 
     public function trainings()

@@ -8,11 +8,16 @@ class CreateForeignKeys extends Migration {
 
 	public function up()
 	{
-		Schema::table('athletes', function(Blueprint $table) {
-			$table->foreign('trophy_id')->references('id')->on('trophies')
-						->onDelete('restrict')
-						->onUpdate('restrict');
-		});
+		Schema::table('athlete_trophie', function(Blueprint $table) {
+        $table->foreign('trophie_id')->references('id')->on('trophies')
+            ->onDelete('cascade')
+            ->onUpdate('cascade');
+    });
+    Schema::table('athlete_trophie', function(Blueprint $table) {
+        $table->foreign('athlete_id')->references('id')->on('athlete')
+            ->onDelete('cascade')
+            ->onUpdate('cascade');
+    });
 		Schema::table('athletes', function(Blueprint $table) {
 			$table->foreign('division_id')->references('id')->on('divisions')
 						->onDelete('restrict')
@@ -102,9 +107,12 @@ class CreateForeignKeys extends Migration {
 
 	public function down()
 	{
-		Schema::table('athletes', function(Blueprint $table) {
-			$table->dropForeign('athletes_trophy_id_foreign');
+		Schema::table('athlete_trophie', function(Blueprint $table) {
+			$table->dropForeign('athlete_trophie_trophie_id_foreign');
 		});
+        Schema::table('athlete_trophie', function(Blueprint $table) {
+            $table->dropForeign('athlete_trophie_athlete_id_foreign');
+        });
 		Schema::table('athletes', function(Blueprint $table) {
 			$table->dropForeign('athletes_division_id_foreign');
 		});

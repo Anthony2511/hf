@@ -17,7 +17,6 @@ class CreateAthletesTable extends Migration {
 			$table->string('status', 255);
 			$table->string('image', 255)->nullable();
 			$table->string('slug', 255);
-			$table->integer('trophy_id')->unsigned();
 			$table->integer('division_id')->unsigned();
 			$table->boolean('active');
 		});
