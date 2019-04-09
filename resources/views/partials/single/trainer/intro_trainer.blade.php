@@ -29,8 +29,10 @@
                                   time="{{$trainer->date_of_birth}}">{{$trainer->date_of_birth}}</datetime>
                     </div>
                     <div class="athlete-intro__content">
-                        <span class="athlete-intro__content-title">Catégorie</span>
-                        <span class="athlete-intro__content-text">Senior</span>
+                        <span class="athlete-intro__content-title">Catégorie(s)</span>
+                        @foreach($trainer->divisions as $division)
+                            <span class="athlete-intro__content-text">{{$division->name}}</span>
+                        @endforeach
                     </div>
                     <div class="athlete-intro__content">
                         <span class="athlete-intro__content-title">Athlète(s)</span>
@@ -39,11 +41,11 @@
                                 <div class="athlete-intro__trainer">
                                     <figure class="athlete-intro__trainer-figure">
                                         <img src="{{ $athlete->getImageProfile('_preview.jpg') }}"
-                                             alt="Photo de l'athlète : Arthur Dupont"
+                                             alt="Photo de l'athlète : {{$athlete->fullname}}"
                                              width="30"
                                              height="30">
                                     </figure>
-                                    <span class="athlete-intro__content-text">{{$athlete->firstname}}</span>
+                                    <span class="athlete-intro__content-text">{{$athlete->fullname}}</span>
                                 </div>
                             </a>
                         @endforeach

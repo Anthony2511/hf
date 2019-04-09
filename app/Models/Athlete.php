@@ -130,6 +130,21 @@ class Athlete extends Model
         return $firstname . '-' . $lastname;
     }
 
+    public function getFirstNameAttribute($value)
+    {
+        return ucfirst($value);
+    }
+
+    public function getLastNameAttribute($value)
+    {
+        return ucfirst($value);
+    }
+
+    public function getFullNameAttribute()
+    {
+        return ucfirst($this->firstname) . ' ' . ucfirst($this->lastname);
+    }
+
     /*
     |--------------------------------------------------------------------------
     | MUTATORS
