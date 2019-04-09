@@ -38,7 +38,8 @@
                     </div>
                     <div class="athlete-intro__content">
                         <span class="athlete-intro__content-title">Entraîneur</span>
-                        <a href="" class="athlete-intro__trainer-link">
+                        @foreach($athlete->trainers as $trainer)
+                        <a href="{{url('entraineurs/' . $trainer['slug'] )}}" class="athlete-intro__trainer-link">
                             <div class="athlete-intro__trainer">
                                 <figure class="athlete-intro__trainer-figure">
                                     <img src="../img/author.jpg"
@@ -47,9 +48,10 @@
                                          width="30"
                                          height="30">
                                 </figure>
-                                <span class="athlete-intro__content-text">Jean Dupont</span>
+                                <span class="athlete-intro__content-text">{{$trainer->firstname}}</span>
                             </div>
                         </a>
+                        @endforeach
                     </div>
                 </div>
             </section>

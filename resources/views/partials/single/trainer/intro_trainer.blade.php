@@ -34,18 +34,19 @@
                     </div>
                     <div class="athlete-intro__content">
                         <span class="athlete-intro__content-title">Athlète(s)</span>
-                        <a href="" class="athlete-intro__trainer-link">
-                            <div class="athlete-intro__trainer">
-                                <figure class="athlete-intro__trainer-figure">
-                                    <img src="../img/author.jpg"
-                                         srcset="../img/author.jpg 2x"
-                                         alt="Photo de l'athlète : Arthur Dupont"
-                                         width="30"
-                                         height="30">
-                                </figure>
-                                <span class="athlete-intro__content-text">Arthur Dupont</span>
-                            </div>
-                        </a>
+                        @foreach($trainer->athletes as $athlete)
+                            <a href="{{url('athletes/' . $athlete['slug'])}}" class="athlete-intro__trainer-link">
+                                <div class="athlete-intro__trainer">
+                                    <figure class="athlete-intro__trainer-figure">
+                                        <img src="{{ $athlete->getImageProfile('_preview.jpg') }}"
+                                             alt="Photo de l'athlète : Arthur Dupont"
+                                             width="30"
+                                             height="30">
+                                    </figure>
+                                    <span class="athlete-intro__content-text">{{$athlete->firstname}}</span>
+                                </div>
+                            </a>
+                        @endforeach
                     </div>
                 </div>
             </section>

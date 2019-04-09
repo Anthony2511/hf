@@ -155,12 +155,14 @@ class Athlete extends Model
         if (starts_with($value, 'data:image')) {
             // 0. Make the image
             $imageProfile = \Image::make($value)->fit(335, 457);
+            $imagePreview = \Image::make($value)->fit(30, 30);
 
             // 1. Generate a filename.
             $filename = md5($value . time());
 
             // 2. Store the image on disk.
             \Storage::disk($disk)->put($destination_path . '/' . $filename . '_profile.jpg', $imageProfile->stream());
+            \Storage::disk($disk)->put($destination_path . '/' . $filename . '_preview.jpg', $imagePreview->stream());
 
             // 3. Save the path to the database
             $this->attributes[$attribute_name] = Url('/') . '/' . $destination_path . '/' . $filename . '.jpg';
