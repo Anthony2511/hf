@@ -93,6 +93,11 @@ class Division extends Model
         return $name . '-' . $gender;
     }
 
+    public function getSpecificDivisionAttribute()
+    {
+        return $this->name . ' - ' . ucfirst($this->gender);
+    }
+
     /*
     |--------------------------------------------------------------------------
     | MUTATORS

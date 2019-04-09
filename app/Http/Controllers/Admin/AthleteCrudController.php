@@ -126,7 +126,7 @@ class AthleteCrudController extends CrudController
             'type' => 'select2_multiple',
             'name' => 'trainers',
             'entity' => 'trainers',
-            'attribute' => 'firstname',
+            'attribute' => 'fullname',
             'model' => "App\Models\Trainer",
             'pivot' => true
         ]);
@@ -150,7 +150,7 @@ class AthleteCrudController extends CrudController
             'type' => 'select2_multiple',
             'name' => 'disciplines',
             'entity' => 'disciplines',
-            'attribute' => 'name',
+            'attribute' => 'specificdiscipline',
             'model' => "App\Models\Discipline",
             'pivot' => true
         ]);
@@ -162,9 +162,10 @@ class AthleteCrudController extends CrudController
             'type' => 'select2_multiple',
             'name' => 'trophies',
             'entity' => 'trophies',
-            'attribute' => 'name',
+            'attribute' => 'fullname',
             'model' => "App\Models\Trophie",
-            'pivot' => true
+            'pivot' => true,
+            'hint' => 'Plusieurs athlètes peuvent avoir le même trophée si c\'est un trophée collectif'
         ]);
 
         // Division field
@@ -174,7 +175,7 @@ class AthleteCrudController extends CrudController
             'type' => 'select',
             'name' => 'division_id',
             'entity' => 'division',
-            'attribute' => 'name',
+            'attribute' => 'specificdivision',
             'model' => "App\Models\Division"
         ]);
 

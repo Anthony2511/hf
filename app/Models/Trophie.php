@@ -32,6 +32,11 @@ class Trophie extends Model
     |--------------------------------------------------------------------------
     */
 
+    public function getFullNameAttribute()
+    {
+        return $this->year . ' - ' . $this->name;
+    }
+
     /*
     |--------------------------------------------------------------------------
     | RELATIONS

@@ -3,7 +3,7 @@
         <figure class="athlete-intro__figure">
             <img src="{{ $trainer->getImageProfile('_profile.jpg') }}"
                  srcset="{{ $trainer->getImageProfile('_profile.jpg') }} 2x"
-                 alt="Image de l'entraîneur : {{$trainer->firstname}} {{$trainer->lastname}}"
+                 alt="Image de l'entraîneur : {{$trainer->fullname}}"
                  width="335"
                  height="457">
         </figure>
@@ -11,7 +11,7 @@
             <section class="athlete-intro__title">
                 <h3 aria-level="3" role="heading" class="athlete-intro__name">{{$trainer->firstname}}
                     <span>{{$trainer->lastname}}</span></h3>
-                <span class="athlete-intro__division">Entraîneur</span>
+                <span class="athlete-intro__division">{{$trainer->status}}</span>
             </section>
             <section class="athlete-intro__info">
                 <h4 class="title title__blue title__left title-size" aria-level="4" role="heading">Informations

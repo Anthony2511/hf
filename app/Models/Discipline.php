@@ -93,6 +93,11 @@ class Discipline extends Model
         return $name . '-' . $gender;
     }
 
+    public function getSpecificDisciplineAttribute()
+    {
+        return $this->name . ' - ' . ucfirst($this->gender);
+    }
+
     /*
     |--------------------------------------------------------------------------
     | MUTATORS
