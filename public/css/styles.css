@@ -894,9 +894,6 @@ input[type="search"]::-webkit-search-decoration {
   width: 45%;
   margin-bottom: 0.3125em;
 }
-.athlete-intro__content-text--discipline:nth-child(n+2) {
-  margin-bottom: 0;
-}
 .athlete-intro__content {
   width: 33.3333%;
   margin-bottom: 1.875em;
