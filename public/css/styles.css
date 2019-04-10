@@ -838,6 +838,10 @@ input[type="search"]::-webkit-search-decoration {
   width: 73%;
   color: #34495e;
 }
+.athlete-intro__bloc-discipline {
+  display: flex;
+  flex-flow: row wrap;
+}
 .athlete-intro__figure {
   position: relative;
   top: -3.125em;
@@ -885,6 +889,13 @@ input[type="search"]::-webkit-search-decoration {
   font-size: 1.125em;
   font-weight: 700;
   transition: 0.3s ease-in-out;
+}
+.athlete-intro__content-text--discipline {
+  width: 45%;
+  margin-bottom: 0.3125em;
+}
+.athlete-intro__content-text--discipline:nth-child(n+2) {
+  margin-bottom: 0;
 }
 .athlete-intro__content {
   width: 33.3333%;

@@ -9,6 +9,9 @@
     margin-left s($paddingBloc)
     width 73%
     color $cBlue
+  &__bloc-discipline
+    display flex
+    flex-flow row wrap
   &__figure
     position relative
     top s(-50)
@@ -49,6 +52,11 @@
     font-size s(18,16)
     font-weight 700
     transition .3s ease-in-out
+    &--discipline
+      width 45%
+      margin-bottom s(5,16)
+      &:nth-child(n+2)
+        margin-bottom 0
   &__content
     width 33.3333%
     margin-bottom s(30,16)

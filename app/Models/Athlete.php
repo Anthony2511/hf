@@ -31,7 +31,6 @@ class Athlete extends Model
         'status',
         'slug',
         'division_id',
-        'trophie_id',
         'active'
     );
     // protected $hidden = [];
