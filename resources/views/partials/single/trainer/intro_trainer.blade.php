@@ -26,7 +26,7 @@
                     <div class="athlete-intro__content">
                         <span class="athlete-intro__content-title">Date de naissance</span>
                         <datetime class="athlete-intro__content-text"
-                                  time="{{$trainer->date_of_birth}}">{{$trainer->date_of_birth}}</datetime>
+                                  time="{{$trainer->getFormatDate()}}">{{$trainer->getFormatDate()}}</datetime>
                     </div>
                     <div class="athlete-intro__content">
                         <span class="athlete-intro__content-title">Catégorie(s)</span>

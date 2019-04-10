@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 use Backpack\CRUD\CrudTrait;
 use Cviebrock\EloquentSluggable\Sluggable;
 use Cviebrock\EloquentSluggable\SluggableScopeHelpers;
+use Carbon\Carbon;
 
 class Trainer extends Model
 {
@@ -69,6 +70,14 @@ class Trainer extends Model
         } else {
             return $this->image;
         }
+    }
+
+    function getFormatDate()
+    {
+        $date = $this->date_of_birth;
+        $dt = Carbon::create($date);
+
+        echo $dt->setTimezone('Europe/Paris')->format('d/m/Y');
     }
 
     /*
