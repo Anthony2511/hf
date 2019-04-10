@@ -102,8 +102,15 @@ class AthleteCrudController extends CrudController
         $this->crud->addField(
             [
                 'name' => 'status',
-                'type' => 'text',
-                'label' => 'Statut'
+                'type' => 'select_from_array',
+                'options' => [
+                    'novice' => 'Novice',
+                    'intermédiaire' => 'Intermédiaire',
+                    'haut niveau' => 'Haut niveau'
+                    ],
+                'allows_null' => false,
+                'default' => 'novice',
+                'label' => 'Statut de l\'athlète'
             ]
         );
 
