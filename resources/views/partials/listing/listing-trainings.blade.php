@@ -7,9 +7,11 @@
                     <div class="trainings__intro">
                         <span class="trainings__day">{{ $training->day }}</span>
                         <span class="trainings__hour">
-                            {{ date("H", strtotime($training->startHour)) }}h{{ date("i", strtotime($training->startHour)) }}
+                            {{ date("H", strtotime($training->startHour)) }}
+                            h{{ date("i", strtotime($training->startHour)) }}
                             -
-                            {{ date("H", strtotime($training->endHour)) }}h{{ date("i", strtotime($training->endHour)) }}</span>
+                            {{ date("H", strtotime($training->endHour)) }}
+                            h{{ date("i", strtotime($training->endHour)) }}</span>
                     </div>
                     <div class="trainings__infos">
                         <span class="trainings__place">{{$training->place->name}}</span>
@@ -22,11 +24,11 @@
                         <figure class="trainings__figure">
                             <img src="../img/author.jpg"
                                  srcset="../img/author.jpg 2x"
-                                 alt="Photo de l'entraineur"
+                                 alt="Photo de l'entraineur : {{ $training->traner['fullname'] }}"
                                  width="30"
                                  height="30">
                         </figure>
-                        <span class="trainings__trainer-name">{{$training->trainer['firstname']}}</span>
+                        <span class="trainings__trainer-name">{{$training->trainer['fullname']}}</span>
                     </a>
                 </div>
             @endforeach

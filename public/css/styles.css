@@ -316,13 +316,17 @@ input[type="search"]::-webkit-search-decoration {
 .home-athletes__container {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: flex-start;
   margin: 3.125em 0 0;
 }
 .home-athletes__bloc {
   position: relative;
+  width: 27.5%;
+  margin-right: 8.75%;
   margin-bottom: 3.125em;
+}
+.home-athletes__bloc:nth-child(3n+3) {
+  margin-right: 0;
 }
 .home-athletes__figure {
   position: relative;
@@ -341,6 +345,7 @@ input[type="search"]::-webkit-search-decoration {
 .home-athletes__figure img {
   border-radius: 10px;
   display: block;
+  width: 100%;
 }
 .home-athletes__infos {
   position: absolute;

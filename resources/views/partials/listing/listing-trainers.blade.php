@@ -4,7 +4,7 @@
         <div class="home-athletes__bloc">
             <figure class="home-athletes__figure">
                 <img src="{{ $trainer->getImageProfile('_profile.jpg') }}"
-                     alt="Image de l'athlète : {{$trainer->firstname}} {{$trainer->lastname}}"
+                     alt="Image de l'entraîneur : {{$trainer->fullname}}"
                      width="335"
                      height="457">
             </figure>
@@ -16,11 +16,10 @@
                             {{$discipline->name}}
                         @endforeach
                     </span>
-
             </section>
             <a href="{{url('entraineurs/' . $trainer->slug )}}"
                class="home-athletes__link"
-               title="Vers la page de l'athlète : {{$trainer->firstname}} {{$trainer->lastname}}"></a>
+               title="Vers la page de l'entraîneur : {{$trainer->fullname}}"></a>
         </div>
     @endforeach
 </div>
