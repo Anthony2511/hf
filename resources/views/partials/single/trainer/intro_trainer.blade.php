@@ -20,7 +20,7 @@
                     <div class="athlete-intro__content">
                         <span class="athlete-intro__content-title">Discipline(s)</span>
                         @foreach($trainer->disciplines as $discipline)
-                            <span class="athlete-intro__content-text">{{$discipline->name}}</span>
+                            <span class="athlete-intro__content-text">{{$discipline->name}} {{ucfirst(substr($discipline->gender,-6,1))}}</span>
                         @endforeach
                     </div>
                     <div class="athlete-intro__content">

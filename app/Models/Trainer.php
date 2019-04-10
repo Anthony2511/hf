@@ -131,6 +131,11 @@ class Trainer extends Model
         return ucfirst($value);
     }
 
+    public function getStatusAttribute($value)
+    {
+        return ucfirst($value);
+    }
+
     public function getFullNameAttribute()
     {
         return ucfirst($this->firstname) . ' ' . ucfirst($this->lastname);

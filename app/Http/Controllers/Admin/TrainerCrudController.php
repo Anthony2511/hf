@@ -102,8 +102,14 @@ class TrainerCrudController extends CrudController
         $this->crud->addField(
             [
                 'name' => 'status',
-                'type' => 'text',
-                'label' => 'Statut'
+                'type' => 'select_from_array',
+                'options' => [
+                    'entraîneur' => 'Entraîneur',
+                    'retraité' => 'Retraité'
+                ],
+                'allows_null' => false,
+                'default' => 'entraîneur',
+                'label' => 'Statut de l\'entraîneur'
             ]
         );
 
