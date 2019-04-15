@@ -17,6 +17,7 @@ class CreateInternshipsTable extends Migration {
 			$table->time('startHour');
 			$table->time('endHour');
 			$table->text('content');
+            $table->string('slug', 255);
 		});
 	}
 
