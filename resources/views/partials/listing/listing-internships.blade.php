@@ -10,8 +10,8 @@
             <time datetime="">de 9h</time>
             <time>à 16h</time>
         </div>
-        <a href="#" class="button-simple">En savoir plus</a>
-        <a href="#" class=""></a>
+        <a href="#" class="button-simple__size">En savoir plus</a>
+        <a href="#" class="stage__link"></a>
     </section>
     <section class="stage__bloc">
         <h3 class="stage__title">Stage au stade de Aywaille</h3>
@@ -23,7 +23,7 @@
             <time datetime="">de 9h</time>
             <time>à 16h</time>
         </div>
-        <a href="#" class="button-simple">En savoir plus</a>
-        <a href="#" class=""></a>
+        <a href="#" class="button-simple__size">En savoir plus</a>
+        <a href="#" class="stage__link"></a>
     </section>
 </div>

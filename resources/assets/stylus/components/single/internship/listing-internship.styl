@@ -1,0 +1,36 @@
+.stage
+  &__container
+    display flex
+    flex-direction column
+    font-family 'opensans'
+    margin s($marginTitle) 0
+  &__bloc
+    background-color $cWhite
+    padding s($paddingBloc)
+    display flex
+    flex-flow row nowrap
+    align-items center
+    justify-content space-between
+    border-radius 10px
+  &__bloc + &__bloc
+    margin-top s(30,16)
+  &__title
+    font-family 'montserrat'
+    font-size s(25,16)
+    font-weight: 600
+  &__date
+    font-weight:300
+    &:before
+      icon('calendar')
+      color $cDarkOrange
+      margin-right s(10,16)
+  &__time
+    font-weight:300
+    &:before
+      icon('time')
+      color $cDarkOrange
+      margin-right s(10,16)
+
+.stage__bloc:hover .button-simple__size:after
+  transform translateX(5px)
+  transition .3s ease-in-out
