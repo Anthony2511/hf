@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b0b97a5d-6dca-40c8-a8f7-cc4d5e556a82" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/InternshipCrudController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/InternshipCrudController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_04_15_092329_create_internships_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_04_15_092329_create_internships_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/InternshipRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/InternshipRequest.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -33,7 +32,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InternshipCrudController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="InternshipCrudController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/InternshipCrudController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="420">
@@ -45,11 +44,30 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TrainingCrudController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/TrainingCrudController.php">
+      <file leaf-file-name="InternshipRequest.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Requests/InternshipRequest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="113" column="6" lean-forward="true" selection-start-line="113" selection-start-column="6" selection-end-line="120" selection-end-column="10" />
+            <state relative-caret-position="368">
+              <caret line="32" column="36" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
+              <folding>
+                <element signature="e#37#67#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TrainingRequest.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Requests/TrainingRequest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-276" />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AthleteRequest.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Requests/AthleteRequest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="28" column="8" lean-forward="true" selection-start-line="28" selection-start-column="8" selection-end-line="34" selection-end-column="68" />
             </state>
           </provider>
         </entry>
@@ -83,7 +101,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/views/pages/about_index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/partials/footer.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/partials/home/news-home.blade.php" />
         <option value="$PROJECT_DIR$/resources/assets/stylus/components/home/news-home.styl" />
@@ -134,6 +151,7 @@
         <option value="$PROJECT_DIR$/app/Models/Internship.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_04_15_092329_create_internships_table.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/InternshipCrudController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Requests/InternshipRequest.php" />
       </list>
     </option>
   </component>
@@ -540,12 +558,12 @@
       <workItem from="1554627333849" duration="539000" />
       <workItem from="1554799324307" duration="6884000" />
       <workItem from="1554888567891" duration="7469000" />
-      <workItem from="1555319178185" duration="2164000" />
+      <workItem from="1555319178185" duration="2677000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="185000000" />
+    <option name="totallyTimeSpent" value="185513000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -611,14 +629,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/views/pages/trainers/trainers_show.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_04_01_091229_create_foreign_keys_2.php" />
     <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Schema.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
@@ -695,13 +705,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/partials/listing/listing-athletes.blade.php">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Requests/AthleteRequest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="32" column="48" lean-forward="true" selection-start-line="32" selection-start-column="48" selection-end-line="32" selection-end-column="48" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$USER_HOME$/Homestead/Homestead.yaml">
       <provider selected="true" editor-type-id="text-editor">
@@ -924,6 +927,28 @@
           <caret line="60" column="39" selection-start-line="60" selection-start-column="39" selection-end-line="60" selection-end-column="39" />
           <folding>
             <element signature="e#46#100#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Requests/TrainingRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-276" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Requests/AthleteRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="28" column="8" lean-forward="true" selection-start-line="28" selection-start-column="8" selection-end-line="34" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Requests/InternshipRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="32" column="36" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
+          <folding>
+            <element signature="e#37#67#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

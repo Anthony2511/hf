@@ -26,7 +26,12 @@ class InternshipRequest extends FormRequest
     public function rules()
     {
         return [
-            // 'name' => 'required|min:5|max:255'
+            'title' => 'required|unique:posts|min:2|max:255',
+            'startDay' => 'required|date',
+            'endDay' => 'required|date',
+            'startHour' => 'required',
+            'endHour' => 'required',
+            'slug' => 'unique:athletes,slug,' . \Request::get('id'),
         ];
     }
 
