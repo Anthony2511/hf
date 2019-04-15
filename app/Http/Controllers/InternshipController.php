@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Backpack\PageManager\app\Models\Page;
 use App\Models\Internship;
+use Illuminate\Validation\Rules\In;
 
 class InternshipController extends Controller
 {
@@ -17,5 +18,12 @@ class InternshipController extends Controller
         $this->data['page']           = $page->withFakes();
 
         return view('pages.internships.' . $page->template, $this->data);
+    }
+
+    public function show(Internship $internship)
+    {
+        return view('pages.internships.internships_show', [
+            'internship' => $internship
+        ]);
     }
 }
