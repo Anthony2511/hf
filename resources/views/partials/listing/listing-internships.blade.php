@@ -9,8 +9,8 @@
                 <time datetime="{{$internship->getFormatEndDate()}}">{{$internship->getFormatEndDate()}}</time>
             </div>
             <div class="stage__time">
-                <time datetime="">de {{$internship->startHour}}</time>
-                <time>à {{$internship->endHour}}</time>
+                <time datetime="">de {{ date("H", strtotime($internship->startHour)) }}h{{ date("i", strtotime($internship->startHour)) }}</time>
+                <time>à {{ date("H", strtotime($internship->endHour)) }}h{{ date("i", strtotime($internship->endHour)) }}</time>
             </div>
             <a href="#" class="button-simple__size">En savoir plus</a>
             <a href="#" class="stage__link"></a>
