@@ -4,9 +4,9 @@
         <section class="stage__bloc">
             <h3 class="stage__title">{{$internship->title}}</h3>
             <div class="stage__date">
-                <time datetime="">{{$internship->startDay}}</time>
+                <time datetime="{{$internship->getFormatStartDate()}}">{{$internship->getFormatStartDate()}}</time>
                 -
-                <time datetime="">{{$internship->endDay}}</time>
+                <time datetime="{{$internship->getFormatEndDate()}}">{{$internship->getFormatEndDate()}}</time>
             </div>
             <div class="stage__time">
                 <time datetime="">de {{$internship->startHour}}</time>

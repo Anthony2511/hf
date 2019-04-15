@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 use Backpack\CRUD\CrudTrait;
 use Cviebrock\EloquentSluggable\Sluggable;
 use Cviebrock\EloquentSluggable\SluggableScopeHelpers;
+use Carbon\Carbon;
 
 class Internship extends Model
 {
@@ -58,6 +59,22 @@ class Internship extends Model
     | FUNCTIONS
     |--------------------------------------------------------------------------
     */
+
+    function getFormatStartDate()
+    {
+        $date = $this->startDay;
+        $dt = Carbon::create($date);
+
+        echo $dt->setTimezone('Europe/Paris')->format('d/m/Y');
+    }
+
+    function getFormatEndDate()
+    {
+        $date = $this->endDay;
+        $dt = Carbon::create($date);
+
+        echo $dt->setTimezone('Europe/Paris')->format('d/m/Y');
+    }
 
     /*
     |--------------------------------------------------------------------------
