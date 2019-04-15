@@ -12,8 +12,8 @@
                 <time datetime="">de {{ date("H", strtotime($internship->startHour)) }}h{{ date("i", strtotime($internship->startHour)) }}</time>
                 <time>à {{ date("H", strtotime($internship->endHour)) }}h{{ date("i", strtotime($internship->endHour)) }}</time>
             </div>
-            <a href="#" class="button-simple__size">En savoir plus</a>
-            <a href="#" class="stage__link"></a>
+            <a href="{{url('stages/' . $internship->slug )}}" class="button-simple__size">En savoir plus</a>
+            <a href="{{url('stages/' . $internship->slug )}}" class="stage__link"></a>
         </section>
     @endforeach
 </div>
