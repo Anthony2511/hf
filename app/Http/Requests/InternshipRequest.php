@@ -26,7 +26,7 @@ class InternshipRequest extends FormRequest
     public function rules()
     {
         return [
-            'title' => 'required|unique:posts|min:2|max:255',
+            'title' => 'required|min:2|max:35',
             'startDay' => 'required|date',
             'endDay' => 'required|date',
             'startHour' => 'required',

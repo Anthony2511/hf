@@ -12,12 +12,14 @@
     align-items center
     justify-content space-between
     border-radius 10px
+    position relative
   &__bloc + &__bloc
     margin-top s(30,16)
   &__title
     font-family 'montserrat'
     font-size s(25,16)
     font-weight: 600
+    width 40%
   &__date
     font-weight:300
     &:before
@@ -30,6 +32,16 @@
       icon('time')
       color $cDarkOrange
       margin-right s(10,16)
+  &__link
+    cursor pointer
+    position absolute
+    top 0
+    left 0
+    right 0
+    bottom 0
+    width 100%
+    height 100%
+    display block
 
 .stage__bloc:hover .button-simple__size:after
   transform translateX(5px)
