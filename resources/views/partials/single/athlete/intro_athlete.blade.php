@@ -19,9 +19,11 @@
                 <div class="athlete-intro__content-bloc">
                     <div class="athlete-intro__content">
                         <span class="athlete-intro__content-title">Discipline(s)</span>
-                        @foreach($athlete->disciplines as $discipline)
-                            <span class="athlete-intro__content-text">{{$discipline->name}}</span>
-                        @endforeach
+                        <div class="athlete-intro__bloc-discipline">
+                            @foreach($athlete->disciplines as $discipline)
+                                <span class="athlete-intro__content-text athlete-intro__content-text--discipline">{{$discipline->name}}</span>
+                            @endforeach
+                        </div>
                     </div>
                     <div class="athlete-intro__content">
                         <span class="athlete-intro__content-title">Date de naissance</span>
