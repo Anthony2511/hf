@@ -60,7 +60,7 @@
                                 <a href="{{ route('entrainements') }}">Entraînements</a>
                             </li>
                             <li>
-                                <a href="#">Stages</a>
+                                <a href="{{ route('stages') }}">Stages</a>
                             </li>
                         </ul>
                     </div>

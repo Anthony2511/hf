@@ -15,6 +15,7 @@
 Route::get('/', 'HomeController@index')->name('home');
 Route::get('athletes', 'AthleteController@index')->name('athletes');
 Route::get('entraineurs', 'TrainerController@index')->name('entraineurs');
+Route::get('stages', 'InternshipController@index')->name('stages');
 Route::get('entrainements', 'TrainingController@index')->name('entrainements');
 Route::get('a-propos', 'AboutController@index')->name('a-propos');
 
