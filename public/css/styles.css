@@ -35,6 +35,11 @@ img {
 .background {
   background-color: $cLightGrey;
 }
+.empty {
+  font-weight: 600;
+  color: $cDarkBlue;
+  font-style: italic;
+}
 /* ******************
  * Settings
    ******************* */
@@ -886,7 +891,6 @@ input[type="search"]::-webkit-search-decoration {
   margin-bottom: 0.555555555555556em;
 }
 .athlete-intro__content-text {
-  font-size: 1.125em;
   font-weight: 700;
   transition: 0.3s ease-in-out;
 }
@@ -896,7 +900,7 @@ input[type="search"]::-webkit-search-decoration {
 }
 .athlete-intro__content {
   width: 33.3333%;
-  margin-bottom: 1.875em;
+  margin-bottom: 1.25em;
 }
 .athlete-intro__trainer {
   display: flex;

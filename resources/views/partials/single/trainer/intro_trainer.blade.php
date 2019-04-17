@@ -20,9 +20,13 @@
                     <div class="athlete-intro__content">
                         <span class="athlete-intro__content-title">Discipline(s)</span>
                         <div class="athlete-intro__bloc-discipline">
-                            @foreach($trainer->disciplines as $discipline)
-                                <span class="athlete-intro__content-text athlete-intro__content-text--discipline">{{$discipline->name}} {{ucfirst(substr($discipline->gender,-6,1))}}</span>
-                            @endforeach
+                            @if(!empty (count($trainer->disciplines)))
+                                @foreach($trainer->disciplines as $discipline)
+                                    <span class="athlete-intro__content-text athlete-intro__content-text--discipline">{{$discipline->name}} {{ucfirst(substr($discipline->gender,-6,1))}}</span>
+                                @endforeach
+                            @else
+                                <p class="empty">Aucune discipline</p>
+                            @endif
                         </div>
                     </div>
                     <div class="athlete-intro__content">
@@ -32,9 +36,13 @@
                     </div>
                     <div class="athlete-intro__content">
                         <span class="athlete-intro__content-title">Catégorie(s)</span>
-                        @foreach($trainer->divisions as $division)
-                            <span class="athlete-intro__content-text">{{$division->name}}</span>
-                        @endforeach
+                        @if(!empty (count($trainer->divisions)))
+                            @foreach($trainer->divisions as $division)
+                                <span class="athlete-intro__content-text">{{$division->name}}</span>
+                            @endforeach
+                        @else
+                            <p class="empty">Aucune catégorie</p>
+                        @endif
                     </div>
                     <div class="athlete-intro__content">
                         <span class="athlete-intro__content-title">Athlète(s)</span>
@@ -53,7 +61,7 @@
                                 </a>
                             @endforeach
                         @else
-                            <p class="athlete-intro__content-text">Aucun athlète</p>
+                            <p class="empty">Aucun athlète</p>
                         @endif
                     </div>
                 </div>

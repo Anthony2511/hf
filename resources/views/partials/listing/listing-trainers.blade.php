@@ -11,10 +11,14 @@
             <section class="home-athletes__infos">
                 <h4 class="home-athletes__infos-title">{{$trainer->firstname}}
                     <span>{{$trainer->lastname}}</span></h4>
-                    <span class="home-athletes__disciplines">
+                <span class="home-athletes__disciplines">
+                        @if(!empty (count($trainer->disciplines)))
                         @foreach($trainer->disciplines as $discipline)
                             {{$discipline->name}}
                         @endforeach
+                    @else
+                        N/A
+                    @endif
                     </span>
             </section>
             <a href="{{url('entraineurs/' . $trainer->slug )}}"
