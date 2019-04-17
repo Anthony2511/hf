@@ -102,9 +102,8 @@ class Internship extends Model
         }
 
         $title = $this->title;
-        $startDay = $this->startDay;
 
-        return $title . '-' . $startDay;
+        return $title;
     }
 
     /*
