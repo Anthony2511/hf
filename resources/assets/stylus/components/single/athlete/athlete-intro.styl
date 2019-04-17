@@ -9,7 +9,8 @@
     margin-left s($paddingBloc)
     width 73%
     color $cBlue
-  &__bloc-discipline
+  &__bloc-discipline,
+  &__bloc-division
     display flex
     flex-flow row wrap
   &__figure
@@ -52,19 +53,34 @@
     font-weight 700
     transition .3s ease-in-out
     &--discipline
-      width 45%
+      width 36%
       margin-bottom s(5,16)
+    &--division
+      width 33%
+      margin-bottom s(5,16)
+      &:after
+        content ','
+      &:last-child
+        &:after
+          content none
   &__content
     width 33.3333%
     margin-bottom s(20,16)
+    &--width
+      width 100%
   &__trainer
     display flex
     flex-direction row
     align-items center
+  &__trainer-link
+    width 33.3333333333%
   &__trainer-figure
     & img
       border-radius 50%
       margin-right s(10,16)
+  &__bloc-athlete
+    display flex
+    flex-flow row wrap
 
 
 .athlete-intro__trainer-link:hover .athlete-intro__content-text

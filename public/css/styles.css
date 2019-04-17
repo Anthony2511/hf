@@ -843,7 +843,8 @@ input[type="search"]::-webkit-search-decoration {
   width: 73%;
   color: #34495e;
 }
-.athlete-intro__bloc-discipline {
+.athlete-intro__bloc-discipline,
+.athlete-intro__bloc-division {
   display: flex;
   flex-flow: row wrap;
 }
@@ -895,21 +896,41 @@ input[type="search"]::-webkit-search-decoration {
   transition: 0.3s ease-in-out;
 }
 .athlete-intro__content-text--discipline {
-  width: 45%;
+  width: 36%;
   margin-bottom: 0.3125em;
+}
+.athlete-intro__content-text--division {
+  width: 33%;
+  margin-bottom: 0.3125em;
+}
+.athlete-intro__content-text--division:after {
+  content: ',';
+}
+.athlete-intro__content-text--division:last-child:after {
+  content: none;
 }
 .athlete-intro__content {
   width: 33.3333%;
   margin-bottom: 1.25em;
+}
+.athlete-intro__content--width {
+  width: 100%;
 }
 .athlete-intro__trainer {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
+.athlete-intro__trainer-link {
+  width: 33.3333333333%;
+}
 .athlete-intro__trainer-figure img {
   border-radius: 50%;
   margin-right: 0.625em;
+}
+.athlete-intro__bloc-athlete {
+  display: flex;
+  flex-flow: row wrap;
 }
 .athlete-intro__trainer-link:hover .athlete-intro__content-text {
   color: #fe712a;

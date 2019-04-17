@@ -121,7 +121,7 @@ class TrainerCrudController extends CrudController
             'type' => 'select2_multiple',
             'name' => 'disciplines',
             'entity' => 'disciplines',
-            'attribute' => 'name',
+            'attribute' => 'specificdiscipline',
             'model' => "App\Models\Discipline",
             'pivot' => true
         ]);
