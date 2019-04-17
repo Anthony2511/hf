@@ -53,11 +53,22 @@
     font-weight 700
     transition .3s ease-in-out
     &--discipline
-      width 36%
-      margin-bottom s(5,16)
+      margin 0 0 s(5,16) s(5,16)
+      &:first-child
+        margin-left 0
+      &:nth-child(3n+5)
+        margin-left 0
+      &:after
+        content ','
+      &:last-child
+        &:after
+          content none
     &--division
-      width 33%
-      margin-bottom s(5,16)
+      margin 0 0 s(5,16) s(5,16)
+      &:first-child
+        margin-left 0
+      &:nth-child(3n+4)
+        margin-left 0
       &:after
         content ','
       &:last-child

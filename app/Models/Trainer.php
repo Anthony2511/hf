@@ -79,7 +79,6 @@ class Trainer extends Model
 
         echo $dt->setTimezone('Europe/Paris')->format('d/m/Y');
     }
-
     /*
     |--------------------------------------------------------------------------
     | RELATIONS

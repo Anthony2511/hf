@@ -896,12 +896,28 @@ input[type="search"]::-webkit-search-decoration {
   transition: 0.3s ease-in-out;
 }
 .athlete-intro__content-text--discipline {
-  width: 36%;
-  margin-bottom: 0.3125em;
+  margin: 0 0 0.3125em 0.3125em;
+}
+.athlete-intro__content-text--discipline:first-child {
+  margin-left: 0;
+}
+.athlete-intro__content-text--discipline:nth-child(3n+5) {
+  margin-left: 0;
+}
+.athlete-intro__content-text--discipline:after {
+  content: ',';
+}
+.athlete-intro__content-text--discipline:last-child:after {
+  content: none;
 }
 .athlete-intro__content-text--division {
-  width: 33%;
-  margin-bottom: 0.3125em;
+  margin: 0 0 0.3125em 0.3125em;
+}
+.athlete-intro__content-text--division:first-child {
+  margin-left: 0;
+}
+.athlete-intro__content-text--division:nth-child(3n+4) {
+  margin-left: 0;
 }
 .athlete-intro__content-text--division:after {
   content: ',';

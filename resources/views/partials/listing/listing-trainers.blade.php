@@ -13,13 +13,13 @@
                     <span>{{$trainer->lastname}}</span></h4>
                 <span class="home-athletes__disciplines">
                         @if(!empty (count($trainer->disciplines)))
-                        @foreach($trainer->disciplines as $discipline)
-                            {{$discipline->name}}
+                        @foreach($trainer->disciplines->take(3) as $discipline)
+                            {{$discipline->name}} {{ucfirst(substr($discipline->gender,-6,1))}}
                         @endforeach
                     @else
                         N/A
                     @endif
-                    </span>
+                </span>
             </section>
             <a href="{{url('entraineurs/' . $trainer->slug )}}"
                class="home-athletes__link"
