@@ -7,7 +7,7 @@
 @section('class', 'index_training')
 
 @section('content')
-    @include('partials.intro-page')
+    @include('partials.intros.intro-internship')
     <div class="wrap">
         @include('partials.switchers.switcher-internships')
         @include('partials.listing.listing-internships')
