@@ -1196,6 +1196,51 @@ input[type="search"]::-webkit-search-decoration {
           transform: translateX(5px);
   transition: 0.3s ease-in-out;
 }
+.single-stage {
+  background-color: #f4f4f4;
+  margin: 3.125em 0;
+  font-family: 'opensans';
+  color: #2c3e50;
+}
+.single-stage__container {
+  padding: 3.125em 0;
+}
+.single-stage__date {
+  text-align: center;
+  margin: 1.875em 0 3.125em;
+}
+.single-stage__date:before {
+  font-family: 'iconfont';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\E907";
+  color: #fe712a;
+  font-size: 1.25em;
+  padding-bottom: 0.25em;
+}
+.single-stage__datetime {
+  font-size: 1.125em;
+  line-height: 1.6;
+  font-weight: 300;
+}
+.single-stage__datetime strong {
+  font-weight: 300;
+}
+.single-stage__datetime time {
+  font-weight: 700;
+}
+.single-stage__content {
+  text-align: center;
+  margin: 1.875em auto 0;
+  width: 50%;
+  line-height: 1.6;
+}
 .nav__container {
   display: flex;
   flex-direction: row;

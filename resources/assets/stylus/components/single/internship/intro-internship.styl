@@ -1,0 +1,29 @@
+.single-stage
+  background-color $cLightGrey
+  margin s($marginTitle) 0
+  font-family 'opensans'
+  color $cDarkBlue
+  &__container
+    padding s($marginTitle) 0
+  &__date
+    text-align center
+    margin s(30,16) 0 s($marginTitle)
+    &:before
+      icon('time')
+      color $cDarkOrange
+      font-size s(20,16)
+      padding-bottom s(5,20)
+  &__datetime
+    font-size s(18,16)
+    line-height 1.6
+    font-weight 300
+    & strong
+      font-weight 300
+    & time
+      font-weight 700
+  &__content
+    text-align center
+    margin s(30,16) auto 0
+    width 50%
+    line-height 1.6
+
