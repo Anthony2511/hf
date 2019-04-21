@@ -36,8 +36,12 @@
             <section class="footer__bloc">
                 <h2 aria-level="2" role="heading" class="footer__title">Nous suivre</h2>
                 <ul class="footer__social">
-                    <li><a href="#"><span>Facebook</span></a></li>
-                    <li><a href="#"><span>Instagram</span></a></li>
+                    <li class="footer__social-list">
+                        <a href="#facebook" class="footer__social footer__social--facebook"><span class="hidden">Facebook</span></a>
+                    </li>
+                    <li class="footer__social-list">
+                        <a href="#instagram" class="footer__social footer__social--instagram"><span class="hidden">Instagram</span></a>
+                    </li>
                 </ul>
             </section>
         </div>
