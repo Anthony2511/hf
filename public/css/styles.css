@@ -901,7 +901,7 @@ input[type="search"]::-webkit-search-decoration {
 .athlete-intro__content-text--discipline:first-child {
   margin-left: 0;
 }
-.athlete-intro__content-text--discipline:nth-child(3n+5) {
+.athlete-intro__content-text--discipline:nth-child(3n+4) {
   margin-left: 0;
 }
 .athlete-intro__content-text--discipline:after {
@@ -916,7 +916,7 @@ input[type="search"]::-webkit-search-decoration {
 .athlete-intro__content-text--division:first-child {
   margin-left: 0;
 }
-.athlete-intro__content-text--division:nth-child(3n+4) {
+.athlete-intro__content-text--division:nth-child(3n+3) {
   margin-left: 0;
 }
 .athlete-intro__content-text--division:after {
@@ -926,7 +926,7 @@ input[type="search"]::-webkit-search-decoration {
   content: none;
 }
 .athlete-intro__content {
-  width: 33.3333%;
+  width: 25%;
   margin-bottom: 1.25em;
 }
 .athlete-intro__content--width {
@@ -937,8 +937,8 @@ input[type="search"]::-webkit-search-decoration {
   flex-direction: row;
   align-items: center;
 }
-.athlete-intro__trainer-link {
-  width: 33.3333333333%;
+.athlete-intro__trainer-link + .athlete-intro__trainer-link {
+  margin-left: 1.25em;
 }
 .athlete-intro__trainer-figure img {
   border-radius: 50%;
@@ -987,7 +987,7 @@ input[type="search"]::-webkit-search-decoration {
   margin-top: 3.125em;
 }
 .athlete-trophies {
-  padding-top: 3.125em;
+  padding: 3.125em 0;
 }
 .athlete-trophies__container {
   margin-top: 1.875em;

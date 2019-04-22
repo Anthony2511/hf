@@ -20,9 +20,13 @@
                     <div class="athlete-intro__content">
                         <span class="athlete-intro__content-title">Discipline(s)</span>
                         <div class="athlete-intro__bloc-discipline">
-                            @foreach($athlete->disciplines as $discipline)
-                                <span class="athlete-intro__content-text athlete-intro__content-text--discipline">{{$discipline->name}}</span>
-                            @endforeach
+                            @if(!empty (count($athlete->disciplines)))
+                                @foreach($athlete->disciplines as $discipline)
+                                    <span class="athlete-intro__content-text athlete-intro__content-text--discipline">{{$discipline->name}}</span>
+                                @endforeach
+                            @else
+                                <p class="empty">Aucune discipline</p>
+                            @endif
                         </div>
                     </div>
                     <div class="athlete-intro__content">
@@ -38,22 +42,29 @@
                         <span class="athlete-intro__content-title">Profession</span>
                         <span class="athlete-intro__content-text">{{$athlete->profession}}</span>
                     </div>
-                    <div class="athlete-intro__content">
+                    <div class="athlete-intro__content athlete-intro__content--width">
                         <span class="athlete-intro__content-title">Entraîneur(s)</span>
-                        @foreach($athlete->trainers as $trainer)
-                            <a href="{{url('entraineurs/' . $trainer['slug'] )}}" class="athlete-intro__trainer-link">
-                                <div class="athlete-intro__trainer">
-                                    <figure class="athlete-intro__trainer-figure">
-                                        <img src="{{ $trainer->getImageProfile('_preview.jpg') }}"
-                                             srcset="{{ $trainer->getImageProfile('_preview.jpg') }} 2x"
-                                             alt="Photo de l'entraîneur : {{$trainer->fullname}}"
-                                             width="30"
-                                             height="30">
-                                    </figure>
-                                    <span class="athlete-intro__content-text">{{$trainer->fullname}}</span>
-                                </div>
-                            </a>
-                        @endforeach
+                        <div class="athlete-intro__bloc-athlete">
+                            @if(!empty (count($athlete->trainers)))
+                                @foreach($athlete->trainers as $trainer)
+                                    <a href="{{url('entraineurs/' . $trainer['slug'] )}}"
+                                       class="athlete-intro__trainer-link">
+                                        <div class="athlete-intro__trainer">
+                                            <figure class="athlete-intro__trainer-figure">
+                                                <img src="{{ $trainer->getImageProfile('_preview.jpg') }}"
+                                                     srcset="{{ $trainer->getImageProfile('_preview.jpg') }} 2x"
+                                                     alt="Photo de l'entraîneur : {{$trainer->fullname}}"
+                                                     width="30"
+                                                     height="30">
+                                            </figure>
+                                            <span class="athlete-intro__content-text">{{$trainer->fullname}}</span>
+                                        </div>
+                                    </a>
+                                @endforeach
+                            @else
+                                <p class="empty">Aucun entraîneur</p>
+                            @endif
+                        </div>
                     </div>
                 </div>
             </section>

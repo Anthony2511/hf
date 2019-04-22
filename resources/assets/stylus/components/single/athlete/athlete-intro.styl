@@ -56,7 +56,7 @@
       margin 0 0 s(5,16) s(5,16)
       &:first-child
         margin-left 0
-      &:nth-child(3n+5)
+      &:nth-child(3n+4)
         margin-left 0
       &:after
         content ','
@@ -67,7 +67,7 @@
       margin 0 0 s(5,16) s(5,16)
       &:first-child
         margin-left 0
-      &:nth-child(3n+4)
+      &:nth-child(3n+3)
         margin-left 0
       &:after
         content ','
@@ -75,7 +75,7 @@
         &:after
           content none
   &__content
-    width 33.3333%
+    width 25%
     margin-bottom s(20,16)
     &--width
       width 100%
@@ -83,8 +83,8 @@
     display flex
     flex-direction row
     align-items center
-  &__trainer-link
-    width 33.3333333333%
+  &__trainer-link + &__trainer-link
+    margin-left s(20,16)
   &__trainer-figure
     & img
       border-radius 50%
