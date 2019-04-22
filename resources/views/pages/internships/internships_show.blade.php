@@ -13,4 +13,5 @@
         </div>
     </div>
     @include('partials.single.internship.intro_internship')
+    @include('partials.single.internship.form_internship')
 @endsection
