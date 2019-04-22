@@ -1,0 +1,50 @@
+.single-stage
+  &__form
+    width 50%
+    margin s(30) auto s(50)
+    font-family 'opensans'
+  &__form-legend
+    color $cDarkBlue
+    font-weight 600
+    margin-bottom s(30,16)
+  &__form-input
+    font-size 16px
+    padding 25px 20px
+    border 1px solid $cWhite
+    background-color $cLightGrey
+    min-width:  280px;
+    box-sizing:  border-box
+    transition:  all .3s linear;
+    color $cDarkBlue
+    font-weight 300
+    border-radius 10px
+    width 100%
+    &::placeholder
+      font-size 16px
+    &:focus,
+    &:hover
+      border 1px solid $cBlue
+      outline: 0
+      transition .3s ease-in-out
+
+.floating-label
+  position:  relative;
+  margin-bottom 30px
+  & label
+    position:  absolute;
+    top: calc(50% - 15px);
+    left 20px
+    opacity:  0;
+    transition:  all .2s ease
+    color $cDarkBlue
+  & input:not(:placeholder-shown)
+    padding:  30px 20px 20px
+    font-weight: 600
+    font-size 16px
+  & input:not(:placeholder-shown) + label
+    transform:  translateY(-10px);
+    opacity:  .7;
+    font-size 14px
+
+
+
