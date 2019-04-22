@@ -114,6 +114,15 @@ class AthleteCrudController extends CrudController
             ]
         );
 
+        // Profession Field
+        $this->crud->addField(
+            [
+                'name' => 'profession',
+                'type' => 'text',
+                'label' => 'Profession'
+            ]
+        );
+
         // Active Field
         $this->crud->addField(
             [

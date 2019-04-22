@@ -19,6 +19,7 @@ class CreateAthletesTable extends Migration {
 			$table->string('slug', 255);
 			$table->integer('division_id')->unsigned();
 			$table->boolean('active');
+            $table->string('profession', 255);
 		});
 	}
 

@@ -31,7 +31,8 @@ class Athlete extends Model
         'status',
         'slug',
         'division_id',
-        'active'
+        'active',
+        'profession'
     );
     // protected $hidden = [];
     // protected $dates = [];
@@ -150,6 +151,11 @@ class Athlete extends Model
     }
 
     public function getStatusAttribute($value)
+    {
+        return ucfirst($value);
+    }
+
+    public function getProfessionAttribute($value)
     {
         return ucfirst($value);
     }

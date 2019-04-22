@@ -36,7 +36,7 @@
                     </div>
                     <div class="athlete-intro__content">
                         <span class="athlete-intro__content-title">Profession</span>
-                        <span class="athlete-intro__content-text">Sportif sous contrat</span>
+                        <span class="athlete-intro__content-text">{{$athlete->profession}}</span>
                     </div>
                     <div class="athlete-intro__content">
                         <span class="athlete-intro__content-title">Entraîneur(s)</span>
