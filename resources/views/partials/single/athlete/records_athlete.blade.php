@@ -5,9 +5,6 @@
             <thead>
                 <tr class="athlete-record__table-legend">
                     <th class="athlete-record__table-title">Discipline</th>
-                    <th class="athlete-record__table-title">Record</th>
-                    <th class="athlete-record__table-title">Lieu</th>
-                    <th class="athlete-record__table-title">Date</th>
                 </tr>
             </thead>
             <tbody class="athlete-record__table-tbody">

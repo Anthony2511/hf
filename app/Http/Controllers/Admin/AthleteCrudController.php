@@ -195,6 +195,21 @@ class AthleteCrudController extends CrudController
             'model' => "App\Models\Division"
         ]);
 
+        // Records Field
+        $this->crud->addField
+        ([
+            'name' => 'records',
+            'label' => 'Records',
+            'type' => 'table',
+            'entity_singular' => 'record', // used on the "Add X" button
+            'columns' => [
+                'discipline' => 'Discipline',
+                'record' => 'Record',
+                'lieu' => 'Lieu',
+                'date' => 'Date'
+            ]
+        ]);
+
         //Slug Field
         $this->crud->addField([
             'name' => 'slug',
