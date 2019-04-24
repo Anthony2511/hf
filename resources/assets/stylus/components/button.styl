@@ -113,16 +113,33 @@
     &:before
       icon('search')
       transition .5s ease-in-out
+  &__right-send
+    background-color $cDarkOrange
+    border-radius 0 10px 10px 0
+    display flex
+    justify-content center
+    align-items center
+    padding 0 s($paddingSmallButton,16)
+    color $cWhite
+    transition .5s ease-in-out
+    /*PROVISOIRE*/
+    height 52.4px
+    &:before
+      icon('send')
+      transition .5s ease-in-out
+
 
 .button:hover .button-orange__left
   background-color $cDarkOrange
   transition .5s ease-in-out
 
-.button:hover .button-orange__right
+.button:hover .button-orange__right,
+.button:hover .button-orange__right-send
   background-color $cOrange
   transition .5s ease-in-out
 
-.button:hover .button-orange__right:before
+.button:hover .button-orange__right:before,
+.button:hover .button-orange__right-send:before
   transform translateX(5px)
   transition .5s ease-in-out
 

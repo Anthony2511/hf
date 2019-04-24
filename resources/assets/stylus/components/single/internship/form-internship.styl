@@ -3,10 +3,36 @@
     width 50%
     margin s(30) auto s(50)
     font-family 'opensans'
+  &__form-bloc
+    text-align center
   &__form-legend
     color $cDarkBlue
     font-weight 600
     margin-bottom s(30,16)
+  &__form-width
+    display flex
+    flex-direction row
+    justify-content space-between
+  &__form-textarea
+    font-size 16px
+    padding 25px 20px
+    border 1px solid $cWhite
+    background-color $cLightGrey
+    min-width:  280px;
+    box-sizing:  border-box
+    transition:  all .3s linear;
+    color $cDarkBlue
+    font-weight 300
+    border-radius 10px
+    width 100%
+    resize none
+    &::placeholder
+      font-size 16px
+    &:focus,
+    &:hover
+      border 1px solid $cBlue
+      outline: 0
+      transition .3s ease-in-out
   &__form-input
     font-size 16px
     padding 25px 20px
@@ -30,6 +56,15 @@
 .floating-label
   position:  relative;
   margin-bottom 30px
+  &__width
+    width 47.5%
+  &__label
+    position:  absolute;
+    top: calc(15% - 15px);
+    left 20px
+    opacity:  0;
+    transition:  all .2s ease
+    color $cDarkBlue
   & label
     position:  absolute;
     top: calc(50% - 15px);

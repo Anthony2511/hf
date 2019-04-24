@@ -1251,10 +1251,50 @@ input[type="search"]::-webkit-search-decoration {
   margin: 1.875em auto 3.125em;
   font-family: 'opensans';
 }
+.single-stage__form-bloc {
+  text-align: center;
+}
 .single-stage__form-legend {
   color: #2c3e50;
   font-weight: 600;
   margin-bottom: 1.875em;
+}
+.single-stage__form-width {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.single-stage__form-textarea {
+  font-size: 16px;
+  padding: 25px 20px;
+  border: 1px solid #fff;
+  background-color: #f4f4f4;
+  min-width: 280px;
+  box-sizing: border-box;
+  transition: all 0.3s linear;
+  color: #2c3e50;
+  font-weight: 300;
+  border-radius: 10px;
+  width: 100%;
+  resize: none;
+}
+.single-stage__form-textarea::-webkit-input-placeholder {
+  font-size: 16px;
+}
+.single-stage__form-textarea:-ms-input-placeholder {
+  font-size: 16px;
+}
+.single-stage__form-textarea::-ms-input-placeholder {
+  font-size: 16px;
+}
+.single-stage__form-textarea::placeholder {
+  font-size: 16px;
+}
+.single-stage__form-textarea:focus,
+.single-stage__form-textarea:hover {
+  border: 1px solid #34495e;
+  outline: 0;
+  transition: 0.3s ease-in-out;
 }
 .single-stage__form-input {
   font-size: 16px;
@@ -1290,6 +1330,17 @@ input[type="search"]::-webkit-search-decoration {
 .floating-label {
   position: relative;
   margin-bottom: 30px;
+}
+.floating-label__width {
+  width: 47.5%;
+}
+.floating-label__label {
+  position: absolute;
+  top: calc(15% - 15px);
+  left: 20px;
+  opacity: 0;
+  transition: all 0.2s ease;
+  color: #2c3e50;
 }
 .floating-label label {
   position: absolute;
@@ -1525,15 +1576,42 @@ input[type="search"]::-webkit-search-decoration {
   content: "\E912";
   transition: 0.5s ease-in-out;
 }
+.button-orange__right-send {
+  background-color: #fe712a;
+  border-radius: 0 10px 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0.9375em;
+  color: #fff;
+  transition: 0.5s ease-in-out;
+/*PROVISOIRE*/
+  height: 52.4px;
+}
+.button-orange__right-send:before {
+  font-family: 'iconfont';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\E902";
+  transition: 0.5s ease-in-out;
+}
 .button:hover .button-orange__left {
   background-color: #fe712a;
   transition: 0.5s ease-in-out;
 }
-.button:hover .button-orange__right {
+.button:hover .button-orange__right,
+.button:hover .button-orange__right-send {
   background-color: #fa9926;
   transition: 0.5s ease-in-out;
 }
-.button:hover .button-orange__right:before {
+.button:hover .button-orange__right:before,
+.button:hover .button-orange__right-send:before {
   -webkit-transform: translateX(5px);
           transform: translateX(5px);
   transition: 0.5s ease-in-out;
