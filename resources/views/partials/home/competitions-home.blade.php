@@ -44,7 +44,7 @@
                     <a href="#" class="button-simple__size">En savoir plus</a>
                     <a href="#" class="compet-home__link"></a>
                 </div>
-                <a href="" class="button button-float">
+                <a href="{{ route('competitions') }}" class="button button-float">
                     <span class="button-blue__left">Voir toutes les compétitions</span>
                     <i class="button-blue__right"></i>
                 </a>

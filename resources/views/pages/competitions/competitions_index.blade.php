@@ -9,6 +9,6 @@
 @section('content')
     <div class="wrap">
         @include('partials.switchers.switcher-competitions')
-        <p>SLT !!!!</p>
+        @include('partials.listing.listing-competitions')
     </div>
 @endsection
