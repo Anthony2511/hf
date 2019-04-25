@@ -1125,6 +1125,24 @@ input[type="search"]::-webkit-search-decoration {
   font-size: 1.125em;
   font-weight: 700;
 }
+/*****COMPETITIONS*****/
+.listing-compet__container {
+  -webkit-column-count: 2;
+          column-count: 2;
+  font-family: 'opensans';
+  width: 100%;
+  color: #2c3e50;
+  margin-top: 3.125em;
+}
+.listing-compet__bloc {
+  padding: 1.875em;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  position: relative;
+  margin-bottom: 0.9375em;
+  display: inline-block;
+}
 /*****INTERNSHIP*****/
 .stage__container {
   display: flex;
