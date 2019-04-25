@@ -25,11 +25,11 @@
                     </p>
                 </section>
             @endif
-            <a href="#" class="button-simple
+            <a href="{{url('competitions/' . $competition->slug )}}" class="button-simple
                     <?php if($competition->content == null): ?>
                     button-simple__size
                     <?php else: ?><?php endif; ?>">En savoir plus</a>
-            <a href="#" class="compet-home__link"></a>
+            <a href="{{url('competitions/' . $competition->slug )}}" class="compet-home__link"></a>
         </div>
     @endforeach
 

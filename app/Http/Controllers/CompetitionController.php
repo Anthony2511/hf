@@ -18,4 +18,11 @@ class CompetitionController extends Controller
 
         return view('pages.competitions.' . $page->template, $this->data);
     }
+
+    public function show(Competition $competition)
+    {
+        return view('pages.competitions.competitions_show', [
+            'competition' => $competition
+        ]);
+    }
 }

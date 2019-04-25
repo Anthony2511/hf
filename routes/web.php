@@ -24,4 +24,5 @@ Route::get('a-propos', 'AboutController@index')->name('a-propos');
 Route::get('athletes/{athlete}', 'AthleteController@show');
 Route::get('entraineurs/{trainer}', 'TrainerController@show');
 Route::get('stages/{internship}', 'InternshipController@show');
+Route::get('competitions/{competition}', 'CompetitionController@show');
 
