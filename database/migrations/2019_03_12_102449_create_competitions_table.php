@@ -14,7 +14,7 @@ class CreateCompetitionsTable extends Migration {
 			$table->string('place', 255);
 			$table->text('content')->nullable();
 			$table->date('startDate');
-			$table->date('endDate')->nullable();
+			$table->boolean('isFinish');
 		});
 	}
 
