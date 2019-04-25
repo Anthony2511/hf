@@ -16,12 +16,37 @@ class Competition extends Model
     */
 
     protected $table = 'competitions';
-    // protected $primaryKey = 'id';
-    // public $timestamps = false;
+    protected $primaryKey = 'id';
+    public $timestamps = true;
     // protected $guarded = ['id'];
-    protected $fillable = [];
+    protected $fillable = array(
+        'title',
+        'place',
+        'content',
+        'startDate',
+        'isFinish'
+    );
     // protected $hidden = [];
     // protected $dates = [];
+
+    /**
+     * Return the sluggable configuration array for this model.
+     *
+     * @return array
+     */
+    public function sluggable()
+    {
+        return [
+            'slug' => [
+                'source' => 'slug_or_title',
+            ],
+        ];
+    }
+
+    public function getRouteKeyName()
+    {
+        return 'slug';
+    }
 
     /*
     |--------------------------------------------------------------------------
@@ -46,6 +71,19 @@ class Competition extends Model
     | ACCESORS
     |--------------------------------------------------------------------------
     */
+
+    // The slug is created automatically from the "title" field if no slug exists.
+    public function getSlugOrTitleAttribute()
+    {
+        if ($this->slug != '') {
+            return $this->slug;
+        }
+
+        $lastname = $this->lastname;
+        $firstname = $this->firstname;
+
+        return $firstname . '-' . $lastname;
+    }
 
     /*
     |--------------------------------------------------------------------------
