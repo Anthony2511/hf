@@ -4,10 +4,13 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Backpack\CRUD\CrudTrait;
+use Cviebrock\EloquentSluggable\Sluggable;
+use Cviebrock\EloquentSluggable\SluggableScopeHelpers;
 
 class Competition extends Model
 {
     use CrudTrait;
+    use Sluggable, SluggableScopeHelpers;
 
     /*
     |--------------------------------------------------------------------------
@@ -25,7 +28,8 @@ class Competition extends Model
         'content',
         'startDate',
         'isFinish',
-        'slug'
+        'slug',
+        'type'
     );
     // protected $hidden = [];
     // protected $dates = [];

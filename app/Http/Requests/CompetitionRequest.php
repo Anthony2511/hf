@@ -26,7 +26,13 @@ class CompetitionRequest extends FormRequest
     public function rules()
     {
         return [
-            // 'name' => 'required|min:5|max:255'
+            'title' => 'required|min:2|max:255',
+            'place' => 'required|min:2|max:255',
+            'image' => 'required',
+            'isFinish' => 'required|min:2|max:50',
+            'type' => 'required|min:2|max:50',
+            'startDate' => 'required|date',
+            'slug' => 'unique:competitions,slug,' . \Request::get('id')
         ];
     }
 
