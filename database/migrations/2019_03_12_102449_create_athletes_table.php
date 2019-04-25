@@ -20,6 +20,7 @@ class CreateAthletesTable extends Migration {
 			$table->integer('division_id')->unsigned();
 			$table->boolean('active');
             $table->string('profession', 255);
+            $table->text('records', 255);
 		});
 	}
 
