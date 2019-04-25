@@ -8,6 +8,7 @@
 
 @section('content')
     <div class="wrap">
+        @include('partials.switchers.switcher-competitions')
         <p>SLT !!!!</p>
     </div>
 @endsection
