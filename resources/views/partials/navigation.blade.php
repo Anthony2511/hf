@@ -54,7 +54,7 @@
                     <div class="nav__sub-nav">
                         <ul class="sub-nav-group">
                             <li>
-                                <a href="#">Compétitions</a>
+                                <a href="{{ route('competitions') }}">Compétitions</a>
                             </li>
                             <li>
                                 <a href="{{ route('entrainements') }}">Entraînements</a>
