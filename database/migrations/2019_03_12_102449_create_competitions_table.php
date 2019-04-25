@@ -15,6 +15,9 @@ class CreateCompetitionsTable extends Migration {
 			$table->text('content')->nullable();
 			$table->date('startDate');
 			$table->boolean('isFinish');
+            $table->string('image', 255);
+            $table->string('type', 255);
+            $table->string('slug', 255);
 		});
 	}
 

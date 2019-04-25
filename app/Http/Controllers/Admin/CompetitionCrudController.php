@@ -33,8 +33,135 @@ class CompetitionCrudController extends CrudController
         |--------------------------------------------------------------------------
         */
 
-        // TODO: remove setFromDb() and manually define Fields and Columns
-        $this->crud->setFromDb();
+        // Columns
+
+        // Title Column
+        $this->crud->addColumn(
+            [
+                'name' => 'title',
+                'type' => 'text',
+                'label' => 'Titre de la compétition'
+            ]
+        );
+
+        // Date Column
+        $this->crud->addColumn(
+            [
+                'name' => 'startDate',
+                'type' => 'date',
+                'label' => 'Début de la compétition'
+            ]
+        );
+
+        // Place Column
+        $this->crud->addColumn(
+            [
+                'name' => 'place',
+                'type' => 'text',
+                'label' => 'Lieu de la compétition'
+            ]
+        );
+
+        // Fields
+
+        // Title Field
+        $this->crud->addField(
+            [
+                'name' => 'title',
+                'type' => 'text',
+                'label' => 'Titre de la compétition'
+            ]
+        );
+
+        //Image Field
+        $this->crud->addField([
+            'name' => "image",
+            'type' => 'image',
+            'label' => "Photo de présentation",
+            'upload' => true,
+            'crop' => true, // set to true to allow cropping, false to disable
+            'aspect_ratio' => 0, // ommit or set to 0 to allow any aspect ratio
+            // 'disk' => 's3_bucket', // in case you need to show images from a different disk
+            // 'prefix' => 'uploads/images/profile_pictures/' // in case your db value is only the file name (no path), you can use this to prepend your path to the image src (in HTML), before it's shown to the user;
+        ]);
+
+        // Place Field
+        $this->crud->addField(
+            [
+                'name' => 'place',
+                'type' => 'text',
+                'label' => 'Lieu de la compétition'
+            ]
+        );
+
+        // Date Field
+        $this->crud->addField(
+            [   // date_picker
+                'name' => 'startDate',
+                'type' => 'date_picker',
+                'label' => 'Date de début',
+                // optional:
+                'date_picker_options' => [
+                    'todayBtn' => 'linked',
+                    'format' => 'dd-mm-yyyy',
+                    'language' => 'fr'
+                ],
+            ]
+        );
+
+        // Type Field
+        $this->crud->addField(
+            [
+                'name' => 'type',
+                'type' => 'select2_from_array',
+                'options' => [
+                    'provincial-outdoor' => 'Provincial Outdoor',
+                    'provincial-indoor' => 'Provincial Indoor',
+                    'francophone-outdoor' => 'Francophone Outdoor',
+                    'francophone-indoor' => 'Francophone Indoor',
+                    'national-outdoor' => 'National Outdoor',
+                    'national-indoor' => 'National Indoor',
+                    'international-outdoor' => 'International Outdoor',
+                    'international-indoor' => 'International Indoor'
+                ],
+                'allows_null' => false,
+                'default' => 'provincial-outdoor',
+                'label' => 'Type de la compétition'
+            ]
+        );
+
+        // isFinish Field
+        $this->crud->addField(
+            [
+                'name' => 'isFinish',
+                'type' => 'select_from_array',
+                'options' => [
+                    'not-finish' => 'Pas terminée',
+                    'finish' => 'Terminée',
+                ],
+                'allows_null' => false,
+                'default' => ' not-finish',
+                'label' => 'Statut de la compétition'
+            ]
+        );
+
+        // Content Field
+        $this->crud->addField(
+            [
+                'name' => 'content',
+                'type' => 'textarea',
+                'label' => 'Courte description'
+            ]
+        );
+
+        //Slug Field
+        $this->crud->addField([
+            'name' => 'slug',
+            'label' => "Slug (URL)",
+            'type' => 'text',
+            'hint' => 'Est automatiquement généré à partir du date-titre si pas remplit.'
+        ]);
+
 
         // add asterisk for fields that are required in CompetitionRequest
         $this->crud->setRequiredFields(StoreRequest::class, 'create');
