@@ -1,0 +1,58 @@
+.intro-competition
+  padding s($marginTitle) 0
+  &__container
+    padding s($marginTitle,16) 0
+    display flex
+    flex-direction row
+    align-items center
+    position relative
+    background-color $cWhite
+    margin s(60,16) 0 s(100,16)
+    font-family 'opensans'
+  &__bloc
+    display flex
+    background-color $cLightGrey
+    width 100%
+    &:before
+      content ''
+      width 78%
+      height 50px
+      background 0 0
+  &__bloc-text
+    position relative
+    z-index 10
+    width 100%
+    padding s($paddingBloc) s($paddingBloc) 0 s(45)
+  &__bloc-img
+    position absolute
+    left 0
+    width 45%
+    height 110%
+    background-position center center
+    background-size cover
+    background-repeat no-repeat
+  &__date
+    position absolute
+    right 0
+    background-color $cDarkOrange
+    color $cWhite
+    padding s(10) s(20)
+    border-radius 0 0 0 10px
+    font-style italic
+    font-weight: 300
+  &__bloc-info
+    margin-top s(30)
+  &__info-content
+    padding s(15) 0 s(30)
+    font-weight 700
+    color $cDarkBlue
+    &--place
+      &:before
+        icon('location')
+        color $cDarkOrange
+        margin-right s(10)
+    &--type
+      &:before
+        icon('stars')
+        color $cDarkOrange
+        margin-right s(10)

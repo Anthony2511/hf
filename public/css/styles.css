@@ -1149,6 +1149,91 @@ input[type="search"]::-webkit-search-decoration {
           transform: translateX(5px);
   transition: 0.3s ease-in-out;
 }
+.intro-competition {
+  padding: 3.125em 0;
+}
+.intro-competition__container {
+  padding: 3.125em 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  background-color: #fff;
+  margin: 3.75em 0 6.25em;
+  font-family: 'opensans';
+}
+.intro-competition__bloc {
+  display: flex;
+  background-color: #f4f4f4;
+  width: 100%;
+}
+.intro-competition__bloc:before {
+  content: '';
+  width: 78%;
+  height: 50px;
+  background: 0 0;
+}
+.intro-competition__bloc-text {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  padding: 1.875em 1.875em 0 2.8125em;
+}
+.intro-competition__bloc-img {
+  position: absolute;
+  left: 0;
+  width: 45%;
+  height: 110%;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.intro-competition__date {
+  position: absolute;
+  right: 0;
+  background-color: #fe712a;
+  color: #fff;
+  padding: 0.625em 1.25em;
+  border-radius: 0 0 0 10px;
+  font-style: italic;
+  font-weight: 300;
+}
+.intro-competition__bloc-info {
+  margin-top: 1.875em;
+}
+.intro-competition__info-content {
+  padding: 0.9375em 0 1.875em;
+  font-weight: 700;
+  color: #2c3e50;
+}
+.intro-competition__info-content--place:before {
+  font-family: 'iconfont';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\E90C";
+  color: #fe712a;
+  margin-right: 0.625em;
+}
+.intro-competition__info-content--type:before {
+  font-family: 'iconfont';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\E900";
+  color: #fe712a;
+  margin-right: 0.625em;
+}
 /*****INTERNSHIP*****/
 .stage__container {
   display: flex;
@@ -1706,7 +1791,7 @@ input[type="search"]::-webkit-search-decoration {
   background-color: #fa9926;
   width: 1.25em;
   height: 0.05em;
-  margin: 0 auto;
+  margin: 5px auto;
 }
 .title__center-white {
   text-align: center;
