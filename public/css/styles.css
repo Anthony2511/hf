@@ -1150,7 +1150,7 @@ input[type="search"]::-webkit-search-decoration {
   transition: 0.3s ease-in-out;
 }
 .intro-competition {
-  padding: 3.125em 0;
+  padding: 3.125em 0 0;
 }
 .intro-competition__container {
   padding: 3.125em 0;
@@ -1159,7 +1159,7 @@ input[type="search"]::-webkit-search-decoration {
   align-items: center;
   position: relative;
   background-color: #fff;
-  margin: 3.75em 0 6.25em;
+  margin: 3.75em 0 3.75em;
   font-family: 'opensans';
 }
 .intro-competition__bloc {
@@ -1233,6 +1233,30 @@ input[type="search"]::-webkit-search-decoration {
   content: "\E900";
   color: #fe712a;
   margin-right: 0.625em;
+}
+.infos-competition {
+  margin-top: -2.0625em;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  font-family: 'opensans';
+  color: #34495e;
+}
+.infos-competition__bloc-img {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin-top: 1.875em;
+}
+.infos-competition__text {
+  font-size: 1.125em;
+  margin-top: 1.666666666666667em;
+  font-weight: 300;
+  line-height: 1.6;
+  width: 75%;
+}
+.infos-competition__figure + .infos-competition__figure {
+  margin-left: 1.25em;
 }
 /*****INTERNSHIP*****/
 .stage__container {
