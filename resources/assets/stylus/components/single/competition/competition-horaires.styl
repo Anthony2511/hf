@@ -1,0 +1,53 @@
+.horaires-competition
+  padding-top s(50)
+  font-family 'opensans'
+  &__container
+    margin-top s(30)
+    border 1px solid $cLightGreyTwo
+    border-radius 10px
+  &__header
+    background-color $cLightGrey
+    padding s(15)
+    display flex
+    flex-direction row
+    justify-content space-around
+    border-radius 10px 10px 0 0
+  &__header-title
+    font-family 'montserrat'
+    color $cDarkOrange
+    text-transform: uppercase
+    font-size s(20)
+    font-weight 300
+  &__bloc
+    display flex
+    flex-flow row nowrap
+    justify-content space-between
+    padding-top s(30)
+    position relative
+    &:before
+      position absolute
+      left 50%
+      right 50%
+      top 0
+      content ''
+      width 1px
+      height 100%
+      background-color $cLightGreyTwo
+      display block
+  &__table-legend
+    margin-bottom s(15)
+  &__table-title
+    font-family 'montserrat'
+    font-weight 600
+    color $cDarkBlue
+    font-size s(18)
+    line-height 2
+  &__table
+    width 100%
+    margin-bottom s(30)
+  &__table-row
+    & td
+      text-align center
+      color $cDarkBlue
+      font-weight 300
+      line-height 1.6

@@ -1258,6 +1258,68 @@ input[type="search"]::-webkit-search-decoration {
 .infos-competition__figure + .infos-competition__figure {
   margin-left: 1.25em;
 }
+.horaires-competition {
+  padding-top: 3.125em;
+  font-family: 'opensans';
+}
+.horaires-competition__container {
+  margin-top: 1.875em;
+  border: 1px solid #ced6e0;
+  border-radius: 10px;
+}
+.horaires-competition__header {
+  background-color: #f4f4f4;
+  padding: 0.9375em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-radius: 10px 10px 0 0;
+}
+.horaires-competition__header-title {
+  font-family: 'montserrat';
+  color: #fe712a;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  font-weight: 300;
+}
+.horaires-competition__bloc {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding-top: 1.875em;
+  position: relative;
+}
+.horaires-competition__bloc:before {
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  top: 0;
+  content: '';
+  width: 1px;
+  height: 100%;
+  background-color: #ced6e0;
+  display: block;
+}
+.horaires-competition__table-legend {
+  margin-bottom: 0.9375em;
+}
+.horaires-competition__table-title {
+  font-family: 'montserrat';
+  font-weight: 600;
+  color: #2c3e50;
+  font-size: 1.125em;
+  line-height: 2;
+}
+.horaires-competition__table {
+  width: 100%;
+  margin-bottom: 1.875em;
+}
+.horaires-competition__table-row td {
+  text-align: center;
+  color: #2c3e50;
+  font-weight: 300;
+  line-height: 1.6;
+}
 /*****INTERNSHIP*****/
 .stage__container {
   display: flex;
