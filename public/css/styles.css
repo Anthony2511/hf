@@ -1143,6 +1143,12 @@ input[type="search"]::-webkit-search-decoration {
   margin-bottom: 0.9375em;
   display: inline-block;
 }
+.listing-compet__bloc:hover .button-simple:after,
+.listing-compet__bloc:hover .button-simple__size:after {
+  -webkit-transform: translateX(5px);
+          transform: translateX(5px);
+  transition: 0.3s ease-in-out;
+}
 /*****INTERNSHIP*****/
 .stage__container {
   display: flex;

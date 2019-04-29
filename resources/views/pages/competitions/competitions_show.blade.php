@@ -12,5 +12,5 @@
             <a href="{{ route('competitions') }}" class="breadcrumb__item">Retour aux compétitions</a>
         </div>
     </div>
-    <p>SALLUUT</p>
+    @include('partials.single.competition.intro_competition')
 @endsection
