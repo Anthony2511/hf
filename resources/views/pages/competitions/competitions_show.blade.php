@@ -14,4 +14,5 @@
     </div>
     @include('partials.single.competition.intro_competition')
     @include('partials.single.competition.infos_competition')
+    @include('partials.single.competition.horaires_competition')
 @endsection
