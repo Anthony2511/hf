@@ -1320,6 +1320,41 @@ input[type="search"]::-webkit-search-decoration {
   font-weight: 300;
   line-height: 1.6;
 }
+.resultats-competition {
+  padding: 3.125em 0;
+}
+.resultats-competition__link {
+  font-family: 'opensans';
+  color: #2c3e50;
+  font-weight: 300;
+  display: block;
+  margin-top: 1.25em;
+  position: relative;
+}
+.resultats-competition__link:before {
+  font-family: 'iconfont';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\E906";
+  color: #fa9926;
+  margin-right: 0.625em;
+}
+.resultats-competition__link:hover:after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 30px;
+  width: 100px;
+  height: 1px;
+  background-color: #34495e;
+  display: block;
+}
 /*****INTERNSHIP*****/
 .stage__container {
   display: flex;

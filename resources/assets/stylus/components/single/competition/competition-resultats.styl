@@ -1,0 +1,23 @@
+.resultats-competition
+  padding s($marginTitle) 0
+  &__link
+    font-family 'opensans'
+    color $cDarkBlue
+    font-weight 300
+    display block
+    margin-top s(20)
+    position relative
+    &:before
+      icon('attachment')
+      color $cOrange
+      margin-right s(10)
+    &:hover
+      &:after
+        content ''
+        position absolute
+        bottom -5px
+        left 30px
+        width 100px
+        height 1px
+        background-color $cBlue
+        display block
