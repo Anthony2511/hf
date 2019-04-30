@@ -6,6 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 use Backpack\CRUD\CrudTrait;
 use Cviebrock\EloquentSluggable\Sluggable;
 use Cviebrock\EloquentSluggable\SluggableScopeHelpers;
+use Carbon\Carbon;
+use Jenssegers\Date\Date;
 
 class Competition extends Model
 {
@@ -26,13 +28,14 @@ class Competition extends Model
         'title',
         'place',
         'content',
-        'startDate',
         'isFinish',
         'slug',
         'type'
     );
     // protected $hidden = [];
-    // protected $dates = [];
+    protected $dates = [
+        'startDate'
+    ];
 
     /**
      * Return the sluggable configuration array for this model.
@@ -70,6 +73,12 @@ class Competition extends Model
         } else {
             return $this->image;
         }
+    }
+
+    public function getFullMonth()
+    {
+        setlocale(LC_TIME, 'fr_FR.utf-8');
+        return Carbon::parse($this->startDate)->formatLocalized('%B');
     }
 
     /*
