@@ -25,7 +25,7 @@ class CompetitionCrudController extends CrudController
         */
         $this->crud->setModel('App\Models\Competition');
         $this->crud->setRoute(config('backpack.base.route_prefix') . '/competition');
-        $this->crud->setEntityNameStrings('competition', 'competitions');
+        $this->crud->setEntityNameStrings('une compétition', 'compétitions');
 
         /*
         |--------------------------------------------------------------------------

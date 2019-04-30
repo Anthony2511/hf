@@ -25,7 +25,7 @@ class DivisionCrudController extends CrudController
         */
         $this->crud->setModel('App\Models\Division');
         $this->crud->setRoute(config('backpack.base.route_prefix') . '/division');
-        $this->crud->setEntityNameStrings('division', 'divisions');
+        $this->crud->setEntityNameStrings('une division', 'divisions');
 
         /*
         |--------------------------------------------------------------------------

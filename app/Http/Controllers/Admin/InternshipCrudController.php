@@ -25,7 +25,7 @@ class InternshipCrudController extends CrudController
         */
         $this->crud->setModel('App\Models\Internship');
         $this->crud->setRoute(config('backpack.base.route_prefix') . '/internship');
-        $this->crud->setEntityNameStrings('internship', 'internships');
+        $this->crud->setEntityNameStrings('un stage', 'stages');
 
         /*
         |--------------------------------------------------------------------------

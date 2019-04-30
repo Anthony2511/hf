@@ -25,7 +25,7 @@ class DisciplineCrudController extends CrudController
         */
         $this->crud->setModel('App\Models\Discipline');
         $this->crud->setRoute(config('backpack.base.route_prefix') . '/discipline');
-        $this->crud->setEntityNameStrings('discipline', 'disciplines');
+        $this->crud->setEntityNameStrings('une discipline', 'disciplines');
 
         /*
         |--------------------------------------------------------------------------

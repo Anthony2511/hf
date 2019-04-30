@@ -25,7 +25,7 @@ class AthleteCrudController extends CrudController
         */
         $this->crud->setModel('App\Models\Athlete');
         $this->crud->setRoute(config('backpack.base.route_prefix') . '/athlete');
-        $this->crud->setEntityNameStrings('athlete', 'athletes');
+        $this->crud->setEntityNameStrings('un athlète', 'athlètes');
 
         /*
         |--------------------------------------------------------------------------

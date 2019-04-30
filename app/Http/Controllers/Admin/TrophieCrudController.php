@@ -25,7 +25,7 @@ class TrophieCrudController extends CrudController
         */
         $this->crud->setModel('App\Models\Trophie');
         $this->crud->setRoute(config('backpack.base.route_prefix') . '/trophie');
-        $this->crud->setEntityNameStrings('trophie', 'trophies');
+        $this->crud->setEntityNameStrings('un trophée', 'trophées');
 
         /*
         |--------------------------------------------------------------------------

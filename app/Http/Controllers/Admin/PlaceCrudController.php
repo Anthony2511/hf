@@ -25,7 +25,7 @@ class PlaceCrudController extends CrudController
         */
         $this->crud->setModel('App\Models\Place');
         $this->crud->setRoute(config('backpack.base.route_prefix') . '/place');
-        $this->crud->setEntityNameStrings('place', 'places');
+        $this->crud->setEntityNameStrings('un lieu', 'lieux');
 
         /*
         |--------------------------------------------------------------------------
