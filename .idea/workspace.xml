@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b0b97a5d-6dca-40c8-a8f7-cc4d5e556a82" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/assets/stylus/components/single/competition/competition-horaires.styl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/partials/single/competition/resultats_competiton.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/stylus/styles.styl" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/stylus/styles.styl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/competitions/competitions_show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/competitions/competitions_show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/single/competition/horaires_competition.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/single/competition/horaires_competition.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,8 +26,8 @@
       <file leaf-file-name="competitions_show.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/pages/competitions/competitions_show.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="16" column="62" selection-start-line="16" selection-start-column="62" selection-end-line="16" selection-end-column="62" />
+            <state relative-caret-position="340">
+              <caret line="17" column="62" selection-start-line="17" selection-start-column="62" selection-end-line="17" selection-end-column="62" />
             </state>
           </provider>
         </entry>
@@ -35,24 +35,28 @@
       <file leaf-file-name="horaires_competition.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/partials/single/competition/horaires_competition.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="754">
-              <caret line="35" column="25" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
+            <state>
+              <caret selection-end-line="1" selection-end-column="120" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="competition-horaires.styl" pinned="false" current-in-tab="true">
+      <file leaf-file-name="competition-horaires.styl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/assets/stylus/components/single/competition/competition-horaires.styl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="409">
-              <caret line="34" column="37" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
+            <state relative-caret-position="23">
+              <caret line="30" column="11" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="colors.styl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/assets/stylus/settings/colors.styl">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file leaf-file-name="resultats_competiton.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/partials/single/competition/resultats_competiton.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="69">
+              <caret line="3" column="48" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -77,7 +81,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/views/partials/listing/listing-internships.blade.php" />
         <option value="$PROJECT_DIR$/resources/assets/stylus/components/footer.styl" />
         <option value="$PROJECT_DIR$/resources/views/partials/footer.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Requests/AthleteRequest.php" />
@@ -124,10 +127,11 @@
         <option value="$PROJECT_DIR$/resources/assets/stylus/components/single/competition/competition-intro.styl" />
         <option value="$PROJECT_DIR$/resources/views/partials/single/competition/infos_competition.blade.php" />
         <option value="$PROJECT_DIR$/resources/assets/stylus/components/single/competition/competition-infos.styl" />
-        <option value="$PROJECT_DIR$/resources/views/pages/competitions/competitions_show.blade.php" />
         <option value="$PROJECT_DIR$/resources/assets/stylus/styles.styl" />
-        <option value="$PROJECT_DIR$/resources/views/partials/single/competition/horaires_competition.blade.php" />
         <option value="$PROJECT_DIR$/resources/assets/stylus/components/single/competition/competition-horaires.styl" />
+        <option value="$PROJECT_DIR$/resources/views/pages/competitions/competitions_show.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/partials/single/competition/horaires_competition.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/partials/single/competition/resultats_competiton.blade.php" />
       </list>
     </option>
   </component>
@@ -291,6 +295,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -483,15 +488,6 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="partials" type="462c0819:PsiDirectoryNode" />
-              <item name="single" type="462c0819:PsiDirectoryNode" />
-              <item name="trainer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hf" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hf" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="partials" type="462c0819:PsiDirectoryNode" />
               <item name="switchers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -543,7 +539,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -614,12 +609,13 @@
       <workItem from="1555919940847" duration="14194000" />
       <workItem from="1556014792518" duration="5761000" />
       <workItem from="1556101297494" duration="10878000" />
-      <workItem from="1556524473991" duration="10454000" />
+      <workItem from="1556524473991" duration="11143000" />
+      <workItem from="1556547398495" duration="1207000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="248796000" />
+    <option name="totallyTimeSpent" value="250692000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -632,7 +628,7 @@
       <window_info anchor="bottom" id="Run" order="1" />
       <window_info id="npm" order="0" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="4" sideWeight="0.6286863" visible="true" weight="0.2467903" />
-      <window_info active="true" content_ui="combo" id="Project" order="3" visible="true" weight="0.33378017" />
+      <window_info active="true" content_ui="combo" id="Project" order="3" visible="true" weight="0.33847186" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="0" />
       <window_info id="Structure" order="1" side_tool="true" />
@@ -686,13 +682,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/views/partials/single/internship/form_internship.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="48" column="32" selection-start-line="48" selection-start-column="32" selection-end-line="48" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/assets/stylus/components/single/internship/form-internship.styl">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -947,9 +936,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
           <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
-          <folding>
-            <element signature="n#style#0;n#figure#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -977,13 +963,6 @@
     <entry file="file://$PROJECT_DIR$/public/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-15192" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/pages/competitions/competitions_show.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="16" column="62" selection-start-line="16" selection-start-column="62" selection-end-line="16" selection-end-column="62" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/partials/single/competition/infos_competition.blade.php">
@@ -1014,20 +993,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/partials/single/competition/horaires_competition.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="754">
-          <caret line="35" column="25" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/assets/stylus/settings/colors.styl">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/assets/stylus/components/single/competition/competition-horaires.styl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="34" column="37" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
+        <state relative-caret-position="23">
+          <caret line="30" column="11" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/competitions/competitions_show.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="17" column="62" selection-start-line="17" selection-start-column="62" selection-end-line="17" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/partials/single/competition/horaires_competition.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="1" selection-end-column="120" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/partials/single/competition/resultats_competiton.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="48" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
         </state>
       </provider>
     </entry>

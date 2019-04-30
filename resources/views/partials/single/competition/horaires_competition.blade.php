@@ -1,4 +1,4 @@
-<div class="horaires-competition wrap">
+<section class="horaires-competition wrap">
     <h2 class="title title__blue title__center title-size" aria-level="2" role="heading">Horaires de la compétition</h2>
     <div class="horaires-competition__container">
         <div class="horaires-competition__header">
@@ -63,4 +63,4 @@
         </div>
 
     </div>
-</div>
+</section>
