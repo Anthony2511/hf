@@ -7,7 +7,6 @@ use Backpack\CRUD\CrudTrait;
 use Cviebrock\EloquentSluggable\Sluggable;
 use Cviebrock\EloquentSluggable\SluggableScopeHelpers;
 use Carbon\Carbon;
-use Jenssegers\Date\Date;
 
 class Competition extends Model
 {
@@ -30,7 +29,8 @@ class Competition extends Model
         'content',
         'isFinish',
         'slug',
-        'type'
+        'type',
+        'image'
     );
     // protected $hidden = [];
     protected $dates = [
@@ -79,6 +79,12 @@ class Competition extends Model
     {
         setlocale(LC_TIME, 'fr_FR.utf-8');
         return Carbon::parse($this->startDate)->formatLocalized('%B');
+    }
+
+    public function getFullDate()
+    {
+        setlocale(LC_TIME, 'fr_FR.utf-8');
+        return Carbon::parse($this->startDate)->formatLocalized('%d %B %Y');
     }
 
     /*
