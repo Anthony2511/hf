@@ -1355,6 +1355,16 @@ input[type="search"]::-webkit-search-decoration {
   background-color: #34495e;
   display: block;
 }
+.gallery-competition__container {
+  margin: 3.125em 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+.gallery-competition__figure img {
+  height: auto;
+  width: 300px;
+}
 /*****INTERNSHIP*****/
 .stage__container {
   display: flex;

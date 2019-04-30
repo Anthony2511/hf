@@ -21,13 +21,13 @@
         </a>
         <a href="#1" class="gallery-competition__link">
             <figure class="gallery-competition__figure">
-                <img src="../img/photo-news.jpg"
-                     srcset="../img/photo-news 2x"
+                <img src="../img/image-compet.jpg"
+                     srcset="../img/image-compet 2x"
                      alt="Photo de la compétition"
-                     width="541"
-                     height="250">
+                     width="614"
+                     height="409">
             </figure>
-        </a>
+        </a href="#1">
         <a href="#1" class="gallery-competition__link">
             <figure class="gallery-competition__figure">
                 <img src="../img/photo.jpg"
