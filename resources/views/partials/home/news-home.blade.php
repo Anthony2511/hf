@@ -70,7 +70,7 @@
                     <a href="#" class="news-home__link"></a>
                 </div>
             </div>
-            <a href="" class="button">
+            <a href="{{route('articles')}}" class="button">
                 <span class="button-blue__left">Voir toutes les actualités</span>
                 <i class="button-blue__right"></i>
             </a>
