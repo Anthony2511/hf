@@ -16,10 +16,15 @@ class Author extends Model
     */
 
     protected $table = 'authors';
-    // protected $primaryKey = 'id';
-    // public $timestamps = false;
+    protected $primaryKey = 'id';
+    public $timestamps = true;
     // protected $guarded = ['id'];
-    protected $fillable = [];
+    protected $fillable = array(
+        'firstname',
+        'lastname',
+        'email',
+        'picture'
+    );
     // protected $hidden = [];
     // protected $dates = [];
 
@@ -29,11 +34,28 @@ class Author extends Model
     |--------------------------------------------------------------------------
     */
 
+    public function getImageProfile($suffix)
+    {
+        $basePath = 'uploads/authors/';
+        $fullname = pathinfo($this->image, PATHINFO_FILENAME);
+        $imageProfile = $basePath . $fullname . $suffix;
+
+        if (file_exists($imageProfile)) {
+            return URL('/') . '/' . $imageProfile;
+        } else {
+            return $this->image;
+        }
+    }
+
     /*
     |--------------------------------------------------------------------------
     | RELATIONS
     |--------------------------------------------------------------------------
     */
+    public function articles()
+    {
+        return $this->hasMany('App\Models\Article');
+    }
 
     /*
     |--------------------------------------------------------------------------
@@ -52,4 +74,37 @@ class Author extends Model
     | MUTATORS
     |--------------------------------------------------------------------------
     */
+
+    public function setImageAttribute($value)
+    {
+        $attribute_name = "image";
+        $disk = "public_folder";
+        $destination_path = "/authors";
+
+        // if the image was erased
+        if ($value == null) {
+            // delete the image from disk
+            \Storage::disk($disk)->delete($this->{$attribute_name});
+
+            // set null in the database column
+            $this->attributes[$attribute_name] = null;
+        }
+
+        // if a base64 was sent, store it in the db
+        if (starts_with($value, 'data:image')) {
+            // 0. Make the image
+            $image = \Image::make($value);
+            $imageProfile = \Image::make($value)->fit(30, 30);
+
+            // 1. Generate a filename.
+            $filename = md5($value . time());
+
+            // 2. Store the image on disk.
+            \Storage::disk($disk)->put($destination_path . '/' . $filename . '_fullscreen.jpg', $image->stream());
+            \Storage::disk($disk)->put($destination_path . '/' . $filename . '_profile.jpg', $imageProfile->stream());
+
+            // 3. Save the path to the database
+            $this->attributes[$attribute_name] = Url('/') . '/' . $destination_path . '/' . $filename . '.jpg';
+        }
+    }
 }
