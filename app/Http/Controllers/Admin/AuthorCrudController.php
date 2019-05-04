@@ -75,7 +75,7 @@ class AuthorCrudController extends CrudController
 
         //Image Field
         $this->crud->addField([
-            'name' => "picture",
+            'name' => 'picture',
             'type' => 'image',
             'label' => "Photo de présentation",
             'upload' => true,

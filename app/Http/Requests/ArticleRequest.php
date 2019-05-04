@@ -29,7 +29,7 @@ class ArticleRequest extends FormRequest
             'title' => 'required|min:2|max:255',
             'introduction' => 'required|min:2|max:255',
             'image' => 'required',
-            'content' => 'required|min:2|max:50',
+            'content' => 'required|min:2',
             'date' => 'required|date',
             'slug' => 'unique:articles,slug,' . \Request::get('id')
         ];

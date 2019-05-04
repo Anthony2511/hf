@@ -84,27 +84,39 @@ class ArticleCrudController extends CrudController
             'type' => 'select2',
             'entity' => 'author',
             'attribute' => 'fullname',
-            'model' => 'App\Models\Author'
+            'model' => 'App\Models\Author',
+            'hint' => 'Si votre nom n\'apparait pas, ajoutez-le dans les auteurs'
         ]);
 
         $this->crud->addField([
             'name'  => 'date',
             'label' => 'Date de publication',
-            'type'  => 'date',
-            'value' => date('Y-m-d')
+            'type'  => 'date_picker',
+            // optional:
+            'date_picker_options' => [
+                'todayBtn' => 'linked',
+                'format' => 'dd-mm-yyyy',
+                'language' => 'fr'
+            ],
         ], 'create');
 
         $this->crud->addField([
             'name'  => 'date',
             'label' => 'Date de publication',
-            'type'  => 'date',
+            'type'  => 'date_picker',
+            // optional:
+            'date_picker_options' => [
+                'todayBtn' => 'linked',
+                'format' => 'dd-mm-yyyy',
+                'language' => 'fr'
+            ],
         ], 'update');
 
         // Introduction Field
         $this->crud->addField(
             [
                 'name' => 'introduction',
-                'type' => 'text',
+                'type' => 'wysiwyg',
                 'label' => 'Introduction de l\'article'
             ]
         );
@@ -113,7 +125,7 @@ class ArticleCrudController extends CrudController
         $this->crud->addField(
             [
                 'name' => 'content',
-                'type' => 'text',
+                'type' => 'wysiwyg',
                 'label' => 'Contenu de l\'article'
             ]
         );

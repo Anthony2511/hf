@@ -37,13 +37,13 @@ class Author extends Model
     public function getImageProfile($suffix)
     {
         $basePath = 'uploads/authors/';
-        $fullname = pathinfo($this->image, PATHINFO_FILENAME);
+        $fullname = pathinfo($this->picture, PATHINFO_FILENAME);
         $imageProfile = $basePath . $fullname . $suffix;
 
         if (file_exists($imageProfile)) {
             return URL('/') . '/' . $imageProfile;
         } else {
-            return $this->image;
+            return $this->picture;
         }
     }
 
@@ -68,6 +68,20 @@ class Author extends Model
     | ACCESORS
     |--------------------------------------------------------------------------
     */
+    public function getFirstNameAttribute($value)
+    {
+        return ucfirst($value);
+    }
+
+    public function getLastNameAttribute($value)
+    {
+        return ucfirst($value);
+    }
+
+    public function getFullNameAttribute()
+    {
+        return ucfirst($this->firstname) . ' ' . ucfirst($this->lastname);
+    }
 
     /*
     |--------------------------------------------------------------------------
@@ -75,9 +89,9 @@ class Author extends Model
     |--------------------------------------------------------------------------
     */
 
-    public function setImageAttribute($value)
+    public function setPictureAttribute($value)
     {
-        $attribute_name = "image";
+        $attribute_name = "picture";
         $disk = "public_folder";
         $destination_path = "/authors";
 

@@ -31,8 +31,9 @@ class Article extends Model
         'author_id'
     );
     // protected $hidden = [];
-    protected $dates = array(
-        'date'
+    // protected $dates = [];
+    protected $casts = array(
+        'date' => 'date'
     );
 
     /**
