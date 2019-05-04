@@ -25,7 +25,7 @@ class ArticleCrudController extends CrudController
         */
         $this->crud->setModel('App\Models\Article');
         $this->crud->setRoute(config('backpack.base.route_prefix') . '/article');
-        $this->crud->setEntityNameStrings('article', 'articles');
+        $this->crud->setEntityNameStrings('un article', 'articles');
 
         /*
         |--------------------------------------------------------------------------
@@ -33,8 +33,87 @@ class ArticleCrudController extends CrudController
         |--------------------------------------------------------------------------
         */
 
-        // TODO: remove setFromDb() and manually define Fields and Columns
-        $this->crud->setFromDb();
+        // Columns
+
+        // Title Column
+        $this->crud->addColumn(
+            [
+                'name' => 'title',
+                'type' => 'text',
+                'label' => 'Titre de la compétition'
+            ]
+        );
+
+        // Date Column
+        $this->crud->addColumn(
+            [
+                'name' => 'date',
+                'type' => 'date',
+                'label' => 'Date de publication',
+            ]
+        );
+
+        // Fields
+
+        // Title Field
+        $this->crud->addField(
+            [
+                'name' => 'title',
+                'type' => 'text',
+                'label' => 'Titre de l\'article'
+            ]
+        );
+
+        //Image Field
+        $this->crud->addField([
+            'name' => "image",
+            'type' => 'image',
+            'label' => "Photo de présentation",
+            'upload' => true,
+            'crop' => true, // set to true to allow cropping, false to disable
+            'aspect_ratio' => 0, // ommit or set to 0 to allow any aspect ratio
+            // 'disk' => 's3_bucket', // in case you need to show images from a different disk
+            // 'prefix' => 'uploads/images/profile_pictures/' // in case your db value is only the file name (no path), you can use this to prepend your path to the image src (in HTML), before it's shown to the user;
+        ]);
+
+        $this->crud->addField([
+            'name'  => 'date',
+            'label' => 'Date de publication',
+            'type'  => 'date',
+            'value' => date('Y-m-d')
+        ], 'create');
+
+        $this->crud->addField([
+            'name'  => 'date',
+            'label' => 'Date de publication',
+            'type'  => 'date',
+        ], 'update');
+
+        // Introduction Field
+        $this->crud->addField(
+            [
+                'name' => 'introduction',
+                'type' => 'text',
+                'label' => 'Introduction de l\'article'
+            ]
+        );
+
+        // Content Field
+        $this->crud->addField(
+            [
+                'name' => 'content',
+                'type' => 'text',
+                'label' => 'Contenu de l\'article'
+            ]
+        );
+
+        //Slug Field
+        $this->crud->addField([
+            'name' => 'slug',
+            'label' => "Slug (URL)",
+            'type' => 'text',
+            'hint' => 'Est automatiquement généré à partir du date-titre si pas remplit.'
+        ]);
 
         // add asterisk for fields that are required in ArticleRequest
         $this->crud->setRequiredFields(StoreRequest::class, 'create');

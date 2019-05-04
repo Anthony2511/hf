@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b0b97a5d-6dca-40c8-a8f7-cc4d5e556a82" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ArticleCrudController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ArticleCrudController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Article.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,35 +39,35 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Internship.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Models/Internship.php">
+      <file leaf-file-name="Athlete.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Models/Athlete.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="407">
+              <caret line="184" column="46" lean-forward="true" selection-start-line="184" selection-start-column="46" selection-end-line="184" selection-end-column="46" />
+              <folding>
+                <element signature="e#30#69#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ArticleCrudController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/ArticleCrudController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="315">
-              <caret line="96" column="4" selection-start-line="96" selection-start-column="4" selection-end-line="96" selection-end-column="4" />
-              <folding>
-                <element signature="e#30#69#0#PHP" expanded="true" />
-              </folding>
+              <caret line="106" column="13" lean-forward="true" selection-start-line="106" selection-start-column="13" selection-end-line="106" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Article.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Article.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Models/Article.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="522">
-              <caret line="89" column="35" selection-start-line="89" selection-start-column="35" selection-end-line="89" selection-end-column="35" />
+            <state relative-caret-position="2800">
+              <caret line="133" column="45" lean-forward="true" selection-start-line="133" selection-start-column="45" selection-end-line="133" selection-end-column="45" />
               <folding>
                 <element signature="e#30#69#0#PHP" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="intro_competition.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/partials/single/competition/intro_competition.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="22" column="126" selection-start-line="22" selection-start-column="126" selection-end-line="22" selection-end-column="126" />
             </state>
           </provider>
         </entry>
@@ -93,7 +94,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/assets/js/config.floatingFormLabels.js" />
         <option value="$PROJECT_DIR$/resources/views/layout.blade.php" />
         <option value="$PROJECT_DIR$/resources/assets/stylus/components/single/internship/form-internship.styl" />
         <option value="$PROJECT_DIR$/resources/views/partials/single/internship/form_internship.blade.php" />
@@ -144,6 +144,7 @@
         <option value="$PROJECT_DIR$/routes/backpack/custom.php" />
         <option value="$PROJECT_DIR$/resources/views/vendor/backpack/base/inc/sidebar_content.blade.php" />
         <option value="$PROJECT_DIR$/app/Models/Article.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/ArticleCrudController.php" />
       </list>
     </option>
   </component>
@@ -607,12 +608,12 @@
       <workItem from="1556101297494" duration="10878000" />
       <workItem from="1556524473991" duration="11143000" />
       <workItem from="1556547398495" duration="18050000" />
-      <workItem from="1556878742009" duration="1580000" />
+      <workItem from="1556878742009" duration="2440000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="269115000" />
+    <option name="totallyTimeSpent" value="269975000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -645,7 +646,7 @@
       <window_info anchor="bottom" id="TypeScript" order="9" />
       <window_info anchor="bottom" id="Debug" order="6" />
       <window_info anchor="right" id="Database" order="0" />
-      <window_info anchor="bottom" id="Terminal" order="4" sideWeight="0.6286863" visible="true" weight="0.18865867" />
+      <window_info anchor="bottom" id="Terminal" order="4" sideWeight="0.6286863" weight="0.18865867" />
       <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.37131366" side_tool="true" weight="0.2467903" />
       <window_info anchor="bottom" id="Version Control" order="5" />
       <window_info anchor="bottom" id="Find" order="7" weight="0.3294964" />
@@ -685,13 +686,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/views/partials/listing/listing-athletes.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="34" lean-forward="true" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/partials/home/competitions-home.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23">
@@ -829,13 +823,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Athlete.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="80" column="36" selection-start-line="80" selection-start-column="36" selection-end-line="80" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Providers/AppServiceProvider.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -902,13 +889,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="506">
           <caret line="27" column="61" selection-start-line="27" selection-start-column="61" selection-end-line="27" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/CompetitionCrudController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="29" column="10" lean-forward="true" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -981,20 +961,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/partials/single/competition/intro_competition.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="22" column="126" selection-start-line="22" selection-start-column="126" selection-end-line="22" selection-end-column="126" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/vendor/backpack/base/inc/sidebar_content.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="614">
-          <caret line="32" column="37" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Models/Competition.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-276">
@@ -1022,13 +988,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Article.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/partials/single/competition/intro_competition.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="89" column="35" selection-start-line="89" selection-start-column="35" selection-end-line="89" selection-end-column="35" />
+        <state relative-caret-position="506">
+          <caret line="22" column="126" selection-start-line="22" selection-start-column="126" selection-end-line="22" selection-end-column="126" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/vendor/backpack/base/inc/sidebar_content.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="614">
+          <caret line="32" column="37" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Athlete.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="184" column="46" lean-forward="true" selection-start-line="184" selection-start-column="46" selection-end-line="184" selection-end-column="46" />
           <folding>
             <element signature="e#30#69#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Article.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2800">
+          <caret line="133" column="45" lean-forward="true" selection-start-line="133" selection-start-column="45" selection-end-line="133" selection-end-column="45" />
+          <folding>
+            <element signature="e#30#69#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/CompetitionCrudController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1817">
+          <caret line="151" column="37" lean-forward="true" selection-start-line="151" selection-start-column="37" selection-end-line="151" selection-end-column="37" />
+          <folding>
+            <element signature="e#46#100#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/ArticleCrudController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="106" column="13" lean-forward="true" selection-start-line="106" selection-start-column="13" selection-end-line="106" selection-end-column="13" />
         </state>
       </provider>
     </entry>
