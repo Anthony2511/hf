@@ -33,12 +33,12 @@
                     </div>
                 </li>
                 <li class="nav__item">
-                    <a href="{{ route('athletes') }}">
+                    <a href="{{ route('athletes') }}" class="{{setActive(['athletes'])}}">
                         <span>Athlètes</span>
                     </a>
                 </li>
                 <li class="nav__item">
-                    <a href="{{ route('entraineurs') }}">
+                    <a href="{{ route('entraineurs') }}" class="{{setActive(['entraineurs'])}}">
                         <span>Entraineurs</span>
                     </a>
                 </li>

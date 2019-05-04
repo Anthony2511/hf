@@ -89,6 +89,22 @@
           content none
 
 
+.active
+  position relative
+  color blue
+  &:after
+    position absolute
+    top 100%
+    left 0
+    width 100%
+    height 1.5px
+    background-color $cDarkOrange
+    content ''
+    opacity 1
+    margin-top s(5)
+
+
+
 .nav__item a:hover::after,
 .nav__item a:focus::after {
   opacity 1
