@@ -30,7 +30,7 @@
 </li>
 <li><a href='{{ backpack_url('internship') }}'><i class='fa fa-list'></i> <span>Stages</span></a></li>
 <li><a href='{{ backpack_url('competition') }}'><i class='fa fa-calendar'></i> <span>Compétitions</span></a></li>
-<li><a href='{{ backpack_url('new') }}'><i class='fa fa-calendar'></i> <span>Actualités</span></a></li>
+<li><a href='{{ backpack_url('article') }}'><i class='fa fa-calendar'></i> <span>Actualités</span></a></li>
 
 
 <li><a href="{{ url(config('backpack.base.route_prefix').'/page') }}"><i class="fa fa-file-o"></i>
