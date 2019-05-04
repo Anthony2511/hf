@@ -16,7 +16,6 @@ class CreateArticlesTable extends Migration {
 			$table->text('content');
 			$table->string('image', 255)->nullable();
 			$table->integer('author_id')->unsigned();
-			$table->integer('category_id')->unsigned();
 			$table->date('date');
 		});
 	}
