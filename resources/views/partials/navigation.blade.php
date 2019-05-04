@@ -43,7 +43,7 @@
                     </a>
                 </li>
                 <li class="nav__item">
-                    <a href="#">
+                    <a href="{{ route('articles') }}">
                         <span>Actualités</span>
                     </a>
                 </li>
