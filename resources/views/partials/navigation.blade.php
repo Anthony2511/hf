@@ -15,7 +15,7 @@
         <div class="nav__menu-bloc">
             <ul class="nav__menu">
                 <li class="nav__item">
-                    <a href="?union">
+                    <a href="?union" class="nav__item-sub">
                         <span>Union Athlétique</span>
                     </a>
                     <div class="nav__sub-nav">
@@ -48,7 +48,7 @@
                     </a>
                 </li>
                 <li class="nav__item">
-                    <a href="?agenda">
+                    <a href="?agenda" class="nav__item-sub">
                         <span>Agenda</span>
                     </a>
                     <div class="nav__sub-nav">

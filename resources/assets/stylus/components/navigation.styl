@@ -14,27 +14,48 @@
     margin 0
     padding 0
     z-index 15
+  &__item-sub
+    position relative
+    &:before
+      icon('arrow')
+      font-size s(8)
+      position absolute
+      right s(-25,8)
+      top s(5,8)
   &__item
     list-style none
     display inline-block
     padding 0
     margin 0
-  &__item > a
-    position relative
-    display inline-block
-    padding 0.5em 1em
-    margin 0 0 -1px 0
-    border 1px solid transparent
-  &__item > a:focus,
-  &__item > a:hover
-    border 1px solid #dedede
+    & a
+      position relative
+      display inline-block
+      outline none
+      text-decoration none
+      letter-spacing 1px
+      font-weight 400
+      text-shadow: 0 0 1px rgba(255,255,255,0.3)
+      &:after
+        position absolute
+        top 100%
+        left 0
+        width 100%
+        height 1.5px
+        background-color $cDarkOrange
+        content ''
+        opacity 0
+        margin-top s(5)
+        transition opacity 0.3s, transform 0.3s
+        transform: translateY(10px)
+  &__item + &__item
+    margin-left s(50)
   &__sub-nav
     position absolute
     display none
     top 2.2em
     margin-top -1px
     padding 0.5em 1em
-    background-color $cWhite
+    background-color $cLightGrey
     border-radius 10px
     &.open
       display: block
@@ -43,12 +64,36 @@
       vertical-align top
       margin 0 1em 0 0
       padding 0
+      &:before
+        position: absolute
+        top -11px
+        right 0
+        left 20px
+        width 0
+        height 0
+        content ''
+        transform rotate(360deg)
+        border-width 0 9.5px 11px 9.5px
+        border-style solid
+        border-style inset
+        border-color transparent transparent $cLightGrey transparent
     & li
       display block
       list-style-type none
       margin 0
-      padding 0
+      padding 10px
       color $cDarkBlue
+      font-weight 400
+      & a
+        &:after
+          content none
+
+
+.nav__item a:hover::after,
+.nav__item a:focus::after {
+  opacity 1
+  transform translateY(0px)
+}
 
 
 
