@@ -27,7 +27,8 @@ class Article extends Model
         'slug',
         'introduction',
         'content',
-        'image'
+        'image',
+        'author_id'
     );
     // protected $hidden = [];
     protected $dates = array(

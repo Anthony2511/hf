@@ -76,6 +76,17 @@ class ArticleCrudController extends CrudController
             // 'prefix' => 'uploads/images/profile_pictures/' // in case your db value is only the file name (no path), you can use this to prepend your path to the image src (in HTML), before it's shown to the user;
         ]);
 
+        // Author Field
+        $this->crud->addField
+        ([
+            'name' => 'author_id',
+            'label' => 'Nom de l\'auteur',
+            'type' => 'select2',
+            'entity' => 'author',
+            'attribute' => 'fullname',
+            'model' => 'App\Models\Author'
+        ]);
+
         $this->crud->addField([
             'name'  => 'date',
             'label' => 'Date de publication',
