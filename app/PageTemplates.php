@@ -87,12 +87,14 @@ trait PageTemplates
     {
         $this->crud->addField(
             [
-                'name' => 'content_text',
-                'type' => 'wysiwyg',
-                'label' => 'Texte d\'introduction',
-                'tab' => 'Section d\'introduction'
+                'name' => 'meta_title',
+                'type' => 'text',
+                'label' => 'Titre',
+                'fake' => true,
+                'store_in' => 'metas',
             ]
         );
+        
     }
 
     private function trainings_index()

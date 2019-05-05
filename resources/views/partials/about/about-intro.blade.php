@@ -1,6 +1,6 @@
 <div class="about__intro wrap">
     <section class="about__bloc about__bloc--one">
-        <h2 aria-level="2" role="heading" class="title title__blue title__left">Notre histoire</h2>
+        <h2 aria-level="2" role="heading" class="title title__blue title__left">{{ $page->meta_title }}</h2>
         <p class="about__text">
             Les Hautes-Fagnes se composent aujourd'hui de 400 athlètes dossardés à la ligue belge
             francophone d'athlétisme (LBFA), encadrés par une structure solide de moniteurs
