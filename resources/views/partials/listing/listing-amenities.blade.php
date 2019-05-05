@@ -1,6 +1,8 @@
 <div class="equipement__container">
     <div class="equipement__bloc">
         <figure class="equipement__figure">
+            <span class="equipement__price">33€</span>
+            <h2 aria-level="2" role="heading" class="equipement__title">Sweet shirt blanc</h2>
             <div class="equipement__size">
                 <span>S - M - L</span>
             </div>
