@@ -16,10 +16,12 @@ class Size extends Model
     */
 
     protected $table = 'sizes';
-    // protected $primaryKey = 'id';
-    // public $timestamps = false;
+    protected $primaryKey = 'id';
+    public $timestamps = true;
     // protected $guarded = ['id'];
-    protected $fillable = [];
+    protected $fillable = array(
+        'name'
+    );
     // protected $hidden = [];
     // protected $dates = [];
 
