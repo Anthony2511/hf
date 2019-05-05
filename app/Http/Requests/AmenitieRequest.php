@@ -26,7 +26,10 @@ class AmenitieRequest extends FormRequest
     public function rules()
     {
         return [
-            // 'name' => 'required|min:5|max:255'
+            'price' => 'required|min:2|max:255',
+            'title' => 'required|min:2|max:255',
+            'sexe' => 'required|min:2|max:255',
+            'image' => 'required',
         ];
     }
 
