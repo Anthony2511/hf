@@ -25,7 +25,7 @@ class AmenitieCrudController extends CrudController
         */
         $this->crud->setModel('App\Models\Amenitie');
         $this->crud->setRoute(config('backpack.base.route_prefix') . '/amenitie');
-        $this->crud->setEntityNameStrings('amenitie', 'amenities');
+        $this->crud->setEntityNameStrings('un équipement', 'équipements');
 
         /*
         |--------------------------------------------------------------------------
@@ -33,8 +33,76 @@ class AmenitieCrudController extends CrudController
         |--------------------------------------------------------------------------
         */
 
-        // TODO: remove setFromDb() and manually define Fields and Columns
-        $this->crud->setFromDb();
+        // Columns
+
+        // Title Column
+        $this->crud->addColumn(
+            [
+                'name' => 'title',
+                'type' => 'text',
+                'label' => 'Nom de l\'équipement'
+            ]
+        );
+
+        // Price Column
+        $this->crud->addColumn(
+            [
+                'name' => 'price',
+                'type' => 'text',
+                'label' => 'Prix de l\'équipement',
+            ]
+        );
+
+        // Fields
+
+        // Title Field
+        $this->crud->addField(
+            [
+                'name' => 'title',
+                'type' => 'text',
+                'label' => 'Nom de l\'équipement'
+            ]
+        );
+
+        //Image Field
+        $this->crud->addField([
+            'name' => "image",
+            'type' => 'image',
+            'label' => "Photo de présentation",
+            'upload' => true,
+            'crop' => true, // set to true to allow cropping, false to disable
+            'aspect_ratio' => 0, // ommit or set to 0 to allow any aspect ratio
+            // 'disk' => 's3_bucket', // in case you need to show images from a different disk
+            // 'prefix' => 'uploads/images/profile_pictures/' // in case your db value is only the file name (no path), you can use this to prepend your path to the image src (in HTML), before it's shown to the user;
+        ]);
+
+        // Size Field
+        $this->crud->addField(
+            [
+                'name' => 'size',
+                'type' => 'select2_from_array',
+                'options' => [
+                    'S' => 'S',
+                    'M' => 'M',
+                    'L' => 'L',
+                    'XL' => 'XL',
+                    'XXL' => 'XXL'
+                ],
+                'allows_null' => false,
+                'default' => 'S',
+                'label' => 'Taille de l\'équipement'
+            ]
+        );
+
+        // Price Field
+        $this->crud->addField(
+            [
+                'name' => 'price',
+                'type' => 'text',
+                'label' => 'Prix de l\'équipement',
+                'hint' => 'Par exemple : 33€'
+            ]
+        );
 
         // add asterisk for fields that are required in AmenitieRequest
         $this->crud->setRequiredFields(StoreRequest::class, 'create');
