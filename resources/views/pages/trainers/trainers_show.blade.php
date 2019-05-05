@@ -8,8 +8,11 @@
 
 @section('content')
     <div class="wrap">
-        <div class="breadcrumb">
-            <a href="{{ route('entraineurs') }}" class="breadcrumb__item">Retour aux entraîneurs</a>
+        <div class="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList">
+            <a href="{{ route('entraineurs') }}" class="breadcrumb__item" itemprop="item" itemscope
+               itemtype="http://schema.org/ListItem">
+                <span itemprop="name">Retour aux entraineurs</span>
+            </a>
         </div>
     </div>
     @include('partials.single.trainer.intro_trainer')
