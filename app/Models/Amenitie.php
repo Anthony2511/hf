@@ -22,7 +22,8 @@ class Amenitie extends Model
     protected $fillable = array(
         'image',
         'price',
-        'size'
+        'size',
+        'title'
     );
     // protected $hidden = [];
     // protected $dates = [];

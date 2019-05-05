@@ -14,6 +14,7 @@ class CreateAmenitiesTable extends Migration {
 			$table->string('image', 255);
 			$table->string('price', 255);
 			$table->string('size', 255);
+            $table->string('title', 255);
 		});
 	}
 

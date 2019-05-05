@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b0b97a5d-6dca-40c8-a8f7-cc4d5e556a82" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/app/Models/Amenitie.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Amenitie.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_03_12_102449_create_amenities_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_03_12_102449_create_amenities_table.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -41,8 +42,8 @@
       <file leaf-file-name="Amenitie.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Models/Amenitie.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="487">
-              <caret line="100" column="47" lean-forward="true" selection-start-line="100" selection-start-column="47" selection-end-line="100" selection-end-column="47" />
+            <state relative-caret-position="207">
+              <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
               <folding>
                 <element signature="e#30#69#0#PHP" expanded="true" />
               </folding>
@@ -84,7 +85,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/assets/stylus/components/single/competition/competition-intro.styl" />
         <option value="$PROJECT_DIR$/resources/assets/stylus/components/single/competition/competition-infos.styl" />
         <option value="$PROJECT_DIR$/resources/assets/stylus/components/single/competition/competition-horaires.styl" />
         <option value="$PROJECT_DIR$/resources/views/partials/single/competition/horaires_competition.blade.php" />
@@ -134,6 +134,7 @@
         <option value="$PROJECT_DIR$/resources/assets/stylus/components/intro.styl" />
         <option value="$PROJECT_DIR$/resources/assets/stylus/components/navigation.styl" />
         <option value="$PROJECT_DIR$/resources/views/vendor/backpack/base/inc/sidebar_content.blade.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_03_12_102449_create_amenities_table.php" />
         <option value="$PROJECT_DIR$/app/Models/Amenitie.php" />
       </list>
     </option>
@@ -328,6 +329,17 @@
               <item name="hf" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="Models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hf" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hf" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hf" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hf" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="migrations" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="hf" type="b2602c69:ProjectViewProjectNode" />
@@ -607,12 +619,12 @@
       <workItem from="1556524473991" duration="11143000" />
       <workItem from="1556547398495" duration="18050000" />
       <workItem from="1556878742009" duration="14788000" />
-      <workItem from="1557045583983" duration="939000" />
+      <workItem from="1557045583983" duration="1082000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="283262000" />
+    <option name="totallyTimeSpent" value="283405000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -690,13 +702,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/DivisionCrudController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="27" column="47" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/InternshipCrudController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="506">
@@ -1015,10 +1020,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_03_12_102449_create_amenities_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Models/Amenitie.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="487">
-          <caret line="100" column="47" lean-forward="true" selection-start-line="100" selection-start-column="47" selection-end-line="100" selection-end-column="47" />
+        <state relative-caret-position="207">
+          <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
           <folding>
             <element signature="e#30#69#0#PHP" expanded="true" />
           </folding>
