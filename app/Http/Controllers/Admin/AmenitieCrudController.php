@@ -53,6 +53,18 @@ class AmenitieCrudController extends CrudController
             ]
         );
 
+        // Size Column
+        $this->crud->addColumn(
+            [
+                'label' => 'Taille de l\équipement', // Table column heading
+                'type' => 'select',
+                'name' => 'sizes', // the column that contains the ID of that connected entity;
+                'entity' => 'sizes', // the method that defines the relationship in your Model
+                'attribute' => 'name', // foreign key attribute that is shown to user
+                'model' => 'App\Models\Size', // foreign key model
+            ]
+        );
+
         // Fields
 
         // Title Field
