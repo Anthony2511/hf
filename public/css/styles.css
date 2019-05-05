@@ -1724,17 +1724,6 @@ input[type="search"]::-webkit-search-decoration {
   position: relative;
   color: #00f;
 }
-.active:after {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  height: 1.5px;
-  background-color: #fe712a;
-  content: '';
-  opacity: 1;
-  margin-top: 0.3125em;
-}
 .nav__item a:hover::after,
 .nav__item a:focus::after {
   opacity: 1;
@@ -2188,6 +2177,7 @@ input[type="search"]::-webkit-search-decoration {
   position: relative;
   background-color: #fff;
   margin-bottom: 3.125em;
+  z-index: 0;
 }
 .intro__bloc {
   display: flex;

@@ -21,7 +21,7 @@
                     <div class="nav__sub-nav">
                         <ul class="sub-nav-group">
                             <li>
-                                <a href="{{ route('a-propos') }}">&Aacute; Propos</a>
+                                <a href="{{ route('a-propos') }}" class="{{setActive(['a-propos'])}}">&Aacute; Propos</a>
                             </li>
                             <li>
                                 <a href="#">&Eacute;quipements et tarifs</a>
@@ -43,7 +43,7 @@
                     </a>
                 </li>
                 <li class="nav__item">
-                    <a href="{{ route('articles') }}">
+                    <a href="{{ route('articles') }}" class="{{setActive(['articles'])}}">
                         <span>Actualités</span>
                     </a>
                 </li>
@@ -54,13 +54,13 @@
                     <div class="nav__sub-nav">
                         <ul class="sub-nav-group">
                             <li>
-                                <a href="{{ route('competitions') }}">Compétitions</a>
+                                <a href="{{ route('competitions') }}" class="{{setActive(['competitions'])}}">Compétitions</a>
                             </li>
                             <li>
-                                <a href="{{ route('entrainements') }}">Entraînements</a>
+                                <a href="{{ route('entrainements') }}" class="{{setActive(['entrainements'])}}">Entraînements</a>
                             </li>
                             <li>
-                                <a href="{{ route('stages') }}">Stages</a>
+                                <a href="{{ route('stages') }}" class="{{setActive(['stages'])}}">Stages</a>
                             </li>
                         </ul>
                     </div>
