@@ -38,8 +38,17 @@
         <li><a href='{{ backpack_url('author') }}'><i class='fa fa-calendar'></i> <span>Auteurs</span></a></li>
     </ul>
 </li>
+
+<!-- Équipements -->
+<li class="treeview">
+    <a href="#"><i class="fa fa-calendar"></i> <span>Équipements</span>
+        <i class="fa fa-angle-left pull-right"></i></a>
+    <ul class="treeview-menu">
+        <li><a href='{{ backpack_url('amenitie') }}'><i class='fa fa-list'></i> <span>Équipements</span></a></li>
+        <li><a href='{{ backpack_url('size') }}'><i class='fa fa-calendar'></i> <span>Tailles</span></a></li>
+    </ul>
+</li>
 <li><a href='{{ backpack_url('internship') }}'><i class='fa fa-list'></i> <span>Stages</span></a></li>
-<li><a href='{{ backpack_url('amenitie') }}'><i class='fa fa-list'></i> <span>Équipements</span></a></li>
 <li><a href='{{ backpack_url('competition') }}'><i class='fa fa-calendar'></i> <span>Compétitions</span></a></li>
 
 
