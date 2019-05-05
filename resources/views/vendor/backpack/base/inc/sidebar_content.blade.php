@@ -39,6 +39,7 @@
     </ul>
 </li>
 <li><a href='{{ backpack_url('internship') }}'><i class='fa fa-list'></i> <span>Stages</span></a></li>
+<li><a href='{{ backpack_url('amenitie') }}'><i class='fa fa-list'></i> <span>Équipements</span></a></li>
 <li><a href='{{ backpack_url('competition') }}'><i class='fa fa-calendar'></i> <span>Compétitions</span></a></li>
 
 
