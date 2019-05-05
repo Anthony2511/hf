@@ -142,4 +142,16 @@ trait PageTemplates
             ]
         );
     }
+
+    private function amenities_index()
+    {
+        $this->crud->addField(
+            [
+                'name' => 'content_text',
+                'type' => 'wysiwyg',
+                'label' => 'Texte d\'introduction',
+                'tab' => 'Section d\'introduction'
+            ]
+        );
+    }
 }
