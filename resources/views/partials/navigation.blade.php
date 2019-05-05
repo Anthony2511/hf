@@ -24,7 +24,7 @@
                                 <a href="{{ route('a-propos') }}" class="{{setActive(['a-propos'])}}">&Aacute; Propos</a>
                             </li>
                             <li>
-                                <a href="#">&Eacute;quipements et tarifs</a>
+                                <a href="{{ route('equipements') }}" class="{{setActive(['equipements'])}}">&Eacute;quipements et tarifs</a>
                             </li>
                             <li>
                                 <a href="#">Nous rejoindre</a>
