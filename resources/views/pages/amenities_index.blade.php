@@ -9,7 +9,7 @@
 @section('content')
     @include('partials.intros.intro-amenitie')
     <div class="wrap">
-        <p>Page equipement</p>
         @include('partials.switchers.switcher-amenities')
+        @include(('partials.listing.listing-amenities'))
     </div>
 @endsection
