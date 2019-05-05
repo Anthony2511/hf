@@ -33,8 +33,27 @@ class SizeCrudController extends CrudController
         |--------------------------------------------------------------------------
         */
 
-        // TODO: remove setFromDb() and manually define Fields and Columns
-        $this->crud->setFromDb();
+        // Columns
+
+        // Name Column
+        $this->crud->addColumn(
+            [
+                'name' => 'name',
+                'type' => 'text',
+                'label' => 'Nom de la taille'
+            ]
+        );
+
+        // Fields
+
+        // Name Field
+        $this->crud->addField(
+            [
+                'name' => 'name',
+                'type' => 'text',
+                'label' => 'Nom de la taille'
+            ]
+        );
 
         // add asterisk for fields that are required in SizeRequest
         $this->crud->setRequiredFields(StoreRequest::class, 'create');
