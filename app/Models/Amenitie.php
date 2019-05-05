@@ -23,7 +23,8 @@ class Amenitie extends Model
         'image',
         'price',
         'size',
-        'title'
+        'title',
+        'sexe'
     );
     // protected $hidden = [];
     // protected $dates = [];

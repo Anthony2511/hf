@@ -13,8 +13,8 @@ class CreateAmenitiesTable extends Migration {
 			$table->softDeletes();
 			$table->string('image', 255);
 			$table->string('price', 255);
-			$table->string('size', 255);
             $table->string('title', 255);
+            $table->string('sexe', 255);
 		});
 	}
 
