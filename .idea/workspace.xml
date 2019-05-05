@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b0b97a5d-6dca-40c8-a8f7-cc4d5e556a82" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/AmenitieCrudController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/AmenitieCrudController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/SizeCrudController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/SizeCrudController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Requests/SizeRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/SizeRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Amenitie.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Amenitie.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Size.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Size.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,8 +28,8 @@
       <file leaf-file-name="Amenitie.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Models/Amenitie.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="24" column="16" lean-forward="true" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
+            <state relative-caret-position="345">
+              <caret line="55" column="3" selection-start-line="55" selection-start-column="3" selection-end-line="58" selection-end-column="5" />
               <folding>
                 <element signature="e#30#69#0#PHP" expanded="true" />
               </folding>
@@ -35,8 +40,8 @@
       <file leaf-file-name="Size.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Models/Size.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="19" column="30" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="30" />
+            <state relative-caret-position="483">
+              <caret line="41" column="56" selection-start-line="41" selection-start-column="56" selection-end-line="41" selection-end-column="56" />
               <folding>
                 <element signature="e#30#69#0#PHP" expanded="true" />
               </folding>
@@ -44,41 +49,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SizeCrudController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/SizeCrudController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="579">
-              <caret line="53" column="44" selection-start-line="53" selection-start-column="44" selection-end-line="53" selection-end-column="44" />
-              <folding>
-                <element signature="e#46#100#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SizeRequest.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SizeRequest.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Requests/SizeRequest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="598">
-              <caret line="27" column="16" lean-forward="true" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
+            <state relative-caret-position="621">
+              <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AmenitieSize.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Models/AmenitieSize.php">
+      <file leaf-file-name="AthleteCrudController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/AthleteCrudController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+            <state relative-caret-position="161">
+              <caret line="137" column="6" lean-forward="true" selection-start-line="137" selection-start-column="6" selection-end-line="137" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AmenitieCrudController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AmenitieCrudController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/AmenitieCrudController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="55" column="8" selection-start-line="55" selection-start-column="8" selection-end-line="64" selection-end-column="10" />
+            <state relative-caret-position="395">
+              <caret line="85" column="34" selection-start-line="85" selection-start-column="33" selection-end-line="85" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -146,16 +139,16 @@
         <option value="$PROJECT_DIR$/resources/views/partials/navigation.blade.php" />
         <option value="$PROJECT_DIR$/resources/assets/stylus/components/intro.styl" />
         <option value="$PROJECT_DIR$/resources/assets/stylus/components/navigation.styl" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/AmenitieCrudController.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_05_05_091642_create_sizes_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_03_12_102449_create_amenities_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_05_05_092058_create_amenitie_size_table.php" />
-        <option value="$PROJECT_DIR$/app/Models/Amenitie.php" />
         <option value="$PROJECT_DIR$/resources/views/vendor/backpack/base/inc/sidebar_content.blade.php" />
         <option value="$PROJECT_DIR$/app/Models/AmenitieSize.php" />
-        <option value="$PROJECT_DIR$/app/Models/Size.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/SizeCrudController.php" />
         <option value="$PROJECT_DIR$/app/Http/Requests/SizeRequest.php" />
+        <option value="$PROJECT_DIR$/app/Models/Amenitie.php" />
+        <option value="$PROJECT_DIR$/app/Models/Size.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/AmenitieCrudController.php" />
       </list>
     </option>
   </component>
@@ -643,12 +636,12 @@
       <workItem from="1556524473991" duration="11143000" />
       <workItem from="1556547398495" duration="18050000" />
       <workItem from="1556878742009" duration="14788000" />
-      <workItem from="1557045583983" duration="3446000" />
+      <workItem from="1557045583983" duration="3800000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="285769000" />
+    <option name="totallyTimeSpent" value="286123000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -957,27 +950,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Athlete.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="204" column="5" lean-forward="true" selection-start-line="173" selection-start-column="4" selection-end-line="204" selection-end-column="5" />
-          <folding>
-            <element signature="e#30#69#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/ArticleCrudController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="301">
           <caret line="66" column="8" selection-start-line="66" selection-start-column="8" selection-end-line="76" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/AthleteCrudController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="100" column="8" selection-start-line="100" selection-start-column="8" selection-end-line="114" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -1026,16 +1002,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Amenitie.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="24" column="16" lean-forward="true" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
-          <folding>
-            <element signature="e#30#69#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/vendor/backpack/base/inc/sidebar_content.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
@@ -1057,16 +1023,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Size.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="19" column="30" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="30" />
-          <folding>
-            <element signature="e#30#69#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Models/AmenitieSize.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
@@ -1074,27 +1030,64 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/AmenitieCrudController.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Requests/SizeRequest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="55" column="8" selection-start-line="55" selection-start-column="8" selection-end-line="64" selection-end-column="10" />
+        <state relative-caret-position="621">
+          <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/AthleteCrudController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="137" column="6" lean-forward="true" selection-start-line="137" selection-start-column="6" selection-end-line="137" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/SizeCrudController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="579">
-          <caret line="53" column="44" selection-start-line="53" selection-start-column="44" selection-end-line="53" selection-end-column="44" />
+        <state relative-caret-position="-207">
+          <caret line="27" column="64" selection-start-line="27" selection-start-column="64" selection-end-line="27" selection-end-column="64" />
           <folding>
             <element signature="e#46#100#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Requests/SizeRequest.php">
+    <entry file="file://$PROJECT_DIR$/app/Models/Athlete.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="27" column="16" lean-forward="true" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
+        <state relative-caret-position="2116">
+          <caret line="92" column="4" selection-start-line="92" selection-start-column="4" selection-end-line="92" selection-end-column="4" />
+          <folding>
+            <element signature="e#30#69#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Amenitie.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="55" column="3" selection-start-line="55" selection-start-column="3" selection-end-line="58" selection-end-column="5" />
+          <folding>
+            <element signature="e#30#69#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Size.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="41" column="56" selection-start-line="41" selection-start-column="56" selection-end-line="41" selection-end-column="56" />
+          <folding>
+            <element signature="e#30#69#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/AmenitieCrudController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="85" column="34" selection-start-line="85" selection-start-column="33" selection-end-line="85" selection-end-column="34" />
         </state>
       </provider>
     </entry>

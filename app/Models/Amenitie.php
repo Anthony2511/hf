@@ -53,6 +53,11 @@ class Amenitie extends Model
     |--------------------------------------------------------------------------
     */
 
+    public function sizes()
+    {
+        return $this->belongsToMany('App\Models\Size');
+    }
+
     /*
     |--------------------------------------------------------------------------
     | SCOPES

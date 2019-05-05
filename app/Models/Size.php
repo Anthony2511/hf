@@ -37,6 +37,11 @@ class Size extends Model
     |--------------------------------------------------------------------------
     */
 
+    public function amenities()
+    {
+        return $this->belongsToMany('App\Models\Amenitie');
+    }
+
     /*
     |--------------------------------------------------------------------------
     | SCOPES

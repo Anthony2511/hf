@@ -76,7 +76,17 @@ class AmenitieCrudController extends CrudController
             // 'prefix' => 'uploads/images/profile_pictures/' // in case your db value is only the file name (no path), you can use this to prepend your path to the image src (in HTML), before it's shown to the user;
         ]);
 
-
+        // Size field
+        $this->crud->addField
+        ([
+            'label' => 'Sélectionnez les tailles',
+            'type' => 'select2_multiple',
+            'name' => 'sizes',
+            'entity' => 'sizes',
+            'attribute' => 'name',
+            'model' => "App\Models\Size",
+            'pivot' => true
+        ]);
 
         //  Sexe Field
         $this->crud->addField(
