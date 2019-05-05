@@ -9,5 +9,6 @@
 @section('content')
     <div class="wrap">
         <p>Page equipement</p>
+        @include('partials.switchers.switcher-amenities')
     </div>
 @endsection
