@@ -1186,6 +1186,12 @@ input[type="search"]::-webkit-search-decoration {
   font-weight: 700;
   padding: 0.625em 0;
 }
+.equipement__size span:after {
+  content: '-';
+}
+.equipement__size span:last-child:after {
+  content: none;
+}
 .equipement__price {
   position: absolute;
   top: 30px;
