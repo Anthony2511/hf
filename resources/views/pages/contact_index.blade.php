@@ -8,6 +8,6 @@
 
 @section('content')
     <div class="about__background">
-        Page contact
+        @include('partials.contact.contact-intro')
     </div>
 @endsection
