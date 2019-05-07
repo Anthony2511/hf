@@ -1643,7 +1643,7 @@ input[type="search"]::-webkit-search-decoration {
 }
 .single-stage {
   background-color: #f4f4f4;
-  margin: 3.125em 0;
+  margin: 3.125em 0 0;
   font-family: 'opensans';
   color: #2c3e50;
 }
@@ -1691,8 +1691,9 @@ input[type="search"]::-webkit-search-decoration {
   margin: 1.875em auto 3.125em;
   font-family: 'opensans';
 }
-.single-stage__form-bloc {
+.single-stage__bloc-form {
   text-align: center;
+  padding-top: 3.125em;
 }
 .single-stage__form-legend {
   color: #2c3e50;
@@ -2091,7 +2092,7 @@ input[type="search"]::-webkit-search-decoration {
   color: #fff;
   transition: 0.5s ease-in-out;
 /*PROVISOIRE*/
-  height: 52.4px;
+  height: 53.3px;
 }
 .button-orange__right-send:before {
   font-family: 'iconfont';

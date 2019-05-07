@@ -11,4 +11,5 @@
         @include('partials.contact.contact-intro')
         @include('partials.contact.contact-person')
     </div>
+    @include('partials.contact.contact-form')
 @endsection
