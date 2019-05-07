@@ -94,7 +94,7 @@ trait PageTemplates
                 'store_in' => 'metas',
             ]
         );
-        
+
     }
 
     private function trainings_index()

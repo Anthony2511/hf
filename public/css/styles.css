@@ -1143,6 +1143,7 @@ input[type="search"]::-webkit-search-decoration {
   width: 27.5%;
   margin-right: 8.75%;
   margin-bottom: 3.125em;
+  overflow: hidden;
 }
 .equipement__bloc:nth-child(3n+3) {
   margin-right: 0;
