@@ -9,5 +9,6 @@
 @section('content')
     <div class="about__background">
         @include('partials.contact.contact-intro')
+        @include('partials.contact.contact-person')
     </div>
 @endsection
