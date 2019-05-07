@@ -7,7 +7,7 @@
         <figure class="about__figure">
             <img src="../img/photo.jpg"
                  srcset="../img/photo.jpg 2x"
-                 alt="Interclub"
+                 alt="Photo de la première section"
                  width="516"
                  height="345">
         </figure>
@@ -16,7 +16,7 @@
         <figure class="about__figure-running">
             <img src="../img/running.png"
                  srcset="../img/running.png 2x"
-                 alt="Athlète qui saute"
+                 alt="Photo de la deuxième section"
                  width="500"
                  height="501">
         </figure>
