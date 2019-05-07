@@ -100,6 +100,58 @@ trait PageTemplates
             ]
         );
 
+        //Troisième Section
+
+        // Title Section
+        $this->crud->addField(
+            [
+                'name' => 'title_threeIntro',
+                'type' => 'text',
+                'label' => 'Titre de la section',
+                'fake' => true,
+                'store_in' => 'extras',
+                'tab' => 'Troisième section'
+            ]
+        );
+
+        // Text Section
+        $this->crud->addField(
+            [
+                'name' => 'text_threeIntro',
+                'type' => 'simplemde',
+                'label' => 'Texte de la section',
+                'fake' => true,
+                'store_in' => 'extras',
+                'tab' => 'Troisième section'
+            ]
+        );
+
+        //Quatrième Section
+
+        // Title Section
+        $this->crud->addField(
+            [
+                'name' => 'title_fourIntro',
+                'type' => 'text',
+                'label' => 'Titre de la section',
+                'fake' => true,
+                'store_in' => 'extras',
+                'tab' => 'Quatrième section'
+            ]
+        );
+
+        // Text Section
+        $this->crud->addField(
+            [
+                'name' => 'text_fourIntro',
+                'type' => 'simplemde',
+                'label' => 'Texte de la section',
+                'fake' => true,
+                'store_in' => 'extras',
+                'tab' => 'Quatrième section'
+            ]
+        );
+
     }
 
     private function trainings_index()
