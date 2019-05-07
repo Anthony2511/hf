@@ -66,7 +66,7 @@
                     </div>
                 </li>
                 <li class="nav__item">
-                    <a href="#">
+                    <a href="{{ route('contact') }}" class="{{setActive(['contact'])}}">
                         <span>Contact</span>
                     </a>
                 </li>

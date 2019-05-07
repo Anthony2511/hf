@@ -21,6 +21,7 @@ Route::get('competitions', 'CompetitionController@index')->name('competitions');
 Route::get('a-propos', 'AboutController@index')->name('a-propos');
 Route::get('articles', 'ArticleController@index')->name('articles');
 Route::get('equipements', 'AmenitieController@index')->name('equipements');
+Route::get('contact', 'ContactController@index')->name('contact');
 
 //POST
 Route::get('athletes/{athlete}', 'AthleteController@show');

@@ -10,7 +10,4 @@
     <div class="about__background">
         Page contact
     </div>
-    <div class="wrap">
-        @include('partials.cta-page')
-    </div>
 @endsection
