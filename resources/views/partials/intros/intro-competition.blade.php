@@ -9,10 +9,9 @@
     </figure>
     <div class="intro__bloc wrap">
         <div class="intro__bloc-text">
-            <h2 class="title title__blue title__left" aria-level="2" role="heading">Les compétitions</h2>
+            <h2 class="title title__blue title__left" aria-level="2" role="heading">{{ $page->compet_titleIntro }}</h2>
             <p class="intro__text">
-                Vous retrouvez ici le planning de toutes les compétitions prévues et terminées. Venez aussi jeter un oeil
-                aux entraînements afin de voir si vous avez assez de temps pour vous entraîner.
+                {{ $page->compet_textIntro }}
             </p>
             <a href="{{route('entrainements')}}" class="button" title="Vers les entraînements">
                 <span class="button-blue__left">Voir nos entraînements</span>

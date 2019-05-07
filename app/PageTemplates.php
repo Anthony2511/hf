@@ -20,25 +20,62 @@ trait PageTemplates
     | - page slug
     */
 
+    /**********PAGE ATHLETES**********/
     private function athletes_index()
     {
+
+        //Section d'introduction
+
+        // Title Intro
         $this->crud->addField(
             [
-                'name' => 'content_text',
-                'type' => 'wysiwyg',
-                'label' => 'Texte d\'introduction',
+                'name' => 'athlete_titleIntro',
+                'type' => 'text',
+                'label' => 'Titre de l\'introduction',
+                'fake' => true,
+                'store_in' => 'extras',
+                'tab' => 'Section d\'introduction'
+            ]
+        );
+
+        // Text Intro
+        $this->crud->addField(
+            [
+                'name' => 'athlete_textIntro',
+                'type' => 'simplemde',
+                'label' => 'Texte de l\'introduction',
+                'fake' => true,
+                'store_in' => 'extras',
                 'tab' => 'Section d\'introduction'
             ]
         );
     }
 
+    /**********PAGE ENTRAINEURS**********/
     private function trainers_index()
     {
+        //Section d'introduction
+
+        // Title Intro
         $this->crud->addField(
             [
-                'name' => 'content_text',
-                'type' => 'wysiwyg',
-                'label' => 'Texte d\'introduction',
+                'name' => 'trainer_titleIntro',
+                'type' => 'text',
+                'label' => 'Titre de l\'introduction',
+                'fake' => true,
+                'store_in' => 'extras',
+                'tab' => 'Section d\'introduction'
+            ]
+        );
+
+        // Text Intro
+        $this->crud->addField(
+            [
+                'name' => 'trainer_textIntro',
+                'type' => 'simplemde',
+                'label' => 'Texte de l\'introduction',
+                'fake' => true,
+                'store_in' => 'extras',
                 'tab' => 'Section d\'introduction'
             ]
         );
@@ -154,61 +191,151 @@ trait PageTemplates
 
     }
 
+    /**********PAGE ENTRAINEMENTS**********/
     private function trainings_index()
     {
+        //Section d'introduction
+
+        // Title Intro
         $this->crud->addField(
             [
-                'name' => 'content_text',
-                'type' => 'wysiwyg',
-                'label' => 'Texte d\'introduction',
+                'name' => 'training_titleIntro',
+                'type' => 'text',
+                'label' => 'Titre de l\'introduction',
+                'fake' => true,
+                'store_in' => 'extras',
+                'tab' => 'Section d\'introduction'
+            ]
+        );
+
+        // Text Intro
+        $this->crud->addField(
+            [
+                'name' => 'training_textIntro',
+                'type' => 'simplemde',
+                'label' => 'Texte de l\'introduction',
+                'fake' => true,
+                'store_in' => 'extras',
                 'tab' => 'Section d\'introduction'
             ]
         );
     }
 
+    /**********PAGE STAGES**********/
     private function internships_index()
     {
+        //Section d'introduction
+
+        // Title Intro
         $this->crud->addField(
             [
-                'name' => 'content_text',
-                'type' => 'wysiwyg',
-                'label' => 'Texte d\'introduction',
+                'name' => 'stage_titleIntro',
+                'type' => 'text',
+                'label' => 'Titre de l\'introduction',
+                'fake' => true,
+                'store_in' => 'extras',
+                'tab' => 'Section d\'introduction'
+            ]
+        );
+
+        // Text Intro
+        $this->crud->addField(
+            [
+                'name' => 'stage_textIntro',
+                'type' => 'simplemde',
+                'label' => 'Texte de l\'introduction',
+                'fake' => true,
+                'store_in' => 'extras',
                 'tab' => 'Section d\'introduction'
             ]
         );
     }
 
+    /**********PAGE COMPÉTITIONS**********/
     private function competitions_index()
     {
+        //Section d'introduction
+
+        // Title Intro
         $this->crud->addField(
             [
-                'name' => 'content_text',
-                'type' => 'wysiwyg',
-                'label' => 'Texte d\'introduction',
+                'name' => 'compet_titleIntro',
+                'type' => 'text',
+                'label' => 'Titre de l\'introduction',
+                'fake' => true,
+                'store_in' => 'extras',
+                'tab' => 'Section d\'introduction'
+            ]
+        );
+
+        // Text Intro
+        $this->crud->addField(
+            [
+                'name' => 'compet_textIntro',
+                'type' => 'simplemde',
+                'label' => 'Texte de l\'introduction',
+                'fake' => true,
+                'store_in' => 'extras',
                 'tab' => 'Section d\'introduction'
             ]
         );
     }
 
+    /**********PAGE ACTUALITÉS**********/
     private function articles_index()
     {
+        //Section d'introduction
+
+        // Title Intro
         $this->crud->addField(
             [
-                'name' => 'content_text',
-                'type' => 'wysiwyg',
-                'label' => 'Texte d\'introduction',
+                'name' => 'actu_titleIntro',
+                'type' => 'text',
+                'label' => 'Titre de l\'introduction',
+                'fake' => true,
+                'store_in' => 'extras',
+                'tab' => 'Section d\'introduction'
+            ]
+        );
+
+        // Text Intro
+        $this->crud->addField(
+            [
+                'name' => 'actu_textIntro',
+                'type' => 'simplemde',
+                'label' => 'Texte de l\'introduction',
+                'fake' => true,
+                'store_in' => 'extras',
                 'tab' => 'Section d\'introduction'
             ]
         );
     }
 
+    /**********PAGE EQUIPEMENTS**********/
     private function amenities_index()
     {
+        //Section d'introduction
+
+        // Title Intro
         $this->crud->addField(
             [
-                'name' => 'content_text',
-                'type' => 'wysiwyg',
-                'label' => 'Texte d\'introduction',
+                'name' => 'equipement_titleIntro',
+                'type' => 'text',
+                'label' => 'Titre de l\'introduction',
+                'fake' => true,
+                'store_in' => 'extras',
+                'tab' => 'Section d\'introduction'
+            ]
+        );
+
+        // Text Intro
+        $this->crud->addField(
+            [
+                'name' => 'equipement_textIntro',
+                'type' => 'simplemde',
+                'label' => 'Texte de l\'introduction',
+                'fake' => true,
+                'store_in' => 'extras',
                 'tab' => 'Section d\'introduction'
             ]
         );

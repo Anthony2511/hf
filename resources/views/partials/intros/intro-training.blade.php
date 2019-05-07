@@ -9,10 +9,9 @@
     </figure>
     <div class="intro__bloc wrap">
         <div class="intro__bloc-text">
-            <h2 class="title title__blue title__left" aria-level="2" role="heading">Notre page d'entrainements</h2>
+            <h2 class="title title__blue title__left" aria-level="2" role="heading">{{ $page->training_titleIntro }}</h2>
             <p class="intro__text">
-                Vous retrouvez ici une liste détaillée de tous les entrainements qui sont dispersés
-                dans nos 4 clubs. Vous pouvez également retrouvez une liste de tous nos entraîneurs.
+                {{ $page->training_textIntro }}
             </p>
             <a href="{{route('entraineurs')}}" class="button" title="Vers les entraîneurs">
                 <span class="button-blue__left">Voir nos entraîneurs</span>

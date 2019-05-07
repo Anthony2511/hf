@@ -9,10 +9,9 @@
     </figure>
     <div class="intro__bloc wrap">
         <div class="intro__bloc-text">
-            <h2 class="title title__blue title__left" aria-level="2" role="heading">Notre page d'entraîneurs</h2>
+            <h2 class="title title__blue title__left" aria-level="2" role="heading">{{ $page->trainer_titleIntro }}</h2>
             <p class="intro__text">
-                Les Hautes-Fagnes se composent aujourd'hui d'une dizaine d'entraîneurs,
-                tous très impliqués dans leurs disciplines respectives.
+                {{ $page->trainer_textIntro }}
             </p>
             <a href="{{ route('entrainements') }}" class="button" title="Vers les entrainements">
                 <span class="button-blue__left">Voir nos entrainements</span>
