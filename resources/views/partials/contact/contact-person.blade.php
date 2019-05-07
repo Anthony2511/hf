@@ -1,4 +1,4 @@
-<div class="contact-person">
+<div class="contact-person wrap">
     <div class="contact-person__container">
         <div class="contact-person__bloc">
             <figure class="contact-person__figure">
@@ -10,7 +10,7 @@
             <h3 aria-level="3" role="heading" class="contact-person__title">Verviers</h3>
             <ul class="contact-person__list">
                 <li class="contact-person__item contact-person__item--place">Place d'Arles, 4800 Verviers</li>
-                <li><a href="mailto:philippe.devel@unamur.be" class="contact-person__item contact-person__item--email">philippe.devel@unamur.be</a></li>
+                <li class="contact-person__item contact-person__item--email"><a href="mailto:philippe.devel@unamur.be">philippe.devel@unamur.be</a></li>
                 <li class="contact-person__item contact-person__item--tel">0497/81 46 63</li>
             </ul>
         </div>
@@ -24,7 +24,7 @@
             <h3 aria-level="3" role="heading" class="contact-person__title">Aywaille</h3>
             <ul class="contact-person__list">
                 <li class="contact-person__item contact-person__item--place">Rue du préfond, 4920 Aywaille</li>
-                <li><a href="mailto:philippe.devel@unamur.be" class="contact-person__item contact-person__item--email">hf.aywaille@gmail.com</a></li>
+                <li class="contact-person__item contact-person__item--email"><a href="mailto:philippe.devel@unamur.be">hf.aywaille@gmail.com</a></li>
                 <li class="contact-person__item contact-person__item--tel">0476/58 20 46</li>
             </ul>
         </div>
@@ -38,7 +38,7 @@
             <h3 aria-level="3" role="heading" class="contact-person__title">Stavelot</h3>
             <ul class="contact-person__list">
                 <li class="contact-person__item contact-person__item--place">Site des Bressaix, 4970 Stavelot</li>
-                <li><a href="mailto:philippe.devel@unamur.be" class="contact-person__item contact-person__item--email">legrosandre@hotmail.com</a></li>
+                <li class="contact-person__item contact-person__item--email"><a href="mailto:philippe.devel@unamur.be">legrosandre@hotmail.com</a></li>
                 <li class="contact-person__item contact-person__item--tel">0497/81 46 53</li>
             </ul>
         </div>
@@ -52,7 +52,7 @@
             <h3 aria-level="3" role="heading" class="contact-person__title">Saint-Vith</h3>
             <ul class="contact-person__list">
                 <li class="contact-person__item contact-person__item--place">Ecole Klosterstraße 38, 4780 St-Vith</li>
-                <li><a href="mailto:philippe.devel@unamur.be" class="contact-person__item contact-person__item--email">jhs105@hotmail.com</a></li>
+                <li class="contact-person__item contact-person__item--email"><a href="mailto:philippe.devel@unamur.be">jhs105@hotmail.com</a></li>
                 <li class="contact-person__item contact-person__item--tel">0497/04 08 39</li>
             </ul>
         </div>

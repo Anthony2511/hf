@@ -1,0 +1,56 @@
+.contact-person
+  padding-top s(50)
+  &__container
+    display flex
+    flex-flow row nowrap
+    justify-content space-between
+    padding-bottom s($marginTitle)
+    font-family 'opensans'
+  &__bloc
+    background-color $cWhite
+    text-align center
+    padding s($paddingBloc)
+    border-radius 10px
+    position relative
+    max-width 23.5%
+  &__figure
+    width s(100)
+    height s(100)
+    border-radius 50%
+    overflow hidden
+    margin 0 auto
+    position absolute
+    left 0
+    right 0
+    top s(-50)
+    & img
+      display inline
+      margin 0 auto
+      height 100%
+      width auto
+  &__title
+    font-family 'montserrat'
+    color $cDarkBlue
+    font-weight 600
+    font-size s(25)
+    margin s(40,25) 0 s(20,25)
+  &__item
+    color $cDarkBlue
+    line-height 1.6
+    margin-bottom s(10)
+    &--place
+      &:before
+        icon('location')
+        color $cOrange
+        margin-right s(10)
+    &--email
+      &:before
+        icon('user')
+        color $cOrange
+        margin-right s(10)
+    &--tel
+      &:before
+        icon('phone')
+        color $cOrange
+        margin-right s(10)
+
