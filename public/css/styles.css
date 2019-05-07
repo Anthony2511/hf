@@ -837,6 +837,18 @@ input[type="search"]::-webkit-search-decoration {
 .about__end-bloc + .about__end-bloc {
   width: 40%;
 }
+/*****CONTACT*****/
+.contact-intro {
+  padding: 3.125em 0;
+}
+.contact-intro__text {
+  font-family: 'opensans';
+  color: #2c3e50;
+  margin: 1.875em auto 0;
+  line-height: 1.6;
+  width: 50%;
+  text-align: center;
+}
 /*****SINGLE*****/
 /*****ATHLETE*****/
 .athlete-intro {

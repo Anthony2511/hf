@@ -1,11 +1,8 @@
 <div class="about__intro wrap">
     <section class="about__bloc about__bloc--one">
-        <h2 aria-level="2" role="heading" class="title title__blue title__left">{{ $page->meta_title }}</h2>
+        <h2 aria-level="2" role="heading" class="title title__blue title__left">{{ $page->title_intro }}</h2>
         <p class="about__text">
-            Les Hautes-Fagnes se composent aujourd'hui de 400 athlètes dossardés à la ligue belge
-            francophone d'athlétisme (LBFA), encadrés par une structure solide de moniteurs
-            (pour école d'athlétisme de 8 à 12 ans), entraîneurs et dirigeants, ce qui en fait
-            un des clubs les plus importants de la Province .
+            {{ $page->text_intro }}
         </p>
         <figure class="about__figure">
             <img src="../img/photo.jpg"
@@ -23,12 +20,9 @@
                  width="500"
                  height="501">
         </figure>
-        <h2 aria-level="2" role="heading" class="about__subtitle">Un club vieux de 100 ans</h2>
+        <h2 aria-level="2" role="heading" class="about__subtitle">{{ $page->title_secondIntro }}</h2>
         <p class="about__text">
-            Les Hautes-Fagnes se composent aujourd'hui de 400 athlètes dossardés à la ligue belge francophone
-            d'athlétisme (LBFA), encadrés par une structure solide de moniteurs
-            (pour école d'athlétisme de 8 à 12 ans), entraîneurs et dirigeants, ce qui en fait un des
-            clubs les plus importants de la Province .
+           {{ $page->text_secondIntro }}
         </p>
     </section>
 </div>
