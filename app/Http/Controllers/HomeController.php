@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Athlete;
+use Backpack\PageManager\app\Models\Page;
 
 class HomeController extends Controller
 {
@@ -14,7 +16,17 @@ class HomeController extends Controller
 
     public function index()
     {
-        return view('pages.home');
+
+        $page = Page::where('template', 'home_index')->firstOrFail();
+        $this->data['athletes'] = Athlete::inRandomOrder()->orderBy('lastname', 'ASC')->limit(3)->get();
+
+        $this->data['title'] = $page->title;
+        $this->data['page'] = $page->withFakes();
+
+        return view('pages.' . $page->template, $this->data, [
+            'athletes' => $this->data['athletes']
+        ]);
+
     }
 
     /**

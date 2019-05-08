@@ -196,7 +196,7 @@ class AthleteCrudController extends CrudController
         ]);
 
         // Records Field
-        $this->crud->addField
+        /*$this->crud->addField
         ([
             'name' => 'records',
             'label' => 'Records',
@@ -208,7 +208,7 @@ class AthleteCrudController extends CrudController
                 'lieu' => 'Lieu',
                 'date' => 'Date'
             ]
-        ]);
+        ]);*/
 
         //Slug Field
         $this->crud->addField([
