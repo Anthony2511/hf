@@ -18,16 +18,22 @@
                     <p class="trainings__text">
                         {{$training->content}}
                     </p>
-                    <a href="{{url('entraineurs/' . $training->trainer['slug'] )}}" class="trainings__trainers">
-                        <figure class="trainings__figure">
-                            <img src="../img/author.jpg"
-                                 srcset="../img/author.jpg 2x"
-                                 alt="Photo de l'entraineur : {{ $training->trainer['fullname'] }}"
-                                 width="30"
-                                 height="30">
-                        </figure>
-                        <span class="trainings__trainer-name">{{$training->trainer['fullname']}}</span>
-                    </a>
+
+                    @if(!empty ($training->trainer))
+                        <a href="{{url('entraineurs/' . $training->trainer['slug'] )}}" class="trainings__trainers">
+                            <figure class="trainings__figure">
+                                <img src="./img/author.jpg"
+                                     srcset="../img/author.jpg 2x"
+                                     alt="Photo de l'entraineur : {{ $training->trainer['fullname'] }}"
+                                     width="30"
+                                     height="30">
+                            </figure>
+                            <span class="trainings__trainer-name">{{$training->trainer['fullname']}}</span>
+                        </a>
+                    @else
+                        <p class="empty-color">Aucune entraîneur</p>
+                    @endif
+
                 </div>
             @endforeach
         </div>

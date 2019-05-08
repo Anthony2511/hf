@@ -14,17 +14,17 @@
         </a>
         <div class="nav__menu-bloc">
             <ul class="nav__menu">
-                <li class="nav__item">
+                <li class="nav__item nav__item-sub">
                     <a href="?union" class="nav__item-sub">
                         <span>Union Athlétique</span>
                     </a>
-                    <div class="nav__sub-nav">
+                    <div class="nav__sub-nav nav__sub-nav--width">
                         <ul class="sub-nav-group">
-                            <li>
-                                <a href="{{ route('a-propos') }}" class="{{setActive(['a-propos'])}}">&Aacute; Propos</a>
+                            <li class="nav__item">
+                                <a href="{{ route('a-propos') }}" class="{{setActive(['a-propos'])}}"><span>&Aacute; Propos</span></a>
                             </li>
                             <li>
-                                <a href="{{ route('equipements') }}" class="{{setActive(['equipements'])}}">&Eacute;quipements et tarifs</a>
+                                <a href="{{ route('equipements') }}" class="{{setActive(['equipements'])}}">Nos &Eacute;quipements</a>
                             </li>
                             <li>
                                 <a href="#">Nous rejoindre</a>
@@ -47,7 +47,7 @@
                         <span>Actualités</span>
                     </a>
                 </li>
-                <li class="nav__item">
+                <li class="nav__item nav__item-sub">
                     <a href="?agenda" class="nav__item-sub">
                         <span>Agenda</span>
                     </a>

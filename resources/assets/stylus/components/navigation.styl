@@ -35,6 +35,9 @@
       letter-spacing 1px
       font-weight 400
       text-shadow: 0 0 1px rgba(255,255,255,0.3)
+      &.active
+        position relative
+        color $cDarkOrange
       &:after
         position absolute
         top 100%
@@ -49,14 +52,20 @@
         transform: translateY(10px)
   &__item + &__item
     margin-left s(50)
+  &__item-sub
+    & a
+      &:after
+        content none
   &__sub-nav
     position absolute
     display none
-    top 2.2em
+    top 2.5em
     margin-top -1px
     padding 0.5em 1em
-    background-color $cLightGrey
+    background-color $cLightGreyThree
     border-radius 10px
+    &--width
+      width s(215)
     &.open
       display: block
     & ul
@@ -76,22 +85,27 @@
         border-width 0 9.5px 11px 9.5px
         border-style solid
         border-style inset
-        border-color transparent transparent $cLightGrey transparent
+        border-color transparent transparent $cLightGreyThree transparent
     & li
       display block
       list-style-type none
       margin 0
       padding 10px
-      color $cDarkBlue
+      color $cBlue
       font-weight 400
       & a
-        &:after
-          content none
+        transition .3s ease-in-out
+        width 100%
+        &.active
+          position relative
+          color $cDarkOrange
+        &:hover
+          color $cDarkOrange
+          transition .3s ease-in-out
 
 
-.active
-  position relative
-  color blue
+
+
 
 .nav__item a:hover::after,
 .nav__item a:focus::after {
