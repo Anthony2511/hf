@@ -380,6 +380,13 @@ input[type="search"]::-webkit-search-decoration {
   background-color: #fe712a;
   padding: 0.555555555555556em 1.666666666666667em;
   border-radius: 0 10px 10px 0;
+  display: inline-block;
+}
+.home-athletes__disciplines span:after {
+  content: ', ';
+}
+.home-athletes__disciplines span:last-child:after {
+  content: none;
 }
 .home-athletes__link {
   position: absolute;

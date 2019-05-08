@@ -14,15 +14,17 @@
                     <section class="home-athletes__infos">
                         <h3 class="home-athletes__infos-title" role="heading" aria-level="3">{{ $athlete->firstname }}
                             <span>{{ $athlete->lastname }}</span></h3>
-                        <span class="home-athletes__disciplines">
+                        <div class="home-athletes__disciplines">
                             @if(!empty (count($athlete->disciplines)))
                                 @foreach($athlete->disciplines->take(3) as $discipline)
-                                    {{$discipline->name}} {{ucfirst(substr($discipline->gender,-6,1))}}
+                                    <span>
+                                           {{$discipline->name}} {{ucfirst(substr($discipline->gender,-6,1))}}
+                                    </span>
                                 @endforeach
                             @else
                                 N/A
                             @endif
-                        </span>
+                        </div>
                     </section>
                     <a href="{{url('athletes/' . $athlete->slug )}}" class="home-athletes__link"
                        title="Vers la page de l'athlète : {{ $athlete->fullname }}"></a>

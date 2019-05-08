@@ -54,6 +54,13 @@
     background-color $cDarkOrange
     padding s(10,18) s(30,18)
     border-radius 0 10px 10px 0
+    display inline-block
+    & span
+      &:after
+        content ', '
+      &:last-child
+        &:after
+          content none
   &__link
     position absolute
     top 0

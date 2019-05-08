@@ -12,15 +12,17 @@
             <section class="home-athletes__infos">
                 <h4 class="home-athletes__infos-title">{{$athlete->firstname}}
                     <span>{{$athlete->lastname}}</span></h4>
-                <span class="home-athletes__disciplines">
+                <div class="home-athletes__disciplines">
                     @if(!empty (count($athlete->disciplines)))
                         @foreach($athlete->disciplines->take(3) as $discipline)
-                            {{$discipline->name}} {{ucfirst(substr($discipline->gender,-6,1))}}
+                            <span>
+                                 {{$discipline->name}} {{ucfirst(substr($discipline->gender,-6,1))}}
+                            </span>
                         @endforeach
                     @else
                         N/A
                     @endif
-                </span>
+                </div>
             </section>
             <a href="{{url('athletes/' . $athlete->slug )}}"
                class="home-athletes__link"
