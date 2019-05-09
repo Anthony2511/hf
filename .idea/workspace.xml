@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b0b97a5d-6dca-40c8-a8f7-cc4d5e556a82" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/app/PageTemplates.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/PageTemplates.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/partials/contact/contact-person.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/contact/contact-person.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -60,8 +59,8 @@
       <file leaf-file-name="contact-person.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/partials/contact/contact-person.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="531">
-              <caret line="55" column="107" selection-start-line="55" selection-start-column="107" selection-end-line="55" selection-end-column="107" />
+            <state relative-caret-position="483">
+              <caret line="49" column="51" lean-forward="true" selection-start-line="49" selection-start-column="51" selection-end-line="49" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -637,12 +636,12 @@
       <workItem from="1557066481283" duration="340000" />
       <workItem from="1557221186235" duration="13597000" />
       <workItem from="1557300951796" duration="9517000" />
-      <workItem from="1557386711699" duration="2888000" />
+      <workItem from="1557386711699" duration="3441000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="321806000" />
+    <option name="totallyTimeSpent" value="322359000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1031,8 +1030,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/partials/contact/contact-person.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="531">
-          <caret line="55" column="107" selection-start-line="55" selection-start-column="107" selection-end-line="55" selection-end-column="107" />
+        <state relative-caret-position="483">
+          <caret line="49" column="51" lean-forward="true" selection-start-line="49" selection-start-column="51" selection-end-line="49" selection-end-column="51" />
         </state>
       </provider>
     </entry>
