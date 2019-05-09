@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 use Backpack\CRUD\CrudTrait;
 use Cviebrock\EloquentSluggable\Sluggable;
 use Cviebrock\EloquentSluggable\SluggableScopeHelpers;
+use Carbon\Carbon;
 
 class Article extends Model
 {
@@ -73,6 +74,12 @@ class Article extends Model
         } else {
             return $this->image;
         }
+    }
+
+    public function getFullDate()
+    {
+        setlocale(LC_TIME, 'fr_FR.utf-8');
+        return Carbon::parse($this->date)->formatLocalized('%d/%m/%Y');
     }
 
     /*

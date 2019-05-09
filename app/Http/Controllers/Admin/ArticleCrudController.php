@@ -105,8 +105,9 @@ class ArticleCrudController extends CrudController
         $this->crud->addField(
             [
                 'name' => 'introduction',
-                'type' => 'wysiwyg',
-                'label' => 'Introduction de l\'article'
+                'type' => 'simplemde',
+                'label' => 'Introduction de l\'article',
+                'hint' => 'Maximum 175 caractères'
             ]
         );
 
@@ -114,7 +115,7 @@ class ArticleCrudController extends CrudController
         $this->crud->addField(
             [
                 'name' => 'content',
-                'type' => 'wysiwyg',
+                'type' => 'simplemde',
                 'label' => 'Contenu de l\'article'
             ]
         );

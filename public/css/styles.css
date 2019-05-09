@@ -732,6 +732,7 @@ input[type="search"]::-webkit-search-decoration {
 .news-home__text {
   line-height: 1.6;
   margin-bottom: 1.875em;
+  min-height: 4.6875em;
 }
 .news-home__comments {
   font-weight: 700;
