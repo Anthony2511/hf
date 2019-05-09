@@ -92,6 +92,12 @@ class Article extends Model
     |--------------------------------------------------------------------------
     */
 
+    public function scopePublished($query)
+    {
+        return $query->where('date', '<=', date('Y-m-d'))
+            ->orderBy('date', 'DESC');
+    }
+
     /*
     |--------------------------------------------------------------------------
     | ACCESORS
