@@ -55,3 +55,14 @@
 
 <li><a href="{{ url(config('backpack.base.route_prefix').'/page') }}"><i class="fa fa-file-o"></i>
         <span>Pages</span></a></li>
+
+
+<!-- Users, Roles Permissions -->
+<li class="treeview">
+    <a href="#"><i class="fa fa-group"></i> <span>Utilisateurs</span> <i class="fa fa-angle-left pull-right"></i></a>
+    <ul class="treeview-menu">
+        <li><a href="{{ backpack_url('user') }}"><i class="fa fa-user"></i> <span>Utilisateurs</span></a></li>
+        <li><a href="{{ backpack_url('role') }}"><i class="fa fa-group"></i> <span>Rôles</span></a></li>
+        <li><a href="{{ backpack_url('permission') }}"><i class="fa fa-key"></i> <span>Permissions</span></a></li>
+    </ul>
+</li>
