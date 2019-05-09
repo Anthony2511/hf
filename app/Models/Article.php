@@ -28,7 +28,8 @@ class Article extends Model
         'introduction',
         'content',
         'image',
-        'author_id'
+        'author_id',
+        'date'
     );
     // protected $hidden = [];
     // protected $dates = [];
@@ -105,9 +106,8 @@ class Article extends Model
         }
 
         $title = $this->title;
-        $date = $this->date;
 
-        return $date . '-' . $title;
+        return $title;
     }
 
     /*

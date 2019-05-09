@@ -40,7 +40,7 @@ class ArticleCrudController extends CrudController
             [
                 'name' => 'title',
                 'type' => 'text',
-                'label' => 'Titre de la compétition'
+                'label' => 'Titre de l\'article'
             ]
         );
 
@@ -91,25 +91,14 @@ class ArticleCrudController extends CrudController
         $this->crud->addField([
             'name'  => 'date',
             'label' => 'Date de publication',
-            'type'  => 'date_picker',
-            // optional:
-            'date_picker_options' => [
-                'todayBtn' => 'linked',
-                'format' => 'dd-mm-yyyy',
-                'language' => 'fr'
-            ],
+            'type'  => 'date',
+            'value' => date('Y-m-d')
         ], 'create');
 
         $this->crud->addField([
             'name'  => 'date',
             'label' => 'Date de publication',
-            'type'  => 'date_picker',
-            // optional:
-            'date_picker_options' => [
-                'todayBtn' => 'linked',
-                'format' => 'dd-mm-yyyy',
-                'language' => 'fr'
-            ],
+            'type'  => 'date',
         ], 'update');
 
         // Introduction Field
@@ -135,7 +124,7 @@ class ArticleCrudController extends CrudController
             'name' => 'slug',
             'label' => "Slug (URL)",
             'type' => 'text',
-            'hint' => 'Est automatiquement généré à partir du date-titre si pas remplit.'
+            'hint' => 'Est automatiquement généré à partir du titre si pas remplit.'
         ]);
 
         // add asterisk for fields that are required in ArticleRequest
