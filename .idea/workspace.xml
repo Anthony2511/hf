@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b0b97a5d-6dca-40c8-a8f7-cc4d5e556a82" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partials/listing/listing-trainings.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/listing/listing-trainings.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/PageTemplates.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/PageTemplates.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/contact/contact-person.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/contact/contact-person.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -39,11 +39,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="listing-trainings.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="listing-trainings.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/partials/listing/listing-trainings.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="276">
               <caret line="24" column="51" lean-forward="true" selection-start-line="24" selection-start-column="51" selection-end-line="24" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PageTemplates.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/PageTemplates.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="485">
+              <caret line="494" column="36" selection-start-line="494" selection-start-column="36" selection-end-line="494" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contact-person.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/partials/contact/contact-person.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="531">
+              <caret line="55" column="107" selection-start-line="55" selection-start-column="107" selection-end-line="55" selection-end-column="107" />
             </state>
           </provider>
         </entry>
@@ -92,7 +110,6 @@
         <option value="$PROJECT_DIR$/resources/assets/stylus/components/contact/contact-intro.styl" />
         <option value="$PROJECT_DIR$/resources/views/partials/about/about-intro.blade.php" />
         <option value="$PROJECT_DIR$/resources/assets/stylus/styles.styl" />
-        <option value="$PROJECT_DIR$/resources/views/partials/contact/contact-person.blade.php" />
         <option value="$PROJECT_DIR$/resources/assets/stylus/components/contact/contact-person.styl" />
         <option value="$PROJECT_DIR$/resources/views/pages/contact_index.blade.php" />
         <option value="$PROJECT_DIR$/resources/assets/stylus/components/single/internship/intro-internship.styl" />
@@ -108,7 +125,6 @@
         <option value="$PROJECT_DIR$/resources/views/partials/intros/intro-internship.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/partials/intros/intro-trainer.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/partials/intros/intro-training.blade.php" />
-        <option value="$PROJECT_DIR$/app/PageTemplates.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/AthleteController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/AthleteCrudController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
@@ -121,6 +137,8 @@
         <option value="$PROJECT_DIR$/resources/assets/stylus/components/navigation.styl" />
         <option value="$PROJECT_DIR$/resources/assets/stylus/base/base.styl" />
         <option value="$PROJECT_DIR$/resources/views/partials/listing/listing-trainings.blade.php" />
+        <option value="$PROJECT_DIR$/app/PageTemplates.php" />
+        <option value="$PROJECT_DIR$/resources/views/partials/contact/contact-person.blade.php" />
       </list>
     </option>
   </component>
@@ -619,12 +637,12 @@
       <workItem from="1557066481283" duration="340000" />
       <workItem from="1557221186235" duration="13597000" />
       <workItem from="1557300951796" duration="9517000" />
-      <workItem from="1557386711699" duration="1580000" />
+      <workItem from="1557386711699" duration="2888000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="320498000" />
+    <option name="totallyTimeSpent" value="321806000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -784,13 +802,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/partials/contact/contact-person.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1242">
-          <caret line="54" column="76" selection-start-line="54" selection-start-column="76" selection-end-line="54" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/partials/about/about-record.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
@@ -888,13 +899,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="690">
           <caret line="210" column="13" selection-start-line="210" selection-start-column="13" selection-end-line="210" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/PageTemplates.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="499">
-          <caret line="357" column="30" lean-forward="true" selection-start-line="357" selection-start-column="30" selection-end-line="357" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -1015,6 +1019,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
           <caret line="24" column="51" lean-forward="true" selection-start-line="24" selection-start-column="51" selection-end-line="24" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/PageTemplates.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="485">
+          <caret line="494" column="36" selection-start-line="494" selection-start-column="36" selection-end-line="494" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/partials/contact/contact-person.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="531">
+          <caret line="55" column="107" selection-start-line="55" selection-start-column="107" selection-end-line="55" selection-end-column="107" />
         </state>
       </provider>
     </entry>
