@@ -18,4 +18,11 @@ class ArticleController extends Controller
 
         return view('pages.articles.' . $page->template, $this->data);
     }
+
+    public function show( Article $article)
+    {
+        return view('pages.articles.articles_show', [
+            'article' => $article
+        ]);
+    }
 }
