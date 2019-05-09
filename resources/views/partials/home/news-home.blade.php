@@ -7,10 +7,10 @@
                     <div class="news-home__bloc">
                         <figure class="news-home__figure">
                             <div class="news-home__bloc-figure">
-                                <time class="news-home__date">16/11/2018</time>
-                                <img src="../img/photo-news.jpg"
-                                     srcset="../img/photo-news.jpg 2x"
-                                     alt="Record du club Martin Reip"
+                                <time class="news-home__date" datetime="{{ $article->date }}">{{ $article->getFullDate() }}</time>
+                                <img src="{{ $article->getImageProfile('_profile.jpg') }}"
+                                     srcset="{{ $article->getImageProfile('_profile.jpg') }} 2x"
+                                     alt="{{ $article->title }}"
                                      width="541"
                                      height="250">
                             </div>
@@ -20,18 +20,15 @@
                                 <figure class="news-home__author-figure">
                                     <img src="../img/author.jpg"
                                          srcset="../img/author.jpg 2x"
-                                         alt="Photo de l'auteur : Anthony Beaumecker"
+                                         alt="Photo de l'auteur : {{ $article->author->fullname }}"
                                          width="30"
                                          height="30">
                                 </figure>
-                                <span class="news-home__author-name">par <span>Anthony Beaumecker</span></span>
+                                <span class="news-home__author-name">par <span>{{ $article->author->fullname }}</span></span>
                             </div>
                             <h3 aria-level="3" role="heading" class="news-home__title">{{ $article->title }}</h3>
                             <p class="news-home__text">
-                                Bravo à Martin Reip qui termine son octathlon, à
-                                Schaerbeek le we dernier, avec un total de 4622 points.
-                                Record personnel et surtout nouveau record du club! Bravo
-                                à lui :-)
+                                {{ $article->introduction }}
                             </p>
                             <span class="news-home__comments"> 3 commentaires</span>
                         </section>
@@ -39,7 +36,7 @@
                     </div>
                 @endforeach
             </div>
-            <a href="{{route('articles')}}" class="button">
+            <a href="{{route('articles')}}" class="button" title="Vers l'article : {{ $article->title }}">
                 <span class="button-blue__left">Voir toutes les actualités</span>
                 <i class="button-blue__right"></i>
             </a>

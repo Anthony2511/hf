@@ -5,10 +5,10 @@
             <div class="news-home__bloc">
                 <figure class="news-home__figure">
                     <div class="news-home__bloc-figure">
-                        <time class="news-home__date">{{ $article->getFullDate() }}</time>
+                        <time class="news-home__date" datetime="{{ $article->date }}">{{ $article->getFullDate() }}</time>
                         <img src="{{ $article->getImageProfile('_profile.jpg') }}"
                              srcset="{{ $article->getImageProfile('_profile.jpg') }} 2x"
-                             alt="Record du club Martin Reip"
+                             alt="{{ $article->title }}"
                              width="541"
                              height="250">
                     </div>

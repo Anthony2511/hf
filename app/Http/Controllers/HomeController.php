@@ -20,7 +20,7 @@ class HomeController extends Controller
 
         $page = Page::where('template', 'home_index')->firstOrFail();
         $this->data['athletes'] = Athlete::inRandomOrder()->orderBy('lastname', 'ASC')->limit(3)->get();
-        $this->data['articles'] = Article::orderBy('date', 'ASC')->limit(2)->get();
+        $this->data['articles'] = Article::orderBy('date', 'DESC')->limit(2)->get();
 
         $this->data['title'] = $page->title;
         $this->data['page'] = $page->withFakes();
