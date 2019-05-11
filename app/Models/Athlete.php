@@ -32,10 +32,15 @@ class Athlete extends Model
         'slug',
         'division_id',
         'active',
-        'profession'
+        'profession',
+        'records'
     );
     // protected $hidden = [];
     // protected $dates = [];
+
+    protected $casts = array(
+        'array' => 'records'
+    );
 
     /**
      * Return the sluggable configuration array for this model.

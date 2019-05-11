@@ -13,14 +13,15 @@
             <tbody class="athlete-record__table-tbody">
             @if(!empty($athlete->records))
                 <?php $records = json_decode($athlete->records, true); ?>
-                <tr class="athlete-record__table-row">
-                    @foreach($records as $row)
+                @foreach($records as $row)
+                    <tr class="athlete-record__table-row">
                         <td>{{ $row['discipline'] }}</td>
                         <td>{{ $row['record'] }}</td>
                         <td>{{ $row['lieu'] }}</td>
                         <td>{{ $row['date'] }}</td>
-                    @endforeach
-                </tr>
+                    </tr>
+                @endforeach
+
             @endif
             </tbody>
         </table>
