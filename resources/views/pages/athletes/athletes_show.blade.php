@@ -20,7 +20,7 @@
     @include('partials.single.athlete.gallery_athlete')
     @include('partials.single.athlete.trophies_athlete')
 
-    @foreach($athlete->trainings as $training)
+    {{--@foreach($athlete->trainings as $training)
         <p>{{ $training->specifictraining }}</p>
-    @endforeach
+    @endforeach--}}
 @endsection

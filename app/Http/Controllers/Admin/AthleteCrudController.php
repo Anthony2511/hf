@@ -60,7 +60,8 @@ class AthleteCrudController extends CrudController
             [
                 'name' => 'firstname',
                 'type' => 'text',
-                'label' => 'Prénom'
+                'label' => 'Prénom',
+                'tab' => 'Informations générales'
             ]
         );
 
@@ -69,7 +70,8 @@ class AthleteCrudController extends CrudController
             [
                 'name' => 'lastname',
                 'type' => 'text',
-                'label' => 'Nom'
+                'label' => 'Nom',
+                'tab' => 'Informations générales'
             ]
         );
 
@@ -81,6 +83,7 @@ class AthleteCrudController extends CrudController
             'upload' => true,
             'crop' => true, // set to true to allow cropping, false to disable
             'aspect_ratio' => 0, // ommit or set to 0 to allow any aspect ratio
+            'tab' => 'Informations générales'
             // 'disk' => 's3_bucket', // in case you need to show images from a different disk
             // 'prefix' => 'uploads/images/profile_pictures/' // in case your db value is only the file name (no path), you can use this to prepend your path to the image src (in HTML), before it's shown to the user;
         ]);
@@ -96,6 +99,7 @@ class AthleteCrudController extends CrudController
                 'format' => 'dd-mm-yyyy',
                 'language' => 'fr'
             ],
+            'tab' => 'Informations générales'
         ]);
 
         // Status Field
@@ -107,10 +111,11 @@ class AthleteCrudController extends CrudController
                     'novice' => 'Novice',
                     'intermédiaire' => 'Intermédiaire',
                     'haut niveau' => 'Haut niveau'
-                    ],
+                ],
                 'allows_null' => false,
                 'default' => 'novice',
-                'label' => 'Statut de l\'athlète'
+                'label' => 'Statut de l\'athlète',
+                'tab' => 'Informations générales'
             ]
         );
 
@@ -119,7 +124,8 @@ class AthleteCrudController extends CrudController
             [
                 'name' => 'profession',
                 'type' => 'text',
-                'label' => 'Profession'
+                'label' => 'Profession',
+                'tab' => 'Informations générales'
             ]
         );
 
@@ -131,7 +137,8 @@ class AthleteCrudController extends CrudController
                 'options' => ['actif' => 'Actif', 'inactif' => 'Inactif'],
                 'allows_null' => false,
                 'default' => 'actif',
-                'label' => 'Activité de l\'athlète'
+                'label' => 'Activité de l\'athlète',
+                'tab' => 'Informations générales'
             ]
         );
 
@@ -144,7 +151,8 @@ class AthleteCrudController extends CrudController
             'entity' => 'trainers',
             'attribute' => 'fullname',
             'model' => "App\Models\Trainer",
-            'pivot' => true
+            'pivot' => true,
+            'tab' => 'Informations générales'
         ]);
 
         // Training field
@@ -156,7 +164,8 @@ class AthleteCrudController extends CrudController
             'entity' => 'trainings',
             'attribute' => 'specifictraining',
             'model' => "App\Models\Training",
-            'pivot' => true
+            'pivot' => true,
+            'tab' => 'Entrainements'
         ]);
 
         // Discipline field
@@ -168,7 +177,8 @@ class AthleteCrudController extends CrudController
             'entity' => 'disciplines',
             'attribute' => 'specificdiscipline',
             'model' => "App\Models\Discipline",
-            'pivot' => true
+            'pivot' => true,
+            'tab' => 'Informations générales'
         ]);
 
         // Trophie field
@@ -181,7 +191,8 @@ class AthleteCrudController extends CrudController
             'attribute' => 'fullname',
             'model' => "App\Models\Trophie",
             'pivot' => true,
-            'hint' => 'Plusieurs athlètes peuvent avoir le même trophée si c\'est un trophée collectif'
+            'hint' => 'Plusieurs athlètes peuvent avoir le même trophée si c\'est un trophée collectif',
+            'tab' => 'Trophées'
         ]);
 
         // Division field
@@ -192,7 +203,8 @@ class AthleteCrudController extends CrudController
             'name' => 'division_id',
             'entity' => 'division',
             'attribute' => 'specificdivision',
-            'model' => "App\Models\Division"
+            'model' => "App\Models\Division",
+            'tab' => 'Informations générales'
         ]);
 
         // Records Field
@@ -207,7 +219,8 @@ class AthleteCrudController extends CrudController
                 'record' => 'Record',
                 'lieu' => 'Lieu',
                 'date' => 'Date'
-        ]
+            ],
+            'tab' => 'Records'
         ]);
 
         // Evolution Field
@@ -224,7 +237,8 @@ class AthleteCrudController extends CrudController
                 'disciplinetwo' => 'Discipline 2',
                 'disciplinethree' => 'Discipline 3'
             ],
-            'hint' => 'Pour les disciplines, c\'est dans l\'ordre des disciplines ajoutées'
+            'hint' => 'Pour les disciplines, c\'est dans l\'ordre des disciplines ajoutées',
+            'tab' => 'Évolution'
         ]);
 
         //Slug Field
@@ -232,7 +246,8 @@ class AthleteCrudController extends CrudController
             'name' => 'slug',
             'label' => "Slug (URL)",
             'type' => 'text',
-            'hint' => 'Est automatiquement généré à partir du nom-prénom si pas remplit.'
+            'hint' => 'Est automatiquement généré à partir du nom-prénom si pas remplit.',
+            'tab' => 'Informations générales'
         ]);
 
         // add asterisk for fields that are required in AthleteRequest
