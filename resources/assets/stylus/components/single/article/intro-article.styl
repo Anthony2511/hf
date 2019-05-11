@@ -1,0 +1,64 @@
+.article-intro
+  &__container
+    margin-bottom s(550)
+    margin-top s($marginTitle)
+    padding-bottom s(50)
+    position relative
+  &__figure
+    position absolute
+    left 0
+    right 0
+    width 100%
+    height s(600)
+    background-position top center
+    background-size cover
+    background-repeat no-repeat
+    &:before
+      content ''
+      position absolute
+      background-color alpha($cDarkBlue,0.75)
+      top 0
+      bottom 0
+      left 0
+      right 0
+      width 100%
+      height 100%
+  &__bloc
+    position absolute
+    left 0
+    right 0
+    text-align center
+    top 45%
+  &__title
+    color $cWhite
+    font-family 'montserrat'
+    font-size s(50)
+    font-weight: 600
+  &__author
+    margin-top s(20)
+    display flex
+    flex-direction row
+    align-items center
+    justify-content center
+  &__author-name
+    font-family 'opensans'
+    color $cWhite
+    font-size s(20)
+    & span
+      font-weight 700
+  &__author-figure
+    & img
+      border-radius 50%
+      margin-right s(10)
+  &__date
+    color $cWhite
+    font-family 'opensans'
+    font-weight 300
+    font-size s(18)
+    font-style: italic
+    background-color $cDarkOrange
+    padding s(10,18) s(30,18)
+    position relative
+    z-index 20
+    display inline-block
+    border-radius 0 0 10px 10px

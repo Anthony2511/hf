@@ -16,4 +16,5 @@
         </div>
     </div>
     @include('partials.single.article.intro_article')
+    @include('partials.single.article.content_article')
 @endsection
