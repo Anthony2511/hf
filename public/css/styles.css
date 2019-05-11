@@ -1317,6 +1317,20 @@ input[type="search"]::-webkit-search-decoration {
   display: inline-block;
   border-radius: 0 0 10px 10px;
 }
+.article-content {
+  background-color: #f4f4f4;
+  padding: 3.125em 0;
+}
+.article-content__text {
+  font-family: 'opensans';
+  -webkit-column-count: 2;
+          column-count: 2;
+  -webkit-column-gap: 5%;
+          column-gap: 5%;
+  line-height: 1.7;
+  color: #34495e;
+  margin: 0 auto;
+}
 /*****EQUIPMENT*****/
 .equipement__container {
   display: flex;

@@ -1,5 +1,5 @@
 <div class="article-content">
     <div class="wrap">
-        <p>{{ $article->content }}</p>
+        <p class="article-content__text">{{ $article->content }}</p>
     </div>
 </div>

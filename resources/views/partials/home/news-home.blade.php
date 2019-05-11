@@ -32,7 +32,7 @@
                             </p>
                             <span class="news-home__comments"> 3 commentaires</span>
                         </section>
-                        <a href="#" class="news-home__link"></a>
+                        <a href="{{url('articles/' . $article->slug )}}" class="news-home__link"></a>
                     </div>
                 @endforeach
             </div>
