@@ -15,5 +15,5 @@
             </a>
         </div>
     </div>
-    <p>{{ $article->title }}</p>
+    @include('partials.single.article.intro_article')
 @endsection

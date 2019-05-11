@@ -1,7 +1,21 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: Anthony
- * Date: 11/05/2019
- * Time: 13:57
- */
+<div class="article-intro">
+    <figure class="article-intro__figure" style="background-image: url('{{ $article->getImageProfile('_fullscreen.jpg') }}')">
+        <img src="{{ $article->getImageProfile('_fullscreen.jpg') }}"
+             srcset="{{ $article->getImageProfile('_fullscreen.jpg') }} 2x"
+             alt="Photo de l'article : {{$article->title}}"
+             width="1024"
+             height="683"
+            class="hidden">
+    </figure>
+    <h2 aria-level="2" role="heading" class="article-intro__title">{{$article->title}}</h2>
+    <div class="article-intro__author">
+        <figure class="article-intro__author-figure">
+            <img src="../img/author.jpg"
+                 srcset="../img/author.jpg 2x"
+                 alt="Photo de l'auteur : {{ $article->author->fullname }}"
+                 width="30"
+                 height="30">
+        </figure>
+        <span class="article-intro__author-name">par <span>{{ $article->author->fullname }}</span></span>
+    </div>
+</div>
