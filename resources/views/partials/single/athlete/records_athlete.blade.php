@@ -21,7 +21,10 @@
                         <td>{{ $row['date'] }}</td>
                     </tr>
                 @endforeach
-
+            @else
+                <tr class="athlete-record__table-row">
+                    <td>Aucun record</td>
+                </tr>
             @endif
             </tbody>
         </table>
@@ -33,53 +36,40 @@
             <tr class="athlete-record__table-legend">
                 <th class="athlete-record__table-title">Année</th>
                 <th class="athlete-record__table-title">Catégorie</th>
-                <th class="athlete-record__table-title">1500m</th>
-                <th class="athlete-record__table-title">500m</th>
+                @foreach($athlete->disciplines as $discipline)
+                    <th class="athlete-record__table-title">{{ $discipline->name }}</th>
+                @endforeach
             </tr>
             </thead>
             <tbody class="athlete-record__table-tbody">
-            <tr class="athlete-record__table-row">
-                <td>2012</td>
-                <td>Espoir</td>
-                <td>3.40.97</td>
-                <td>-</td>
-            </tr>
-            <tr class="athlete-record__table-row">
-                <td>2013</td>
-                <td>Senior</td>
-                <td>3.38.61</td>
-                <td>-</td>
-            </tr>
-            <tr class="athlete-record__table-row">
-                <td>2014</td>
-                <td>Senior</td>
-                <td>3.38.20</td>
-                <td>13.34.90</td>
-            </tr>
-            <tr class="athlete-record__table-row">
-                <td>2015</td>
-                <td>Senior</td>
-                <td>3.41.44</td>
-                <td>-</td>
-            </tr>
-            <tr class="athlete-record__table-row">
-                <td>2016</td>
-                <td>Senior</td>
-                <td>-</td>
-                <td>13.52.11</td>
-            </tr>
-            <tr class="athlete-record__table-row">
-                <td>2017</td>
-                <td>Senior</td>
-                <td>-</td>
-                <td>14.15.98</td>
-            </tr>
-            <tr class="athlete-record__table-row">
-                <td>2018</td>
-                <td>Senior</td>
-                <td>3.38.61</td>
-                <td>-</td>
-            </tr>
+            @if(!empty($athlete->evolution))
+                <?php $evolutions = json_decode($athlete->evolution, true); ?>
+                @foreach($evolutions as $row)
+                    <tr class="athlete-record__table-row">
+                        <td>{{ $row['annee'] }}</td>
+                        <td>{{ $row['categorie'] }}</td>
+                        @if(!empty ($row['disciplineone']))
+                            <td>{{ $row['disciplineone'] }}</td>
+                        @else
+                            <td>-</td>
+                        @endif
+                        @if(!empty ($row['disciplinetwo']))
+                            <td>{{ $row['disciplinetwo'] }}</td>
+                        @else
+                            <td>-</td>
+                        @endif
+                        @if(!empty ($row['disciplinethree']))
+                            <td>{{ $row['disciplinethree'] }}</td>
+                        @else
+                            <td>-</td>
+                        @endif
+                    </tr>
+                @endforeach
+            @else
+                <tr class="athlete-record__table-row">
+                    <td>Aucune évolution</td>
+                </tr>
+            @endif
             </tbody>
         </table>
     </section>

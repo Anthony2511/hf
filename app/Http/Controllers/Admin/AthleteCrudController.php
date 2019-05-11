@@ -207,7 +207,24 @@ class AthleteCrudController extends CrudController
                 'record' => 'Record',
                 'lieu' => 'Lieu',
                 'date' => 'Date'
-            ]
+        ]
+        ]);
+
+        // Evolution Field
+        $this->crud->addField
+        ([
+            'name' => 'evolution',
+            'label' => 'Évolution',
+            'type' => 'table',
+            'entity_singular' => 'evolution', // used on the "Add X" button
+            'columns' => [
+                'annee' => 'Année',
+                'categorie' => 'Catégorie',
+                'disciplineone' => 'Discipline 1',
+                'disciplinetwo' => 'Discipline 2',
+                'disciplinethree' => 'Discipline 3'
+            ],
+            'hint' => 'Pour les disciplines, c\'est dans l\'ordre des disciplines ajoutées'
         ]);
 
         //Slug Field

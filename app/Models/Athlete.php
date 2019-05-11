@@ -33,13 +33,15 @@ class Athlete extends Model
         'division_id',
         'active',
         'profession',
-        'records'
+        'records',
+        'evolution'
     );
     // protected $hidden = [];
     // protected $dates = [];
 
     protected $casts = array(
-        'array' => 'records'
+        'array' => 'records',
+        'array' => 'evolution'
     );
 
     /**
