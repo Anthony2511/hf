@@ -1678,6 +1678,10 @@ input[type="search"]::-webkit-search-decoration {
   font-weight: 300;
   line-height: 1.6;
 }
+.horaires-competition__table-row--empty-horaire {
+  font-size: 1.125em;
+  font-weight: 600;
+}
 .resultats-competition {
   padding: 3.125em 0;
 }
