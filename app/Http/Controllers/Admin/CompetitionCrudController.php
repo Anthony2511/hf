@@ -177,6 +177,22 @@ class CompetitionCrudController extends CrudController
             'tab' => 'Horaires'
         ]);
 
+        // Horaires Femmes Field
+        $this->crud->addField
+        ([
+            'name' => 'horaires_f',
+            'label' => 'Horaires des femmes',
+            'type' => 'table',
+            'entity_singular' => 'un horaire', // used on the "Add X" button
+            'columns' => [
+                'debut' => 'Début',
+                'fin' => 'Fin',
+                'categorie' => 'Catégorie',
+                'discipline' => 'Discipline'
+            ],
+            'tab' => 'Horaires'
+        ]);
+
         //Slug Field
         $this->crud->addField([
             'name' => 'slug',
