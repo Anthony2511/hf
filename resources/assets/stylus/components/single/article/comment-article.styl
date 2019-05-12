@@ -1,0 +1,44 @@
+.article-comment
+  padding s($marginTitle) 0
+  font-family 'opensans'
+  color $cDarkBlue
+  &__container
+    width 75%
+    margin 0 auto
+    padding s(50) 0
+  &__author-bloc
+    display flex
+    flex-direction row
+    margin-bottom s(20)
+    align-items center
+  &__author-infos
+    display flex
+    flex-direction column
+  &__author-figure
+    margin-right s(10)
+    & img
+      border-radius 50%
+      display inline-block
+  &__author-name
+    font-weight 600
+    font-size s(18)
+    margin-bottom s(10,18)
+  &__date-author
+    font-size s(14)
+    font-weight 400
+  &__text
+    line-height 1.6
+  &__bloc-container
+    margin s(30) 0 0 s(60)
+  &__author-line
+    position relative
+    &:before
+      content ''
+      position absolute
+      left -30px
+      height 100%
+      width 1px
+      background-color $cLightGreyTwo
+      display block
+  &__author-line + &__author-line
+    margin-top s(30)
