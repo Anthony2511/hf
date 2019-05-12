@@ -18,4 +18,5 @@
     @include('partials.single.article.intro_article')
     @include('partials.single.article.content_article')
     @include('partials.single.article.comment_article')
+    @include('partials.cta.cta-news')
 @endsection

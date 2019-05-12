@@ -1334,6 +1334,7 @@ input[type="search"]::-webkit-search-decoration {
 .article-comment {
   padding: 3.125em 0;
   font-family: 'opensans';
+  background-color: #fff;
   color: #2c3e50;
 }
 .article-comment__container {
@@ -2644,11 +2645,6 @@ input[type="search"]::-webkit-search-decoration {
           transform: translateX(-5px) rotate(180deg);
   transition: 0.3s ease-in-out;
 }
-.cta-page {
-  padding-top: 3.125em;
-  text-align: center;
-  margin-bottom: 3.125em;
-}
 .cta-page__text {
   font-family: 'opensans';
   color: #2c3e50;
@@ -2657,4 +2653,22 @@ input[type="search"]::-webkit-search-decoration {
   padding: 1.875em;
   width: 75%;
   margin: 0 auto;
+}
+.cta-news {
+  padding-top: 3.125em;
+  text-align: center;
+  padding-bottom: 12.5em;
+  margin: 0 auto;
+}
+.cta-news__background {
+  background-color: #f4f4f4;
+  margin-bottom: -10.3125em;
+}
+.cta-about {
+  padding-top: 3.125em;
+  text-align: center;
+  margin-bottom: 3.125em;
+}
+.cta-about__background {
+  background-color: #fff;
 }

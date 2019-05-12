@@ -13,6 +13,6 @@
         @include('partials.about.about-end')
     </div>
     <div class="wrap">
-        @include('partials.cta-page')
+        @include('partials.cta.cta-about')
     </div>
 @endsection
