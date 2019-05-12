@@ -11,18 +11,21 @@
             </tr>
             </thead>
             <tbody class="athlete-record__table-tbody">
-            <tr class="athlete-record__table-row">
-                <td>1500m</td>
-                <td>3.36.07</td>
-                <td>Oordegem</td>
-                <td>02/08/2011</td>
-            </tr>
-            <tr class="athlete-record__table-row">
-                <td>5000m</td>
-                <td>13.33.09</td>
-                <td>Heusden</td>
-                <td>07/07/2012</td>
-            </tr>
+            @if(!empty($trainer->records))
+                <?php $records = json_decode($trainer->records, true); ?>
+                @foreach($records as $row)
+                    <tr class="athlete-record__table-row">
+                        <td>{{ $row['discipline'] }}</td>
+                        <td>{{ $row['record'] }}</td>
+                        <td>{{ $row['lieu'] }}</td>
+                        <td>{{ $row['date'] }}</td>
+                    </tr>
+                @endforeach
+            @else
+                <tr class="athlete-record__table-row">
+                    <td>Aucun record</td>
+                </tr>
+            @endif
             </tbody>
         </table>
     </section>
