@@ -4,7 +4,10 @@
     <bookmark url="file://$PROJECT_DIR$/resources/assets/stylus/components/button.styl" description=".button:hover .button-white__right" line="46" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0b97a5d-6dca-40c8-a8f7-cc4d5e556a82" name="Default" comment="" />
+    <list default="true" id="b0b97a5d-6dca-40c8-a8f7-cc4d5e556a82" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/app/Models/Trainer.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Trainer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Trophie.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Trophie.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,8 +38,8 @@
       <file leaf-file-name="Athlete.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Models/Athlete.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1334">
-              <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
+            <state relative-caret-position="506">
+              <caret line="114" column="2" selection-start-line="114" selection-start-column="2" selection-end-line="118" />
             </state>
           </provider>
         </entry>
@@ -44,17 +47,17 @@
       <file leaf-file-name="Trainer.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Models/Trainer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="101" column="31" selection-start-line="101" selection-start-column="31" selection-end-line="101" selection-end-column="31" />
+            <state relative-caret-position="690">
+              <caret line="110" selection-start-line="110" selection-end-line="110" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2019_05_12_132732_create_trainer_trophie_table.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2019_05_12_132732_create_trainer_trophie_table.php">
+      <file leaf-file-name="Trophie.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Models/Trophie.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
+            <state relative-caret-position="453">
+              <caret line="51" column="55" selection-start-line="51" selection-start-column="55" selection-end-line="51" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -90,8 +93,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/views/partials/intros/intro-trainer.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/partials/intros/intro-training.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/AthleteController.php" />
         <option value="$PROJECT_DIR$/resources/views/partials/listing/listing-trainers.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/partials/listing/listing-athletes.blade.php" />
@@ -141,6 +142,8 @@
         <option value="$PROJECT_DIR$/resources/views/partials/single/competition/horaires_competition.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/CompetitionCrudController.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_05_12_132732_create_trainer_trophie_table.php" />
+        <option value="$PROJECT_DIR$/app/Models/Trainer.php" />
+        <option value="$PROJECT_DIR$/app/Models/Trophie.php" />
       </list>
     </option>
   </component>
@@ -727,12 +730,12 @@
       <workItem from="1557300951796" duration="9517000" />
       <workItem from="1557386711699" duration="11674000" />
       <workItem from="1557565532849" duration="11248000" />
-      <workItem from="1557650548649" duration="9824000" />
+      <workItem from="1557650548649" duration="10296000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="351664000" />
+    <option name="totallyTimeSpent" value="352136000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -805,13 +808,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/views/pages/athletes/athletes_show.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="23" column="44" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Models/Article.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2284">
@@ -1099,27 +1095,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Athlete.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1334">
-          <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Models/AthleteTrophie.php">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Trophie.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-644" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Trainer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="101" column="31" selection-start-line="101" selection-start-column="31" selection-end-line="101" selection-end-column="31" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_04_09_084638_create_athlete_trophie_table.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -1132,6 +1109,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
           <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_03_12_102449_create_athletes_table.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Athlete.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="114" column="2" selection-start-line="114" selection-start-column="2" selection-end-line="118" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Trainer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="110" selection-start-line="110" selection-end-line="110" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Trophie.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="453">
+          <caret line="51" column="55" selection-start-line="51" selection-start-column="55" selection-end-line="51" selection-end-column="55" />
         </state>
       </provider>
     </entry>

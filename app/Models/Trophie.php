@@ -47,6 +47,11 @@ class Trophie extends Model
         return $this->belongsToMany('App\Models\Athlete');
     }
 
+    public function trainers()
+    {
+        return $this->belongsToMany('App\Models\Trainer');
+    }
+
     /*
     |--------------------------------------------------------------------------
     | SCOPES

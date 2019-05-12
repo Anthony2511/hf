@@ -104,6 +104,12 @@ class Trainer extends Model
         return $this->belongsToMany('App\Models\Division');
     }
 
+    public function trophies()
+    {
+        return $this->belongsToMany('App\Models\Trophie');
+    }
+
+
     /*
     |--------------------------------------------------------------------------
     | SCOPES
