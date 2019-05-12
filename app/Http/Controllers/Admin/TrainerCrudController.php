@@ -60,7 +60,8 @@ class TrainerCrudController extends CrudController
             [
                 'name' => 'firstname',
                 'type' => 'text',
-                'label' => 'Prénom'
+                'label' => 'Prénom',
+                'tab' => 'Informations générales'
             ]
         );
 
@@ -69,7 +70,8 @@ class TrainerCrudController extends CrudController
             [
                 'name' => 'lastname',
                 'type' => 'text',
-                'label' => 'Nom'
+                'label' => 'Nom',
+                'tab' => 'Informations générales'
             ]
         );
 
@@ -81,6 +83,7 @@ class TrainerCrudController extends CrudController
             'upload' => true,
             'crop' => true, // set to true to allow cropping, false to disable
             'aspect_ratio' => 0, // ommit or set to 0 to allow any aspect ratio
+            'tab' => 'Informations générales'
             // 'disk' => 's3_bucket', // in case you need to show images from a different disk
             // 'prefix' => 'uploads/images/profile_pictures/' // in case your db value is only the file name (no path), you can use this to prepend your path to the image src (in HTML), before it's shown to the user;
         ]);
@@ -96,6 +99,7 @@ class TrainerCrudController extends CrudController
                 'format' => 'dd-mm-yyyy',
                 'language' => 'fr'
             ],
+            'tab' => 'Informations générales'
         ]);
 
         // Status Field
@@ -109,10 +113,10 @@ class TrainerCrudController extends CrudController
                 ],
                 'allows_null' => false,
                 'default' => 'entraîneur',
-                'label' => 'Statut de l\'entraîneur'
+                'label' => 'Statut de l\'entraîneur',
+                'tab' => 'Informations générales'
             ]
         );
-
 
         // Discipline field
         $this->crud->addField
@@ -123,7 +127,22 @@ class TrainerCrudController extends CrudController
             'entity' => 'disciplines',
             'attribute' => 'specificdiscipline',
             'model' => "App\Models\Discipline",
-            'pivot' => true
+            'pivot' => true,
+            'tab' => 'Informations générales'
+        ]);
+
+        // Trophie field
+        $this->crud->addField
+        ([
+            'label' => 'Sélectionnez ses trophées',
+            'type' => 'select2_multiple',
+            'name' => 'trophies',
+            'entity' => 'trophies',
+            'attribute' => 'fullname',
+            'model' => "App\Models\Trophie",
+            'pivot' => true,
+            'hint' => 'Plusieurs entraîneurs peuvent avoir le même trophée si c\'est un trophée collectif',
+            'tab' => 'Trophées'
         ]);
 
         // Division field
@@ -135,7 +154,8 @@ class TrainerCrudController extends CrudController
             'entity' => 'divisions',
             'attribute' => 'specificdivision',
             'model' => "App\Models\Division",
-            'pivot' => true
+            'pivot' => true,
+            'tab' => 'Informations générales'
         ]);
 
         //Slug Field
@@ -143,7 +163,8 @@ class TrainerCrudController extends CrudController
             'name' => 'slug',
             'label' => "Slug (URL)",
             'type' => 'text',
-            'hint' => 'Est automatiquement généré à partir du nom-prénom si pas remplit.'
+            'hint' => 'Est automatiquement généré à partir du nom-prénom si pas remplit.',
+            'tab' => 'Informations générales'
         ]);
 
 
