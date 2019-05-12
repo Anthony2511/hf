@@ -27,7 +27,7 @@
                                 <a href="{{ route('equipements') }}" class="{{setActive(['equipements'])}}">Nos &Eacute;quipements</a>
                             </li>
                             <li>
-                                <a href="#">Nous rejoindre</a>
+                                <a href="{{ route('rejoindre') }}" class="{{setActive(['rejoindre'])}}">Nous rejoindre</a>
                             </li>
                         </ul>
                     </div>
