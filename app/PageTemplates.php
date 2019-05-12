@@ -49,6 +49,19 @@ trait PageTemplates
                 'tab' => 'Section d\'introduction'
             ]
         );
+
+        // Link Intro
+        $this->crud->addField(
+            [
+                'name' => 'athlete_linkIntro',
+                'label' => 'Lien vers la page',
+                'type' => 'page_or_link',
+                'page_model' => '\Backpack\PageManager\app\Models\Page',
+                'fake' => true,
+                'store_in' => 'extras',
+                'tab' => 'Section d\'introduction'
+            ]
+        );
     }
 
     /**********PAGE ENTRAINEURS**********/
@@ -332,6 +345,36 @@ trait PageTemplates
         $this->crud->addField(
             [
                 'name' => 'equipement_textIntro',
+                'type' => 'simplemde',
+                'label' => 'Texte de l\'introduction',
+                'fake' => true,
+                'store_in' => 'extras',
+                'tab' => 'Section d\'introduction'
+            ]
+        );
+    }
+
+    /**********PAGE NOUS REJOINDRE**********/
+    private function join_index()
+    {
+        //Section d'introduction
+
+        // Title Intro
+        $this->crud->addField(
+            [
+                'name' => 'join_titleIntro',
+                'type' => 'text',
+                'label' => 'Titre de l\'introduction',
+                'fake' => true,
+                'store_in' => 'extras',
+                'tab' => 'Section d\'introduction'
+            ]
+        );
+
+        // Text Intro
+        $this->crud->addField(
+            [
+                'name' => 'join_textIntro',
                 'type' => 'simplemde',
                 'label' => 'Texte de l\'introduction',
                 'fake' => true,
