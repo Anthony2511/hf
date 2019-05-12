@@ -29,10 +29,15 @@ class Trainer extends Model
         'image',
         'date_of_birth',
         'status',
-        'slug'
+        'slug',
+        'records'
     );
     // protected $hidden = [];
     // protected $dates = [];
+
+    protected  $casts = array(
+        'array' => 'records'
+    );
 
     /**
      * Return the sluggable configuration array for this model.

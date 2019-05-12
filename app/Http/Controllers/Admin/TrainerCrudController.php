@@ -158,6 +158,22 @@ class TrainerCrudController extends CrudController
             'tab' => 'Informations générales'
         ]);
 
+        // Records Field
+        $this->crud->addField
+        ([
+            'name' => 'records',
+            'label' => 'Records',
+            'type' => 'table',
+            'entity_singular' => 'un record', // used on the "Add X" button
+            'columns' => [
+                'discipline' => 'Discipline',
+                'record' => 'Record',
+                'lieu' => 'Lieu',
+                'date' => 'Date'
+            ],
+            'tab' => 'Records'
+        ]);
+
         //Slug Field
         $this->crud->addField([
             'name' => 'slug',

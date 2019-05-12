@@ -213,7 +213,7 @@ class AthleteCrudController extends CrudController
             'name' => 'records',
             'label' => 'Records',
             'type' => 'table',
-            'entity_singular' => 'record', // used on the "Add X" button
+            'entity_singular' => 'un record', // used on the "Add X" button
             'columns' => [
                 'discipline' => 'Discipline',
                 'record' => 'Record',
@@ -229,7 +229,7 @@ class AthleteCrudController extends CrudController
             'name' => 'evolution',
             'label' => 'Évolution',
             'type' => 'table',
-            'entity_singular' => 'evolution', // used on the "Add X" button
+            'entity_singular' => 'une évolution', // used on the "Add X" button
             'columns' => [
                 'annee' => 'Année',
                 'categorie' => 'Catégorie',
