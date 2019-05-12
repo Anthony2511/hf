@@ -13,8 +13,8 @@
             <p class="intro__text">
                 {{ $page->athlete_textIntro }}
             </p>
-            <a href="#" class="button" title="Vers la page Nous rejoindre">
-                <span class="button-blue__left">Nous rejoindre</span>
+            <a href="{{ route('rejoindre') }}" class="button" title="Vers la page Nous rejoindre">
+                <span class="button-blue__left">Rejoindre</span>
                 <i class="button-blue__right"></i>
             </a>
         </div>

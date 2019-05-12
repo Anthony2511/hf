@@ -49,19 +49,6 @@ trait PageTemplates
                 'tab' => 'Section d\'introduction'
             ]
         );
-
-        // Link Intro
-        $this->crud->addField(
-            [
-                'name' => 'athlete_linkIntro',
-                'label' => 'Lien vers la page',
-                'type' => 'page_or_link',
-                'page_model' => '\Backpack\PageManager\app\Models\Page',
-                'fake' => true,
-                'store_in' => 'extras',
-                'tab' => 'Section d\'introduction'
-            ]
-        );
     }
 
     /**********PAGE ENTRAINEURS**********/
