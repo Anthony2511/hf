@@ -69,7 +69,8 @@ class CompetitionCrudController extends CrudController
             [
                 'name' => 'title',
                 'type' => 'text',
-                'label' => 'Titre de la compétition'
+                'label' => 'Titre de la compétition',
+                'tab' => 'Informations générales'
             ]
         );
 
@@ -81,6 +82,7 @@ class CompetitionCrudController extends CrudController
             'upload' => true,
             'crop' => true, // set to true to allow cropping, false to disable
             'aspect_ratio' => 0, // ommit or set to 0 to allow any aspect ratio
+            'tab' => 'Informations générales'
             // 'disk' => 's3_bucket', // in case you need to show images from a different disk
             // 'prefix' => 'uploads/images/profile_pictures/' // in case your db value is only the file name (no path), you can use this to prepend your path to the image src (in HTML), before it's shown to the user;
         ]);
@@ -90,7 +92,8 @@ class CompetitionCrudController extends CrudController
             [
                 'name' => 'place',
                 'type' => 'text',
-                'label' => 'Lieu de la compétition'
+                'label' => 'Lieu de la compétition',
+                'tab' => 'Informations générales'
             ]
         );
 
@@ -106,6 +109,7 @@ class CompetitionCrudController extends CrudController
                     'format' => 'dd-mm-yyyy',
                     'language' => 'fr'
                 ],
+                'tab' => 'Informations générales'
             ]
         );
 
@@ -126,7 +130,8 @@ class CompetitionCrudController extends CrudController
                 ],
                 'allows_null' => false,
                 'default' => 'provincial-outdoor',
-                'label' => 'Type de la compétition'
+                'label' => 'Type de la compétition',
+                'tab' => 'Informations générales'
             ]
         );
 
@@ -141,7 +146,8 @@ class CompetitionCrudController extends CrudController
                 ],
                 'allows_null' => false,
                 'default' => ' not-finish',
-                'label' => 'Statut de la compétition'
+                'label' => 'Statut de la compétition',
+                'tab' => 'Informations générales'
             ]
         );
 
@@ -150,16 +156,34 @@ class CompetitionCrudController extends CrudController
             [
                 'name' => 'content',
                 'type' => 'textarea',
-                'label' => 'Courte description'
+                'label' => 'Courte description',
+                'tab' => 'Informations générales'
             ]
         );
+
+        // Horaires Hommes Field
+        $this->crud->addField
+        ([
+            'name' => 'horaires_h',
+            'label' => 'Horaires des hommes',
+            'type' => 'table',
+            'entity_singular' => 'un horaire', // used on the "Add X" button
+            'columns' => [
+                'debut' => 'Début',
+                'fin' => 'Fin',
+                'categorie' => 'Catégorie',
+                'discipline' => 'Discipline'
+            ],
+            'tab' => 'Horaires'
+        ]);
 
         //Slug Field
         $this->crud->addField([
             'name' => 'slug',
             'label' => "Slug (URL)",
             'type' => 'text',
-            'hint' => 'Est automatiquement généré à partir du date-titre si pas remplit.'
+            'hint' => 'Est automatiquement généré à partir du date-titre si pas remplit.',
+            'tab' => 'Informations générales'
         ]);
 
 

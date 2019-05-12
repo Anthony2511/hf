@@ -30,12 +30,17 @@ class Competition extends Model
         'isFinish',
         'slug',
         'type',
-        'image'
+        'image',
+        'horaires_h'
     );
     // protected $hidden = [];
     protected $dates = [
         'startDate'
     ];
+
+    protected $casts = array(
+        'array' => 'horaires_h'
+    );
 
     /**
      * Return the sluggable configuration array for this model.
