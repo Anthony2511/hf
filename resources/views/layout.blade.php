@@ -12,5 +12,6 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="{{ asset('js/jquery-accessibleMegaMenu.js') }}"></script>
 <script src="{{ asset('js/configAccessibleMegaMenu.js') }}"></script>
+<script src="{{ asset('js/nav.js') }}"></script>
 </body>
 </html>

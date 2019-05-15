@@ -1,11 +1,13 @@
 <nav class="nav">
     <h1 class="hidden" aria-level="1" role="heading">Menu de navigation principal</h1>
-    <button class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-    </button>
+    <div class="nav__button">
+        <div class="nav__icon">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
     <div class="nav__container">
         <a href="/" class="nav__container-logo">
             <figure>
@@ -27,7 +29,8 @@
                                 <a href="{{ route('equipements') }}" class="{{setActive(['equipements'])}}">Nos &Eacute;quipements</a>
                             </li>
                             <li>
-                                <a href="{{ route('rejoindre') }}" class="{{setActive(['rejoindre'])}}">Nous rejoindre</a>
+                                <a href="{{ route('rejoindre') }}" class="{{setActive(['rejoindre'])}}">Nous
+                                    rejoindre</a>
                             </li>
                         </ul>
                     </div>
