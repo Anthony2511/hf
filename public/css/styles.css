@@ -289,7 +289,7 @@ input[type="search"]::-webkit-search-decoration {
 .header-home {
   background: url("/img/Background.jpg") no-repeat top center/cover;
   background-position: 50% 50%;
-  height: 59em;
+  height: 100vh;
   position: relative;
   z-index: 5;
 }
@@ -307,6 +307,7 @@ input[type="search"]::-webkit-search-decoration {
   font-family: 'montserrat';
   font-size: 2.5em;
   font-weight: 700;
+  text-align: center;
 }
 .header-home__text {
   font-family: 'opensans';
@@ -318,6 +319,42 @@ input[type="search"]::-webkit-search-decoration {
 .header {
   height: 170px;
   background-position: 50% 38%;
+}
+@media screen and (max-width: 1300px) {
+  .header-home__text {
+    max-width: 50%;
+  }
+  .header-home__bloc {
+    padding: 0 1.25em;
+  }
+}
+@media screen and (max-width: 900px) {
+  .header-home__text {
+    max-width: 70%;
+    font-size: 0.875em;
+  }
+  .header-home__title {
+    font-size: 2.1875em;
+  }
+}
+@media screen and (max-width: 650px) {
+  .header-home__text {
+    max-width: 90%;
+    margin: 1.428571428571429em 0 2.142857142857143em;
+  }
+}
+@media screen and (max-width: 450px) {
+  .header-home__text {
+    max-width: 100%;
+  }
+  .header-home__title {
+    font-size: 1.75em;
+  }
+}
+@media screen and (max-width: 378px) {
+  .header-home {
+    background-position: 65% 50%;
+  }
 }
 .home-athletes {
   padding: 3.125em 0;
@@ -1971,6 +2008,9 @@ input[type="search"]::-webkit-search-decoration {
   align-items: center;
   padding-top: 3.125em;
 }
+.nav__container-logo {
+  cursor: pointer;
+}
 .nav__menu {
   display: inline-block;
   position: relative;
@@ -2098,7 +2138,7 @@ input[type="search"]::-webkit-search-decoration {
   transition: 0.3s ease-in-out;
 }
 .nav__button {
-  top: -4em;
+  top: 3.3125em;
   right: 1.25em;
   width: 2.1875em;
   height: 5em;
@@ -2179,6 +2219,43 @@ input[type="search"]::-webkit-search-decoration {
   opacity: 1;
   -webkit-transform: translateY(0px);
           transform: translateY(0px);
+}
+@media screen and (max-width: 1300px) {
+  .nav {
+    padding: 0 1.25em;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .nav__item {
+    font-size: 0.875em;
+  }
+  .nav__sub-nav--width {
+    width: 13.75em;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .nav__button {
+    display: inline-block;
+    position: absolute;
+    z-index: 50;
+    text-align: right;
+    cursor: pointer;
+  }
+  .nav__menu-bloc {
+    margin-top: 3.409090909090909em;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    transition: 0.5s height ease;
+  }
+  .nav__container-logo {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 378px) {
+  .nav__container-logo {
+    width: 150%;
+  }
 }
 .button {
   display: inline-flex;
@@ -2419,6 +2496,11 @@ input[type="search"]::-webkit-search-decoration {
 }
 .button-float {
   float: right;
+}
+@media screen and (max-width: 768px) {
+  .button-white__left {
+    font-size: 0.875em;
+  }
 }
 .title {
   font-family: 'montserrat';

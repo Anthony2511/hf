@@ -1,7 +1,7 @@
 .header-home
   background url('/img/Background.jpg') no-repeat top center / cover
   background-position 50% 50%
-  height 59em
+  height 100vh
   position relative
   z-index 5
   &__bloc
@@ -17,6 +17,7 @@
     font-family 'montserrat'
     font-size s(40, 16)
     font-weight: 700
+    text-align center
   &__text
     font-family 'opensans'
     max-width 35%
@@ -27,3 +28,42 @@
 .header
   height 170px
   background-position 50% 38%
+
+//MEDIA QUERIES
+
+//1300PX
+@media screen and (max-width:1300px)
+  .header-home
+    &__text
+      max-width 50%
+    &__bloc
+      padding 0 s(20)
+
+//900PX
+@media screen and (max-width:900px)
+  .header-home
+    &__text
+      max-width 70%
+      font-size s(14)
+    &__title
+      font-size s(35)
+
+//650PX
+@media screen and (max-width:650px)
+  .header-home
+    &__text
+      max-width 90%
+      margin s(20,14) 0 s(30,14)
+
+//450PX
+@media screen and (max-width:450px)
+  .header-home
+    &__text
+      max-width 100%
+    &__title
+      font-size s(28)
+
+//378PX
+@media screen and (max-width:378px)
+  .header-home
+    background-position 65% 50%
