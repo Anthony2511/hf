@@ -18,12 +18,10 @@
     z-index 15
   &__item-sub
     position relative
-    &:before
+    &:after
       icon('arrow')
       font-size s(8)
-      position absolute
-      right s(-25,8)
-      top s(5,8)
+      padding-left s(10,8)
   &__item
     list-style none
     display inline-block
@@ -56,6 +54,8 @@
     margin-left s(50)
   &__item-sub
     & a
+      &:before
+        content none
       &:after
         content none
   &__sub-nav
@@ -195,6 +195,7 @@
 //1024PX
 @media screen and (max-width:1024px)
   .nav
+    padding 0
     &__button
       display inline-block
       position: absolute
@@ -209,6 +210,48 @@
       transition .5s height ease
     &__container-logo
       width 100%
+      & figure
+        padding-left s(20)
+    &__item
+      display block
+      font-size s(16)
+      width 100%
+    &__item + &__item
+      margin-left 0
+      margin-top s(50,18)
+    &__container
+      display block
+  .with-menu
+    .nav
+      background-color $cBlue
+      padding 0
+      &__container
+        padding  s(50) 0 0
+        height 100vh
+      &__container-logo
+        & figure
+          padding-left s(20)
+      &__menu-bloc
+        text-align center
+      &__menu
+        display flex
+        flex-direction column
+        justify-content center
+        align-items center
+      &__sub-nav
+        position inherit
+        padding 0
+        background-color $cDarkBlue
+        border-radius 0
+        margin 0
+        top s(10)
+        &--width
+          width 100%
+        & ul
+          &:before
+            content none
+        & li
+          color $cWhite
 
 //378PX
 @media screen and (max-width:378px)
