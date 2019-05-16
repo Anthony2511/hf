@@ -2892,3 +2892,19 @@ input[type="search"]::-webkit-search-decoration {
 .cta-about__background {
   background-color: #fff;
 }
+.cta-compet__background {
+  background-color: #f4f4f4;
+  padding-top: 3.125em;
+  padding-bottom: 12.5em;
+  margin-bottom: -10.3125em;
+}
+.cta-compet__bloc {
+  display: block;
+}
+.cta-compet__container {
+  padding-top: 3.125em;
+}
+.cta-compet__button {
+  text-align: center;
+  margin-top: 2.1875em;
+}

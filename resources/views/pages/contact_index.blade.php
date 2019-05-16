@@ -12,4 +12,5 @@
         @include('partials.contact.contact-person')
     </div>
     @include('partials.contact.contact-form')
+    @include('partials.cta.cta-compet')
 @endsection
