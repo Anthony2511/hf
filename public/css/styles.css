@@ -482,6 +482,68 @@ input[type="search"]::-webkit-search-decoration {
 .home-athletes__link:hover.home-athletes__figure:before {
   transition: 0.3s ease-in-out;
 }
+@media screen and (max-width: 1300px) {
+  .home-athletes {
+    padding: 3.125em 1.25em;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .home-athletes__infos-title {
+    font-size: 1.6875em;
+  }
+  .home-athletes__disciplines {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .home-athletes__container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .home-athletes__bloc {
+    width: 60%;
+    margin-right: 0;
+  }
+  .home-athletes__infos-title {
+    font-size: 2.1875em;
+  }
+  .home-athletes__disciplines {
+    font-size: 1.25em;
+  }
+  .home-athletes__link:before {
+    font-size: 1.875em;
+  }
+}
+@media screen and (max-width: 768px) {
+  .home-athletes__bloc {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .home-athletes__bloc {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 475px) {
+  .home-athletes__bloc {
+    width: 100%;
+  }
+  .home-athletes__infos-title {
+    font-size: 1.875em;
+  }
+  .home-athletes__disciplines {
+    font-size: 1.125em;
+  }
+}
+@media screen and (max-width: 475px) {
+  .home-athletes__infos-title {
+    font-size: 1.6875em;
+  }
+  .home-athletes__disciplines {
+    font-size: 1em;
+  }
+}
 .compet-home {
   padding: 3.125em 0;
 }
@@ -2561,9 +2623,14 @@ input[type="search"]::-webkit-search-decoration {
 .button-float {
   float: right;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 475px) {
   .button-white__left {
     font-size: 0.875em;
+    padding: 0.9375em 1.25em;
+  }
+  .button-blue__left {
+    font-size: 0.875em;
+    padding: 0.9375em 1.25em;
   }
 }
 .title {
@@ -2617,6 +2684,19 @@ input[type="search"]::-webkit-search-decoration {
 }
 .title-size {
   font-size: 1.5625em;
+}
+@media screen and (max-width: 1024px) {
+  .title {
+    text-align: center;
+  }
+  .title__left:after {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 450px) {
+  .title {
+    font-size: 1.75em;
+  }
 }
 .wrap {
   max-width: 77.5em;

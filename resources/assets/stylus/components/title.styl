@@ -44,5 +44,19 @@
 .title-size
   font-size s(25,16)
 
+//MEDIA QUERIES
+
+//1024PX
+@media screen and (max-width:1024px)
+  .title
+    text-align center
+    &__left
+      &:after
+        margin 0 auto
+
+//450PX
+@media screen and (max-width:450px)
+  .title
+    font-size s(28)
 
 
