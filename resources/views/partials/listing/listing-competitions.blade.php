@@ -33,6 +33,5 @@
             <a href="{{url('competitions/' . $competition->slug )}}" class="compet-home__link"></a>
         </div>
     @endforeach
-
 </div>
 </div>
