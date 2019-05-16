@@ -2918,3 +2918,12 @@ input[type="search"]::-webkit-search-decoration {
   text-align: center;
   margin-top: 2.1875em;
 }
+.cta-training__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 3.125em;
+}
+.cta-training__single {
+  margin-bottom: 0;
+}

@@ -8,10 +8,10 @@
                         <span class="trainings__day">{{ $training->day }}</span>
                         <span class="trainings__hour">
                             {{ date("H", strtotime($training->startHour)) }}
-                            h{{ date("i", strtotime($training->startHour)) }}
+                            h {{ date("i", strtotime($training->startHour)) }}
                             -
                             {{ date("H", strtotime($training->endHour)) }}
-                            h{{ date("i", strtotime($training->endHour)) }}</span>
+                            h {{ date("i", strtotime($training->endHour)) }}</span>
                     </div>
                     <div class="trainings__infos">
                         <span class="trainings__place">{{$training->place->name}}</span>
