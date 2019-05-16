@@ -39,6 +39,11 @@ img {
   font-weight: 600;
   color: $cDarkBlue;
   font-style: italic;
+  font-family: 'opensans';
+}
+.empty-center {
+  text-align: center;
+  margin: 0 auto;
 }
 .empty-color {
   font-weight: 600;
@@ -2916,12 +2921,12 @@ input[type="search"]::-webkit-search-decoration {
 }
 .cta-training__button {
   text-align: center;
-  margin-top: 2.1875em;
+  margin-top: 3.125em;
 }
 .cta-training__container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 3.125em;
 }
 .cta-training__single {
