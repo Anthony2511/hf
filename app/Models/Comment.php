@@ -16,10 +16,15 @@ class Comment extends Model
     */
 
     protected $table = 'comments';
-    // protected $primaryKey = 'id';
-    // public $timestamps = false;
+    protected $primaryKey = 'id';
+    public $timestamps = true;
     // protected $guarded = ['id'];
-    protected $fillable = [];
+    protected $fillable =array(
+        'content',
+        'user_name',
+        'email',
+        'post_id'
+    );
     // protected $hidden = [];
     // protected $dates = [];
 
