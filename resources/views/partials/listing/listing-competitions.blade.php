@@ -5,7 +5,7 @@
                 <time class="compet-home__left-date
                 <?php if($competition->content == null): ?>
                         compet-home__bloc-date
-                        <?php else: ?><?php endif; ?>">
+                        <?php else: ?><?php endif; ?>" datetime="{{$competition->startDate}}">
                     {{ date("d", strtotime($competition->startDate)) }}<span>{{ substr($competition->getFullMonth(),0,4) }}</span></time>
                 <section>
                     <h3 class="compet-home__left-title

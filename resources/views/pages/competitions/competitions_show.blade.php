@@ -20,4 +20,5 @@
     @include('partials.single.competition.horaires_competition')
     @include('partials.single.competition.resultats_competiton')
     @include('partials.single.competition.gallery_competition')
+    @include('partials.cta.cta-stage')
 @endsection
