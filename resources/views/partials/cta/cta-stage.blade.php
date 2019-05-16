@@ -11,4 +11,10 @@
             <i class="button-blue__right"></i>
         </a>
     </div>
-</div>
+</div><?php
+/**
+ * Created by PhpStorm.
+ * User: Anthony
+ * Date: 16/05/2019
+ * Time: 12:31
+ */

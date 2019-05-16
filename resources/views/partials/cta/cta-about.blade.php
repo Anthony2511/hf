@@ -6,7 +6,7 @@
         incontournable de la saison de route qui se déroule toujours le dernier dimanche de l'année au stade de Bielmont.
     </p>
     <a href="{{ route('stages') }}" class="button" title="Vers les stages">
-        <span class="button-blue__left">En savoir plus</span>
+        <span class="button-blue__left">Voir nos stages</span>
         <i class="button-blue__right"></i>
     </a>
 </section>
