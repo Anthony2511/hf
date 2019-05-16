@@ -676,6 +676,7 @@ input[type="search"]::-webkit-search-decoration {
   -webkit-transform: translateX(5px);
           transform: translateX(5px);
   transition: 0.3s ease-in-out;
+  color: #fe712a;
 }
 .trainee-home {
   background-color: #fa9926;
@@ -845,7 +846,7 @@ input[type="search"]::-webkit-search-decoration {
   font-weight: 700;
   vertical-align: top;
 }
-.news-home__comments:before {
+.news-home__comments:after {
   font-family: 'iconfont';
   speak: none;
   font-style: normal;
@@ -858,7 +859,7 @@ input[type="search"]::-webkit-search-decoration {
   content: "\E914";
   color: #fa9926;
   font-size: 1.125em;
-  margin-right: 0.555555555555556em;
+  margin-left: 0.555555555555556em;
 }
 .news-home__bloc:hover .news-home__bloc-figure:before {
   transition: 0.3s ease-in-out;
@@ -1613,6 +1614,7 @@ input[type="search"]::-webkit-search-decoration {
   -webkit-transform: translateX(5px);
           transform: translateX(5px);
   transition: 0.3s ease-in-out;
+  color: #fe712a;
 }
 .intro-competition {
   padding: 3.125em 0 0;
@@ -1909,6 +1911,7 @@ input[type="search"]::-webkit-search-decoration {
   -webkit-transform: translateX(5px);
           transform: translateX(5px);
   transition: 0.3s ease-in-out;
+  color: #fe712a;
 }
 .single-stage {
   background-color: #f4f4f4;
@@ -2622,6 +2625,10 @@ input[type="search"]::-webkit-search-decoration {
 }
 .button-float {
   float: right;
+}
+.button:hover .trainee-home__figure {
+  position: relative;
+  left: 50px;
 }
 @media screen and (max-width: 475px) {
   .button-white__left {

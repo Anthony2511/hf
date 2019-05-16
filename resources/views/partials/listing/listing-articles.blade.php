@@ -28,7 +28,7 @@
                     <p class="news-home__text">
                       {{ $article->introduction }}
                     </p>
-                    <span class="news-home__comments"> 3 commentaires</span>
+                    <span class="news-home__comments">3</span>
                 </section>
                 <a href="{{url('articles/' . $article->slug )}}" class="news-home__link"></a>
             </div>
