@@ -25,7 +25,7 @@ class CommentCrudController extends CrudController
         */
         $this->crud->setModel('App\Models\Comment');
         $this->crud->setRoute(config('backpack.base.route_prefix') . '/comment');
-        $this->crud->setEntityNameStrings('comment', 'comments');
+        $this->crud->setEntityNameStrings('un commentaire', 'commentaires');
 
         /*
         |--------------------------------------------------------------------------
@@ -33,8 +33,34 @@ class CommentCrudController extends CrudController
         |--------------------------------------------------------------------------
         */
 
-        // TODO: remove setFromDb() and manually define Fields and Columns
-        $this->crud->setFromDb();
+        $this->crud->denyAccess('update');
+
+        // ------ CRUD COLUMNS
+        $this->crud->addColumn
+        ([
+            'name' => 'user_name',
+            'label' => 'Nom/Pseudo',
+        ]);
+        $this->crud->addColumn
+        ([
+            'name' => 'email',
+            'label' => 'Adresse e-mail',
+        ]);
+        $this->crud->addColumn
+        ([
+            'label' => "Sur l’article",
+            'type' => "select",
+            'name' => 'post_id',
+            'entity' => 'article',
+            'attribute' => "title",
+            'model' => "App\Models\Comment"
+        ]);
+        $this->crud->addColumn
+        ([
+            'name' => 'content',
+            'label' => 'Commentaire',
+            'type' => 'text'
+        ]);
 
         // add asterisk for fields that are required in CommentRequest
         $this->crud->setRequiredFields(StoreRequest::class, 'create');
