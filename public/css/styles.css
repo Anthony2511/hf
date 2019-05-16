@@ -306,7 +306,7 @@ input[type="search"]::-webkit-search-decoration {
   position: absolute;
   right: 0;
   left: 0;
-  top: 40%;
+  top: 45%;
 }
 .header-home__title {
   font-family: 'montserrat';
@@ -541,6 +541,7 @@ input[type="search"]::-webkit-search-decoration {
   border-radius: 10px;
   text-align: center;
   margin: 0 0.2em 0.4em 0;
+  transition: 0.4s ease-in-out;
 }
 .compet-home__left-date span {
   text-transform: uppercase;
@@ -581,6 +582,7 @@ input[type="search"]::-webkit-search-decoration {
   border-radius: 10px;
   text-align: center;
   margin: 0 0.333333333333333em 0.666666666666667em 0;
+  transition: 0.4s ease-in-out;
 }
 .compet-home__bloc-date span {
   text-transform: uppercase;

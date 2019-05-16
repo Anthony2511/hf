@@ -22,7 +22,7 @@
                 <section>
                     <h4 class="compet-home__left-title" aria-level="4" role="heading">Informations générales</h4>
                     <p class="compet-home__left-text">
-                        {{ $competition->content }}
+                        {{ strip_tags(str_limit($competition->content, 255, '...')) }}
                     </p>
                 </section>
             @endif

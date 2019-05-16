@@ -32,7 +32,8 @@ class Competition extends Model
         'type',
         'image',
         'horaires_h',
-        'horaires_f'
+        'horaires_f',
+        'startDate'
     );
     // protected $hidden = [];
     protected $dates = [
@@ -41,7 +42,8 @@ class Competition extends Model
 
     protected $casts = array(
         'array' => 'horaires_h',
-        'array' => 'horaires_f'
+        'array' => 'horaires_f',
+        'date' => 'startDate'
     );
 
     /**

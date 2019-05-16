@@ -11,7 +11,7 @@ class CompetitionController extends Controller
     public function index()
     {
         $page = Page::where('template', 'competitions_index')->firstOrFail();
-        $this->data['competitions'] = Competition::orderBy('startDate')->get();
+        $this->data['competitions'] = Competition::orderBy('startDate')->where('isFinish', 'not-finish')->get();
 
         $this->data['title'] = $page->title;
         $this->data['page'] = $page->withFakes();

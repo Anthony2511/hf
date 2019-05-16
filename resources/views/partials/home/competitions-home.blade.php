@@ -15,7 +15,7 @@
                 <section>
                     <h4 class="compet-home__left-title" aria-level="4" role="heading">Informations générales</h4>
                     <p class="compet-home__left-text">
-                       {{$competition->content}}
+                        {{ strip_tags(str_limit($competition->content, 255, '...')) }}
                     </p>
                     <a href="{{url('competitions/' . $competition->slug )}}" class="button-simple">En savoir plus</a>
                 </section>
@@ -26,7 +26,9 @@
             @foreach($competitionsB as $competition)
                 <div class="compet-home__bloc">
                     <div class="compet-home__right-flex">
-                        <time class="compet-home__bloc-date">{{ date("d", strtotime($competition->startDate)) }}<span>{{ substr($competition->getFullMonth(),0,4) }}</time>
+                        <time class="compet-home__bloc-date" datetime="{{$competition->startDate}}">
+                            {{ date("d", strtotime($competition->startDate)) }}<span>{{ substr($competition->getFullMonth(),0,4) }}</span>
+                        </time>
                         <section>
                             <h3 class="compet-home__bloc-title" aria-level="3" role="heading">{{ $competition->title }}</h3>
                             <span class="compet-home__bloc-location">{{ $competition->place }}</span>

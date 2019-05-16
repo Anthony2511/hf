@@ -26,7 +26,7 @@ class HomeController extends Controller
         $this->data['articles'] = Article::orderBy('date', 'DESC')->limit(2)->get();
         $articles = $this->data['articles'];
 
-        $this->data['competitionsA'] = Competition::orderBy('startDate', 'ASC')->whereNotNull('content')->limit(1)->get();
+        $this->data['competitionsA'] = Competition::orderBy('startDate', 'ASC')->whereNotNull('content')->where('isFinish', 'not-finish')->limit(1)->get();
         $competitionsA = $this->data['competitionsA'];
 
         $this->data['competitionsB'] = Competition::orderBy('startDate', 'ASC')->whereNull('content')->limit(2)->get();
