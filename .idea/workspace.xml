@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b0b97a5d-6dca-40c8-a8f7-cc4d5e556a82" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/partials/cta/cta-stage.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/internships/internships_show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/internships/internships_show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partials/cta/cta-about.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/cta/cta-about.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partials/cta/cta-news.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/cta/cta-news.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/cta/cta-stage.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/cta/cta-stage.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -42,7 +38,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="internships_show.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="internships_show.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/pages/internships/internships_show.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="437">
@@ -51,11 +47,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cta-stage.blade.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="cta-stage.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/partials/cta/cta-stage.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="20" selection-start-column="20" selection-end-column="20" />
+            <state relative-caret-position="276">
+              <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -143,9 +139,9 @@
         <option value="$PROJECT_DIR$/resources/views/partials/cta/cta-training.blade.php" />
         <option value="$PROJECT_DIR$/resources/assets/stylus/components/cta-page.styl" />
         <option value="$PROJECT_DIR$/resources/views/partials/cta/cta-about.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/partials/cta/cta-stage.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/partials/cta/cta-news.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/pages/internships/internships_show.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/partials/cta/cta-stage.blade.php" />
       </list>
     </option>
   </component>
@@ -583,12 +579,12 @@
       <workItem from="1557746195487" duration="589000" />
       <workItem from="1557749277129" duration="792000" />
       <workItem from="1557842921801" duration="9131000" />
-      <workItem from="1557997575499" duration="5158000" />
+      <workItem from="1557997575499" duration="5326000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="372028000" />
+    <option name="totallyTimeSpent" value="372196000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -930,13 +926,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/partials/cta/cta-stage.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="20" selection-start-column="20" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/pages/trainers/trainers_show.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="483">
@@ -990,6 +979,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
           <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/partials/cta/cta-stage.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
         </state>
       </provider>
     </entry>
