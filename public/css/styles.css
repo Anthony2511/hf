@@ -2908,3 +2908,13 @@ input[type="search"]::-webkit-search-decoration {
   text-align: center;
   margin-top: 2.1875em;
 }
+.cta-training__background {
+  background-color: #f4f4f4;
+  padding-top: 3.125em;
+  padding-bottom: 12.5em;
+  margin-bottom: -10.3125em;
+}
+.cta-training__button {
+  text-align: center;
+  margin-top: 2.1875em;
+}

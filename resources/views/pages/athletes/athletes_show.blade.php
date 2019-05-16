@@ -19,8 +19,5 @@
     @include('partials.single.athlete.records_athlete')
     @include('partials.single.athlete.gallery_athlete')
     @include('partials.single.athlete.trophies_athlete')
-
-    {{--@foreach($athlete->trainings as $training)
-        <p>{{ $training->specifictraining }}</p>
-    @endforeach--}}
+    @include('partials.cta.cta-training')
 @endsection
