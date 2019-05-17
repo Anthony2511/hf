@@ -1,35 +1,36 @@
 <div class="switcher">
-    <form action="" class="switcher__form">
+    <form action="{{ route('athletes-filter') }}" method="get" class="switcher__form">
         <div class="switcher__container">
             <div class="switcher__bloc">
                 <label for="discipline" class="switcher__label">Discipline(s)</label>
                 <select name="discipline" id="discipline" class="switcher__select">
-                    <option value="0">1500m</option>
-                    <option value="1">800m</option>
-                    <option value="2">Saut à la perche</option>
+                    @foreach($disciplines as $discipline)
+                        <option value="{{ $discipline->slug }}">{{ $discipline->specificdiscipline }}</option>
+                    @endforeach
                 </select>
             </div>
             <div class="switcher__bloc">
-                <label for="category" class="switcher__label">Catégorie(s)</label>
-                <select name="category" id="category" class="switcher__select">
-                    <option value="0">Cadet</option>
-                    <option value="1">Scolaire</option>
-                    <option value="2">Junior</option>
+                <label for="division" class="switcher__label">Catégorie(s)</label>
+                <select name="division" id="division" class="switcher__select">
+                    @foreach($division as $division)
+                        <option value="{{ $division->slug }}">{{ $division->specificdivision }}</option>
+                    @endforeach
                 </select>
             </div>
             <div class="switcher__bloc">
-                <label for="activity" class="switcher__label">Activité</label>
-                <select name="activity" id="activity" class="switcher__select">
-                    <option value="0">Actif</option>
-                    <option value="1">Inactif</option>
+                <label for="status" class="switcher__label">Statut</label>
+                <select name="status" id="status" class="switcher__select">
+                    <option value="novice">Novice</option>
+                    <option value="intermédiaire">Intermédiaire</option>
+                    <option value="haut niveau">Haut Niveau</option>
                 </select>
             </div>
         </div>
         <div>
-            <a href="#" class="button" title="Vers les stages">
+            <button type="submit" class="button" title="Vers les stages">
                 <span class="button-orange__left">Rechercher</span>
                 <i class="button-orange__right"></i>
-            </a>
+            </button>
         </div>
     </form>
 </div>

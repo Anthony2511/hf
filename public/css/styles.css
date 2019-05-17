@@ -1351,6 +1351,11 @@ input[type="search"]::-webkit-search-decoration {
 .trainings__trainer-name {
   font-size: 1.125em;
   font-weight: 700;
+  transition: 0.3s ease-in-out;
+}
+.trainings__trainer-name:hover {
+  color: #fe712a;
+  transition: 0.3s ease-in-out;
 }
 /*****ARTICLE*****/
 .article-intro__container {
@@ -2958,6 +2963,7 @@ input[type="search"]::-webkit-search-decoration {
   -webkit-transform: translateX(-5px) rotate(180deg);
           transform: translateX(-5px) rotate(180deg);
   transition: 0.3s ease-in-out;
+  color: #fe712a;
 }
 .cta-page__text {
   font-family: 'opensans';
