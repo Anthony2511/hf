@@ -4,6 +4,11 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Backpack\CRUD\CrudTrait;
+use Session;
+use Cookie;
+use Request;
+use App;
+use Carbon\Carbon;
 
 class Comment extends Model
 {
@@ -33,13 +38,26 @@ class Comment extends Model
     | FUNCTIONS
     |--------------------------------------------------------------------------
     */
+    public function getDate()
+    {
+        if (App::getLocale() == 'fr') {
+            Carbon::setLocale('fr');
+
+            return $this->created_at->diffForHumans();
+        } else {
+            return $this->created_at->diffForHumans();
+        }
+    }
 
     /*
     |--------------------------------------------------------------------------
     | RELATIONS
     |--------------------------------------------------------------------------
     */
-
+    public function article()
+    {
+        return $this->belongsTo('App\Models\Article', 'post_id');
+    }
     /*
     |--------------------------------------------------------------------------
     | SCOPES

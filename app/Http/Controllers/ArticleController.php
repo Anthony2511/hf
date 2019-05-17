@@ -21,8 +21,13 @@ class ArticleController extends Controller
 
     public function show( Article $article)
     {
+        $comments = $article->comments()->paginate(5);
+        $numberOfComments = $article->comments()->count();
+
         return view('pages.articles.articles_show', [
-            'article' => $article
+            'article' => $article,
+            'comments' => $comments,
+            'numberOfComments' => $numberOfComments
         ]);
     }
 }

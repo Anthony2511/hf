@@ -7,6 +7,8 @@ use Backpack\CRUD\CrudTrait;
 use Cviebrock\EloquentSluggable\Sluggable;
 use Cviebrock\EloquentSluggable\SluggableScopeHelpers;
 use Carbon\Carbon;
+use Request;
+use Cookie;
 
 class Article extends Model
 {
@@ -82,6 +84,16 @@ class Article extends Model
         return Carbon::parse($this->date)->formatLocalized('%d/%m/%Y');
     }
 
+    public function setValueCommentForm($data)
+    {
+        if (Request::old($data) && Cookie::get($data) == null)
+        {
+            echo Request::old($data);
+        } elseif (Cookie::get($data) !== null){
+            echo Request::cookie($data);
+        }
+    }
+
     /*
     |--------------------------------------------------------------------------
     | RELATIONS
@@ -92,6 +104,13 @@ class Article extends Model
     {
         return $this->belongsTo('App\Models\Author');
     }
+
+    public function comments()
+    {
+        return $this->hasMany('App\Models\Comment', 'post_id');
+    }
+
+
 
     /*
     |--------------------------------------------------------------------------

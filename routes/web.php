@@ -26,10 +26,13 @@ Route::get('rejoindre', 'JoinController@index')->name('rejoindre');
 Route::get('athletes/filter', 'AthleteController@filter')->name('athletes-filter');
 
 
-//POST
+//POSTS
 Route::get('athletes/{athlete}', 'AthleteController@show');
 Route::get('entraineurs/{trainer}', 'TrainerController@show');
 Route::get('stages/{internship}', 'InternshipController@show');
 Route::get('competitions/{competition}', 'CompetitionController@show');
-Route::get('articles/{article}', 'ArticleController@show');
+Route::get('articles/{article}', 'ArticleController@show')->name('article.single');
+Route::post('comments/{article_id}', ['uses' => 'CommentController@store', 'as' => 'comment.store']);
+
+
 
