@@ -13,5 +13,6 @@
 <script src="{{ asset('js/jquery-accessibleMegaMenu.js') }}"></script>
 <script src="{{ asset('js/configAccessibleMegaMenu.js') }}"></script>
 <script src="{{ asset('js/nav.js') }}"></script>
+<script src="{{ asset('js/ajaxAthletes.js') }}"></script>
 </body>
 </html>

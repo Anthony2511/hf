@@ -1,28 +1,31 @@
 <div class="switcher">
-    <form action="{{ route('athletes-filter') }}" method="get" class="switcher__form">
+    <form action="{{ Request::url() }}" method="get" class="switcher__form">
         <div class="switcher__container">
             <div class="switcher__bloc">
                 <label for="discipline" class="switcher__label">Discipline(s)</label>
                 <select name="discipline" id="discipline" class="switcher__select">
+                    <option value="all">Tous</option>
                     @foreach($disciplines as $discipline)
-                        <option value="{{ $discipline->slug }}">{{ $discipline->specificdiscipline }}</option>
+                        <option <?php echo (Request::get('discipline') == $discipline->slug) ? 'selected' : '' ;?> value="{{ $discipline->slug }}">{{ $discipline->specificdiscipline }}</option>
                     @endforeach
                 </select>
             </div>
             <div class="switcher__bloc">
                 <label for="division" class="switcher__label">Catégorie(s)</label>
                 <select name="division" id="division" class="switcher__select">
-                    @foreach($division as $division)
-                        <option value="{{ $division->slug }}">{{ $division->specificdivision }}</option>
-                    @endforeach
+                        <option value="all">Tous</option>
+                        @foreach($division as $division)
+                            <option <?php echo (Request::get('division') == $division->slug) ? 'selected' : '' ;?> value="{{ $division->slug }}">{{ $division->specificdivision }}</option>
+                        @endforeach
                 </select>
             </div>
             <div class="switcher__bloc">
                 <label for="status" class="switcher__label">Statut</label>
-                <select name="status" id="status" class="switcher__select">
-                    <option value="novice">Novice</option>
-                    <option value="intermédiaire">Intermédiaire</option>
-                    <option value="haut niveau">Haut Niveau</option>
+                    <select name="status" id="status" class="switcher__select">
+                    <option <?php echo (Request::get('status') == '') ? 'selected' : '' ;?> value="all">Tous</option>
+                    <option <?php echo (Request::get('status') == 'novice') ? 'selected' : '' ;?> value="novice">Novice</option>
+                    <option <?php echo (Request::get('status') == 'intermediaire') ? 'selected' : '' ;?> value="intermediaire">Intermédiaire</option>
+                    <option <?php echo (Request::get('status') == 'haut-niveau') ? 'selected' : '' ;?>  value="haut-niveau">Haut Niveau</option>
                 </select>
             </div>
         </div>

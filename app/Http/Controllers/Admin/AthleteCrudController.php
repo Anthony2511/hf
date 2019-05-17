@@ -109,8 +109,8 @@ class AthleteCrudController extends CrudController
                 'type' => 'select_from_array',
                 'options' => [
                     'novice' => 'Novice',
-                    'intermédiaire' => 'Intermédiaire',
-                    'haut niveau' => 'Haut niveau'
+                    'intermediaire' => 'Intermédiaire',
+                    'haut-niveau' => 'Haut niveau'
                 ],
                 'allows_null' => false,
                 'default' => 'novice',

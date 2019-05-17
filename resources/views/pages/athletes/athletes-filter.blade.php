@@ -1,6 +1,4 @@
-<p class="switcher__result">Résultat de la recherche : 3</p>
-<div class="home-athletes__container">
-    @foreach($athletes as $athlete)
+ @foreach($athletes as $athlete)
         <div class="home-athletes__bloc">
             <figure class="home-athletes__figure">
                 <img src="{{ $athlete->getImageProfile('_profile.jpg') }}"
@@ -29,4 +27,3 @@
                title="Vers la page de l'athlète : {{$athlete->fullname}}"></a>
         </div>
     @endforeach
-</div>
