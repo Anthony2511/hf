@@ -34,12 +34,12 @@
         <span class="empty">Il n'y pas d'athlètes correspondant à votre recherche</span>
     @endif
 </div>
-@if($athletes->count() >= 3)
+@if($athletes->count() >= 1)
     <noscript>
         {!! $athletes->render() !!}
     </noscript>
     <div class="load-more__container">
-        <a href="{{ $athletes->nextPageUrl() }}" class="load-more" id="load-more">
+        <a href="{{ $athletes->nextPageUrl() . $getLoadMoreLink }}" class="load-more" id="load-more">
                 <span class="load-more__label">
                     <span class="load-more__label-text">Charger plus</span>
                 </span>

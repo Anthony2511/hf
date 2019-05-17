@@ -44,17 +44,19 @@ class AthleteController extends Controller
         }
 
 
-        $this->data['athletes'] = $query->paginate(3);
+        $this->data['athletes'] = $query->paginate(1);
 
         if ($request->ajax()) {
             return [
                 'athletes' => view('partials.single.athlete.item_athlete',
                     [
-                        'athletes' => $this->data['athletes']
+                        'athletes' => $this->data['athletes'],
                     ])->render(),
                 'next_page' => $this->data['athletes']->nextPageUrl()
             ];
         }
+
+        $this->data['getLoadMoreLink'] = $this->getLoadMoreLink($request);
 
         return view('pages.athletes.' . $page->template, $this->data);
     }
@@ -80,7 +82,7 @@ class AthleteController extends Controller
         }
 
 
-        $athletes = $query->paginate(3);
+        $athletes = $query->paginate(1);
 
         if ($request->ajax()) {
             return [
@@ -103,5 +105,24 @@ class AthleteController extends Controller
         return view('pages.athletes.athletes_show', [
             'athlete' => $athlete
         ]);
+    }
+
+    public function getLoadMoreLink(Request $request) {
+
+        $querystring = '';
+
+        if ($request->has('discipline') ) {
+            $querystring .= '&discipline=' . $request->get('discipline');
+        }
+
+        if ($request->has('division') ) {
+            $querystring .= '&division=' . $request->get('division');
+        }
+
+        if ($request->has('status') ) {
+            $querystring .= '&status=' . $request->get('status');
+        }
+
+        return $querystring;
     }
 }
