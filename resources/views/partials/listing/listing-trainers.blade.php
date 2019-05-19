@@ -27,3 +27,15 @@
         </div>
     @endforeach
 </div>
+@if($trainers->count() >= 1)
+    <noscript>
+        {!! $trainers->render() !!}
+    </noscript>
+    <div class="load-more__container">
+        <a href="{{ $trainers->nextPageUrl() . $getLoadMoreLink }}" class="load-more" id="load-more">
+                <span class="load-more__label">
+                    <span class="load-more__label-text">Charger plus de résultats</span>
+                </span>
+        </a>
+    </div>
+@endif

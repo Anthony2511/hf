@@ -14,5 +14,6 @@
 <script src="{{ asset('js/configAccessibleMegaMenu.js') }}"></script>
 <script src="{{ asset('js/nav.js') }}"></script>
 <script src="{{ asset('js/ajaxAthletes.js') }}"></script>
+<script src="{{ asset('js/ajaxTrainers.js') }}"></script>
 </body>
 </html>

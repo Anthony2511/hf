@@ -4,7 +4,7 @@
             <div class="switcher__bloc">
                 <label for="discipline" class="switcher__label">Discipline(s)</label>
                 <select name="discipline" id="discipline" class="switcher__select">
-                    <option value="all">Tous</option>
+                    <option value="all">Toutes</option>
                     @foreach($disciplines as $discipline)
                         <option <?php echo (Request::get('discipline') == $discipline->slug) ? 'selected' : '' ;?> value="{{ $discipline->slug }}">{{ $discipline->specificdiscipline }}</option>
                     @endforeach
@@ -13,7 +13,7 @@
             <div class="switcher__bloc">
                 <label for="division" class="switcher__label">Catégorie(s)</label>
                 <select name="division" id="division" class="switcher__select">
-                    <option value="all">Tous</option>
+                    <option value="all">Toutes</option>
                     @foreach($division as $division)
                         <option <?php echo (Request::get('division') == $division->slug) ? 'selected' : '' ;?> value="{{ $division->slug }}">{{ $division->specificdivision }}</option>
                     @endforeach

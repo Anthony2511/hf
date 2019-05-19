@@ -23,6 +23,32 @@ class TrainerController extends Controller
         $this->data['disciplines'] = Discipline::orderBy('name', 'ASC')->get();
         $this->data['division'] = Division::orderBy('name', 'ASC')->get();
 
+        /**********/
+        $query = Trainer::query();
+        if ($request->has('discipline')) {
+            $query->whereHas('disciplines', function ($query) use ($request) {
+                $query->where('slug', $request->get('discipline'));
+            });
+        }
+        if ($request->has('division')) {
+            $query->whereHas('divisions', function ($query) use ($request) {
+                $query->where('slug', $request->get('division'));
+            });
+        }
+
+
+        $trainers = $query->paginate(3);
+
+        if ($request->ajax()) {
+            return [
+                'trainers' => view('partials.single.trainer.item_trainer',
+                    [
+                        'athletes' => $trainers
+                    ])->render(),
+                'next_page' => $trainers->nextPageUrl()
+            ];
+        }
+
         return view('pages.trainers.' . $page->template, $this->data);
     }
 
