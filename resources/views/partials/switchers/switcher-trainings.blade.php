@@ -1,28 +1,30 @@
 <div class="switcher">
-    <form action="" class="switcher__form">
+    <form action="{{ Request::url() }}" method="get" class="switcher__form">
         <div class="switcher__container">
             <div class="switcher__bloc">
                 <label for="place" class="switcher__label">Lieux</label>
                 <select name="place" id="place" class="switcher__select">
-                    <option value="0">Verviers</option>
-                    <option value="1">Stavelot</option>
-                    <option value="2">Aywaille</option>
+                    <option value="all">Tous</option>
+                    @foreach($place as $place)
+                        <option <?php echo (Request::get('place') == $place->slug) ? 'selected' : '' ;?> value="{{ $place->slug }}">{{ $place->name }}</option>
+                    @endforeach
                 </select>
             </div>
             <div class="switcher__bloc">
-                <label for="type" class="switcher__label">Type(s)</label>
-                <select name="type" id="type" class="switcher__select">
-                    <option value="0">Sprint</option>
-                    <option value="1">Lancer</option>
-                    <option value="2">Demi-fond</option>
+                <label for="division" class="switcher__label">Types</label>
+                <select name="division" id="division" class="switcher__select">
+                    <option value="all">Tous</option>
+                    @foreach($type as $type)
+                        <option <?php echo (Request::get('type') == $type->slug) ? 'selected' : '' ;?> value="{{ $type->slug }}">{{ $type->name }}</option>
+                    @endforeach
                 </select>
             </div>
         </div>
         <div>
-            <a href="#" class="button" title="Vers les stages">
+            <button type="submit" class="button" title="Vers les stages">
                 <span class="button-orange__left">Rechercher</span>
                 <i class="button-orange__right"></i>
-            </a>
+            </button>
         </div>
     </form>
 </div>

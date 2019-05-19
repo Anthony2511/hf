@@ -27,6 +27,7 @@ Route::get('rejoindre', 'JoinController@index')->name('rejoindre');
 //FILTERS
 Route::get('athletes/filter', 'AthleteController@filter')->name('athletes-filter');
 Route::get('trainers/filter', 'TrainerController@filter')->name('trainers-filter');
+Route::get('trainings/filter', 'TrainingController@filter')->name('trainings-filter');
 
 
 //POSTS
