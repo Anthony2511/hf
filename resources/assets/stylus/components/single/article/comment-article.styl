@@ -4,14 +4,16 @@
   background-color $cWhite
   color $cDarkBlue
   &__container
-    width 75%
+    width 50%
     margin 0 auto
-    padding s(50) 0
+    padding s(50) 0 0
   &__author-bloc
     display flex
     flex-direction row
     margin-bottom s(20)
     align-items center
+  &__author
+    margin-bottom s(30)
   &__author-infos
     display flex
     flex-direction column
@@ -43,3 +45,27 @@
       display block
   &__author-line + &__author-line
     margin-top s(30)
+  &__section
+    text-align center
+    padding-top s(50)
+  &__title-comment
+    font-family 'montserrat'
+    color $cDarkBlue
+    font-weight 700
+    font-size s(20)
+    margin-bottom s(30,20)
+    text-align left
+  &__container-author
+    position relative
+    padding-bottom s(20)
+    &:after
+      content ''
+      position absolute
+      bottom 0
+      left 0
+      right 0
+      width s(150)
+      margin 0 auto
+      height 1px
+      background-color $cDarkOrange
+

@@ -17,7 +17,7 @@ class CommentController extends Controller
         $validator = Validator::make($request->all(), [
             'user_name' => 'required|min:2|max:255',
             'email' => 'required|email|max:255',
-            'content' => 'required|min:10|max:4000'
+            'content' => 'required|min:5|max:4000'
         ]);
 
         $article = Article::find($post_id);
