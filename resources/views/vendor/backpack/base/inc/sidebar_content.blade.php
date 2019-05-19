@@ -42,6 +42,7 @@
             <i class="fa fa-angle-left pull-right"></i></a>
         <ul class="treeview-menu">
             <li><a href='{{ backpack_url('article') }}'><i class='fa fa-list'></i> <span>Actualités</span></a></li>
+            <li><a href='{{ backpack_url('comment') }}'><i class='fa fa-list'></i> <span>Commentaires</span></a></li>
             <li><a href='{{ backpack_url('author') }}'><i class='fa fa-calendar'></i> <span>Auteurs</span></a></li>
         </ul>
     </li>

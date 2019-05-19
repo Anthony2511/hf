@@ -25,4 +25,5 @@ Route::group([
     CRUD::resource('author','AuthorCrudController');
     CRUD::resource('amenitie','AmenitieCrudController');
     CRUD::resource('size','SizeCrudController');
+    CRUD::resource('comment','CommentCrudController');
 }); // this should be the absolute last line of this file
