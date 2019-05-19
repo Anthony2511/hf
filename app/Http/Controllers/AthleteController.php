@@ -44,7 +44,7 @@ class AthleteController extends Controller
         }
 
 
-        $this->data['athletes'] = $query->paginate(1);
+        $this->data['athletes'] = $query->paginate(3);
 
         if ($request->ajax()) {
             return [
@@ -82,7 +82,7 @@ class AthleteController extends Controller
         }
 
 
-        $athletes = $query->paginate(1);
+        $athletes = $query->paginate(3);
 
         if ($request->ajax()) {
             return [

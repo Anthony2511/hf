@@ -41,7 +41,7 @@
     <div class="load-more__container">
         <a href="{{ $athletes->nextPageUrl() . $getLoadMoreLink }}" class="load-more" id="load-more">
                 <span class="load-more__label">
-                    <span class="load-more__label-text">Charger plus</span>
+                    <span class="load-more__label-text">Charger plus de résultats</span>
                 </span>
         </a>
     </div>

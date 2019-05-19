@@ -11,7 +11,7 @@
 |
 */
 
-
+//PAGES
 Route::get('/', 'HomeController@index')->name('home');
 Route::get('athletes', 'AthleteController@index')->name('athletes');
 Route::get('entraineurs', 'TrainerController@index')->name('entraineurs');
@@ -23,7 +23,10 @@ Route::get('articles', 'ArticleController@index')->name('articles');
 Route::get('equipements', 'AmenitieController@index')->name('equipements');
 Route::get('contact', 'ContactController@index')->name('contact');
 Route::get('rejoindre', 'JoinController@index')->name('rejoindre');
+
+//FILTERS
 Route::get('athletes/filter', 'AthleteController@filter')->name('athletes-filter');
+Route::get('trainers/filter', 'TrainerController@filter')->name('trainers-filter');
 
 
 //POSTS
@@ -33,6 +36,9 @@ Route::get('stages/{internship}', 'InternshipController@show');
 Route::get('competitions/{competition}', 'CompetitionController@show');
 Route::get('articles/{article}', 'ArticleController@show')->name('article.single');
 Route::post('comments/{article_id}', ['uses' => 'CommentController@store', 'as' => 'comment.store']);
+
+//MAILS
+Route::post('/send-contact-form', 'ContactController@contactForm')->name('mail-contact-form');
 
 
 

@@ -2533,6 +2533,7 @@ input[type="search"]::-webkit-search-decoration {
   padding: 0 0.9375em;
   color: #fff;
   transition: 0.5s ease-in-out;
+  height: 3.3125em;
 }
 .button-orange__right:before {
   font-family: 'iconfont';
@@ -3026,4 +3027,15 @@ input[type="search"]::-webkit-search-decoration {
 }
 .cta-training__single {
   margin-bottom: 0;
+}
+.load-more__container {
+  text-align: center;
+  font-family: 'opensans';
+  color: #fff;
+  font-weight: 700;
+  background-color: #2c3e50;
+  width: 27.5%;
+  margin: 0 auto 3.125em;
+  padding: 0.9375em 0;
+  border-radius: 10px;
 }
