@@ -11,8 +11,8 @@
                 </select>
             </div>
             <div class="switcher__bloc">
-                <label for="division" class="switcher__label">Types</label>
-                <select name="division" id="division" class="switcher__select">
+                <label for="type" class="switcher__label">Types</label>
+                <select name="type" id="type" class="switcher__select">
                     <option value="all">Tous</option>
                     @foreach($type as $type)
                         <option <?php echo (Request::get('type') == $type->slug) ? 'selected' : '' ;?> value="{{ $type->slug }}">{{ $type->name }}</option>

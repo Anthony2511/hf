@@ -21,6 +21,38 @@ class TrainingController extends Controller
         $this->data['place'] = Place::orderBy('name', 'ASC')->get();
         $this->data['type'] = Type::orderBy('name', 'ASC')->get();
 
+        /**********/
+        $query = Training::query();
+        if ($request->has('place')) {
+            if ($request->get('place') !== 'all') {
+                $query->whereHas('place', function ($query) use ($request) {
+                    $query->where('slug', $request->get('place'));
+                });
+            }
+        }
+        if ($request->has('type')) {
+            if ($request->get('type') !== 'all') {
+                $query->whereHas('type', function ($query) use ($request) {
+                    $query->where('slug', $request->get('type'));
+                });
+            }
+        }
+
+
+        $this->data['trainings'] = $query->paginate(3);
+
+        if ($request->ajax()) {
+            return [
+                'trainings' => view('partials.single.training.item_training',
+                    [
+                        'trainings' => $this->data['trainings']
+                    ])->render(),
+                'next_page' => $this->data['trainings']->nextPageUrl()
+            ];
+        }
+
+        $this->data['getLoadMoreLink'] = $this->getLoadMoreLink($request);
+
         return view('pages.trainings.' . $page->template, $this->data);
     }
 
@@ -39,7 +71,7 @@ class TrainingController extends Controller
             });
         }
 
-        $trainings = $query->paginate(1);
+        $trainings = $query->paginate(3);
 
         if ($request->ajax()) {
             return [
@@ -55,5 +87,20 @@ class TrainingController extends Controller
             [
                 'trainings' => $trainings
             ]);
+    }
+
+    public function getLoadMoreLink(Request $request) {
+
+        $querystring = '';
+
+        if ($request->has('place') ) {
+            $querystring .= '&place=' . $request->get('place');
+        }
+
+        if ($request->has('type') ) {
+            $querystring .= '&type=' . $request->get('type');
+        }
+
+        return $querystring;
     }
 }
