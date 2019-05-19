@@ -1,6 +1,5 @@
 function ajaxAthletes() {
     var button = $('#load-more');
-    console.log('test');
     $('document').ready(function () {
         button.on('click', function (e) {
             e.preventDefault();

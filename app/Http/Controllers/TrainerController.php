@@ -21,33 +21,39 @@ class TrainerController extends Controller
         $this->data['page']           = $page->withFakes();
 
         $this->data['disciplines'] = Discipline::orderBy('name', 'ASC')->get();
-        $this->data['division'] = Division::orderBy('name', 'ASC')->get();
+        $this->data['divisions'] = Division::orderBy('name', 'ASC')->get();
 
         /**********/
         $query = Trainer::query();
         if ($request->has('discipline')) {
-            $query->whereHas('disciplines', function ($query) use ($request) {
-                $query->where('slug', $request->get('discipline'));
-            });
+            if ($request->get('discipline') !== 'all') {
+                $query->whereHas('disciplines', function ($query) use ($request) {
+                    $query->where('slug', $request->get('discipline'));
+                });
+            }
         }
         if ($request->has('division')) {
-            $query->whereHas('divisions', function ($query) use ($request) {
-                $query->where('slug', $request->get('division'));
-            });
+            if ($request->get('division') !== 'all') {
+                $query->whereHas('divisions', function ($query) use ($request) {
+                    $query->where('slug', $request->get('division'));
+                });
+            }
         }
 
 
-        $trainers = $query->paginate(3);
+        $this->data['trainers'] = $query->paginate(3);
 
         if ($request->ajax()) {
             return [
                 'trainers' => view('partials.single.trainer.item_trainer',
                     [
-                        'athletes' => $trainers
+                        'trainers' => $this->data['trainers']
                     ])->render(),
-                'next_page' => $trainers->nextPageUrl()
+                'next_page' => $this->data['trainers']->nextPageUrl()
             ];
         }
+
+        $this->data['getLoadMoreLink'] = $this->getLoadMoreLink($request);
 
         return view('pages.trainers.' . $page->template, $this->data);
     }
@@ -67,14 +73,13 @@ class TrainerController extends Controller
             });
         }
 
-
         $trainers = $query->paginate(3);
 
         if ($request->ajax()) {
             return [
-                'trainers' => view('partials.single.trainer.item_trainer',
+                'trainers' => view('partials.single.trainers.item_trainer',
                     [
-                        'athletes' => $trainers
+                        'trainers' => $trainers
                     ])->render(),
                 'next_page' => $trainers->nextPageUrl()
             ];
@@ -94,5 +99,20 @@ class TrainerController extends Controller
             'trainer' => $trainer,
             'competitions' => $this->data['competitions']
         ]);
+    }
+
+    public function getLoadMoreLink(Request $request) {
+
+        $querystring = '';
+
+        if ($request->has('discipline') ) {
+            $querystring .= '&discipline=' . $request->get('discipline');
+        }
+
+        if ($request->has('division') ) {
+            $querystring .= '&division=' . $request->get('division');
+        }
+
+        return $querystring;
     }
 }

@@ -14,18 +14,9 @@
                 <label for="division" class="switcher__label">Catégorie(s)</label>
                 <select name="division" id="division" class="switcher__select">
                     <option value="all">Toutes</option>
-                    @foreach($division as $division)
+                    @foreach($divisions as $division)
                         <option <?php echo (Request::get('division') == $division->slug) ? 'selected' : '' ;?> value="{{ $division->slug }}">{{ $division->specificdivision }}</option>
                     @endforeach
-                </select>
-            </div>
-            <div class="switcher__bloc">
-                <label for="status" class="switcher__label">Statut</label>
-                <select name="status" id="status" class="switcher__select">
-                    <option <?php echo (Request::get('status') == '') ? 'selected' : '' ;?> value="all">Tous</option>
-                    <option <?php echo (Request::get('status') == 'novice') ? 'selected' : '' ;?> value="novice">Novice</option>
-                    <option <?php echo (Request::get('status') == 'intermediaire') ? 'selected' : '' ;?> value="intermediaire">Intermédiaire</option>
-                    <option <?php echo (Request::get('status') == 'haut-niveau') ? 'selected' : '' ;?>  value="haut-niveau">Haut Niveau</option>
                 </select>
             </div>
         </div>
