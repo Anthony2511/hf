@@ -53,6 +53,14 @@ class TypeCrudController extends CrudController
             ]
         );
 
+        //Slug Field
+        $this->crud->addField([
+            'name' => 'slug',
+            'label' => "Slug (URL)",
+            'type' => 'text',
+            'hint' => 'Est automatiquement généré à partir du nom si pas remplit.'
+        ]);
+
         // add asterisk for fields that are required in TypeRequest
         $this->crud->setRequiredFields(StoreRequest::class, 'create');
         $this->crud->setRequiredFields(UpdateRequest::class, 'edit');
