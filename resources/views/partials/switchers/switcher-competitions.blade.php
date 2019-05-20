@@ -1,26 +1,33 @@
 <div class="switcher">
-    <form action="" class="switcher__form">
+    <form action="{{ Request::url() }}" method="get" class="switcher__form">
         <div class="switcher__container">
             <div class="switcher__bloc">
-                <label for="order" class="switcher__label">Ordre</label>
+                <label for="order" class="switcher__label">Date</label>
                 <select name="order" id="order" class="switcher__select">
-                    <option value="0">Croissant</option>
-                    <option value="1">Décroissant</option>
+                    <option <?php echo (Request::get('order') == 'ASC') ? 'selected' : '' ;?> value="ASC">Plus récent</option>
+                    <option <?php echo (Request::get('order') == 'DESC') ? 'selected' : '' ;?> value="DESC">Moins récent</option>
                 </select>
             </div>
             <div class="switcher__bloc">
-                <label for="date" class="switcher__label">Date</label>
-                <select name="date" id="date" class="switcher__select">
-                    <option value="0">Plus récent</option>
-                    <option value="1">Moins récent</option>
+                <label for="type" class="switcher__label">Type</label>
+                <select name="type" id="type" class="switcher__select">
+                    <option <?php echo (Request::get('type') == '') ? 'selected' : '' ;?> value="all">Tous</option>
+                    <option <?php echo (Request::get('type') == 'provincial-outdoor') ? 'selected' : '' ;?> value="provincial-outdoor">Provincial Outdoor</option>
+                    <option <?php echo (Request::get('type') == 'provincial-indoor') ? 'selected' : '' ;?> value="provincial-indoor">Provincial Indoor</option>
+                    <option <?php echo (Request::get('type') == 'francophone-outdoor') ? 'selected' : '' ;?>  value="francophone-outdoor">Francophone Outdoor</option>
+                    <option <?php echo (Request::get('type') == 'francophone-indoor') ? 'selected' : '' ;?>  value="francophone-indoor">Francophone Indoor</option>
+                    <option <?php echo (Request::get('type') == 'national-outdoor') ? 'selected' : '' ;?>  value="national-outdoor">National Outdoor</option>
+                    <option <?php echo (Request::get('type') == 'national-indoor') ? 'selected' : '' ;?>  value="national-indoor">National Indoor</option>
+                    <option <?php echo (Request::get('type') == 'international-outdoor') ? 'selected' : '' ;?>  value="international-outdoor">International Outdoor</option>
+                    <option <?php echo (Request::get('type') == 'international-indoor') ? 'selected' : '' ;?>  value="international-indoor">International Indoor</option>
                 </select>
             </div>
         </div>
         <div>
-            <a href="#" class="button" title="Vers les stages">
+            <button type="submit" class="button" title="Vers les stages">
                 <span class="button-orange__left">Rechercher</span>
                 <i class="button-orange__right"></i>
-            </a>
+            </button>
         </div>
     </form>
 </div>

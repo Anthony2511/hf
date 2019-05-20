@@ -1631,6 +1631,7 @@ input[type="search"]::-webkit-search-decoration {
   width: 100%;
   color: #2c3e50;
   margin-top: 3.125em;
+  margin-bottom: 2.1875em;
 }
 .listing-compet__bloc {
   padding: 1.875em;

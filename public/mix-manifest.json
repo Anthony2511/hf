@@ -1,6 +1,7 @@
 {
     "/css/styles.css": "/css/styles.css",
     "/js/ajaxAthletes.js": "/js/ajaxAthletes.js",
+    "/js/ajaxCompetitions.js": "/js/ajaxCompetitions.js",
     "/js/ajaxTrainers.js": "/js/ajaxTrainers.js",
     "/js/ajaxTrainings.js": "/js/ajaxTrainings.js",
     "/js/app.js": "/js/app.js",

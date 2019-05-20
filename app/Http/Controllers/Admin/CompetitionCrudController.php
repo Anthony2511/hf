@@ -119,14 +119,14 @@ class CompetitionCrudController extends CrudController
                 'name' => 'type',
                 'type' => 'select2_from_array',
                 'options' => [
-                    'Provincial Outdoor' => 'Provincial Outdoor',
-                    'Provincial Indoor' => 'Provincial Indoor',
-                    'Francophone Outdoor' => 'Francophone Outdoor',
-                    'Francophone Indoor' => 'Francophone Indoor',
-                    'National Outdoor' => 'National Outdoor',
-                    'National Indoor' => 'National Indoor',
-                    'International Outdoor' => 'International Outdoor',
-                    'International Indoor' => 'International Indoor'
+                    'provincial-outdoor' => 'Provincial Outdoor',
+                    'provincial-indoor' => 'Provincial Indoor',
+                    'francophone-outdoor' => 'Francophone Outdoor',
+                    'francophone-indoor' => 'Francophone Indoor',
+                    'national-outdoor' => 'National Outdoor',
+                    'national-indoor' => 'National Indoor',
+                    'international-outdoor' => 'International Outdoor',
+                    'international-indoor' => 'International Indoor'
                 ],
                 'allows_null' => false,
                 'default' => 'provincial-outdoor',
