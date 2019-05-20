@@ -1,33 +1,36 @@
 <div class="switcher">
-    <form action="" class="switcher__form">
+    <form action="{{ Request::url() }}" method="get" class="switcher__form">
         <div class="switcher__container">
             <div class="switcher__bloc">
                 <label for="order" class="switcher__label">Prix</label>
                 <select name="order" id="order" class="switcher__select">
-                    <option value="0">Croissant</option>
-                    <option value="1">Décroissant</option>
+                    <option <?php echo (Request::get('order') == 'ASC') ? 'selected' : '' ;?> value="ASC">Croissant</option>
+                    <option <?php echo (Request::get('order') == 'DESC') ? 'selected' : '' ;?> value="DESC">Décroissant</option>
                 </select>
             </div>
             <div class="switcher__bloc">
-                <label for="date" class="switcher__label">Taille</label>
-                <select name="date" id="date" class="switcher__select">
-                    <option value="0">S</option>
-                    <option value="1">M</option>
+                <label for="size" class="switcher__label">Taille(s)</label>
+                <select name="size" id="size" class="switcher__select">
+                    <option value="all">Toutes</option>
+                    @foreach($sizes as $size)
+                        <option <?php echo (Request::get('size') == $size->slug) ? 'selected' : '' ;?> value="{{ $size->slug }}">{{ $size->name }}</option>
+                    @endforeach
                 </select>
             </div>
             <div class="switcher__bloc">
-                <label for="date" class="switcher__label">Sexe</label>
-                <select name="date" id="date" class="switcher__select">
-                    <option value="0">Hommes</option>
-                    <option value="1">Femmes</option>
+                <label for="sexe" class="switcher__label">Sexe</label>
+                <select name="sexe" id="sexe" class="switcher__select">
+                    <option <?php echo (Request::get('sexe') == '') ? 'selected' : '' ;?> value="all">Tous</option>
+                    <option <?php echo (Request::get('sexe') == 'hommes') ? 'selected' : '' ;?> value="hommes">Hommes</option>
+                    <option <?php echo (Request::get('sexe') == 'femmes') ? 'selected' : '' ;?> value="femmes">Femmes</option>
                 </select>
             </div>
         </div>
         <div>
-            <a href="#" class="button" title="Vers les stages">
+            <button type="submit" class="button" title="Vers les stages">
                 <span class="button-orange__left">Rechercher</span>
                 <i class="button-orange__right"></i>
-            </a>
+            </button>
         </div>
     </form>
 </div>
