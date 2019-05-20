@@ -10,7 +10,7 @@
                            type="text" name="firstname" id="firstname" autocomplete="off" required>
                     <label for="firstname">Votre prénom *</label>
                     @if($errors->has('firstname'))
-                        {{$errors->first('firstname')}}
+                        <span class="form-error">{{$errors->first('firstname')}}</span>
                     @endif
                 </div>
                 <div class="floating-label floating-label__width">
@@ -18,7 +18,7 @@
                            type="text" name="lastname" id="lastname" autocomplete="off" required>
                     <label for="lastname">Votre nom *</label>
                     @if($errors->has('lastname'))
-                        {{$errors->first('lastname')}}
+                        <span class="form-error"> {{$errors->first('lastname')}}</span>
                     @endif
                 </div>
             </div>
@@ -27,7 +27,7 @@
                        type="text" name="email" id="email" autocomplete="off" required>
                 <label for="email">Votre email *</label>
                 @if($errors->has('email'))
-                    {{$errors->first('email')}}
+                    <span class="form-error">{{$errors->first('email')}}</span>
                 @endif
             </div>
             <div class="single-stage__form-width">
@@ -36,7 +36,7 @@
                            type="text" name="phone" id="phone" autocomplete="off" required>
                     <label for="phone">Votre téléphone</label>
                     @if($errors->has('phone'))
-                        {{$errors->first('phone')}}
+                        <span class="form-error">{{$errors->first('phone')}}</span>
                     @endif
                 </div>
                 <div class="floating-label floating-label__width">
@@ -44,7 +44,7 @@
                            type="text" name="fax" id="fax" autocomplete="off">
                     <label for="fax">Votre fax</label>
                     @if($errors->has('fax'))
-                        {{$errors->first('fax')}}
+                        <span class="form-error">{{$errors->first('fax')}}</span>
                     @endif
                 </div>
             </div>
@@ -53,7 +53,7 @@
                        type="text" name="subject" id="subject" autocomplete="off">
                 <label for="subject">Sujet de votre message *</label>
                 @if($errors->has('subject'))
-                    {{$errors->first('subject')}}
+                    <span class="form-error">{{$errors->first('subject')}}</span>
                 @endif
             </div>
             <div class="floating-label">
@@ -61,16 +61,17 @@
                           required placeholder="Votre message *"></textarea>
                 <label for="bodyMessage" class="floating-label__label">Votre message *</label>
                 @if($errors->has('bodyMessage'))
-                    {{$errors->first('bodyMessage')}}
+                    <span class="form-error">{{$errors->first('bodyMessage')}}</span>
                 @endif
             </div>
-
-            <p>{!! session('success') !!}</p>
-
             <button type="submit" class="button">
                 <span class="button-orange__left">Envoyez votre message</span>
                 <i class="button-orange__right-send"></i>
             </button>
+            @if((session('success')))
+                <p class="form-success">{!! session('success') !!}</p>
+            @else
+            @endif
         </div>
 
     </div>
