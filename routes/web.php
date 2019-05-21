@@ -23,6 +23,7 @@ Route::get('articles', 'ArticleController@index')->name('articles');
 Route::get('equipements', 'AmenitieController@index')->name('equipements');
 Route::get('contact', 'ContactController@index')->name('contact');
 Route::get('rejoindre', 'JoinController@index')->name('rejoindre');
+Route::get('confirmation-stage', 'ConfirmInternshipController@index')->name('confirmation-stage');
 
 //FILTERS
 Route::get('athletes/filter', 'AthleteController@filter')->name('athletes-filter');

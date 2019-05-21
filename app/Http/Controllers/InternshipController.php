@@ -79,7 +79,7 @@ class InternshipController extends Controller
         ]);
 
         if ($validator->fails()) {
-            return redirect()->to(view('pages.internships.internships_thanks', compact('#formerror')))
+            return redirect()->to(route('confirmation-stage', '#formerror'))
                 ->withInput()
                 ->withErrors($validator);
         }
@@ -93,7 +93,7 @@ class InternshipController extends Controller
 
         \Session::flash('success', 'Votre message a bien été envoyé. Merci&nbsp;!');
 
-        return redirect()->to(view('pages.internships.internships_thanks', compact('#form')));
+        return redirect()->to(route('confirmation-stage', '#form'));
     }
 
     public function show(Internship $internship)
