@@ -7,7 +7,7 @@
 @section('class', 'index_athletes')
 
 @section('content')
-    <div class="wrap">
-        <p>Page Nous Rejoinde</p>
+    <div class="about__background">
+        @include('partials.join.join_intro')
     </div>
 @endsection

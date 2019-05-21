@@ -2586,7 +2586,7 @@ input[type="search"]::-webkit-search-decoration {
   color: #fff;
   transition: 0.5s ease-in-out;
 /*PROVISOIRE*/
-  height: 53.3px;
+  height: 3.3125em;
 }
 .button-orange__right-send:before {
   font-family: 'iconfont';

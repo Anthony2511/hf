@@ -17,8 +17,8 @@ class InternshipController extends Controller
         $page = Page::where('template', 'internships_index')->firstOrFail();
         $this->data['internships'] = Internship::orderBy('startDay')->get();
 
-        $this->data['title'] = $page->title;
-        $this->data['page'] = $page->withFakes();
+        $this->data['title']          = $page->title;
+        $this->data['page']           = $page->withFakes();
 
         /************/
         $query = Internship::query();
@@ -69,18 +69,17 @@ class InternshipController extends Controller
             ]);
     }
 
-    public function internshipForm(Request $request)
-    {
+    public function internshipForm(Request $request) {
         $validator = Validator::make($request->all(), [
             'name' => 'required|min:2|max:255',
-            'email' => 'required|email',
+            'email'     => 'required|email',
             'childs' => 'required|integer',
             'affil' => 'required',
-            'bodyMessage' => 'required|min:30|max:5000'
+            'bodyMessage'   => 'required|min:30|max:5000'
         ]);
 
         if ($validator->fails()) {
-            return redirect()->to(view('pages.internships.internships_thanks'))
+            return redirect()->to(view('pages.internships.internships_thanks', compact('#formerror')))
                 ->withInput()
                 ->withErrors($validator);
         }
@@ -88,13 +87,13 @@ class InternshipController extends Controller
         try {
             Mail::to('contact@hf.be')
                 ->send(new InternshipForm($request));
-        } catch (Exception $ex) {
+        }catch (Exception $ex) {
             return 'We eregrgrtg0';
         }
 
-        \Session::flash('success', 'Votre message a bien été envoyé pour le stage Merci&nbsp;!');
+        \Session::flash('success', 'Votre message a bien été envoyé. Merci&nbsp;!');
 
-        return redirect()->to(view('pages.internships.internships_thanks'));
+        return redirect()->to(view('pages.internships.internships_thanks', compact('#form')));
     }
 
     public function show(Internship $internship)
@@ -104,12 +103,11 @@ class InternshipController extends Controller
         ]);
     }
 
-    public function getLoadMoreLink(Request $request)
-    {
+    public function getLoadMoreLink(Request $request) {
 
         $querystring = '';
 
-        if ($request->has('order')) {
+        if ($request->has('order') ) {
             $querystring .= '&order=' . $request->get('order');
         }
 
