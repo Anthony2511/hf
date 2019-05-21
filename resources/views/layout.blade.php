@@ -19,5 +19,6 @@
 <script src="{{ asset('js/ajaxCompetitions.js') }}"></script>
 <script src="{{ asset('js/ajaxInternships.js') }}"></script>
 <script src="{{ asset('js/ajaxAmenities.js') }}"></script>
+<script src="{{ asset('js/ajaxArticles.js') }}"></script>
 </body>
 </html>
