@@ -2,12 +2,16 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Internship;
 use Illuminate\Http\Request;
 
 class ConfirmInternshipController extends Controller
 {
     public function index()
     {
-        return view('pages.confirm_index');
+        $this->data['internships'] = Internship::orderBy('title', 'ASC')->get();
+        return view('pages.confirm_index', [
+            'internships' => $this->data['internships']
+        ]);
     }
 }
