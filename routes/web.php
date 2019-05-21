@@ -41,6 +41,7 @@ Route::post('comments/{article_id}', ['uses' => 'CommentController@store', 'as' 
 
 //MAILS
 Route::post('/send-contact-form', 'ContactController@contactForm')->name('mail-contact-form');
+Route::post('/send-internship-form', 'InternshipController@internshipForm')->name('mail-internship-form');
 
 
 

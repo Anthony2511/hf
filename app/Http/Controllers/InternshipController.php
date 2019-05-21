@@ -5,6 +5,10 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Backpack\PageManager\app\Models\Page;
 use App\Models\Internship;
+use Validator;
+use App\Mail\InternshipForm;
+use Session;
+use Illuminate\Support\Facades\Mail;
 
 class InternshipController extends Controller
 {
@@ -13,8 +17,8 @@ class InternshipController extends Controller
         $page = Page::where('template', 'internships_index')->firstOrFail();
         $this->data['internships'] = Internship::orderBy('startDay')->get();
 
-        $this->data['title']          = $page->title;
-        $this->data['page']           = $page->withFakes();
+        $this->data['title'] = $page->title;
+        $this->data['page'] = $page->withFakes();
 
         /************/
         $query = Internship::query();
@@ -65,6 +69,34 @@ class InternshipController extends Controller
             ]);
     }
 
+    public function internshipForm(Request $request)
+    {
+        $validator = Validator::make($request->all(), [
+            'name' => 'required|min:2|max:255',
+            'email' => 'required|email',
+            'childs' => 'required|integer',
+            'affil' => 'required',
+            'bodyMessage' => 'required|min:30|max:5000'
+        ]);
+
+        if ($validator->fails()) {
+            return redirect()->to(view('pages.internships.internships_thanks'))
+                ->withInput()
+                ->withErrors($validator);
+        }
+
+        try {
+            Mail::to('contact@hf.be')
+                ->send(new InternshipForm($request));
+        } catch (Exception $ex) {
+            return 'We eregrgrtg0';
+        }
+
+        \Session::flash('success', 'Votre message a bien été envoyé pour le stage Merci&nbsp;!');
+
+        return redirect()->to(view('pages.internships.internships_thanks'));
+    }
+
     public function show(Internship $internship)
     {
         return view('pages.internships.internships_show', [
@@ -72,11 +104,12 @@ class InternshipController extends Controller
         ]);
     }
 
-    public function getLoadMoreLink(Request $request) {
+    public function getLoadMoreLink(Request $request)
+    {
 
         $querystring = '';
 
-        if ($request->has('order') ) {
+        if ($request->has('order')) {
             $querystring .= '&order=' . $request->get('order');
         }
 
