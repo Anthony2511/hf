@@ -11,4 +11,5 @@
         @include('partials.join.join_intro')
     </div>
     @include('partials.join.join_contact')
+    @include('partials.cta.cta-compet')
 @endsection
