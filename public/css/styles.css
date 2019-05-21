@@ -678,6 +678,90 @@ input[type="search"]::-webkit-search-decoration {
   transition: 0.3s ease-in-out;
   color: #fe712a;
 }
+@media screen and (max-width: 1300px) {
+  .compet-home {
+    padding: 3.125em 1.25em;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .compet-home__container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .compet-home__bloc-left {
+    width: 100%;
+    margin-bottom: 1.25em;
+    text-align: left;
+  }
+  .compet-home__bloc-right {
+    width: 100%;
+  }
+  .compet-home__bloc {
+    text-align: left;
+  }
+}
+@media screen and (max-width: 600px) {
+  .compet-home__left-date {
+    font-size: 2.5em;
+  }
+  .compet-home__bloc-date {
+    font-size: 1.5625em;
+  }
+  .compet-home__left-title {
+    font-size: 1.375em;
+  }
+  .compet-home__bloc-title {
+    font-size: 1em;
+  }
+  .compet-home__left-location {
+    font-size: 0.875em;
+  }
+  .compet-home__bloc-location {
+    font-size: 0.875em;
+  }
+  .compet-home__left-text {
+    font-size: 0.875em;
+  }
+  .compet-home__bloc-left {
+    padding: 1.25em;
+  }
+  .compet-home__bloc {
+    padding: 1.25em;
+  }
+}
+@media screen and (max-width: 400px) {
+  .compet-home__left-date {
+    font-size: 1.875em;
+  }
+  .compet-home__bloc-date {
+    font-size: 1.25em;
+  }
+  .compet-home__left-title {
+    font-size: 1.25em;
+    margin-bottom: 0.25em;
+    line-height: 1.3;
+  }
+  .compet-home__bloc-title {
+    font-size: 0.875em;
+    line-height: 1.2;
+    margin-bottom: 0.357142857142857em;
+  }
+  .compet-home__left-location {
+    font-size: 0.75em;
+  }
+  .compet-home__bloc-location {
+    font-size: 0.75em;
+  }
+  .compet-home__infos-bloc {
+    margin-top: 0.9375em;
+  }
+  .compet-home__left-flex,
+  .compet-home__right-flex {
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 0.625em;
+  }
+}
 .trainee-home {
   background-color: #fa9926;
   padding: 3.125em 0 0;
@@ -2664,6 +2748,19 @@ input[type="search"]::-webkit-search-decoration {
   position: relative;
   left: 50px;
 }
+@media screen and (max-width: 1024px) {
+  .button-float {
+    float: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .button-simple {
+    font-size: 1.375em;
+  }
+  .button-simple__size {
+    font-size: 1.125em;
+  }
+}
 @media screen and (max-width: 475px) {
   .button-white__left {
     font-size: 0.875em;
@@ -2672,6 +2769,25 @@ input[type="search"]::-webkit-search-decoration {
   .button-blue__left {
     font-size: 0.875em;
     padding: 0.9375em 1.25em;
+  }
+}
+@media screen and (max-width: 400px) {
+  .button-simple {
+    font-size: 1.25em;
+  }
+  .button-simple__size {
+    font-size: 1em;
+  }
+  .button-blue__left {
+    font-size: 0.75em;
+  }
+}
+@media screen and (max-width: 320px) {
+  .button-blue__left {
+    padding: 1.142857142857143em;
+  }
+  .button-white__left {
+    padding: 1.142857142857143em;
   }
 }
 .title {

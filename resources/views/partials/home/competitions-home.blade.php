@@ -12,7 +12,7 @@
                         <span class="compet-home__left-location">{{ $competition->place }}</span>
                     </section>
                 </div>
-                <section>
+                <section class="compet-home__infos-bloc">
                     <h4 class="compet-home__left-title" aria-level="4" role="heading">Informations générales</h4>
                     <p class="compet-home__left-text">
                         {{ strip_tags(str_limit($competition->content, 255, '...')) }}
