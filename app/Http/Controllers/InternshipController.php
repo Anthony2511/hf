@@ -9,6 +9,7 @@ use Validator;
 use App\Mail\InternshipForm;
 use Session;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\URL;
 
 class InternshipController extends Controller
 {
@@ -79,7 +80,7 @@ class InternshipController extends Controller
         ]);
 
         if ($validator->fails()) {
-            return redirect()->to(route('confirmation-stage', '#formerror'))
+            return redirect()->to(URL::previous().'#formerror')
                 ->withInput()
                 ->withErrors($validator);
         }

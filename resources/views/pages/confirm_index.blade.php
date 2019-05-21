@@ -16,6 +16,8 @@
         </div>
     </div>
     <div class="wrap">
-        Nous avons bien reçu votre demande de stage
+        <p class="contact-intro__text">
+            Nous avons bien reçu votre pré-inscription pour le stage :
+        </p>
     </div>
 @endsection
