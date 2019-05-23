@@ -21,9 +21,9 @@
                 </figure>
                 <span class="news-home__author-name">par <span>{{ $article->author->fullname }}</span></span>
             </div>
-            <h3 aria-level="3" role="heading" class="news-home__title">{{ $article->title }}</h3>
+            <h3 aria-level="3" role="heading" class="news-home__title">{{ strip_tags(str_limit($article->title, 50, '...')) }}</h3>
             <p class="news-home__text">
-                {{ $article->introduction }}
+                {{ strip_tags(str_limit($article->content, 255, '...')) }}
             </p>
             <span class="news-home__comments">{{ $article->comments->count() }}</span>
         </section>

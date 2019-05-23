@@ -28,7 +28,6 @@ class Article extends Model
     protected $fillable = array(
         'title',
         'slug',
-        'introduction',
         'content',
         'image',
         'author_id',

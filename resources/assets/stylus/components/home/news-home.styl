@@ -119,3 +119,48 @@
 .listing-news
   padding 0
   margin 0 0 s($marginTitle)
+
+//MEDIA QUERIES
+
+//1300PX
+@media screen and (max-width: 1300px)
+  .news-home
+    &__container
+      padding 0 s(20)
+    &__title
+      min-height s(50,25)
+
+//1024PX
+@media screen and (max-width: 1024px)
+  .news-home
+    margin s(-210,16) 0 s(-285,16)
+    &__container
+      flex-flow column wrap
+    &__bloc
+      width 100%
+    &__title
+      min-height 0
+
+//600PX
+@media screen and (max-width: 600px)
+  .news-home
+    &__sub-bloc
+      padding s(20)
+
+//450PX
+@media screen and (max-width: 450px)
+  .news-home
+    &__text
+      font-size s(14)
+    &__title
+      font-size s(20,16)
+    &__author-name
+      font-size s(14)
+    &__author-figure
+      & img
+        width s(20)
+    &__comments
+      font-size s(14)
+    &__date
+      font-size s(14)
+      padding s(5,14) s(10,14)

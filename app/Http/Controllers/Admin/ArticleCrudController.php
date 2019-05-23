@@ -101,16 +101,6 @@ class ArticleCrudController extends CrudController
             'type'  => 'date',
         ], 'update');
 
-        // Introduction Field
-        $this->crud->addField(
-            [
-                'name' => 'introduction',
-                'type' => 'simplemde',
-                'label' => 'Introduction de l\'article',
-                'hint' => 'Maximum 175 caractères'
-            ]
-        );
-
         // Content Field
         $this->crud->addField(
             [
