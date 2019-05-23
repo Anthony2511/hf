@@ -22,3 +22,52 @@
   &__bloc
     width 50%
     margin-right 10%
+
+//MEDIA QUERIES
+
+//1300PX
+@media screen and (max-width: 1300px)
+  .trainee-home
+    &__container
+      padding 0 s(20)
+    &__bloc
+      margin-right 5%
+    &__text
+      font-size s(14)
+  .trainee-title
+    font-size s(35)
+
+//1024PX
+@media screen and (max-width: 1024px)
+  .trainee-home
+    padding s(75) 0
+    &__text
+      font-size s(16)
+    &__container
+      top 0
+
+//900PX
+@media screen and (max-width: 900px)
+  .trainee-home
+    &__bloc
+      width 70%
+
+//768PX
+@media screen and (max-width: 768px)
+  .trainee-home
+    &__container
+      flex-direction column
+    &__bloc
+      width 100%
+      order 1
+    &__figure
+      margin-bottom s(30)
+      order 0
+      & img
+        width 100%
+
+//600PX
+@media screen and (max-width: 600px)
+  .trainee-home
+    &__text
+      font-size s(14)

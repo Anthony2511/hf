@@ -486,6 +486,9 @@ input[type="search"]::-webkit-search-decoration {
   .home-athletes {
     padding: 3.125em 1.25em;
   }
+  .listing-athletes {
+    padding: 0 1.25em;
+  }
 }
 @media screen and (max-width: 1150px) {
   .home-athletes__infos-title {
@@ -791,6 +794,57 @@ input[type="search"]::-webkit-search-decoration {
 .trainee-home__bloc {
   width: 50%;
   margin-right: 10%;
+}
+@media screen and (max-width: 1300px) {
+  .trainee-home__container {
+    padding: 0 1.25em;
+  }
+  .trainee-home__bloc {
+    margin-right: 5%;
+  }
+  .trainee-home__text {
+    font-size: 0.875em;
+  }
+  .trainee-title {
+    font-size: 2.1875em;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .trainee-home {
+    padding: 4.6875em 0;
+  }
+  .trainee-home__text {
+    font-size: 1em;
+  }
+  .trainee-home__container {
+    top: 0;
+  }
+}
+@media screen and (max-width: 900px) {
+  .trainee-home__bloc {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .trainee-home__container {
+    flex-direction: column;
+  }
+  .trainee-home__bloc {
+    width: 100%;
+    order: 1;
+  }
+  .trainee-home__figure {
+    margin-bottom: 1.875em;
+    order: 0;
+  }
+  .trainee-home__figure img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .trainee-home__text {
+    font-size: 0.875em;
+  }
 }
 .news-home {
   background-color: #f4f4f4;
@@ -1732,6 +1786,11 @@ input[type="search"]::-webkit-search-decoration {
           transform: translateX(5px);
   transition: 0.3s ease-in-out;
   color: #fe712a;
+}
+@media screen and (max-width: 1300px) {
+  .listing-compet__container {
+    padding: 0 1.25em;
+  }
 }
 .intro-competition {
   padding: 3.125em 0 0;
@@ -2804,7 +2863,7 @@ input[type="search"]::-webkit-search-decoration {
   color: #fff;
 }
 .title__center {
-  text-align: center;
+  text-align: left;
 }
 .title__center:after {
   content: '';
@@ -2845,9 +2904,13 @@ input[type="search"]::-webkit-search-decoration {
 @media screen and (max-width: 1024px) {
   .title {
     text-align: center;
+    font-size: 2.1875em;
   }
   .title__left:after {
     margin: 0 auto;
+  }
+  .trainee-title {
+    text-align: left;
   }
 }
 @media screen and (max-width: 450px) {
@@ -3171,6 +3234,9 @@ input[type="search"]::-webkit-search-decoration {
 }
 .cta-training__single {
   margin-bottom: 0;
+}
+.cta-training__single:last-child {
+  margin-right: 0;
 }
 .load-more__container {
   text-align: center;

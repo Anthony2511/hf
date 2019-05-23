@@ -2,7 +2,7 @@
     <section class="wrap">
         <div class="trainee-home__container">
             <div class="trainee-home__bloc">
-                <h2 class="title title__white title__left-white" aria-level="2" role="heading">Nous organisons des
+                <h2 class="title title__white title__left-white trainee-title" aria-level="2" role="heading">Nous organisons des
                     stages</h2>
                 <p class="trainee-home__text">
                     L'union athlétique Hautes-Fagnes organise des stages pour jeunes (BPM, 8 à

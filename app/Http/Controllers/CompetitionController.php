@@ -29,8 +29,6 @@ class CompetitionController extends Controller
         if ($request->has('order')) {
             $query->orderBy('startDate', $request->get('order'));
         }
-
-
         $this->data['competitions'] = $query->paginate(6);
 
         if ($request->ajax()) {

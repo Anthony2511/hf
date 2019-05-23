@@ -1,5 +1,5 @@
 <p class="switcher__result">Résultat de la recherche : {{$athletes->count()}}</p>
-<div class="home-athletes__container" id="container-ajax">
+<div class="home-athletes__container listing-athletes" id="container-ajax">
     @if($athletes->count() > 0)
         @foreach($athletes as $athlete)
             <div class="home-athletes__bloc">
