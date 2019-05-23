@@ -1,7 +1,6 @@
 .footer
   position relative
   overflow hidden
-  height 479px
   color $cWhite
   font-family 'opensans'
   &__bloc-container
@@ -13,6 +12,8 @@
     flex-direction row
     justify-content space-between
     padding-bottom s(50,16)
+  &__bloc
+    width 30%
   &__bg
     position absolute
     top 0
@@ -53,6 +54,7 @@
   &__results-link
     position relative
     display inline-block
+    word-wrap break-word
     &:before
       content ''
       position absolute
@@ -93,6 +95,48 @@
         font-size s(25,16)
   &__social-list
     margin-right s(10,16)
+
+//MEDIA QUERIES
+
+//1300PX
+@media screen and (max-width:1300px)
+  .footer
+    &__container
+      padding 0 s(20) s(50)
+
+//900PX
+@media screen and (max-width:900px)
+  .footer
+    &__container
+      flex-direction column
+      align-items center
+      text-align center
+    &__bloc
+      width 100%
+    &__title
+      &:after
+        left 0
+        right 0
+        margin 0 auto
+    &__bloc + &__bloc
+      margin-top s(30)
+    &__bloc-container
+      padding s(115,16) 0 0
+    &__social
+      justify-content: center
+
+//450PX
+@media screen and (max-width:450px)
+  .footer
+    &__title
+      font-size s(25)
+    &__contact-item
+      font-size s(14)
+    &__results-link
+      font-size s(14)
+    &__copyright
+      & span
+        font-size s(14)
 
 
 
