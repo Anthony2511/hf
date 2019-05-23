@@ -7,6 +7,19 @@
   background-color $cWhite
   margin-bottom s($marginTitle,16)
   z-index 0
+  &__title
+    font-family 'montserrat'
+    font-size s($mainTitle,16)
+    font-weight: 600
+    position relative
+    text-align left
+    color $cDarkBlue
+    &:after
+      content ''
+      display block
+      background-color $cOrange
+      width s(50,40)
+      height s(2,40)
   &__bloc
     display flex
     &:before
@@ -32,3 +45,39 @@
     font-family 'opensans'
     color $cBlue
     line-height 1.6
+
+//MEDIA QUERIES
+
+//1024PX
+@media screen and (max-width: 1024px)
+  .intro
+    &__title
+      font-size s(35)
+
+//768PX
+@media screen and (max-width: 768px)
+  .intro
+    &__bloc-img
+      position absolute
+      left -9999px
+      top -9999px
+    &__bloc-text
+      margin-left 0
+    &__bloc
+      display block
+      text-align center
+      padding 0 s(20)
+    &__title
+      text-align center
+      &:after
+        left 0
+        right 0
+        margin 0 auto
+
+//450PX
+@media screen and (max-width: 450px)
+  .intro
+    &__text
+      font-size s(14)
+    &__title
+      font-size s(25)
