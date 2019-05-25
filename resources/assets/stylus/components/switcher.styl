@@ -14,10 +14,22 @@
     font-size s(18,16)
     font-weight: 600
     display block
-    margin-bottom s(10,18)
   &__select
     border-radius 10px
-    padding s(10,16) s(20,16)
+    padding s(12,14) s(62,14) s(12,14) s(20,14)
+    background-color: $cWhite
+    font-size s(14)
+    color: $cBlue
+    border: none
+    appearance: button
+    outline: none
+    overflow-y hidden
+    background-image none
+    & option
+      padding 30px
+      display block
+      &:hover
+        background-color $cBlue
   &__bloc + &__bloc
     margin-left s(50,16)
   &__result
@@ -26,3 +38,29 @@
     margin-top s($marginTitle,25)
     color $cDarkBlue
     font-weight 700
+  &__select-box
+    position: relative
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    &:before
+      icon('arrow')
+      position: absolute
+      top: 0
+      right: 0
+      height: 100%
+      font-size s(8)
+      text-align: center
+      color: $cWhite
+      padding 0 s(15,8)
+      background-color: $cDarkBlue
+      pointer-events: none
+      display: flex
+      flex-direction: column
+      justify-content: center
+      border-radius: 0 10px 10px 0
+  &__button
+    position relative
+    top s(18)
+
+
