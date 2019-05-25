@@ -96,6 +96,13 @@ class Competition extends Model
         return Carbon::parse($this->startDate)->formatLocalized('%d %B %Y');
     }
 
+    function getFormatStartDate()
+    {
+        setlocale(LC_TIME, 'fr_FR.utf-8');
+        return Carbon::parse($this->startDate)->format('d/m/Y');
+    }
+
+
     /*
     |--------------------------------------------------------------------------
     | RELATIONS

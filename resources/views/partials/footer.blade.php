@@ -22,15 +22,11 @@
             <section class="footer__bloc">
                 <h2 aria-level="2" role="heading" class="footer__title">Derniers résultats</h2>
                 <ul>
-                    <li class="footer__results-item"><a href="#" class="footer__results-link">Cross cup de Dour -
-                            <time>12/11/2018</time>
-                        </a></li>
-                    <li class="footer__results-item"><a href="#" class="footer__results-link">Cross cup de Dour -
-                            <time>12/11/2018</time>
-                        </a></li>
-                    <li class="footer__results-item"><a href="#" class="footer__results-link">Cross cup de Dour -
-                            <time>12/11/2018</time>
-                        </a></li>
+                    @foreach($competitions->take(3) as $competition)
+                        <li class="footer__results-item"><a href="{{url('competitions/' . $competition->slug )}}" class="footer__results-link">{{$competition->title}} -
+                                <time>{{$competition->getFormatStartDate()}}</time>
+                            </a></li>
+                    @endforeach
                 </ul>
             </section>
             <section class="footer__bloc">

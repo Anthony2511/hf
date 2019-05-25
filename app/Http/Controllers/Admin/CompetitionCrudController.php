@@ -147,7 +147,7 @@ class CompetitionCrudController extends CrudController
                 'allows_null' => false,
                 'default' => ' not-finish',
                 'label' => 'Statut de la compétition',
-                'tab' => 'Informations générales'
+                'tab' => 'Statut de la compétition'
             ]
         );
 
