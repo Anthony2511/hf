@@ -193,6 +193,18 @@ class CompetitionCrudController extends CrudController
             'tab' => 'Horaires'
         ]);
 
+        // Résultats Field
+        $this->crud->addField(
+            [
+                'name' => 'results',
+                'label' => 'Résultat de la compétition',
+                'tab' => 'Résultats',
+                'type' => 'upload',
+                'upload' => true,
+                'disk' => 'uploads' // if you store files in the /public folder, please ommit this; if you store them in /storage or S3, please specify it;
+            ]
+        );
+
         //Slug Field
         $this->crud->addField([
             'name' => 'slug',

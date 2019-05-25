@@ -33,7 +33,8 @@ class Competition extends Model
         'image',
         'horaires_h',
         'horaires_f',
-        'startDate'
+        'startDate',
+        'results'
     );
     // protected $hidden = [];
     protected $dates = [
@@ -81,6 +82,19 @@ class Competition extends Model
             return URL('/') . '/' . $imageProfile;
         } else {
             return $this->image;
+        }
+    }
+
+    public function getFileResult($suffix)
+    {
+        $basePath = 'uploads/resultats/';
+        $fullname = pathinfo($this->results, PATHINFO_FILENAME);
+        $fileResult = $basePath . $fullname . $suffix;
+
+        if (file_exists($fileResult)) {
+            return URL('/') . '/' . $fileResult;
+        } else {
+            return $this->results;
         }
     }
 
@@ -169,5 +183,14 @@ class Competition extends Model
             // 3. Save the path to the database
             $this->attributes[$attribute_name] = Url('/') . '/' . $destination_path . '/' . $filename . '.jpg';
         }
+    }
+
+    public function setResultsAttribute($value)
+    {
+        $attribute_name = "results";
+        $disk = "uploads";
+        $destination_path = "/resultats";
+
+        $this->uploadFileToDisk($value, $attribute_name, $disk, $destination_path);
     }
 }
