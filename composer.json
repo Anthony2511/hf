@@ -12,6 +12,7 @@
         "backpack/crud": "^3.5",
         "backpack/pagemanager": "^1.1",
         "backpack/permissionmanager": "^4.0",
+        "backpack/settings": "^2.1",
         "barryvdh/laravel-elfinder": "^0.4.1",
         "cviebrock/eloquent-sluggable": "^4.6",
         "fideloper/proxy": "^4.0",
