@@ -1082,6 +1082,9 @@ input[type="search"]::-webkit-search-decoration {
 .about__figure img {
   width: 100%;
 }
+.about__figure-running img {
+  width: 70%;
+}
 .about__text {
   padding: 1.875em 0;
   font-family: 'opensans';
@@ -3083,6 +3086,14 @@ input[type="search"]::-webkit-search-decoration {
 .footer__social {
   display: flex;
 }
+.footer__social--facebook {
+  -webkit-animation: 1s both ease-in-out;
+          animation: 1s both ease-in-out;
+}
+.footer__social--facebook:hover {
+  -webkit-animation-name: bounce;
+          animation-name: bounce;
+}
 .footer__social--facebook:before {
   font-family: 'iconfont';
   speak: none;
@@ -3094,7 +3105,15 @@ input[type="search"]::-webkit-search-decoration {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   content: "\E903";
-  font-size: 1.5625em;
+  font-size: 1.875em;
+}
+.footer__social--instagram {
+  -webkit-animation: 1s both ease-in-out;
+          animation: 1s both ease-in-out;
+}
+.footer__social--instagram:hover {
+  -webkit-animation-name: bounce;
+          animation-name: bounce;
 }
 .footer__social--instagram:before {
   font-family: 'iconfont';
@@ -3107,7 +3126,7 @@ input[type="search"]::-webkit-search-decoration {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   content: "\E90A";
-  font-size: 1.5625em;
+  font-size: 1.875em;
 }
 .footer__social-list {
   margin-right: 0.625em;
@@ -3150,6 +3169,34 @@ input[type="search"]::-webkit-search-decoration {
   }
   .footer__copyright span {
     font-size: 0.875em;
+  }
+}
+@-webkit-keyframes bounce {
+  0%, 100%, 20%, 50%, 80% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+  60% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+}
+@keyframes bounce {
+  0%, 100%, 20%, 50%, 80% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+  60% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
   }
 }
 .index_athletes {
