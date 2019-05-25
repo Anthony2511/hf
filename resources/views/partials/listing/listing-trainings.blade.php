@@ -6,7 +6,7 @@
                 @foreach($trainings as $training)
                     <div class="trainings__single">
                         <div class="trainings__intro">
-                            <span class="trainings__day">{{ $training->day }}</span>
+                            <span class="trainings__day">{{ substr($training->day,0,3) }}</span>
                             <span class="trainings__hour">
                                 {{ date("H", strtotime($training->startHour)) }}
                                 h {{ date("i", strtotime($training->startHour)) }}

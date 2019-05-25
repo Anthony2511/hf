@@ -52,7 +52,7 @@
     font-weight: 400
     line-height 1.7
     margin s(20,16) 0
-    min-height s(110,16)
+    min-height s(135,16)
   &__trainers
     display flex
     flex-flow row
@@ -68,4 +68,73 @@
     &:hover
       color $cDarkOrange
       transition .3s ease-in-out
+
+//MEDIA QUERIES
+
+//1300PX
+@media screen and (max-width:1300px)
+  .trainings
+    padding 0 s(20)
+
+//1200PX
+@media screen and (max-width:1200px)
+  .trainings
+    &__hour
+      font-size s(21,16)
+    &__day
+      font-size s(21,16)
+
+//1024PX
+@media screen and (max-width:1024px)
+  .trainings
+    &__hour
+      font-size s(25,16)
+    &__day
+      font-size s(25,16)
+    &__single
+      width 47.5%
+      margin-right 5%
+      &:nth-child(3n+3)
+        margin-right 5%
+      &:nth-child(2n+2)
+        margin-right 0
+
+//768PX
+@media screen and (max-width:768px)
+  .trainings
+    &__single
+      width 100%
+      margin-right 0
+    &__text
+      min-height 0
+
+//450PX
+@media screen and (max-width:450px)
+  .trainings
+    &__single
+      padding s(20)
+    &__hour
+      font-size s(21,16)
+    &__day
+      font-size s(21,16)
+    &__text
+      font-size s(14)
+    &__type
+      font-size s(14)
+    &__place
+      font-size s(14)
+    &__trainer-name
+      font-size s(16)
+    &__figure
+      & img
+        width s(20)
+
+//400PX
+@media screen and (max-width:400px)
+  .trainings
+    &__hour
+      font-size s(20,16)
+    &__type
+      font-size s(20,16)
+
 
