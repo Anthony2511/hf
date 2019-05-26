@@ -3721,6 +3721,16 @@ input[type="search"]::-webkit-search-decoration {
   transition: 0.3s ease-in-out;
   color: #fe712a;
 }
+@media screen and (max-width: 1300px) {
+  .breadcrumb {
+    padding: 0 1.25em;
+  }
+}
+@media screen and (max-width: 450px) {
+  .breadcrumb__item {
+    font-size: 0.75em;
+  }
+}
 .cta-page__text {
   font-family: 'opensans';
   color: #2c3e50;

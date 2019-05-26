@@ -17,3 +17,16 @@
         transform translateX(-5px) rotate(180deg)
         transition 0.3s ease-in-out
         color $cDarkOrange
+
+//MEDIA QUERIES
+
+//1300PX
+@media screen and (max-width: 1300px)
+  .breadcrumb
+    padding 0 s(20)
+
+//450PX
+@media screen and (max-width: 450px)
+  .breadcrumb
+    &__item
+      font-size s(12)
