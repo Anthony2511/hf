@@ -23,3 +23,52 @@
     & tr
       &:nth-child(odd)
         background-color alpha($cOrange,0.3)
+
+//MEDIA QUERIES
+
+//1300PX
+@media screen and (max-width: 1300px)
+  .athlete-record
+    padding s(50) s(20) 0
+    &__table-title
+      font-size s(16)
+    &__table-row
+      & td
+        font-size s(14)
+
+//1024PX
+@media screen and (max-width: 1024px)
+  .athlete-record
+    flex-direction column
+    &__bloc
+      width 100%
+    &__bloc + &__bloc
+      margin-top s(30)
+    &__table
+      width 100%
+    &__table-title
+      text-align center
+
+//500PX
+@media screen and (max-width: 500px)
+  .athlete-record
+    &__table-title
+      padding s(5,16) s(10,16)
+    &__table-row
+      & td
+        padding s(5,14) s(10,14)
+
+//400PX
+@media screen and (max-width: 400px)
+  .athlete-record
+    &__table-title
+      font-size s(14)
+    &__table-row
+      & td
+        font-size s(12)
+
+//350PX
+@media screen and (max-width: 350px)
+  .athlete-record
+    &__table-title
+      font-size s(12)

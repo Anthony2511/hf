@@ -1519,6 +1519,55 @@ input[type="search"]::-webkit-search-decoration {
 .athlete-record__table-tbody tr:nth-child(odd) {
   background-color: rgba(250,153,38,0.3);
 }
+@media screen and (max-width: 1300px) {
+  .athlete-record {
+    padding: 3.125em 1.25em 0;
+  }
+  .athlete-record__table-title {
+    font-size: 1em;
+  }
+  .athlete-record__table-row td {
+    font-size: 0.875em;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .athlete-record {
+    flex-direction: column;
+  }
+  .athlete-record__bloc {
+    width: 100%;
+  }
+  .athlete-record__bloc + .athlete-record__bloc {
+    margin-top: 1.875em;
+  }
+  .athlete-record__table {
+    width: 100%;
+  }
+  .athlete-record__table-title {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 500px) {
+  .athlete-record__table-title {
+    padding: 0.3125em 0.625em;
+  }
+  .athlete-record__table-row td {
+    padding: 0.357142857142857em 0.714285714285714em;
+  }
+}
+@media screen and (max-width: 400px) {
+  .athlete-record__table-title {
+    font-size: 0.875em;
+  }
+  .athlete-record__table-row td {
+    font-size: 0.75em;
+  }
+}
+@media screen and (max-width: 350px) {
+  .athlete-record__table-title {
+    font-size: 0.75em;
+  }
+}
 .athlete-gallery {
   display: flex;
   flex-flow: row nowrap;
