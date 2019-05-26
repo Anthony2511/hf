@@ -13,6 +13,20 @@
   &__bloc-division
     display flex
     flex-flow row wrap
+  &__title-infos
+    font-family 'montserrat'
+    font-size s(25,16)
+    font-weight: 600
+    position relative
+    text-align left
+    color $cDarkBlue
+    &:after
+      content ''
+      display block
+      background-color $cOrange
+      width s(50,40)
+      height s(2,40)
+      position absolute
   &__figure
     position relative
     top s(-50)
@@ -97,3 +111,91 @@
 .athlete-intro__trainer-link:hover .athlete-intro__content-text
   color $cDarkOrange
   transition .3s ease-in-out
+
+//MEDIA QUERIES
+
+//1300PX
+@media screen and (max-width:1300px)
+  .athlete-intro
+    padding 0 s(20)
+
+//1024PX
+@media screen and (max-width:1024px)
+  .athlete-intro
+    &__content-title
+      font-size s(16)
+    &__bloc-discipline
+      font-size s(14)
+    &__content-text
+      font-size s(14)
+    &__name
+      font-size s(35,16)
+    &__division
+      font-size s(14)
+    &__title-infos
+      font-size s(22)
+
+//768PX
+@media screen and (max-width:768px)
+  .athlete-intro
+    &__container
+      flex-direction column
+    &__bloc
+      margin-left 0
+      width 100%
+    &__figure
+      width 100%
+      text-align center
+      & img
+        width 60%
+    &__name
+      margin-bottom s(20,35)
+    &__title
+      flex-direction column
+      margin 0 0 s(30)
+    &__title-infos
+      text-align center
+      &:after
+        left 0
+        right 0
+        margin s(5) auto
+    &__content
+      width 35%
+      text-align center
+      &--width
+        width 100%
+    &__bloc-discipline
+      justify-content center
+    &__bloc-athlete
+      justify-content center
+    &__content-bloc
+      justify-content center
+    &__division
+      margin-left 0
+
+//600PX
+@media screen and (max-width:600px)
+  .athlete-intro
+    &__figure
+      & img
+        width 75%
+    &__content
+      width 100%
+    &__bloc-athlete
+      flex-direction column
+      justify-content center
+      align-items center
+    &__trainer-link + &__trainer-link
+      margin-left 0
+      margin-top s(10)
+      display block
+
+//450PX
+@media screen and (max-width:450px)
+  .athlete-intro
+    &__figure
+      & img
+        width 90%
+    &__name
+      font-size s(30)
+      text-align center

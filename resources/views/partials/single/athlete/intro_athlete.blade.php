@@ -13,7 +13,7 @@
                 <span class="athlete-intro__division">{{$athlete->division['name']}}</span>
             </section>
             <section class="athlete-intro__info">
-                <h4 class="title title__blue title__left title-size" aria-level="4" role="heading">
+                <h4 class="athlete-intro__title-infos" aria-level="4" role="heading">
                     Informations générales
                 </h4>
                 <div class="athlete-intro__content-bloc">
