@@ -57,3 +57,20 @@
     margin-bottom 0
     &:last-child
       margin-right 0
+
+//MEDIA QUERIES
+
+//1300PX
+@media screen and (max-width:1300px)
+  .cta-training
+    padding s(50) s(20) s(200)
+
+//1024PX
+@media screen and (max-width:1024px)
+  .cta-training
+    &__container
+      flex-direction column
+    &__single
+     width 100%
+    &__single + &__single
+      margin-top s(30)

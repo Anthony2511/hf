@@ -1800,20 +1800,6 @@ input[type="search"]::-webkit-search-decoration {
   .trainings__place {
     font-size: 0.875em;
   }
-  .trainings__trainer-name {
-    font-size: 1em;
-  }
-  .trainings__figure img {
-    width: 1.25em;
-  }
-}
-@media screen and (max-width: 400px) {
-  .trainings__hour {
-    font-size: 1.25em;
-  }
-  .trainings__type {
-    font-size: 1.25em;
-  }
 }
 /*****ARTICLE*****/
 .article-intro__container {
@@ -3820,6 +3806,22 @@ input[type="search"]::-webkit-search-decoration {
 }
 .cta-training__single:last-child {
   margin-right: 0;
+}
+@media screen and (max-width: 1300px) {
+  .cta-training {
+    padding: 3.125em 1.25em 12.5em;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .cta-training__container {
+    flex-direction: column;
+  }
+  .cta-training__single {
+    width: 100%;
+  }
+  .cta-training__single + .cta-training__single {
+    margin-top: 1.875em;
+  }
 }
 .load-more__container {
   text-align: center;
