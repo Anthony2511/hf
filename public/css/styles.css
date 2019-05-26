@@ -1608,6 +1608,31 @@ input[type="search"]::-webkit-search-decoration {
   color: #fa9926;
   margin-right: 0.5em;
 }
+@media screen and (max-width: 1300px) {
+  .athlete-trophies {
+    padding: 3.125em 1.25em;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .athlete-trophies__bloc {
+    width: 100%;
+  }
+  .athlete-trophies__container {
+    flex-flow: column wrap;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 450px) {
+  .athlete-trophies__date {
+    font-size: 0.875em;
+  }
+  .athlete-trophies__bloc {
+    line-height: 1.5;
+  }
+  .athlete-trophies__bloc span {
+    font-size: 0.875em;
+  }
+}
 /*****TRAINING*****/
 .index_training {
   background-color: #f4f4f4;

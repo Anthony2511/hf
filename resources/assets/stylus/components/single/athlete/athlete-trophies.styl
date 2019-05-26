@@ -18,3 +18,29 @@
       icon('trophy')
       color $cOrange
       margin-right s(10,20)
+
+//MEDIA QUERIES
+
+//1300PX
+@media screen and (max-width: 1300px)
+  .athlete-trophies
+    padding s(50) s(20)
+
+//1024PX
+@media screen and (max-width: 1024px)
+  .athlete-trophies
+    &__bloc
+      width 100%
+    &__container
+      flex-flow column wrap
+      text-align center
+
+//450PX
+@media screen and (max-width: 450px)
+  .athlete-trophies
+    &__date
+      font-size s(14)
+    &__bloc
+      line-height 1.5
+      & span
+        font-size s(14)
