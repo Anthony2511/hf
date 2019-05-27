@@ -106,7 +106,7 @@ class AthleteController extends Controller
 
         return view('pages.athletes.athletes_show', [
             'athlete' => $athlete,
-            $athleteDivision
+            'athleteDivision' => $athleteDivision
         ]);
     }
 

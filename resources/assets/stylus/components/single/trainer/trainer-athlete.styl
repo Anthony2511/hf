@@ -1,0 +1,37 @@
+.athlete-trainer
+  &__container
+    padding s(50) 0 0
+  &__bloc
+    display flex
+    flex-direction row
+    justify-content center
+    align-items center
+    margin-top s(30)
+  &__athlete
+    display flex
+    flex-direction column
+    justify-content center
+    align-items center
+    align-items center
+  &__athlete-link
+    margin-right s(30)
+    &:last-child
+      margin-right 0
+  &__athlete-figure
+    width s(150)
+    height s(150)
+    position relative
+    overflow hidden
+    border-radius: 50%
+    & img
+      display inline-block
+      margin 0 auto
+      height auto
+      width 100%
+  &__athlete-name
+    font-family 'montserrat'
+    font-size s(16,16)
+    color $cDarkBlue
+    font-weight 500
+    font-style italic
+    margin-top s(15,16)

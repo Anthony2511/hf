@@ -7,10 +7,10 @@
                    class="athlete-trainer__athlete-link">
                     <div class="athlete-trainer__athlete">
                         <figure class="athlete-trainer__athlete-figure">
-                            <img src="{{ $athlete->getImageProfile('_preview.jpg') }}"
+                            <img src="{{ $athlete->getImageProfile('_profile.jpg') }}"
                                  alt="Photo de l'athlète : {{$athlete->fullname}}"
-                                 width="30"
-                                 height="30">
+                                 width="335"
+                                 height="457">
                         </figure>
                         <span class="athlete-trainer__athlete-name">{{$athlete->fullname}}</span>
                     </div>

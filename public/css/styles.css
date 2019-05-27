@@ -1633,6 +1633,51 @@ input[type="search"]::-webkit-search-decoration {
     font-size: 0.875em;
   }
 }
+/*****TRAINER*****/
+.athlete-trainer__container {
+  padding: 3.125em 0 0;
+}
+.athlete-trainer__bloc {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.875em;
+}
+.athlete-trainer__athlete {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+}
+.athlete-trainer__athlete-link {
+  margin-right: 1.875em;
+}
+.athlete-trainer__athlete-link:last-child {
+  margin-right: 0;
+}
+.athlete-trainer__athlete-figure {
+  width: 9.375em;
+  height: 9.375em;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.athlete-trainer__athlete-figure img {
+  display: inline-block;
+  margin: 0 auto;
+  height: auto;
+  width: 100%;
+}
+.athlete-trainer__athlete-name {
+  font-family: 'montserrat';
+  font-size: 1em;
+  color: #2c3e50;
+  font-weight: 500;
+  font-style: italic;
+  margin-top: 0.9375em;
+}
 /*****TRAINING*****/
 .index_training {
   background-color: #f4f4f4;
