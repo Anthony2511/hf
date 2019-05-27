@@ -1,21 +1,21 @@
 <footer class="footer">
     <div class="footer__bg"></div>
-    <div class="footer__bloc-container">
+    <div class="footer__bloc-container" itemscope itemtype="http://schema.org/Organization">
         <div class="footer__container wrap">
             <section class="footer__bloc">
                 <h2 aria-level="2" role="heading" class="footer__title">Nous contactez</h2>
                 <ul class="footer__contact-list">
-                    <li class="footer__contact-item"><a href="mailto:philippe.devel@unamur.be">Verviers
-                            <span>philippe.devel@unamur.be</span></a>
+                    <li class="footer__contact-item"><a href="mailto:{{ Config::get('settings.email_verviers') }}" itemprop="email">Verviers
+                            <span>{{ Config::get('settings.email_verviers') }}</span></a>
                     </li>
-                    <li class="footer__contact-item"><a href="mailto:hf.aywaille@gmail.com">Aywaille
-                            <span>hf.aywaille@gmail.com</span></a>
+                    <li class="footer__contact-item"><a href="mailto:{{ Config::get('settings.email_aywaille') }}" itemprop="email">Aywaille
+                            <span>{{ Config::get('settings.email_aywaille') }}</span></a>
                     </li>
-                    <li class="footer__contact-item"><a href="mailto:legrosandre@gmail.com">Stavelot
-                            <span>legrosandre@gmail.com</span></a>
+                    <li class="footer__contact-item"><a href="mailto:{{ Config::get('settings.email_stavelot') }}" itemprop="email">Stavelot
+                            <span>{{ Config::get('settings.email_stavelot') }}</span></a>
                     </li>
-                    <li class="footer__contact-item"><a href="mailto:jhs105@hotmail.com">Saint-Vith
-                            <span>jhs105@hotmail.com</span></a>
+                    <li class="footer__contact-item"><a href="mailto:{{ Config::get('settings.email_saintvith') }}" itemprop="email">Saint-Vith
+                            <span>{{ Config::get('settings.email_saintvith') }}</span></a>
                     </li>
                 </ul>
             </section>
@@ -33,10 +33,10 @@
                 <h2 aria-level="2" role="heading" class="footer__title">Nous suivre</h2>
                 <ul class="footer__social">
                     <li class="footer__social-list">
-                        <a href="#facebook" class="footer__social footer__social--facebook"><span class="hidden">Facebook</span></a>
+                        <a href="{{ Config::get('settings.link_fcb') }}" class="footer__social footer__social--facebook" target="_blank" itemprop="url"><span class="hidden">Facebook</span></a>
                     </li>
                     <li class="footer__social-list">
-                        <a href="#instagram" class="footer__social footer__social--instagram"><span class="hidden">Instagram</span></a>
+                        <a href="{{ Config::get('settings.link_insta') }}" class="footer__social footer__social--instagram" target="_blank" itemprop="url"><span class="hidden">Instagram</span></a>
                     </li>
                 </ul>
             </section>
