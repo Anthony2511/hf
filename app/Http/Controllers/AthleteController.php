@@ -102,7 +102,10 @@ class AthleteController extends Controller
 
     public function show(Athlete $athlete)
     {
-        $athleteDivision = Athlete::where('division_id', $athlete->division)->get();
+        $athleteDivision = Athlete::inRandomOrder()
+                                    ->where('division_id', $athlete->division->id)
+                                    ->where('id', '!=', $athlete->id)
+                                    ->get();
 
         return view('pages.athletes.athletes_show', [
             'athlete' => $athlete,
