@@ -44,3 +44,40 @@
   transform translateY(0px)
   transition .3s ease-in-out
   color $cDarkOrange
+
+//MEDIA QUERIES
+
+//1300PX
+@media screen and (max-width: 1300px)
+  .athlete-trainer
+    &__container
+      padding s(50) s(20) 0
+
+//1024PX
+@media screen and (max-width: 1024px)
+  .athlete-trainer
+    &__athlete-name
+      opacity 1
+      transform none
+      color $cDarkBlue
+
+//768PX
+@media screen and (max-width: 768px)
+  .athlete-trainer
+    &__athlete-figure
+      width s(100)
+      height s(100)
+
+//600PX
+@media screen and (max-width: 600px)
+  .athlete-trainer
+    &__bloc
+      flex-direction column
+    &__athlete-figure
+      width s(150)
+      height s(150)
+    &__athlete-link
+      margin-right 0
+      margin-bottom s(30)
+      &:last-child
+        margin-bottom 0

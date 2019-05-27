@@ -1689,6 +1689,41 @@ input[type="search"]::-webkit-search-decoration {
   transition: 0.3s ease-in-out;
   color: #fe712a;
 }
+@media screen and (max-width: 1300px) {
+  .athlete-trainer__container {
+    padding: 3.125em 1.25em 0;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .athlete-trainer__athlete-name {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+    color: #2c3e50;
+  }
+}
+@media screen and (max-width: 768px) {
+  .athlete-trainer__athlete-figure {
+    width: 6.25em;
+    height: 6.25em;
+  }
+}
+@media screen and (max-width: 600px) {
+  .athlete-trainer__bloc {
+    flex-direction: column;
+  }
+  .athlete-trainer__athlete-figure {
+    width: 9.375em;
+    height: 9.375em;
+  }
+  .athlete-trainer__athlete-link {
+    margin-right: 0;
+    margin-bottom: 1.875em;
+  }
+  .athlete-trainer__athlete-link:last-child {
+    margin-bottom: 0;
+  }
+}
 /*****TRAINING*****/
 .index_training {
   background-color: #f4f4f4;
