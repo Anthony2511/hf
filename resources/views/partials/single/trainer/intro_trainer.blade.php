@@ -14,7 +14,7 @@
                 <span class="athlete-intro__division">{{$trainer->status}}</span>
             </section>
             <section class="athlete-intro__info">
-                <h4 class="title title__blue title__left title-size" aria-level="4" role="heading">Informations
+                <h4 class="athlete-intro__title-infos" aria-level="4" role="heading">Informations
                     générales</h4>
                 <div class="athlete-intro__content-bloc">
                     <div class="athlete-intro__content">
@@ -34,7 +34,7 @@
                         <datetime class="athlete-intro__content-text"
                                   time="{{$trainer->getFormatDate()}}">{{$trainer->getFormatDate()}}</datetime>
                     </div>
-                    <div class="athlete-intro__content">
+                    <div class="athlete-intro__content athlete-intro__content--width">
                         <span class="athlete-intro__content-title">Catégorie(s)</span>
                         <div class="athlete-intro__bloc-division">
                             @if(!empty (count($trainer->divisions)))
