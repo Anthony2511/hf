@@ -102,8 +102,11 @@ class AthleteController extends Controller
 
     public function show(Athlete $athlete)
     {
+        $athleteDivision = Athlete::where('division_id', $athlete->division)->get();
+
         return view('pages.athletes.athletes_show', [
-            'athlete' => $athlete
+            'athlete' => $athlete,
+            $athleteDivision
         ]);
     }
 

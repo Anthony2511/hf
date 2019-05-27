@@ -17,7 +17,7 @@
     </div>
     @include('partials.single.trainer.intro_trainer')
     @include('partials.single.trainer.records_trainer')
-    @include('partials.single.trainer.gallery_trainer')
+    @include('partials.single.trainer.athlete_trainer')
     @include('partials.single.trainer.trophies_trainer')
     @include('partials.cta.cta-compet')
 @endsection

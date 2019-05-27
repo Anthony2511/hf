@@ -46,29 +46,6 @@
                             @endif
                         </div>
                     </div>
-                    <div class="athlete-intro__content athlete-intro__content--width">
-                        <span class="athlete-intro__content-title">Athlète(s)</span>
-                        <div class="athlete-intro__bloc-athlete">
-                            @if(!empty (count($trainer->athletes)))
-                                @foreach($trainer->athletes as $athlete)
-                                    <a href="{{url('athletes/' . $athlete['slug'])}}"
-                                       class="athlete-intro__trainer-link">
-                                        <div class="athlete-intro__trainer">
-                                            <figure class="athlete-intro__trainer-figure">
-                                                <img src="{{ $athlete->getImageProfile('_preview.jpg') }}"
-                                                     alt="Photo de l'athlète : {{$athlete->fullname}}"
-                                                     width="30"
-                                                     height="30">
-                                            </figure>
-                                            <span class="athlete-intro__content-text">{{$athlete->fullname}}</span>
-                                        </div>
-                                    </a>
-                                @endforeach
-                            @else
-                                <p class="empty">Aucun athlète</p>
-                            @endif
-                        </div>
-                    </div>
                 </div>
             </section>
         </div>
