@@ -1677,6 +1677,17 @@ input[type="search"]::-webkit-search-decoration {
   font-weight: 500;
   font-style: italic;
   margin-top: 0.9375em;
+  opacity: 0;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  transition: 0.3s ease-in-out;
+}
+.athlete-trainer__athlete-link:hover .athlete-trainer__athlete-name {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  transition: 0.3s ease-in-out;
+  color: #fe712a;
 }
 /*****TRAINING*****/
 .index_training {
