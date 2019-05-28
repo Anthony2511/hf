@@ -1197,6 +1197,53 @@ input[type="search"]::-webkit-search-decoration {
 .about__end-bloc + .about__end-bloc {
   width: 40%;
 }
+.about__title {
+  font-family: 'montserrat';
+  font-size: 2.5em;
+  font-weight: 600;
+  position: relative;
+  text-align: left;
+  color: #2c3e50;
+}
+.about__title:after {
+  content: '';
+  display: block;
+  background-color: #fa9926;
+  width: 1.25em;
+  height: 0.05em;
+}
+@media screen and (max-width: 1300px) {
+  .about__end {
+    padding: 6.25em 1.25em 3.125em;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .about__end {
+    flex-direction: column;
+  }
+  .about__end-bloc {
+    width: 100%;
+  }
+  .about__end-bloc + .about__end-bloc {
+    width: 100%;
+  }
+  .about__title {
+    font-size: 2.1875em;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about__end-figure img {
+    width: 100%;
+  }
+  .about__end {
+    padding: 3.125em 1.25em;
+  }
+}
+@media screen and (max-width: 450px) {
+  .about__title {
+    font-size: 1.75em;
+  }
+}
 /*****CONTACT*****/
 .contact-intro {
   padding: 3.125em 0;

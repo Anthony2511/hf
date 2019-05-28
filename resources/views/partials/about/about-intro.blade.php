@@ -1,6 +1,6 @@
 <div class="about__intro wrap">
     <section class="about__bloc about__bloc--one">
-        <h2 aria-level="2" role="heading" class="title title__blue title__left">{{ $page->title_intro }}</h2>
+        <h2 aria-level="2" role="heading" class="about__title">{{ $page->title_intro }}</h2>
         <p class="about__text">
             {{ $page->text_intro }}
         </p>
