@@ -2632,6 +2632,12 @@ input[type="search"]::-webkit-search-decoration {
 .stage__bloc + .stage__bloc {
   margin-top: 1.875em;
 }
+.stage__bloc-infos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 55%;
+}
 .stage__title {
   font-family: 'montserrat';
   font-size: 1.5625em;
@@ -2653,7 +2659,7 @@ input[type="search"]::-webkit-search-decoration {
   -moz-osx-font-smoothing: grayscale;
   content: "\E901";
   color: #fe712a;
-  margin-right: 0.625em;
+  margin-right: 0.3125em;
 }
 .stage__time {
   font-weight: 300;
@@ -2670,7 +2676,7 @@ input[type="search"]::-webkit-search-decoration {
   -moz-osx-font-smoothing: grayscale;
   content: "\E907";
   color: #fe712a;
-  margin-right: 0.625em;
+  margin-right: 0.3125em;
 }
 .stage__link {
   cursor: pointer;
@@ -2688,6 +2694,69 @@ input[type="search"]::-webkit-search-decoration {
           transform: translateX(5px);
   transition: 0.3s ease-in-out;
   color: #fe712a;
+}
+@media screen and (max-width: 1300px) {
+  .stage__container {
+    padding: 0 1.25em;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .stage__date {
+    font-size: 0.875em;
+  }
+  .stage__time {
+    font-size: 0.875em;
+  }
+  .stage__title {
+    font-size: 1.375em;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .stage__bloc {
+    flex-direction: column;
+  }
+  .stage__title {
+    width: 100%;
+    text-align: center;
+    font-size: 1.5625em;
+  }
+  .stage__bloc-infos {
+    width: 100%;
+    margin-top: 1.25em;
+  }
+  .stage__time {
+    font-size: 1em;
+  }
+  .stage__date {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 768px) {
+  .stage__bloc-infos {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .stage__date {
+    margin-bottom: 1.25em;
+  }
+  .stage__time {
+    margin-bottom: 1.25em;
+  }
+  .stage__bloc {
+    padding: 1.25em;
+  }
+}
+@media screen and (max-width: 450px) {
+  .stage__date {
+    font-size: 0.875em;
+  }
+  .stage__time {
+    font-size: 0.875em;
+  }
+  .stage__title {
+    font-size: 1.375em;
+  }
 }
 .single-stage {
   background-color: #f4f4f4;

@@ -15,6 +15,11 @@
     position relative
   &__bloc + &__bloc
     margin-top s(30,16)
+  &__bloc-infos
+    display flex
+    flex-direction row
+    justify-content space-between
+    width 55%
   &__title
     font-family 'montserrat'
     font-size s(25,16)
@@ -25,13 +30,13 @@
     &:before
       icon('calendar')
       color $cDarkOrange
-      margin-right s(10,16)
+      margin-right s(5,16)
   &__time
     font-weight:300
     &:before
       icon('time')
       color $cDarkOrange
-      margin-right s(10,16)
+      margin-right s(5,16)
   &__link
     cursor pointer
     position absolute
@@ -47,3 +52,62 @@
   transform translateX(5px)
   transition .3s ease-in-out
   color $cDarkOrange
+
+//MEDIA QUERIES
+
+//1300PX
+@media screen and (max-width: 1300px)
+  .stage
+    &__container
+      padding 0 s(20)
+
+//1150PX
+@media screen and (max-width: 1150px)
+  .stage
+    &__date
+      font-size s(14)
+    &__time
+      font-size s(14)
+    &__title
+      font-size s(22)
+
+//1024PX
+@media screen and (max-width: 1024px)
+  .stage
+    &__bloc
+      flex-direction column
+    &__title
+      width 100%
+      text-align center
+      font-size s(25)
+    &__bloc-infos
+      width 100%
+      margin-top s(20)
+    &__time
+      font-size s(16)
+    &__date
+      font-size s(16)
+
+//768PX
+@media screen and (max-width: 768px)
+  .stage
+    &__bloc-infos
+      flex-direction column
+      justify-content center
+      align-items center
+    &__date
+      margin-bottom s(20)
+    &__time
+      margin-bottom s(20)
+    &__bloc
+      padding s(20)
+
+//450PX
+@media screen and (max-width: 450px)
+  .stage
+    &__date
+      font-size s(14)
+    &__time
+      font-size s(14)
+    &__title
+      font-size s(22)
