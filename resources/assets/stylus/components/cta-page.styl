@@ -4,7 +4,7 @@
     color $cDarkBlue
     font-weight: 400
     line-height 1.7
-    padding s($paddingBloc)
+    padding s($paddingBloc) 0
     width 75%
     margin 0 auto
 
@@ -64,6 +64,8 @@
 @media screen and (max-width:1300px)
   .cta-training
     padding s(50) s(20) s(200)
+  .cta-about
+    padding s(50) s(20) 0
 
 //1024PX
 @media screen and (max-width:1024px)
@@ -74,3 +76,16 @@
      width 100%
     &__single + &__single
       margin-top s(30)
+
+//768PX
+@media screen and (max-width:768px)
+  .cta-page
+    &__text
+      width 100%
+
+//450PX
+@media screen and (max-width:450px)
+  .cta-page
+    &__text
+      font-size s(14)
+

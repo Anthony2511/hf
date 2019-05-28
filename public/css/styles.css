@@ -3941,7 +3941,7 @@ input[type="search"]::-webkit-search-decoration {
   color: #2c3e50;
   font-weight: 400;
   line-height: 1.7;
-  padding: 1.875em;
+  padding: 1.875em 0;
   width: 75%;
   margin: 0 auto;
 }
@@ -4005,6 +4005,9 @@ input[type="search"]::-webkit-search-decoration {
   .cta-training {
     padding: 3.125em 1.25em 12.5em;
   }
+  .cta-about {
+    padding: 3.125em 1.25em 0;
+  }
 }
 @media screen and (max-width: 1024px) {
   .cta-training__container {
@@ -4015,6 +4018,16 @@ input[type="search"]::-webkit-search-decoration {
   }
   .cta-training__single + .cta-training__single {
     margin-top: 1.875em;
+  }
+}
+@media screen and (max-width: 768px) {
+  .cta-page__text {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .cta-page__text {
+    font-size: 0.875em;
   }
 }
 .load-more__container {
