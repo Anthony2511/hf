@@ -82,5 +82,49 @@
     opacity:  .7;
     font-size 14px
 
+//MEDIA QUERIES
+
+//1300PX
+@media screen and (max-width:1300px)
+  .single-stage
+    &__bloc-form
+      padding s(50) s(20) 0
+
+//1200PX
+@media screen and (max-width:1200px)
+  .single-stage
+    &__form
+      width 60%
+
+//1024PX
+@media screen and (max-width:1024px)
+  .single-stage
+    &__form
+      width 80%
+
+//768PX
+@media screen and (max-width:768px)
+  .single-stage
+    &__form-width
+      flex-direction column
+    &__form
+      width 100%
+  .floating-label
+    &__width
+      width 100%
+
+//450PX
+@media screen and (max-width:450px)
+  .floating-label
+    & input:not(:placeholder-shown)
+      font-size 14px
+    & input:not(:placeholder-shown) + label
+      font-size 12px
+  .single-stage
+    &__form-input
+      font-size 14px
+    &__form-legend
+      font-size s(14)
+
 
 
