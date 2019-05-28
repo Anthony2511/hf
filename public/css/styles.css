@@ -1256,6 +1256,26 @@ input[type="search"]::-webkit-search-decoration {
   width: 50%;
   text-align: center;
 }
+@media screen and (max-width: 1300px) {
+  .contact-intro {
+    padding: 3.125em 1.25em;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .contact-intro__text {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contact-intro__text {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .contact-intro__text {
+    font-size: 0.875em;
+  }
+}
 .contact-person {
   padding-top: 3.125em;
 }
