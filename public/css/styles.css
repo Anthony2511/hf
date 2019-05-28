@@ -2172,7 +2172,7 @@ input[type="search"]::-webkit-search-decoration {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
-  margin: 3.125em 0;
+  margin: 3.125em 0 0;
   font-family: 'montserrat';
   color: #fff;
 }
@@ -2260,6 +2260,72 @@ input[type="search"]::-webkit-search-decoration {
   transition: 0.3s ease-in-out;
   -webkit-transform: translateX(0px);
           transform: translateX(0px);
+}
+@media screen and (max-width: 1300px) {
+  .equipement__container {
+    padding: 0 1.25em;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .equipement__bloc {
+    width: 47.5%;
+    margin-right: 0;
+  }
+  .equipement__container {
+    justify-content: space-between;
+  }
+  .equipement__title {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+  .equipement__figure:before {
+    background-color: rgba(52,73,94,0.5);
+  }
+  .equipement__price {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .equipement__bloc {
+    width: 100%;
+  }
+  .equipement__size {
+    font-size: 1.125em;
+    padding: 1.111111111111111em 0;
+  }
+  .equipement__title {
+    font-size: 1.875em;
+  }
+  .equipement__price {
+    font-size: 1.25em;
+  }
+}
+@media screen and (max-width: 450px) {
+  .equipement__size {
+    font-size: 1em;
+    padding: 0.9375em 0;
+  }
+  .equipement__title {
+    font-size: 1.5625em;
+  }
+  .equipement__price {
+    font-size: 1.125em;
+  }
+}
+@media screen and (max-width: 375px) {
+  .equipement__title {
+    font-size: 1.25em;
+  }
+  .equipement__size {
+    font-size: 0.875em;
+    padding: 0.714285714285714em 0;
+  }
+  .equipement__price {
+    font-size: 1em;
+  }
 }
 /*****COMPETITIONS*****/
 .listing-compet__container {

@@ -3,7 +3,7 @@
     display flex
     flex-flow row wrap
     justify-content flex-start
-    margin s($marginTitle) 0
+    margin s($marginTitle) 0 0
     font-family 'montserrat'
     color $cWhite
   &__bloc
@@ -79,3 +79,64 @@
   opacity 1
   transition .3s ease-in-out
   transform translateX(0px)
+
+//MEDIA QUERIES
+
+//1300PX
+@media screen and (max-width: 1300px)
+  .equipement
+    &__container
+      padding 0 s(20)
+
+//1024PX
+@media screen and (max-width: 1024px)
+  .equipement
+    &__bloc
+      width 47.5%
+      margin-right 0
+    &__container
+      justify-content space-between
+    &__title
+      opacity 1
+      transform none
+    &__figure
+      &:before
+        background-color alpha($cBlue,0.5)
+    &__price
+      opacity 1
+      transform none
+
+//768PX
+@media screen and (max-width: 768px)
+  .equipement
+    &__bloc
+      width 100%
+    &__size
+      font-size s(18)
+      padding s(20,18) 0
+    &__title
+      font-size s(30)
+    &__price
+      font-size s(20)
+
+//450PX
+@media screen and (max-width: 450px)
+  .equipement
+    &__size
+      font-size s(16)
+      padding s(15,16) 0
+    &__title
+      font-size s(25)
+    &__price
+      font-size s(18)
+
+//375PX
+@media screen and (max-width: 375px)
+  .equipement
+    &__title
+      font-size s(20)
+    &__size
+      font-size s(14)
+      padding s(10,14) 0
+    &__price
+      font-size s(16)
