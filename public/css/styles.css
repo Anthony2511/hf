@@ -1101,6 +1101,41 @@ input[type="search"]::-webkit-search-decoration {
 .about__figure-running {
   margin-bottom: 3.125em;
 }
+@media screen and (max-width: 1300px) {
+  .about__intro {
+    padding: 3.125em 1.25em;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about__intro {
+    flex-direction: column;
+    padding: 3.125em 1.25em 0;
+  }
+  .about__bloc--one {
+    width: 100%;
+  }
+  .about__bloc--two {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.875em;
+  }
+  .about__figure-running {
+    order: 2;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 450px) {
+  .about__text {
+    font-size: 0.875em;
+  }
+  .about__subtitle {
+    font-size: 1.5625em;
+  }
+  .about__figure-running img {
+    width: 100%;
+  }
+}
 .about__record {
   background: url("/img/background-about.jpg") no-repeat top center/cover;
   background-position: 50% 40%;
@@ -1134,6 +1169,21 @@ input[type="search"]::-webkit-search-decoration {
   font-weight: 500;
   width: 50%;
   margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  .about__record {
+    margin-top: 0;
+  }
+  .about__record-text {
+    width: 75%;
+    padding: 1.875em 1.25em;
+  }
+}
+@media screen and (max-width: 450px) {
+  .about__record-text {
+    width: 100%;
+    font-size: 0.875em;
+  }
 }
 .about__end {
   display: flex;
@@ -1495,7 +1545,7 @@ input[type="search"]::-webkit-search-decoration {
   }
 }
 .athlete-record {
-  padding-top: 3.125em;
+  padding: 3.125em 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1524,7 +1574,7 @@ input[type="search"]::-webkit-search-decoration {
 }
 @media screen and (max-width: 1300px) {
   .athlete-record {
-    padding: 3.125em 1.25em 0;
+    padding: 3.125em 1.25em;
   }
   .athlete-record__table-title {
     font-size: 1em;
@@ -1638,7 +1688,10 @@ input[type="search"]::-webkit-search-decoration {
 }
 /*****TRAINER*****/
 .athlete-trainer__container {
-  padding: 3.125em 0 0;
+  padding: 3.125em 0;
+}
+.athlete-trainer__background {
+  background-color: #f4f4f4;
 }
 .athlete-trainer__bloc {
   display: flex;
@@ -1694,7 +1747,7 @@ input[type="search"]::-webkit-search-decoration {
 }
 @media screen and (max-width: 1300px) {
   .athlete-trainer__container {
-    padding: 3.125em 1.25em 0;
+    padding: 3.125em 1.25em;
   }
 }
 @media screen and (max-width: 1024px) {

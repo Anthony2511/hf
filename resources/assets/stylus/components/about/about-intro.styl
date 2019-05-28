@@ -32,3 +32,40 @@
     color $cDarkBlue
   &__figure-running
     margin-bottom s($marginTitle)
+
+//MEDIA QUERIES
+
+//1300PX
+@media screen and (max-width: 1300px)
+  .about
+    &__intro
+      padding s(50) s(20)
+
+//768PX
+@media screen and (max-width: 768px)
+  .about
+    &__intro
+      flex-direction column
+      padding s(50) s(20) 0
+    &__bloc
+      &--one
+        width 100%
+      &--two
+        width 100%
+        display flex
+        flex-direction column
+        margin-top s(30)
+    &__figure-running
+      order 2
+      text-align center
+
+//450PX
+@media screen and (max-width: 450px)
+  .about
+    &__text
+      font-size s(14)
+    &__subtitle
+      font-size s(25,16)
+    &__figure-running
+      & img
+        width 100%
