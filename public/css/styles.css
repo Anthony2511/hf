@@ -483,8 +483,8 @@ input[type="search"]::-webkit-search-decoration {
   transition: 0.3s ease-in-out;
 }
 @media screen and (max-width: 1300px) {
-  .home-athletes {
-    padding: 3.125em 1.25em;
+  .home-athletes__container {
+    padding: 0 1.25em;
   }
   .listing-athletes {
     padding: 0 1.25em;
@@ -1028,6 +1028,9 @@ input[type="search"]::-webkit-search-decoration {
   .news-home__container {
     flex-flow: column wrap;
   }
+  .news-home__container--single {
+    margin: 15.625em 0;
+  }
   .news-home__bloc {
     width: 100%;
   }
@@ -1514,9 +1517,6 @@ input[type="search"]::-webkit-search-decoration {
 @media screen and (max-width: 1024px) {
   .athlete-intro__content-title {
     font-size: 1em;
-  }
-  .athlete-intro__bloc-discipline {
-    font-size: 0.875em;
   }
   .athlete-intro__content-text {
     font-size: 0.875em;
@@ -3493,6 +3493,9 @@ input[type="search"]::-webkit-search-decoration {
   .button-orange__left {
     font-size: 0.75em;
   }
+  .button-orange__right {
+    height: 2.5em;
+  }
   .button-orange__right-send {
     height: 2.5em;
   }
@@ -3572,6 +3575,11 @@ input[type="search"]::-webkit-search-decoration {
 @media screen and (max-width: 450px) {
   .title {
     font-size: 1.75em;
+  }
+}
+@media screen and (max-width: 375px) {
+  .title {
+    font-size: 1.5625em;
   }
 }
 .wrap {
@@ -3860,6 +3868,11 @@ input[type="search"]::-webkit-search-decoration {
   color: #34495e;
   line-height: 1.6;
 }
+@media screen and (max-width: 1300px) {
+  .intro__bloc-text {
+    padding-right: 1.25em;
+  }
+}
 @media screen and (max-width: 1024px) {
   .intro__title {
     font-size: 2.1875em;
@@ -3876,6 +3889,7 @@ input[type="search"]::-webkit-search-decoration {
   }
   .intro__bloc-text {
     margin-left: 0;
+    padding-right: 0;
   }
   .intro__bloc {
     display: block;

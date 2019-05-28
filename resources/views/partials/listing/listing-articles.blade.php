@@ -1,6 +1,6 @@
 <p class="switcher__result">Résultat de la recherche : {{ $articles->count() }}</p>
 <div class="news-home listing-news" id="container-ajax">
-    <div class="news-home__container">
+    <div class="news-home__container news-home__container--single">
         @if($articles->count() > 0)
             @foreach($articles as $article)
                 <div class="news-home__bloc">
