@@ -42,7 +42,7 @@
                        title="Vers la page de la compétition : {{ $competition->title }}"></a>
                 </div>
             @endforeach
-            <a href="{{ route('competitions') }}" class="button button-float">
+            <a href="{{ route('competitions') }}" class="button button-float" title="Vers la page des compétitions">
                 <span class="button-blue__left">Voir toutes les compétitions</span>
                 <i class="button-blue__right"></i>
             </a>

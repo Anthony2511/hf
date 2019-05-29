@@ -37,8 +37,8 @@
                     </div>
                 @endforeach
             </div>
-            <a href="{{route('articles')}}" class="button" title="Vers la page de l'article : {{ $article->title }}" alt="Vers la page de l'article : {{ $article->title }}">
-                <span class="button-blue__left">Voir toutes les actualités</span>
+            <a href="{{route('articles')}}" class="button" title="Vers la page de l'article : {{ $article->title }}">
+                <span class="button-blue__left" alt="Vers la page des actualités">Voir toutes les actualités</span>
                 <i class="button-blue__right"></i>
             </a>
         </div>
