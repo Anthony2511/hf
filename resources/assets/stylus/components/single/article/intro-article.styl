@@ -2,7 +2,7 @@
   &__container
     margin-bottom s(450)
     margin-top s($marginTitle)
-    padding-bottom s(50)
+    padding 0 0 s(50)
     position relative
   &__figure
     position absolute
@@ -16,7 +16,7 @@
     &:before
       content ''
       position absolute
-      background-color alpha($cDarkBlue,0.75)
+      background-color alpha($cDarkBlue,0.5)
       top 0
       bottom 0
       left 0
@@ -62,3 +62,42 @@
     z-index 20
     display inline-block
     border-radius 0 0 10px 10px
+
+//MEDIA QUERIES
+
+//1300PX
+@media screen and (max-width: 1300px)
+  .article-intro
+    &__figure
+      padding 0 s(20)
+    &__bloc
+      padding 0 s(20)
+
+//768PX
+@media screen and (max-width: 768px)
+  .article-intro
+    &__figure
+      height s(400)
+    &__container
+      margin-bottom s(350)
+    &__date
+      font-size s(16)
+    &__title
+      font-size s(40)
+    &__author-name
+      font-size s(16)
+    &__bloc
+      top 40%
+
+//450PX
+@media screen and (max-width: 450px)
+  .article-intro
+    &__date
+      font-size s(14)
+      padding s(10,14) s(20,14)
+    &__title
+      font-size s(30)
+    &__author-name
+      font-size s(14)
+    &__author
+      margin-top s(10)
