@@ -7,7 +7,7 @@
                 C'est un club d'athlétisme, composé de 4 sections situées en Province
                 de Liège (Belgique) à Aywaille, Stavelot, St Vith et Verviers.
             </p>
-            <a href="{{ route('a-propos') }}" class="button">
+            <a href="{{ route('a-propos') }}" class="button" title="Vers la page &Aacute; Propos">
                 <span class="button-white__left">En savoir plus</span>
                 <i class="button-white__right"></i>
             </a>
