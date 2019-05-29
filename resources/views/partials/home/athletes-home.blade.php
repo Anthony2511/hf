@@ -27,7 +27,7 @@
                         </div>
                     </section>
                     <a href="{{url('athletes/' . $athlete->slug )}}" class="home-athletes__link"
-                       title="Vers la page de l'athlète : {{ $athlete->fullname }}" aria-labelledby="Vers la page de l'athlète : {{ $athlete->fullname }}"></a>
+                       title="Vers la page de l'athlète : {{ $athlete->fullname }}"></a>
                 </div>
             @endforeach
         </div>
