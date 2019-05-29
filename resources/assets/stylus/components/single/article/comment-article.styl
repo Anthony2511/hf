@@ -69,3 +69,30 @@
       height 1px
       background-color $cDarkOrange
 
+//MEDIA QUERIES
+
+//1300PX
+@media screen and (max-width:1300px)
+  .article-comment
+    padding s(50) s(20)
+
+//1024PX
+@media screen and (max-width:1024px)
+  .article-comment
+    &__container
+      width 75%
+
+//768PX
+@media screen and (max-width:768px)
+  .article-comment
+    &__container
+      width 100%
+
+//450PX
+@media screen and (max-width:450px)
+  .article-comment
+    &__author-name
+      font-size s(14)
+    &__text
+      font-size s(14)
+

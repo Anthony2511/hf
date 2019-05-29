@@ -2250,6 +2250,29 @@ input[type="search"]::-webkit-search-decoration {
   height: 1px;
   background-color: #fe712a;
 }
+@media screen and (max-width: 1300px) {
+  .article-comment {
+    padding: 3.125em 1.25em;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .article-comment__container {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .article-comment__container {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .article-comment__author-name {
+    font-size: 0.875em;
+  }
+  .article-comment__text {
+    font-size: 0.875em;
+  }
+}
 /*****EQUIPMENT*****/
 .equipement__container {
   display: flex;
@@ -4169,10 +4192,16 @@ input[type="search"]::-webkit-search-decoration {
   .switcher__bloc + .switcher__bloc {
     margin-left: 0;
   }
+  .switcher__label {
+    margin-bottom: 1.875em;
+  }
 }
 @media screen and (max-width: 450px) {
   .switcher__result {
     font-size: 1.125em;
+  }
+  .switcher__label {
+    font-size: 0.875em;
   }
 }
 .breadcrumb {

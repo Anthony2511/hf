@@ -188,7 +188,7 @@ class Competition extends Model
     public function setResultsAttribute($value)
     {
         $attribute_name = "results";
-        $disk = "uploads";
+        $disk = "public_folder";
         $destination_path = "/resultats";
 
         $this->uploadFileToDisk($value, $attribute_name, $disk, $destination_path);
