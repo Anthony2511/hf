@@ -9,6 +9,10 @@
     background-color $cWhite
     margin s(60,16) 0 s(60,16)
     font-family 'opensans'
+  &__hidden
+    position absolute
+    left -9999px
+    top -9999px
   &__bloc
     display flex
     background-color $cLightGrey
@@ -56,3 +60,45 @@
         icon('stars')
         color $cDarkOrange
         margin-right s(10)
+
+//MEDIA QUERIES
+
+//1300PX
+@media screen and (max-width: 1300px)
+  .intro-competition
+    &__container
+      padding s(50) s(20)
+
+//768PX
+@media screen and (max-width: 768px)
+  .intro-competition
+    &__bloc
+      display block
+      &:before
+        content none
+    &__bloc-img
+      background-image none
+      width 100%
+      height auto
+      background-position initial
+      position initial
+    &__hidden
+      position static
+      width 100%
+    &__container
+      flex-direction column
+      padding 0 s(20)
+    &__date
+      right 20px
+      top 0
+    &__bloc-info
+      text-align center
+
+//450PX
+@media screen and (max-width: 450px)
+  .intro-competition
+    &__date
+      font-size s(14)
+      padding s(10,14) s(15,14)
+    &__info-content
+      font-size s(14)

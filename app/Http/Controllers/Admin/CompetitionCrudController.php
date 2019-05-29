@@ -215,6 +215,16 @@ class CompetitionCrudController extends CrudController
             ]
         );
 
+        // Register Text Field
+        $this->crud->addField(
+            [
+                'name' => 'register_text',
+                'label' => 'Informations sur les inscriptions',
+                'tab' => 'Informations générales',
+                'type' => 'simplemde'
+            ]
+        );
+
         //Slug Field
         $this->crud->addField([
             'name' => 'slug',

@@ -50,6 +50,10 @@ img {
   color: $cOrange;
   font-style: italic;
 }
+.empty-margin {
+  margin-top: 20px;
+  display: block;
+}
 /* ******************
  * Settings
    ******************* */
@@ -2524,6 +2528,11 @@ input[type="search"]::-webkit-search-decoration {
   margin: 3.75em 0 3.75em;
   font-family: 'opensans';
 }
+.intro-competition__hidden {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+}
 .intro-competition__bloc {
   display: flex;
   background-color: #f4f4f4;
@@ -2596,6 +2605,50 @@ input[type="search"]::-webkit-search-decoration {
   color: #fe712a;
   margin-right: 0.625em;
 }
+@media screen and (max-width: 1300px) {
+  .intro-competition__container {
+    padding: 3.125em 1.25em;
+  }
+}
+@media screen and (max-width: 768px) {
+  .intro-competition__bloc {
+    display: block;
+  }
+  .intro-competition__bloc:before {
+    content: none;
+  }
+  .intro-competition__bloc-img {
+    background-image: none;
+    width: 100%;
+    height: auto;
+    background-position: initial;
+    position: initial;
+  }
+  .intro-competition__hidden {
+    position: static;
+    width: 100%;
+  }
+  .intro-competition__container {
+    flex-direction: column;
+    padding: 0 1.25em;
+  }
+  .intro-competition__date {
+    right: 20px;
+    top: 0;
+  }
+  .intro-competition__bloc-info {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 450px) {
+  .intro-competition__date {
+    font-size: 0.875em;
+    padding: 0.714285714285714em 1.071428571428571em;
+  }
+  .intro-competition__info-content {
+    font-size: 0.875em;
+  }
+}
 .infos-competition {
   margin-top: -2.0625em;
   display: flex;
@@ -2615,7 +2668,6 @@ input[type="search"]::-webkit-search-decoration {
   margin-top: 1.666666666666667em;
   font-weight: 300;
   line-height: 1.6;
-  width: 75%;
 }
 .infos-competition__figure + .infos-competition__figure {
   margin-left: 1.25em;

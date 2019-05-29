@@ -5,6 +5,6 @@
             {{ $competition->text_results }}
         </a>
     @else
-        <span class="empty">Aucun résultat pour le moment</span>
+        <span class="empty empty-margin">Aucun résultat pour le moment</span>
     @endif
 </section>

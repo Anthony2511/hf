@@ -28,6 +28,7 @@ class CompetitionRequest extends FormRequest
         return [
             'title' => 'required|min:2|max:255',
             'place' => 'required|min:2|max:255',
+            'register_text' => 'required|min:2|max:255',
             'image' => 'required',
             'isFinish' => 'required|min:2|max:50',
             'type' => 'required|min:2|max:50',
