@@ -2142,6 +2142,26 @@ input[type="search"]::-webkit-search-decoration {
   color: #34495e;
   margin: 0 auto;
 }
+@media screen and (max-width: 1300px) {
+  .article-content {
+    padding: 3.125em 1.25em;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .article-content__text {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .article-content__text {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .article-content__text {
+    font-size: 0.875em;
+  }
+}
 .article-comment {
   padding: 3.125em 0;
   font-family: 'opensans';

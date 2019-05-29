@@ -7,3 +7,28 @@
     line-height 1.7
     color $cBlue
     margin  0 auto
+
+//MEDIA QUERIES
+
+//1300PX
+@media screen and (max-width: 1300px)
+  .article-content
+    padding s(50) s(20)
+
+//1024PX
+@media screen and (max-width: 1024px)
+  .article-content
+    &__text
+      width 85%
+
+//768PX
+@media screen and (max-width: 768px)
+  .article-content
+    &__text
+      width 100%
+
+//450PX
+@media screen and (max-width: 450px)
+  .article-content
+    &__text
+      font-size s(14)
