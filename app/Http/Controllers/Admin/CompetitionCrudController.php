@@ -205,6 +205,16 @@ class CompetitionCrudController extends CrudController
             ]
         );
 
+        // Résultats Title Field
+        $this->crud->addField(
+            [
+                'name' => 'text_results',
+                'label' => 'Titre du pdf',
+                'tab' => 'Résultats',
+                'type' => 'text'
+            ]
+        );
+
         //Slug Field
         $this->crud->addField([
             'name' => 'slug',

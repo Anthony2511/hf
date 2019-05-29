@@ -34,7 +34,9 @@ class Competition extends Model
         'horaires_h',
         'horaires_f',
         'startDate',
-        'results'
+        'results',
+        'text_results',
+        'register_text'
     );
     // protected $hidden = [];
     protected $dates = [
