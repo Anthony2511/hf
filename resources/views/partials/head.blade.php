@@ -4,7 +4,6 @@
     <meta name="robots" content="noindex,nofollow">
     @yield('styles')
     <link rel="stylesheet" href="{{ asset('css/styles.css') }}" type="text/css">
-
     @yield('highlightJS')
-
+    <title>H-f - Titre de la page</title>
 </head>

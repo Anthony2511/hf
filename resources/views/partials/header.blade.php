@@ -1,4 +1,4 @@
-<header class="header-home header" role="banner">
+<header class="header-home header">
     <div class="wrap">
         @include('partials.navigation')
     </div>

@@ -1,6 +1,6 @@
 <div class="background-home">
     <div class="home-athletes wrap">
-        <h2 class="title title__blue title__left" aria-level="2" role="heading">Nos athlètes</h2>
+        <h2 class="title title__blue title__left" aria-level="2">Nos athlètes</h2>
         <div class="home-athletes__container">
             @foreach($athletes as $athlete)
                 <div class="home-athletes__bloc">
@@ -12,7 +12,7 @@
                              height="457">
                     </figure>
                     <section class="home-athletes__infos">
-                        <h3 class="home-athletes__infos-title" role="heading" aria-level="3">{{ $athlete->firstname }}
+                        <h3 class="home-athletes__infos-title" aria-level="3">{{ $athlete->firstname }}
                             <span>{{ $athlete->lastname }}</span></h3>
                         <div class="home-athletes__disciplines">
                             @if(!empty (count($athlete->disciplines)))
@@ -27,7 +27,7 @@
                         </div>
                     </section>
                     <a href="{{url('athletes/' . $athlete->slug )}}" class="home-athletes__link"
-                       title="Vers la page de l'athlète : {{ $athlete->fullname }}"></a>
+                       title="Vers la page de l'athlète : {{ $athlete->fullname }}"  alt="Vers la page de l'athlète : {{ $athlete->fullname }}"></a>
                 </div>
             @endforeach
         </div>
