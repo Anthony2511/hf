@@ -2657,6 +2657,9 @@ input[type="search"]::-webkit-search-decoration {
   font-family: 'opensans';
   color: #34495e;
 }
+.infos-competition__bloc {
+  width: 100%;
+}
 .infos-competition__bloc-img {
   display: flex;
   flex-flow: row wrap;
@@ -2669,8 +2672,20 @@ input[type="search"]::-webkit-search-decoration {
   font-weight: 300;
   line-height: 1.6;
 }
-.infos-competition__figure + .infos-competition__figure {
-  margin-left: 1.25em;
+@media screen and (max-width: 1300px) {
+  .infos-competition {
+    padding: 0 1.25em;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .infos-competition__text {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 450px) {
+  .infos-competition__text {
+    font-size: 0.875em;
+  }
 }
 .horaires-competition {
   padding-top: 3.125em;
@@ -2738,6 +2753,50 @@ input[type="search"]::-webkit-search-decoration {
   font-size: 1.125em;
   font-weight: 600;
 }
+@media screen and (max-width: 1300px) {
+  .horaires-competition {
+    padding: 3.125em 1.25em 0;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .horaires-competition__table-title {
+    font-size: 1em;
+  }
+  .horaires-competition__table-row td {
+    font-size: 0.875em;
+  }
+  .horaires-competition__header-title {
+    font-size: 1.125em;
+  }
+}
+@media screen and (max-width: 768px) {
+  .horaires-competition__header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .horaires-competition__bloc {
+    flex-direction: column;
+    padding: 1.25em 0.625em 0;
+  }
+  .horaires-competition__bloc:before {
+    content: none;
+  }
+  .horaires-competition__header-title + .horaires-competition__header-title {
+    margin-top: 0.555555555555556em;
+  }
+}
+@media screen and (max-width: 450px) {
+  .horaires-competition__table-title {
+    font-size: 0.875em;
+  }
+  .horaires-competition__table-row td {
+    font-size: 0.75em;
+  }
+  .horaires-competition__header-title {
+    font-size: 1em;
+  }
+}
 .resultats-competition {
   padding: 3.125em 0;
 }
@@ -2772,6 +2831,22 @@ input[type="search"]::-webkit-search-decoration {
   height: 1px;
   background-color: #34495e;
   display: block;
+}
+@media screen and (max-width: 1300px) {
+  .resultats-competition {
+    padding: 3.125em 1.25em;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .resultats-competition__link {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 450px) {
+  .resultats-competition__link {
+    font-size: 0.875em;
+    line-height: 1.5;
+  }
 }
 .gallery-competition__container {
   margin: 3.125em 0;

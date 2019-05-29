@@ -5,6 +5,8 @@
   justify-content flex-start
   font-family 'opensans'
   color $cBlue
+  &__bloc
+    width 100%
   &__bloc-img
     display flex
     flex-flow row wrap
@@ -15,5 +17,23 @@
     margin-top s(30,18)
     font-weight 300
     line-height 1.6
-  &__figure + &__figure
-    margin-left s(20)
+
+//MEDIA QUERIES
+
+//1300PX
+@media screen and (max-width:1300px)
+  .infos-competition
+    padding 0 s(20)
+
+//1024PX
+@media screen and (max-width:1024px)
+  .infos-competition
+    &__text
+      text-align center
+
+//450PX
+@media screen and (max-width:450px)
+  .infos-competition
+    &__text
+      font-size s(14)
+

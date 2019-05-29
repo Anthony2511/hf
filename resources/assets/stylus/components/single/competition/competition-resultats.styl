@@ -21,3 +21,23 @@
         height 1px
         background-color $cBlue
         display block
+
+//MEDIA QUERIES
+
+//1300PX
+@media screen and (max-width: 1300px)
+  .resultats-competition
+    padding s(50) s(20)
+
+//1024PX
+@media screen and (max-width: 1024px)
+  .resultats-competition
+    &__link
+      text-align center
+
+//450PX
+@media screen and (max-width:450px)
+  .resultats-competition
+    &__link
+      font-size s(14)
+      line-height 1.5

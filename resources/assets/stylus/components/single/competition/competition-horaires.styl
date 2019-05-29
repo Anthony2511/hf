@@ -54,3 +54,47 @@
     &--empty-horaire
       font-size s(18)
       font-weight 600
+
+//MEDIA QUERIES
+
+//1300PX
+@media screen and (max-width: 1300px)
+  .horaires-competition
+    padding s(50) s(20) 0
+
+//1024PX
+@media screen and (max-width: 1024px)
+  .horaires-competition
+    &__table-title
+      font-size s(16)
+    &__table-row
+      & td
+        font-size s(14)
+    &__header-title
+      font-size s(18)
+
+//768PX
+@media screen and (max-width: 768px)
+  .horaires-competition
+    &__header
+      flex-direction column
+      justify-content center
+      align-items center
+    &__bloc
+      flex-direction column
+      padding s(20) s(10) 0
+      &:before
+        content none
+    &__header-title + &__header-title
+      margin-top s(10,18)
+
+//450PX
+@media screen and (max-width: 450px)
+  .horaires-competition
+    &__table-title
+      font-size s(14)
+    &__table-row
+      & td
+        font-size s(12)
+    &__header-title
+      font-size s(16)
