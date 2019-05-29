@@ -10,7 +10,7 @@
                     d'une semaine, ont lieu à Stavelot et Verviers, et sont généralement ouverts
                     aux affiliés comme aux non-affiliés.
                 </p>
-                <a href="{{ route('stages') }}" class="button" title="Vers la page des stages" alt="Vers la page des stages">
+                <a href="{{ route('stages') }}" class="button" title="Vers la page des stages">
                     <span class="button-white__left">En savoir plus</span>
                     <i class="button-white__right"></i>
                 </a>

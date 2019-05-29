@@ -29,8 +29,7 @@
                     @foreach($competitions->take(3) as $competition)
                         <li class="footer__results-item"><a href="{{url('competitions/' . $competition->slug )}}"
                                                             class="footer__results-link"
-                                                            title="Vers la page de la compétition : {{ $competition->title }}"
-                                                            alt="Vers la page de la compétition : {{ $competition->title }}">{{$competition->title}}
+                                                            title="Vers la page de la compétition : {{ $competition->title }}">{{$competition->title}}
                                 -
                                 <time datetime="{{$competition->startDate}}">{{$competition->getFormatStartDate()}}</time>
                             </a></li>
@@ -43,13 +42,13 @@
                     <li class="footer__social-list">
                         <a href="{{ Config::get('settings.link_fcb') }}" class="footer__social footer__social--facebook"
                            target="_blank" itemprop="url"
-                           alt="Vers notre page Facebook" title="Vers notre page Facebook"><span
+                           title="Vers notre page Facebook"><span
                                     class="hidden">Facebook</span></a>
                     </li>
                     <li class="footer__social-list">
                         <a href="{{ Config::get('settings.link_insta') }}"
                            class="footer__social footer__social--instagram" target="_blank" itemprop="url"
-                           alt="Vers notre page Instagram" title="Vers notre page Instagram"><span class="hidden">Instagram</span></a>
+                           title="Vers notre page Instagram"><span class="hidden">Instagram</span></a>
                     </li>
                 </ul>
             </section>

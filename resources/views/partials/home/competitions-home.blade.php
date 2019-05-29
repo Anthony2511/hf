@@ -18,10 +18,10 @@
                         {{ strip_tags(str_limit($competition->content, 255, '...')) }}
                     </p>
                     <a href="{{url('competitions/' . $competition->slug )}}" class="button-simple"
-                       title="Vers la page de la compétition : {{ $competition->title }}"  alt="Vers la page de la compétition : {{ $competition->title }}">En savoir plus</a>
+                       title="Vers la page de la compétition : {{ $competition->title }}">En savoir plus</a>
                 </section>
                 <a href="{{url('competitions/' . $competition->slug )}}" class="compet-home__link"
-                   title="Vers la page de la compétition : {{ $competition->title }}"  alt="Vers la page de la compétition : {{ $competition->title }}"></a>
+                   title="Vers la page de la compétition : {{ $competition->title }}"></a>
             </div>
         @endforeach
         <div class="compet-home__bloc-right">
@@ -37,9 +37,9 @@
                         </section>
                     </div>
                     <a href="{{url('competitions/' . $competition->slug )}}" class="button-simple__size"
-                       title="Vers la page de la compétition : {{ $competition->title }}"  alt="Vers la page de la compétition : {{ $competition->title }}">En savoir plus</a>
+                       title="Vers la page de la compétition : {{ $competition->title }}">En savoir plus</a>
                     <a href="{{url('competitions/' . $competition->slug )}}" class="compet-home__link"
-                       title="Vers la page de la compétition : {{ $competition->title }}"  alt="Vers la page de la compétition : {{ $competition->title }}"></a>
+                       title="Vers la page de la compétition : {{ $competition->title }}"></a>
                 </div>
             @endforeach
             <a href="{{ route('competitions') }}" class="button button-float">
