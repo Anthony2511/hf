@@ -1295,7 +1295,7 @@ input[type="search"]::-webkit-search-decoration {
   padding: 1.875em;
   border-radius: 10px;
   position: relative;
-  max-width: 23.5%;
+  width: 23.5%;
 }
 .contact-person__figure {
   width: 6.25em;
@@ -1325,6 +1325,7 @@ input[type="search"]::-webkit-search-decoration {
   color: #2c3e50;
   line-height: 1.6;
   margin-bottom: 0.625em;
+  word-break: break-word;
 }
 .contact-person__item--place:before {
   font-family: 'iconfont';
@@ -1367,6 +1368,38 @@ input[type="search"]::-webkit-search-decoration {
   content: "\E908";
   color: #fa9926;
   margin-right: 0.625em;
+}
+@media screen and (max-width: 1300px) {
+  .contact-person {
+    padding: 3.125em 1.25em 0;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .contact-person__container {
+    flex-flow: row wrap;
+    padding-bottom: 0;
+  }
+  .contact-person__bloc {
+    width: 47.5%;
+    margin-bottom: 5em;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contact-person__container {
+    flex-flow: column wrap;
+    padding-bottom: 0;
+  }
+  .contact-person__bloc {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .contact-person__title {
+    font-size: 1.375em;
+  }
+  .contact-person__item {
+    font-size: 0.875em;
+  }
 }
 /*****SINGLE*****/
 /*****ATHLETE*****/

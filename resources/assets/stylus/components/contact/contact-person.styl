@@ -12,7 +12,7 @@
     padding s($paddingBloc)
     border-radius 10px
     position relative
-    max-width 23.5%
+    width 23.5%
   &__figure
     width s(100)
     height s(100)
@@ -38,6 +38,7 @@
     color $cDarkBlue
     line-height 1.6
     margin-bottom s(10)
+    word-break break-word
     &--place
       &:before
         icon('location')
@@ -53,4 +54,38 @@
         icon('phone')
         color $cOrange
         margin-right s(10)
+
+//MEDIA QUERIES
+
+//1300PX
+@media screen and (max-width:1300px)
+  .contact-person
+    padding s(50) s(20) 0
+
+//1024PX
+@media screen and (max-width:1024px)
+  .contact-person
+    &__container
+      flex-flow row wrap
+      padding-bottom 0
+    &__bloc
+      width 47.5%
+      margin-bottom s(80)
+
+//768PX
+@media screen and (max-width:768px)
+  .contact-person
+    &__container
+      flex-flow column wrap
+      padding-bottom 0
+    &__bloc
+      width 100%
+
+//450PX
+@media screen and (max-width:450px)
+  .contact-person
+    &__title
+      font-size s(22)
+    &__item
+      font-size s(14)
 
