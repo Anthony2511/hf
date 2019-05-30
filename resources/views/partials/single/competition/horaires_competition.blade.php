@@ -1,5 +1,5 @@
 <section class="horaires-competition wrap">
-    <h2 class="title title__blue title__center title-size" aria-level="2" role="heading">Horaires de la compétition</h2>
+    <h2 class="title title__blue title__center title-size" aria-level="2">Horaires de la compétition</h2>
     <div class="horaires-competition__container">
         <div class="horaires-competition__header">
             <span class="horaires-competition__header-title">Hommes</span>
@@ -7,6 +7,7 @@
         </div>
         <div class="horaires-competition__bloc">
             <table class="horaires-competition__table">
+                <caption class="hidden">Tableau des horaires hommes</caption>
                 @if(!empty($competition->horaires_h))
                     <thead class="horaires-competition__thead">
                     <tr class="horaires-competition__table-legend">
@@ -36,6 +37,7 @@
                 @endif
             </table>
             <table class="horaires-competition__table">
+                <caption class="hidden">Tableau des horaires femmes</caption>
                 @if(!empty($competition->horaires_f))
                     <thead class="horaires-competition__thead">
                     <tr class="horaires-competition__table-legend">

@@ -8,11 +8,11 @@
                  width="614"
                  height="409"
                  class="intro-competition__hidden">
-            <time datetime="" class="intro-competition__date">{{ $competition->getFullDate() }}</time>
+            <time datetime="{{$competition->startDate}}" class="intro-competition__date">{{ $competition->getFullDate() }}</time>
         </figure>
         <div class="intro-competition__bloc wrap">
             <div class="intro-competition__bloc-text">
-                <h3 class="athlete-intro__title-infos" aria-level="3" role="heading">Informations générales</h3>
+                <h3 class="athlete-intro__title-infos" aria-level="3">Informations générales</h3>
                 <div class="intro-competition__bloc-info">
                     <div class="intro-competition__info">
                         <span>Adresse</span>

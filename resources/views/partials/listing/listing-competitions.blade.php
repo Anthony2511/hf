@@ -14,7 +14,7 @@
                         <h3 class="compet-home__left-title
                     <?php if($competition->content == null): ?>
                                 compet-home__bloc-title
-<?php else: ?><?php endif; ?>" aria-level="3" role="heading">{{ $competition->title }}</h3>
+<?php else: ?><?php endif; ?>" aria-level="3">{{ $competition->title }}</h3>
                         <span class="compet-home__left-location
                     <?php if($competition->content == null): ?>
                                 compet-home__bloc-location
@@ -23,7 +23,7 @@
                 </div>
                 @if( $competition->content !== null)
                     <section>
-                        <h4 class="compet-home__left-title" aria-level="4" role="heading">Informations générales</h4>
+                        <h4 class="compet-home__left-title" aria-level="4">Informations générales</h4>
                         <p class="compet-home__left-text">
                             {{ strip_tags(str_limit($competition->content, 255, '...')) }}
                         </p>

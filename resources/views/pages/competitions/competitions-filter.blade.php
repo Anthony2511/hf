@@ -10,7 +10,7 @@
                 <h3 class="compet-home__left-title
                     <?php if($competition->content == null): ?>
                         compet-home__bloc-title
-<?php else: ?><?php endif; ?>" aria-level="3">{{ $competition->title }}</h3>
+<?php else: ?><?php endif; ?>">{{ $competition->title }}</h3>
                 <span class="compet-home__left-location
                     <?php if($competition->content == null): ?>
                         compet-home__bloc-location
