@@ -1,7 +1,8 @@
 <div class="athlete-record wrap">
     <section class="athlete-record__bloc">
-        <h4 class="title title__blue title__left title-size" aria-level="4" role="heading">Records personnels</h4>
+        <h3 class="title title__blue title__left title-size" aria-level="3">Records personnels</h3>
         <table class="athlete-record__table">
+            <caption class="hidden">Tableau des records</caption>
             <thead>
             <tr class="athlete-record__table-legend">
                 <th class="athlete-record__table-title">Discipline</th>

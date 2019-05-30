@@ -9,7 +9,7 @@
         </figure>
         <div class="athlete-intro__bloc">
             <section class="athlete-intro__title">
-                <h3 aria-level="3" role="heading" class="athlete-intro__name">{{$trainer->firstname}}
+                <h3 aria-level="3" class="athlete-intro__name">{{$trainer->firstname}}
                     <span>{{$trainer->lastname}}</span></h3>
                 <span class="athlete-intro__division">{{$trainer->status}}</span>
             </section>

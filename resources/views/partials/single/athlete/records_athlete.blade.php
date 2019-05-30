@@ -33,7 +33,7 @@
     <section class="athlete-record__bloc">
         <h3 class="title title__blue title__left title-size" aria-level="3">&Eacute;volution</h3>
         <table class="athlete-record__table">
-            <caption class="hidden">Tableau des records</caption>
+            <caption class="hidden">Tableau des évolutions</caption>
             <thead>
             <tr class="athlete-record__table-legend">
                 <th class="athlete-record__table-title">Année</th>
