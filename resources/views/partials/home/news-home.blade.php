@@ -33,7 +33,7 @@
                             <span class="news-home__comments">{{$article->comments->count()}}</span>
                         </section>
                         <a href="{{url('articles/' . $article->slug )}}" class="news-home__link"
-                           title="Vers la page de l'article : {{ $article->title }}"  alt="Vers la page de l'article : {{ $article->title }}"></a>
+                           title="Vers la page de l'article : {{ $article->title }}"><span class="hidden">Vers la page de l'article : {{ $article->title }}</span></a>
                     </div>
                 @endforeach
             </div>

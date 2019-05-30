@@ -10,21 +10,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b0b97a5d-6dca-40c8-a8f7-cc4d5e556a82" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/stylus/base/base.styl" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/stylus/base/base.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/stylus/components/button.styl" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/stylus/components/button.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/stylus/components/home/compet-home.styl" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/stylus/components/home/compet-home.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/stylus/components/home/news-home.styl" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/stylus/components/home/news-home.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/stylus/components/navigation.styl" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/stylus/components/navigation.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/stylus/components/single/article/intro-article.styl" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/stylus/components/single/article/intro-article.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/stylus/components/single/competition/competition-intro.styl" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/stylus/components/single/competition/competition-intro.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/stylus/components/single/competition/competition-resultats.styl" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/stylus/components/single/competition/competition-resultats.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/stylus/components/single/internship/intro-internship.styl" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/stylus/components/single/internship/intro-internship.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/stylus/components/switcher.styl" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/stylus/components/switcher.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/stylus/components/title.styl" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/stylus/components/title.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partials/home/athletes-home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/home/athletes-home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partials/single/article/comment_article.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/single/article/comment_article.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/home/competitions-home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/home/competitions-home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/home/news-home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/home/news-home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor.zip" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -39,38 +29,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="athletes-home.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="athletes-home.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/partials/home/athletes-home.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="391">
               <caret line="29" column="159" selection-start-line="29" selection-start-column="159" selection-end-line="29" selection-end-column="159" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="navigation.styl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/assets/stylus/components/navigation.styl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="108" column="12" selection-start-line="108" selection-start-column="12" selection-end-line="108" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="comment_article.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/partials/single/article/comment_article.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="28" column="43" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="resultats_competiton.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/partials/single/competition/resultats_competiton.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -84,6 +47,15 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="competitions-home.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/partials/home/competitions-home.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="317">
+              <caret line="41" column="166" selection-start-line="41" selection-start-column="166" selection-end-line="41" selection-end-column="166" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="intro-internship.styl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/assets/stylus/components/single/internship/intro-internship.styl">
           <provider selected="true" editor-type-id="text-editor">
@@ -93,11 +65,29 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="news-home.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/partials/home/news-home.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="322">
+              <caret line="35" column="155" selection-start-line="35" selection-start-column="155" selection-end-line="35" selection-end-column="155" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="button.styl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/assets/stylus/components/button.styl">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="523">
               <caret line="242" column="18" selection-start-line="242" selection-start-column="18" selection-end-line="242" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="layout.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/layout.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="138">
+              <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -174,10 +164,7 @@
         <option value="$PROJECT_DIR$/resources/views/partials/footer.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/partials/home/trainee-home.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/partials/navigation.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/partials/home/competitions-home.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/partials/home/news-home.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/partials/header-home.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/layout.blade.php" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/resources/assets/stylus/components/navigation.styl" />
         <option value="$PROJECT_DIR$/resources/assets/stylus/components/title.styl" />
@@ -193,6 +180,9 @@
         <option value="$PROJECT_DIR$/resources/assets/stylus/components/single/competition/competition-intro.styl" />
         <option value="$PROJECT_DIR$/resources/assets/stylus/components/single/internship/intro-internship.styl" />
         <option value="$PROJECT_DIR$/resources/views/partials/home/athletes-home.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/partials/home/competitions-home.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/partials/home/news-home.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/layout.blade.php" />
       </list>
     </option>
   </component>
@@ -795,12 +785,12 @@
       <workItem from="1559031726726" duration="56000" />
       <workItem from="1559034229716" duration="10691000" />
       <workItem from="1559122030565" duration="19684000" />
-      <workItem from="1559206392615" duration="2313000" />
+      <workItem from="1559206392615" duration="2744000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="531692000" />
+    <option name="totallyTimeSpent" value="532123000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1081,24 +1071,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/partials/home/competitions-home.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="44" column="114" selection-start-line="44" selection-start-column="114" selection-end-line="44" selection-end-column="114" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/partials/home/trainee-home.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
           <caret line="12" column="94" selection-start-line="12" selection-start-column="94" selection-end-line="12" selection-end-column="94" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/partials/home/news-home.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="22" column="99" selection-start-line="22" selection-start-column="98" selection-end-line="22" selection-end-column="99" />
         </state>
       </provider>
     </entry>
@@ -1113,13 +1089,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layout.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -1225,6 +1194,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="29" column="159" selection-start-line="29" selection-start-column="159" selection-end-line="29" selection-end-column="159" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/partials/home/competitions-home.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="41" column="166" selection-start-line="41" selection-start-column="166" selection-end-line="41" selection-end-column="166" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/partials/home/news-home.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="35" column="155" selection-start-line="35" selection-start-column="155" selection-end-line="35" selection-end-column="155" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layout.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
         </state>
       </provider>
     </entry>

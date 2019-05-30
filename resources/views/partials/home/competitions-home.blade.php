@@ -39,7 +39,7 @@
                     <a href="{{url('competitions/' . $competition->slug )}}" class="button-simple__size"
                        title="Vers la page de la compétition : {{ $competition->title }}">En savoir plus</a>
                     <a href="{{url('competitions/' . $competition->slug )}}" class="compet-home__link"
-                       title="Vers la page de la compétition : {{ $competition->title }}"></a>
+                       title="Vers la page de la compétition : {{ $competition->title }}"><span class="hidden">Vers la page de la compétition : {{ $competition->title }}</span></a>
                 </div>
             @endforeach
             <a href="{{ route('competitions') }}" class="button button-float" title="Vers la page des compétitions">
