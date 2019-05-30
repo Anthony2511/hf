@@ -10,10 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b0b97a5d-6dca-40c8-a8f7-cc4d5e556a82" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/athletes/athletes-filter.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/athletes/athletes-filter.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partials/listing/listing-athletes.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/listing/listing-athletes.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partials/single/athlete/item_athlete.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/single/athlete/item_athlete.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/single/athlete/division_athlete.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/single/athlete/division_athlete.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/single/athlete/intro_athlete.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/single/athlete/intro_athlete.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/single/athlete/records_athlete.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/single/athlete/records_athlete.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/single/athlete/trophies_athlete.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/single/athlete/trophies_athlete.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,29 +28,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="athletes-filter.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/pages/athletes/athletes-filter.blade.php">
+      <file leaf-file-name="intro_athlete.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/partials/single/athlete/intro_athlete.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="26" column="74" selection-start-line="26" selection-start-column="74" selection-end-line="26" selection-end-column="154" />
+            <state relative-caret-position="345">
+              <caret line="15" column="69" lean-forward="true" selection-start-line="15" selection-start-column="69" selection-end-line="15" selection-end-column="69" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="listing-athletes.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/partials/listing/listing-athletes.blade.php">
+      <file leaf-file-name="records_athlete.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/partials/single/athlete/records_athlete.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="29" column="158" selection-start-line="29" selection-start-column="158" selection-end-line="29" selection-end-column="158" />
+            <state relative-caret-position="207">
+              <caret line="33" column="75" selection-start-line="33" selection-start-column="75" selection-end-line="33" selection-end-column="75" />
+              <folding>
+                <element signature="e#1551#1559#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="item_athlete.blade.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/partials/single/athlete/item_athlete.blade.php">
+      <file leaf-file-name="trophies_athlete.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/partials/single/athlete/trophies_athlete.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="26" column="150" selection-start-line="26" selection-start-column="150" selection-end-line="26" selection-end-column="150" />
+            <state relative-caret-position="23">
+              <caret line="1" column="71" selection-start-line="1" selection-start-column="71" selection-end-line="1" selection-end-column="71" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="division_athlete.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/partials/single/athlete/division_athlete.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="115">
+              <caret line="5" column="63" selection-start-line="5" selection-start-column="62" selection-end-line="5" selection-end-column="63" />
             </state>
           </provider>
         </entry>
@@ -96,10 +108,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/assets/stylus/components/single/competition/competition-infos.styl" />
-        <option value="$PROJECT_DIR$/resources/assets/stylus/components/single/competition/competition-horaires.styl" />
-        <option value="$PROJECT_DIR$/config/app.php" />
-        <option value="$USER_HOME$/Desktop/hf.sql" />
         <option value="$PROJECT_DIR$/resources/views/partials/head.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/partials/header.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/partials/footer.blade.php" />
@@ -147,6 +155,10 @@
         <option value="$PROJECT_DIR$/resources/views/pages/athletes/athletes-filter.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/partials/listing/listing-athletes.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/partials/single/athlete/item_athlete.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/partials/single/athlete/division_athlete.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/partials/single/athlete/intro_athlete.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/partials/single/athlete/records_athlete.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/partials/single/athlete/trophies_athlete.blade.php" />
       </list>
     </option>
   </component>
@@ -772,12 +784,12 @@
       <workItem from="1559031726726" duration="56000" />
       <workItem from="1559034229716" duration="10691000" />
       <workItem from="1559122030565" duration="19684000" />
-      <workItem from="1559206392615" duration="4819000" />
+      <workItem from="1559206392615" duration="5260000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="534198000" />
+    <option name="totallyTimeSpent" value="534639000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -860,41 +872,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Desktop/hf.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="61" column="59" lean-forward="true" selection-start-line="61" selection-start-column="59" selection-end-line="61" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/stylus/components/cta-page.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="667">
-          <caret line="69" column="16" selection-start-line="69" selection-start-column="16" selection-end-line="69" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/partials/header.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="34" selection-start-column="34" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="27" column="14" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/partials/home/trainee-home.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
@@ -1192,6 +1169,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/partials/listing/listing-athletes.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="29" column="158" selection-start-line="29" selection-start-column="158" selection-end-line="29" selection-end-column="158" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/pages/athletes/athletes-filter.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="506">
@@ -1199,10 +1183,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/partials/listing/listing-athletes.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/partials/single/athlete/gallery_athlete.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/partials/single/athlete/division_athlete.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="29" column="158" selection-start-line="29" selection-start-column="158" selection-end-line="29" selection-end-column="158" />
+        <state relative-caret-position="115">
+          <caret line="5" column="63" selection-start-line="5" selection-start-column="62" selection-end-line="5" selection-end-column="63" />
         </state>
       </provider>
     </entry>
@@ -1210,6 +1197,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="506">
           <caret line="26" column="150" selection-start-line="26" selection-start-column="150" selection-end-line="26" selection-end-column="150" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/partials/single/athlete/intro_athlete.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="15" column="69" lean-forward="true" selection-start-line="15" selection-start-column="69" selection-end-line="15" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/partials/single/athlete/records_athlete.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="33" column="75" selection-start-line="33" selection-start-column="75" selection-end-line="33" selection-end-column="75" />
+          <folding>
+            <element signature="e#1551#1559#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/partials/single/athlete/trophies_athlete.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="71" selection-start-line="1" selection-start-column="71" selection-end-line="1" selection-end-column="71" />
         </state>
       </provider>
     </entry>

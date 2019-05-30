@@ -1,5 +1,5 @@
 <section class="athlete-trophies wrap">
-    <h4 class="title title__blue title__left title-size" aria-level="4" role="heading">Ses palmarès</h4>
+    <h3 class="title title__blue title__left title-size" aria-level="3">Ses palmarès</h3>
     <div class="athlete-trophies__container">
         @if(!empty (count($athlete->trophies)))
             @foreach($athlete->trophies as $trophie)

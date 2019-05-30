@@ -1,6 +1,6 @@
 <div class="athlete-trainer__background">
     <section class="athlete-trainer__container wrap">
-        <h4 class="title title__blue title__center title-size" aria-level="4" role="heading">Athlètes de la même division</h4>
+        <h3 class="title title__blue title__center title-size" aria-level="3">Athlètes de la même division</h3>
         <div class="athlete-trainer__bloc">
             @if(!empty (count($athleteDivision)))
                 @foreach($athleteDivision->take(5) as $athlete)
