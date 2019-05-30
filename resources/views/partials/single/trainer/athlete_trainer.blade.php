@@ -5,7 +5,8 @@
             @if(!empty (count($trainer->athletes)))
                 @foreach($trainer->athletes->take(5) as $athlete)
                     <a href="{{url('athletes/' . $athlete['slug'])}}"
-                       class="athlete-trainer__athlete-link">
+                       class="athlete-trainer__athlete-link"
+                       title="Vers la page de l'athlète : {{ $athlete->fullname }}">
                         <div class="athlete-trainer__athlete">
                             <figure class="athlete-trainer__athlete-figure">
                                 <img src="{{ $athlete->getImageProfile('_profile.jpg') }}"

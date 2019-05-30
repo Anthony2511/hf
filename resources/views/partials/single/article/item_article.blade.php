@@ -21,12 +21,12 @@
                 </figure>
                 <span class="news-home__author-name">par <span>{{ $article->author->fullname }}</span></span>
             </div>
-            <h3 aria-level="3" role="heading" class="news-home__title">{{ strip_tags(str_limit($article->title, 50, '...')) }}</h3>
+            <h3 aria-level="3" class="news-home__title">{{ strip_tags(str_limit($article->title, 50, '...')) }}</h3>
             <p class="news-home__text">
                 {{ strip_tags(str_limit($article->content, 255, '...')) }}
             </p>
             <span class="news-home__comments">{{ $article->comments->count() }}</span>
         </section>
-        <a href="{{url('articles/' . $article->slug )}}" class="news-home__link"></a>
+        <a href="{{url('articles/' . $article->slug )}}" class="news-home__link" title="Vers la page de l'article : {{ $article->title }}"><span class="hidden">Vers la page de l'article : {{ $article->title }}</span></a>
     </div>
 @endforeach
