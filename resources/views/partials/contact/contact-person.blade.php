@@ -9,7 +9,7 @@
                      height="300"
                      itemprop="image">
             </figure>
-            <h3 aria-level="3" role="heading" class="contact-person__title">Verviers</h3>
+            <h3 aria-level="3" class="contact-person__title">Verviers</h3>
             <ul class="contact-person__list">
                 <li class="contact-person__item contact-person__item--place" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">{{ Config::get('settings.place_verviers') }}</li>
                 <li class="contact-person__item contact-person__item--email"><a href="mailto:{{ Config::get('settings.email_verviers') }}" itemprop="email">{{ Config::get('settings.email_verviers') }}</a></li>
@@ -24,7 +24,7 @@
                      height="300"
                      itemprop="image">
             </figure>
-            <h3 aria-level="3" role="heading" class="contact-person__title">Aywaille</h3>
+            <h3 aria-level="3" class="contact-person__title">Aywaille</h3>
             <ul class="contact-person__list">
                 <li class="contact-person__item contact-person__item--place" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">{{ Config::get('settings.place_aywaille') }}</li>
                 <li class="contact-person__item contact-person__item--email"><a href="mailto:{{ Config::get('settings.email_aywaille') }}" itemprop="email">{{ Config::get('settings.email_aywaille') }}</a></li>
@@ -39,7 +39,7 @@
                      height="300"
                      itemprop="image">
             </figure>
-            <h3 aria-level="3" role="heading" class="contact-person__title">Stavelot</h3>
+            <h3 aria-level="3" class="contact-person__title">Stavelot</h3>
             <ul class="contact-person__list">
                 <li class="contact-person__item contact-person__item--place" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">{{ Config::get('settings.place_stavelot') }}</li>
                 <li class="contact-person__item contact-person__item--email"><a href="mailto:{{ Config::get('settings.email_stavelot') }}" itemprop="email">{{ Config::get('settings.email_stavelot') }}</a></li>
@@ -54,7 +54,7 @@
                      height="300"
                      itemprop="image">
             </figure>
-            <h3 aria-level="3" role="heading" class="contact-person__title">Saint-Vith</h3>
+            <h3 aria-level="3" class="contact-person__title">Saint-Vith</h3>
             <ul class="contact-person__list">
                 <li class="contact-person__item contact-person__item--place" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">{{ Config::get('settings.place_saintvith') }}</li>
                 <li class="contact-person__item contact-person__item--email"><a href="mailto:{{ Config::get('settings.email_saintvith') }}" itemprop="email">{{ Config::get('settings.email_saintvith') }}</a></li>
