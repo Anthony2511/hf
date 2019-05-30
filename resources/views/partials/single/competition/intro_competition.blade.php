@@ -1,5 +1,5 @@
 <div class="intro-competition">
-    <h2 aria-level="2" role="heading" class="title title__blue title__center">{{ $competition->title }}</h2>
+    <h2 aria-level="2" class="title title__blue title__center">{{ $competition->title }}</h2>
     <div class="intro-competition__container">
         <figure class="intro-competition__bloc-img" style="background-image: url('{{ $competition->getImageProfile('_profile.jpg') }}')">
             <img src="{{ $competition->getImageProfile('_profile.jpg') }}"
