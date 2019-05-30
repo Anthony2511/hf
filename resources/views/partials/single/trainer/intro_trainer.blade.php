@@ -9,13 +9,13 @@
         </figure>
         <div class="athlete-intro__bloc">
             <section class="athlete-intro__title">
-                <h3 aria-level="3" class="athlete-intro__name">{{$trainer->firstname}}
-                    <span>{{$trainer->lastname}}</span></h3>
+                <h2 aria-level="2" class="athlete-intro__name">{{$trainer->firstname}}
+                    <span>{{$trainer->lastname}}</span></h2>
                 <span class="athlete-intro__division">{{$trainer->status}}</span>
             </section>
             <section class="athlete-intro__info">
-                <h4 class="athlete-intro__title-infos" aria-level="4" role="heading">Informations
-                    générales</h4>
+                <h3 class="athlete-intro__title-infos" aria-level="3">Informations
+                    générales</h3>
                 <div class="athlete-intro__content-bloc">
                     <div class="athlete-intro__content">
                         <span class="athlete-intro__content-title">Discipline(s)</span>
@@ -31,8 +31,8 @@
                     </div>
                     <div class="athlete-intro__content">
                         <span class="athlete-intro__content-title">Date de naissance</span>
-                        <datetime class="athlete-intro__content-text"
-                                  time="{{$trainer->getFormatDate()}}">{{$trainer->getFormatDate()}}</datetime>
+                        <time class="athlete-intro__content-text"
+                                  time="{{$trainer->date_of_birth}}">{{$trainer->getFormatDate()}}</time>
                     </div>
                     <div class="athlete-intro__content athlete-intro__content--width">
                         <span class="athlete-intro__content-title">Catégorie(s)</span>
