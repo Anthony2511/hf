@@ -4,16 +4,18 @@
         @foreach($competitions as $competition)
             <div class="listing-compet__bloc cta-compet__bloc">
                 <div class="compet-home__left-flex">
-                    <time class="compet-home__bloc-date">
+                    <time class="compet-home__bloc-date" datetime="{{$competition->startDate}}">
                         {{ date("d", strtotime($competition->startDate)) }}
                         <span>{{ substr($competition->getFullMonth(),0,4) }}</span></time>
                     <section>
-                        <h3 class="compet-home__bloc-title" aria-level="3" role="heading">{{ $competition->title }}</h3>
+                        <h3 class="compet-home__bloc-title" aria-level="3">{{ $competition->title }}</h3>
                         <span class="compet-home__bloc-location">{{ $competition->place }}</span>
                     </section>
                 </div>
-                <a href="{{url('competitions/' . $competition->slug )}}" class="button-simple__size">En savoir plus</a>
-                <a href="{{url('competitions/' . $competition->slug )}}" class="compet-home__link"></a>
+                <a href="{{url('competitions/' . $competition->slug )}}" class="button-simple__size" title="Vers la page de la compétition : {{ $competition->title }}">En savoir plus</a>
+                <a href="{{url('competitions/' . $competition->slug )}}" class="compet-home__link" title="Vers la page de la compétition : {{ $competition->title }}">
+                    <span class="hidden">Vers la page de la compétition : {{ $competition->title }}</span>
+                </a>
             </div>
         @endforeach
     </div>

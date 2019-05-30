@@ -9,7 +9,7 @@
     </figure>
     <div class="intro__bloc wrap">
         <div class="intro__bloc-text">
-            <h2 class="intro__title" aria-level="2" role="heading">{{ $page->compet_titleIntro }}</h2>
+            <h2 class="intro__title" aria-level="2">{{ $page->compet_titleIntro }}</h2>
             <p class="intro__text">
                 {{ $page->compet_textIntro }}
             </p>
