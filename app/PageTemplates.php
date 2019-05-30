@@ -374,7 +374,142 @@ trait PageTemplates
     /**********PAGE CONTACT**********/
     private function contact_index()
     {
-
+        //Section VERVIERS
+        // Place Verviers
+        $this->crud->addField(
+            [
+                'name' => 'contact_verviersPlace',
+                'type' => 'text',
+                'label' => 'Adresse',
+                'fake' => true,
+                'store_in' => 'extras',
+                'tab' => 'Verviers'
+            ]
+        );
+        // Email Verviers
+        $this->crud->addField(
+            [
+                'name' => 'contact_verviersEmail',
+                'type' => 'email',
+                'label' => 'Adresse email',
+                'fake' => true,
+                'store_in' => 'extras',
+                'tab' => 'Verviers'
+            ]
+        );
+        // Phone Verviers
+        $this->crud->addField(
+            [
+                'name' => 'contact_verviersPhone',
+                'type' => 'text',
+                'label' => 'Numéro de Téléphone',
+                'fake' => true,
+                'store_in' => 'extras',
+                'tab' => 'Verviers'
+            ]
+        );
+        //Section Aywaille
+        // Place Aywaille
+        $this->crud->addField(
+            [
+                'name' => 'contact_aywaillePlace',
+                'type' => 'text',
+                'label' => 'Adresse',
+                'fake' => true,
+                'store_in' => 'extras',
+                'tab' => 'Aywaille'
+            ]
+        );
+        // Email Aywaile
+        $this->crud->addField(
+            [
+                'name' => 'contact_aywailleEmail',
+                'type' => 'email',
+                'label' => 'Adresse email',
+                'fake' => true,
+                'store_in' => 'extras',
+                'tab' => 'Aywaille'
+            ]
+        );
+        // Phone Aywaille
+        $this->crud->addField(
+            [
+                'name' => 'contact_aywaillePhone',
+                'type' => 'text',
+                'label' => 'Numéro de Téléphone',
+                'fake' => true,
+                'store_in' => 'extras',
+                'tab' => 'Aywaille'
+            ]
+        );
+        //Section Stavelot
+        // Place Stavelot
+        $this->crud->addField(
+            [
+                'name' => 'contact_stavelotPlace',
+                'type' => 'text',
+                'label' => 'Adresse',
+                'fake' => true,
+                'store_in' => 'extras',
+                'tab' => 'Stavelot'
+            ]
+        );
+        // Email Stavelot
+        $this->crud->addField(
+            [
+                'name' => 'contact_stavelotEmail',
+                'type' => 'email',
+                'label' => 'Adresse email',
+                'fake' => true,
+                'store_in' => 'extras',
+                'tab' => 'Stavelot'
+            ]
+        );
+        // Phone Stavelot
+        $this->crud->addField(
+            [
+                'name' => 'contact_stavelotPhone',
+                'type' => 'text',
+                'label' => 'Numéro de Téléphone',
+                'fake' => true,
+                'store_in' => 'extras',
+                'tab' => 'Stavelot'
+            ]
+        );
+        //Section Saint-Vith
+        // Place Saint-Vith
+        $this->crud->addField(
+            [
+                'name' => 'contact_saintvithPlace',
+                'type' => 'text',
+                'label' => 'Adresse',
+                'fake' => true,
+                'store_in' => 'extras',
+                'tab' => 'Saint-Vith'
+            ]
+        );
+        // Email Saint-Vith
+        $this->crud->addField(
+            [
+                'name' => 'contact_saintvithEmail',
+                'type' => 'email',
+                'label' => 'Adresse email',
+                'fake' => true,
+                'store_in' => 'extras',
+                'tab' => 'Saint-Vith'
+            ]
+        );
+        // Phone Saint-Vith
+        $this->crud->addField(
+            [
+                'name' => 'contact_saintvithPhone',
+                'type' => 'text',
+                'label' => 'Numéro de Téléphone',
+                'fake' => true,
+                'store_in' => 'extras',
+                'tab' => 'Saint-Vith'
+            ]
+        );
     }
 
     private function home_index()

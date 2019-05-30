@@ -5,21 +5,21 @@
             <section class="footer__bloc">
                 <h2 aria-level="2" class="footer__title">Nous contactez</h2>
                 <ul class="footer__contact-list">
-                    <li class="footer__contact-item"><a href="mailto:{{ Config::get('settings.email_verviers') }}"
+                    <li class="footer__contact-item"><a href="mailto:philippe.devel@unamur.be"
                                                         itemprop="email">Verviers
-                            <span>{{ Config::get('settings.email_verviers') }}</span></a>
+                            <span>philippe.devel@unamur.be</span></a>
                     </li>
-                    <li class="footer__contact-item"><a href="mailto:{{ Config::get('settings.email_aywaille') }}"
+                    <li class="footer__contact-item"><a href="mailto:hf.aywaille@gmail.com"
                                                         itemprop="email">Aywaille
-                            <span>{{ Config::get('settings.email_aywaille') }}</span></a>
+                            <span>hf.aywaille@gmail.com</span></a>
                     </li>
-                    <li class="footer__contact-item"><a href="mailto:{{ Config::get('settings.email_stavelot') }}"
+                    <li class="footer__contact-item"><a href="mailto:legrosandre@hotmail.com"
                                                         itemprop="email">Stavelot
-                            <span>{{ Config::get('settings.email_stavelot') }}</span></a>
+                            <span>legrosandre@hotmail.com</span></a>
                     </li>
-                    <li class="footer__contact-item"><a href="mailto:{{ Config::get('settings.email_saintvith') }}"
+                    <li class="footer__contact-item"><a href="mailto:jhs105@hotmail.com"
                                                         itemprop="email">Saint-Vith
-                            <span>{{ Config::get('settings.email_saintvith') }}</span></a>
+                            <span>jhs105@hotmail.com</span></a>
                     </li>
                 </ul>
             </section>

@@ -11,9 +11,9 @@
             </figure>
             <h3 aria-level="3" class="contact-person__title">Verviers</h3>
             <ul class="contact-person__list">
-                <li class="contact-person__item contact-person__item--place" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">{{ Config::get('settings.place_verviers') }}</li>
-                <li class="contact-person__item contact-person__item--email"><a href="mailto:{{ Config::get('settings.email_verviers') }}" itemprop="email">{{ Config::get('settings.email_verviers') }}</a></li>
-                <li class="contact-person__item contact-person__item--tel"><a href="tel:{{ Config::get('settings.phone_verviers') }}" itemprop="telephone">{{ Config::get('settings.phone_verviers') }}</a></li>
+                <li class="contact-person__item contact-person__item--place" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">{{ $page->contact_verviersPlace }}</li>
+                <li class="contact-person__item contact-person__item--email"><a href="mailto:{{ $page->contact_verviersEmail }}" itemprop="email">{{ $page->contact_verviersEmail }}</a></li>
+                <li class="contact-person__item contact-person__item--tel"><a href="tel:{{ $page->contact_verviersPhone }}" itemprop="telephone">{{ $page->contact_verviersPhone }}</a></li>
             </ul>
         </div>
         <div class="contact-person__bloc" itemprop="alumni" itemscope itemtype="http://schema.org/Person">
@@ -26,9 +26,9 @@
             </figure>
             <h3 aria-level="3" class="contact-person__title">Aywaille</h3>
             <ul class="contact-person__list">
-                <li class="contact-person__item contact-person__item--place" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">{{ Config::get('settings.place_aywaille') }}</li>
-                <li class="contact-person__item contact-person__item--email"><a href="mailto:{{ Config::get('settings.email_aywaille') }}" itemprop="email">{{ Config::get('settings.email_aywaille') }}</a></li>
-                <li class="contact-person__item contact-person__item--tel"><a href="tel:{{ Config::get('settings.phone_aywaille') }}" itemprop="telephone">{{ Config::get('settings.phone_aywaille') }}</a></li>
+                <li class="contact-person__item contact-person__item--place" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">{{ $page->contact_aywaillePlace }}</li>
+                <li class="contact-person__item contact-person__item--email"><a href="mailto:{{ $page->contact_aywailleEmail }}" itemprop="email">{{ $page->contact_aywailleEmail }}</a></li>
+                <li class="contact-person__item contact-person__item--tel"><a href="tel:{{ $page->contact_aywaillePhone }}" itemprop="telephone">{{ $page->contact_aywaillePhone }}</a></li>
             </ul>
         </div>
         <div class="contact-person__bloc" itemprop="alumni" itemscope itemtype="http://schema.org/Person">
@@ -41,9 +41,9 @@
             </figure>
             <h3 aria-level="3" class="contact-person__title">Stavelot</h3>
             <ul class="contact-person__list">
-                <li class="contact-person__item contact-person__item--place" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">{{ Config::get('settings.place_stavelot') }}</li>
-                <li class="contact-person__item contact-person__item--email"><a href="mailto:{{ Config::get('settings.email_stavelot') }}" itemprop="email">{{ Config::get('settings.email_stavelot') }}</a></li>
-                <li class="contact-person__item contact-person__item--tel"><a href="tel:{{ Config::get('settings.phone_stavelot') }}" itemprop="telephone">{{ Config::get('settings.phone_stavelot') }}</a></li>
+                <li class="contact-person__item contact-person__item--place" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">{{ $page->contact_stavelotPlace }}</li>
+                <li class="contact-person__item contact-person__item--email"><a href="mailto:{{ $page->contact_stavelotEmail }}" itemprop="email">{{ $page->contact_stavelotEmail }}</a></li>
+                <li class="contact-person__item contact-person__item--tel"><a href="tel:{{ $page->contact_stavelotPhone }}" itemprop="telephone">{{ $page->contact_stavelotPhone }}</a></li>
             </ul>
         </div>
         <div class="contact-person__bloc" itemprop="alumni" itemscope itemtype="http://schema.org/Person">
@@ -56,9 +56,9 @@
             </figure>
             <h3 aria-level="3" class="contact-person__title">Saint-Vith</h3>
             <ul class="contact-person__list">
-                <li class="contact-person__item contact-person__item--place" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">{{ Config::get('settings.place_saintvith') }}</li>
-                <li class="contact-person__item contact-person__item--email"><a href="mailto:{{ Config::get('settings.email_saintvith') }}" itemprop="email">{{ Config::get('settings.email_saintvith') }}</a></li>
-                <li class="contact-person__item contact-person__item--tel"><a href="tel:{{ Config::get('settings.phone_saintvith') }}" itemprop="telephone">{{ Config::get('settings.phone_saintvith') }}</a></li>
+                <li class="contact-person__item contact-person__item--place" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">{{ $page->contact_saintvithPlace }}</li>
+                <li class="contact-person__item contact-person__item--email"><a href="mailto:{{ $page->contact_saintvithEmail }}" itemprop="email">{{ $page->contact_saintvithEmail }}</a></li>
+                <li class="contact-person__item contact-person__item--tel"><a href="tel:{{ $page->contact_saintvithPhone }}" itemprop="telephone">{{ $page->contact_saintvithPhone }}</a></li>
             </ul>
         </div>
     </div>
