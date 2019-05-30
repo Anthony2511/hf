@@ -12,7 +12,7 @@
                 <time class="article-intro__date" datetime="{{ $article->date }}">{{ $article->getFullDate() }}</time>
             </div>
             <section class="article-intro__bloc">
-                <h2 aria-level="2" role="heading" class="article-intro__title">{{$article->title}}</h2>
+                <h2 aria-level="2" class="article-intro__title">{{$article->title}}</h2>
                 <div class="article-intro__author">
                     <figure class="article-intro__author-figure">
                         <img src="../img/author.jpg"

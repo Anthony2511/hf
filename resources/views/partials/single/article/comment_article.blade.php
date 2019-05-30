@@ -1,5 +1,5 @@
 <section class="article-comment wrap">
-    <h2 class="title title__blue title__center" aria-level="2" role="heading">Les commentaires</h2>
+    <h2 class="title title__blue title__center" role="heading">Les commentaires</h2>
     <div class="article-comment__container">
         @if($comments->count() > 0)
             <div class="article-comment__container-author">
@@ -32,6 +32,7 @@
             <h3 role="heading" aria-level="3" class="article-comment__title-comment">Écrire un commentaire&nbsp;:</h3>
             {{ Form::open(['route' => ['comment.store', $article->id], 'method' => 'POST', 'class' => 'postComment', 'id' => 'comment']) }}
             <fieldset>
+                <legend class="hidden">Formulaire pour écrire un commentaire</legend>
                 <div class="single-stage__form-bloc">
                     <div class="floating-label">
                         <input type="text"
@@ -49,7 +50,7 @@
                         <input type="email"
                                name="email"
                                placeholder="Adresse email (ne sera pas publiée)*"
-                               id="user_name" class="single-stage__form-input" required
+                               id="email" class="single-stage__form-input" required
                                value="{{ $article->setValueCommentForm('email') }}">
                         @if($errors->has('subject'))
                             <span class="form-error">{{ $errors->first('email') }}</span>

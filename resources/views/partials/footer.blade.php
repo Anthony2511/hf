@@ -55,7 +55,7 @@
         </div>
         <div class="footer__copyright">
             <div class="wrap">
-                <span>© 2018-2019 H-F, design by <a href="#">Anthony Beaumecker</a></span>
+                <span>© 2018-2019 H-F, design by <a href="#" title="Vers la page du développeur">Anthony Beaumecker</a></span>
             </div>
         </div>
     </div>
