@@ -21,7 +21,7 @@
                        title="Vers la page de la compétition : {{ $competition->title }}">En savoir plus</a>
                 </section>
                 <a href="{{url('competitions/' . $competition->slug )}}" class="compet-home__link"
-                   title="Vers la page de la compétition : {{ $competition->title }}"></a>
+                   title="Vers la page de la compétition : {{ $competition->title }}"><span class="hidden">Vers la page de la compétition : {{ $competition->title }}</span></a>
             </div>
         @endforeach
         <div class="compet-home__bloc-right">
