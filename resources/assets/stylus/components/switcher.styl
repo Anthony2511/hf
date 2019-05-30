@@ -72,6 +72,12 @@
     &__result
       padding 0 s(20,25)
 
+//1024PX
+@media screen and (max-width:1024px)
+  .switcher
+    &__button
+      top s(34)
+
 //900PX
 @media screen and (max-width:900px)
   .switcher
@@ -97,7 +103,9 @@
     &__bloc + &__bloc
       margin-left 0
     &__label
-      margin-bottom s(30)
+      margin-bottom s(30,18)
+    &__button
+      top s(10)
 
 //450PX
 @media screen and (max-width:450px)
@@ -106,5 +114,6 @@
       font-size s(18,16)
     &__label
       font-size s(14)
+      margin-bottom s(30,14)
 
 

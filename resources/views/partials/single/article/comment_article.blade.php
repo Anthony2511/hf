@@ -26,7 +26,7 @@
                 @endforeach
             </div>
         @else
-            <span class="empty">Aucun commentaire</span>
+            <span class="empty empty-center">Aucun commentaire</span>
         @endif
         <section class="article-comment__section">
             <h3 role="heading" aria-level="3" class="article-comment__title-comment">Écrire un commentaire&nbsp;:</h3>

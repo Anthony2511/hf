@@ -201,10 +201,17 @@
       font-size s(14)
       padding s($paddingSmallButton, 16) s(20,16)
     &__right
+      height s(47)
+    &__right-send
+      height s(47)
+
+//450PX
+@media screen and (max-width:450px)
+  .button-orange
+    &__right
       height s(46)
     &__right-send
       height s(46)
-
 
 //400PX
 @media screen and (max-width:400px)
@@ -231,5 +238,10 @@
   .button-white
     &__left
       padding s(16,14)
+  .button-orange
+    &__right
+      height s(39)
+    &__right-send
+      height s(39)
 
 
