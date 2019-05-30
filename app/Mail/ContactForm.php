@@ -39,7 +39,7 @@ class ContactForm extends Mailable
     public function build()
     {
         return $this->view('mails.contactForm')
-            ->subject(ucfirst($this->firstname) . ' ' . ucfirst($this->lastname) . ' viens d’envoyer un message à partir du site h-f.be')
+            ->subject(ucfirst($this->subject))
             ->from($this->email, ucfirst($this->firstname) . ' ' . ucfirst($this->lastname));
     }
 }
