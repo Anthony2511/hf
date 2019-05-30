@@ -10,10 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b0b97a5d-6dca-40c8-a8f7-cc4d5e556a82" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/internships/internships_index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/internships/internships_index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partials/contact/contact-form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/contact/contact-form.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partials/contact/contact-intro.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/contact/contact-intro.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partials/contact/contact-person.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/contact/contact-person.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/single/internship/form_internship.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/single/internship/form_internship.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/single/internship/intro_internship.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/single/internship/intro_internship.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,29 +26,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="contact-intro.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/partials/contact/contact-intro.blade.php">
+      <file leaf-file-name="intro_internship.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/partials/single/internship/intro_internship.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+            <state relative-caret-position="345">
+              <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="contact-form.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/partials/contact/contact-form.blade.php">
+      <file leaf-file-name="form_internship.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/partials/single/internship/form_internship.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="983">
+            <state relative-caret-position="615">
               <caret line="75" column="18" selection-start-line="75" selection-start-column="18" selection-end-line="75" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="contact-person.blade.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/partials/contact/contact-person.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="56" column="31" selection-start-line="56" selection-start-column="31" selection-end-line="56" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -96,8 +85,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/views/partials/cta/cta-news.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/partials/cta/cta-stage.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/partials/cta/cta-training.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/partials/listing/listing-amenities.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/pages/amenities/amenities-filter.blade.php" />
@@ -147,6 +134,8 @@
         <option value="$PROJECT_DIR$/resources/views/partials/contact/contact-intro.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/partials/contact/contact-form.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/partials/contact/contact-person.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/partials/single/internship/intro_internship.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/partials/single/internship/form_internship.blade.php" />
       </list>
     </option>
   </component>
@@ -782,12 +771,12 @@
       <workItem from="1559031726726" duration="56000" />
       <workItem from="1559034229716" duration="10691000" />
       <workItem from="1559122030565" duration="19684000" />
-      <workItem from="1559206392615" duration="8828000" />
+      <workItem from="1559206392615" duration="9034000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="538207000" />
+    <option name="totallyTimeSpent" value="538413000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -870,20 +859,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/assets/stylus/components/home/compet-home.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="49" column="10" lean-forward="true" selection-start-line="49" selection-start-column="10" selection-end-line="49" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/partials/cta/cta-compet.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="29" lean-forward="true" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/partials/join/join_contact.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
@@ -1159,11 +1134,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Internship.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-92" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/pages/internships/internships-filter.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
@@ -1192,10 +1162,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/partials/contact/contact-intro.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/partials/contact/contact-person.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+        <state relative-caret-position="368">
+          <caret line="56" column="31" selection-start-line="56" selection-start-column="31" selection-end-line="56" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -1206,10 +1176,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/partials/contact/contact-person.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/partials/contact/contact-intro.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="56" column="31" selection-start-line="56" selection-start-column="31" selection-end-line="56" selection-end-column="31" />
+        <state relative-caret-position="23">
+          <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Internship.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/partials/single/internship/intro_internship.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/partials/single/internship/form_internship.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="75" column="18" selection-start-line="75" selection-start-column="18" selection-end-line="75" selection-end-column="18" />
         </state>
       </provider>
     </entry>
