@@ -5,9 +5,9 @@
             <div class="listing-compet__bloc">
                 <div class="compet-home__left-flex">
                     <time class="compet-home__left-date
-                <?php if($competition->content == null): ?>
+                    <?php if($competition->content == null): ?>
                             compet-home__bloc-date
-<?php else: ?><?php endif; ?>" datetime="{{$competition->startDate}}">
+                    <?php else: ?><?php endif; ?>" datetime="{{$competition->startDate}}">
                         {{ date("d", strtotime($competition->startDate)) }}
                         <span>{{ substr($competition->getFullMonth(),0,4) }}</span></time>
                     <section>
@@ -32,8 +32,8 @@
                 <a href="{{url('competitions/' . $competition->slug )}}" class="button-simple
                     <?php if($competition->content == null): ?>
                         button-simple__size
-<?php else: ?><?php endif; ?>">En savoir plus</a>
-                <a href="{{url('competitions/' . $competition->slug )}}" class="compet-home__link"></a>
+<?php else: ?><?php endif; ?>" title="Vers la page de la compétition : {{ $competition->title }}">En savoir plus</a>
+                <a href="{{url('competitions/' . $competition->slug )}}" class="compet-home__link" title="Vers la page de la compétition : {{ $competition->title }}"><span class="hidden">Vers la page de la compétition : {{ $competition->title }}</span></a>
             </div>
         @endforeach
     @else

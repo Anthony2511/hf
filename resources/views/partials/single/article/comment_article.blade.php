@@ -1,5 +1,5 @@
 <section class="article-comment wrap">
-    <h2 class="title title__blue title__center" role="heading">Les commentaires</h2>
+    <h2 class="title title__blue title__center" aria-level="2">Les commentaires</h2>
     <div class="article-comment__container">
         @if($comments->count() > 0)
             <div class="article-comment__container-author">
