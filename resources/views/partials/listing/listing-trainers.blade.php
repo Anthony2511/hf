@@ -10,8 +10,8 @@
                          height="457">
                 </figure>
                 <section class="home-athletes__infos">
-                    <h4 class="home-athletes__infos-title">{{$trainer->firstname}}
-                        <span>{{$trainer->lastname}}</span></h4>
+                    <h3 class="home-athletes__infos-title" aria-level="3">{{$trainer->firstname}}
+                        <span>{{$trainer->lastname}}</span></h3>
                     <span class="home-athletes__disciplines">
                         @if(!empty (count($trainer->disciplines)))
                             @foreach($trainer->disciplines->take(3) as $discipline)
@@ -24,7 +24,7 @@
                 </section>
                 <a href="{{url('entraineurs/' . $trainer->slug )}}"
                    class="home-athletes__link"
-                   title="Vers la page de l'entraîneur : {{$trainer->fullname}}"></a>
+                   title="Vers la page de l'entraîneur : {{$trainer->fullname}}"><span class="hidden">Vers la page de l'entraîneur : {{ $trainer->fullname }}</span></a>
             </div>
         @endforeach
     @else

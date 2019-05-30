@@ -32,7 +32,7 @@
                     <div class="athlete-intro__content">
                         <span class="athlete-intro__content-title">Date de naissance</span>
                         <time class="athlete-intro__content-text"
-                                  datetime="{{$athlete->getFormatDate()}}">{{$athlete->getFormatDate()}}</time>
+                                  datetime="{{$athlete->date_of_birth}}">{{$athlete->getFormatDate()}}</time>
                     </div>
                     <div class="athlete-intro__content">
                         <span class="athlete-intro__content-title">Statut</span>
