@@ -1,6 +1,5 @@
-
 <section class="cta-training cta-training__background">
-    <h2 aria-level="2" role="heading" class="title title__blue title__center">Ses prochains entrainements</h2>
+    <h2 aria-level="2" class="title title__blue title__center">Ses prochains entrainements</h2>
     <div class="cta-training__container wrap">
         @if(!empty (count(($athlete->trainings))))
             @foreach($athlete->trainings->take(3) as $training)

@@ -1,5 +1,5 @@
 <section class="cta-compet cta-compet__background">
-    <h2 aria-level="2" role="heading" class="title title__blue title__center">Prochaines compétitions</h2>
+    <h2 aria-level="2" class="title title__blue title__center">Prochaines compétitions</h2>
     <div class="listing-compet__container cta-compet__container wrap">
         @foreach($competitions as $competition)
             <div class="listing-compet__bloc cta-compet__bloc">

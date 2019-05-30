@@ -1,6 +1,6 @@
 <div class="cta-news cta-news__background">
     <div class="wrap">
-        <h2 aria-level="2" role="heading" class="title title__blue title__center">Envie de commencer la course à pied ?</h2>
+        <h2 aria-level="2" class="title title__blue title__center">Envie de commencer la course à pied ?</h2>
         <p class="cta-page__text">
             Le club des Hautes Fagnes organise depuis maintenant plus de 30 ans le jogging de la St Sylvestre
             (8km légèrement vallonné et varié - route, chemin, sentiers). Chaque année, c'est un moment

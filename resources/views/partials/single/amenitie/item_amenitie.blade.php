@@ -2,7 +2,7 @@
     <div class="equipement__bloc">
         <figure class="equipement__figure">
             <span class="equipement__price">{{ $amenity->price }}</span>
-            <h2 aria-level="2" role="heading" class="equipement__title">{{ $amenity->title }}</h2>
+            <h2 aria-level="2" class="equipement__title">{{ $amenity->title }}</h2>
             <div class="equipement__size">
                 @foreach($amenity->sizes as $size)
                     <span>
