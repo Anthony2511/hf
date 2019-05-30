@@ -48,8 +48,8 @@
                     <div class="floating-label floating-label__width">
                         <select name="affil" id="affil" class="single-stage__form-input" required>
                             <option value="" selected disabled>Affilié</option>
-                            <option value="0">Oui</option>
-                            <option value="1">Non</option>
+                            <option value="oui">Oui</option>
+                            <option value="non">Non</option>
                         </select>
                         <label for="affil">Affilié</label>
                         @if($errors->has('affil'))
@@ -58,9 +58,17 @@
                     </div>
                 </div>
                 <div class="floating-label">
+                    <input class="single-stage__form-input" placeholder="Inscrivez le nom du stage*"
+                           type="text" name="title" id="title" autocomplete="off" required>
+                    <label for="title">Inscrivez le nom du stage *</label>
+                    @if($errors->has('title'))
+                        <span class="form-error">{{$errors->first('title')}}</span>
+                    @endif
+                </div>
+                <div class="floating-label">
                 <textarea class="single-stage__form-textarea" name="bodyMessage" id="bodyMessage" cols="30" rows="10"
-                          required placeholder="Votre message *"></textarea>
-                    <label for="bodyMessage" class="floating-label__label">Votre message *</label>
+                          required placeholder="Éventuelles questions ?"></textarea>
+                    <label for="bodyMessage" class="floating-label__label">Éventuelles questions ?</label>
                     @if($errors->has('bodyMessage'))
                         <span class="form-error">{{$errors->first('bodyMessage')}}</span>
                     @endif

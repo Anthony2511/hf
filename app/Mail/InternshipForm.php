@@ -17,6 +17,7 @@ class InternshipForm extends Mailable
     public $bodyMessage;
     public $phone;
     public $fax;
+    public $title;
     public $affil;
 
 
@@ -29,6 +30,7 @@ class InternshipForm extends Mailable
         $this->phone      = $request->input('phone');
         $this->fax      = $request->input('fax');
         $this->affil      = $request->input('affil');
+        $this->title      = $request->input('title');
     }
 
     /**
@@ -39,7 +41,7 @@ class InternshipForm extends Mailable
     public function build()
     {
         return $this->view('mails.internshipForm')
-            ->subject(ucfirst($this->name) . ' ' . ' viens d’envoyer un message à partir du site h-f.be')
+            ->subject(ucfirst($this->name) . ' ' . ' souhaite inscrire son ou ses enfant(s) au stage :'  . ($this->title))
             ->from($this->email, ucfirst($this->name));
     }
 }
