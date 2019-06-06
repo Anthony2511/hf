@@ -30,8 +30,8 @@
                         @if(!empty ($training->trainer))
                             <a href="{{url('entraineurs/' . $training->trainer['slug'] )}}" class="trainings__trainers">
                                 <figure class="trainings__figure">
-                                    <img src="./img/author.jpg"
-                                         srcset="../img/author.jpg 2x"
+                                    <img src="{{ $training->trainer->getImageProfile('_preview.jpg') }}"
+                                         srcset="{{ $training->trainer->getImageProfile('_preview.jpg') }}"
                                          alt="Photo de l'entraineur : {{ $training->trainer['fullname'] }}"
                                          width="30"
                                          height="30">
