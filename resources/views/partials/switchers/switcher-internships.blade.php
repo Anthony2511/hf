@@ -10,6 +10,19 @@
                     </select>
                 </div>
             </div>
+            <div class="switcher__bloc">
+                <label for="isFinish" class="switcher__label">Statut</label>
+                <div class="switcher__select-box">
+                    <select name="isFinish" id="isFinish" class="switcher__select">
+                        <option <?php echo (Request::get('isFinish') == '') ? 'selected' : '';?> value="all">Tous</option>
+                        <option <?php echo (Request::get('isFinish') == 'finish') ? 'selected' : '';?> value="finish">Terminée
+                        </option>
+                        <option
+                            <?php echo (Request::get('isFinish') == 'not-finish') ? 'selected' : '';?> value="not-finish">Pas terminée
+                        </option>
+                    </select>
+                </div>
+            </div>
         </div>
         <div class="switcher__button">
             <button type="submit" class="button" title="Vers les stages">

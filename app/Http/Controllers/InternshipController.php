@@ -27,6 +27,12 @@ class InternshipController extends Controller
             $query->orderBy('startDay', $request->get('order'));
         }
 
+        if ($request->has('isFinish')) {
+            if ($request->get('isFinish') !== 'all') {
+                $query->where('isFinish', $request->get('isFinish'));
+            }
+        }
+
         $this->data['internships'] = $query->paginate(5);
 
         if ($request->ajax()) {
@@ -51,6 +57,11 @@ class InternshipController extends Controller
         if ($request->has('order')) {
             $query->orderBy('startDay', $request->get('order'));
         }
+
+        if ($request->has('isFinish')) {
+            $query->where('isFinish', $request->get('isFinish'));
+        }
+
 
         $internships = $query->paginate(3);
 
@@ -110,6 +121,10 @@ class InternshipController extends Controller
 
         if ($request->has('order') ) {
             $querystring .= '&order=' . $request->get('order');
+        }
+
+        if ($request->has('isFinish') ) {
+            $querystring .= '&isFinish=' . $request->get('isFinish');
         }
 
         return $querystring;
