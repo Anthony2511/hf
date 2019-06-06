@@ -7,6 +7,9 @@ use Backpack\CRUD\CrudTrait;
 use Cviebrock\EloquentSluggable\Sluggable;
 use Cviebrock\EloquentSluggable\SluggableScopeHelpers;
 use Carbon\Carbon;
+use Request;
+use Cookie;
+
 
 class Internship extends Model
 {
@@ -80,6 +83,16 @@ class Internship extends Model
         $dt = Carbon::create($date);
 
         echo $dt->setTimezone('Europe/Paris')->format('d/m/Y');
+    }
+
+    public function setValueInternshipForm($data)
+    {
+        if (Request::old($data) && Cookie::get($data) == null)
+        {
+            echo Request::old($data);
+        } elseif (Cookie::get($data) !== null){
+            echo Request::cookie($data);
+        }
     }
 
     /*
