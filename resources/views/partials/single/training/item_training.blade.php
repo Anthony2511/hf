@@ -11,7 +11,11 @@
         </div>
         <div class="trainings__infos">
             <span class="trainings__place">{{$training->place->name}}</span>
-            <span class="trainings__type trainings__type--sprint">{{$training->type->name}}</span>
+            <span class="trainings__type {{$training->type->slug == 'sprint'? 'trainings__type--sprint' : ''}}
+                                        {{$training->type->slug == 'epreuves-combinees'? 'trainings__type--sprint' : ''}}
+                                        {{$training->type->slug == 'demi-fond'? 'trainings__type--sprint' : ''}}
+                                        {{$training->type->slug == 'lancer'? 'trainings__type--lancer' : ''}}
+                                        {{$training->type->slug == 'saut'? 'trainings__type--jump' : ''}}">{{$training->type->name}}</span>
         </div>
         @if(!empty ($training->content))
             <p class="trainings__text">

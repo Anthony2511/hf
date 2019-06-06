@@ -84,7 +84,7 @@
                         <span class="form-error">{{$errors->first('bodyMessage')}}</span>
                     @endif
                 </div>
-                <button type="submit" class="button">
+                <button type="submit" class="button" id="#internship">
                     <span class="button-orange__left">Envoyez votre message</span>
                     <i class="button-orange__right-send"></i>
                 </button>

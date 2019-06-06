@@ -56,7 +56,7 @@
                     <div class="floating-label floating-label__width">
                         <input class="single-stage__form-input"
                                type="date" name="date" id="date" autocomplete="off" required
-                               value="1919-01-01"
+                               value="2000-01-01"
                                min="1919-01-01" max="2015-01-01">
                         <label for="date">Votre date de naissance*</label>
                         @if($errors->has('date'))

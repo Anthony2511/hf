@@ -60,8 +60,8 @@ img {
    ******************* */
 @font-face {
   font-family: 'iconfont';
-  src: url(/fonts/icomoon.eot?f2aafc2f1f3597d249a7507b77672fb2);
-  src: url(/fonts/icomoon.eot?f2aafc2f1f3597d249a7507b77672fb2#iefix) format('embedded-opentype'), url(/fonts/icomoon.ttf?e4d0ae15fabe8f060f0c18f6f1461bd2) format('truetype'), url(/fonts/icomoon.woff?52d4d55edcbc3e5e5ee43a8bf4a1d294) format('woff'), url(/fonts/icomoon.svg?684066514d2a9c9122cf5a25b48e4200#icomoon) format('svg');
+  src: url(/fonts/icomoon.eot?8ecc16d7beb9d685d1909f9845042121);
+  src: url(/fonts/icomoon.eot?8ecc16d7beb9d685d1909f9845042121#iefix) format('embedded-opentype'), url(/fonts/icomoon.ttf?420601ecde403682b017bb8af693616f) format('truetype'), url(/fonts/icomoon.woff?ced7e5c539bc26bdeb5606d1c11f154a) format('woff'), url(/fonts/icomoon.svg?513bf991234bcf4aa1f93f14c6588b90#icomoon) format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -1962,6 +1962,36 @@ input[type="search"]::-webkit-search-decoration {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   content: "\E905";
+  color: #fa9926;
+  font-size: 1.125em;
+  margin-right: 0.555555555555556em;
+}
+.trainings__type--lancer:before {
+  font-family: 'iconfont';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\E904";
+  color: #fa9926;
+  font-size: 1.125em;
+  margin-right: 0.555555555555556em;
+}
+.trainings__type--jump:before {
+  font-family: 'iconfont';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\E917";
   color: #fa9926;
   font-size: 1.125em;
   margin-right: 0.555555555555556em;
