@@ -46,6 +46,11 @@
             </div>
         </div>
         <div class="switcher__button">
+            <a href="{{route('athletes')}}" class="button" title="Vers les stages">
+                <i class="button-orange__right"></i>
+            </a>
+        </div>
+        <div class="switcher__button">
             <button type="submit" class="button" title="Vers les stages">
                 <span class="button-orange__left">Rechercher</span>
                 <i class="button-orange__right"></i>

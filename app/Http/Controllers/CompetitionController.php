@@ -29,6 +29,12 @@ class CompetitionController extends Controller
         if ($request->has('order')) {
             $query->orderBy('startDate', $request->get('order'));
         }
+
+        if ($request->has('isFinish')) {
+            if ($request->get('isFinish') !== 'all') {
+                $query->where('isFinish', $request->get('isFinish'));
+            }
+        }
         $this->data['competitions'] = $query->paginate(6);
 
         if ($request->ajax()) {
@@ -58,6 +64,10 @@ class CompetitionController extends Controller
 
         if ($request->has('order')) {
             $query->orderBy('startDate', $request->get('order'));
+        }
+
+        if ($request->has('isFinish')) {
+            $query->where('isFinish', $request->get('isFinish'));
         }
 
 
@@ -96,6 +106,10 @@ class CompetitionController extends Controller
 
         if ($request->has('order') ) {
             $querystring .= '&order=' . $request->get('order');
+        }
+
+        if ($request->has('isFinish') ) {
+            $querystring .= '&isFinish=' . $request->get('isFinish');
         }
 
         return $querystring;
