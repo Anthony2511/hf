@@ -30,7 +30,8 @@ class JoinController extends Controller
             'lastname'  => 'required|min:2|max:255',
             'email'     => 'required|email',
             'phone'       =>'required',
-            'date'   => 'required|date'
+            'date'   => 'required|date',
+            'club' => 'required'
         ]);
 
         if ($validator->fails()) {

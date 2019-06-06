@@ -31,6 +31,19 @@
                         <span class="form-error">{{$errors->first('email')}}</span>
                     @endif
                 </div>
+                <div class="floating-label">
+                    <select name="club" id="club" class="single-stage__form-input" required>
+                        <option value="" selected disabled>Choix du club</option>
+                            <option value="verviers">Verviers</option>
+                            <option value="aywaille">Aywaille</option>
+                            <option value="stavelot">Stavelot</option>
+                            <option value="saint-vith">Saint-Vith</option>
+                    </select>
+                    <label for="title">Choix du club</label>
+                    @if($errors->has('club'))
+                        <span class="form-error">{{$errors->first('club')}}</span>
+                    @endif
+                </div>
                 <div class="single-stage__form-width">
                     <div class="floating-label floating-label__width">
                         <input class="single-stage__form-input" placeholder="Votre téléphone*"

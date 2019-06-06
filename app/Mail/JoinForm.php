@@ -17,6 +17,7 @@ class JoinForm extends Mailable
     public $bodyMessage;
     public $phone;
     public $date;
+    public $club;
 
 
     public function __construct(Request $request)
@@ -27,6 +28,7 @@ class JoinForm extends Mailable
         $this->bodyMessage   = $request->input('bodyMessage');
         $this->phone      = $request->input('phone');
         $this->date      = $request->input('date');
+        $this->club     = $request->input('club');
     }
 
     /**
@@ -37,7 +39,7 @@ class JoinForm extends Mailable
     public function build()
     {
         return $this->view('mails.joinForm')
-            ->subject(ucfirst($this->firstname) . ' ' . ucfirst($this->lastname) . ' viens d’envoyer son inscription à partir du site h-f.be')
+            ->subject(ucfirst($this->firstname) . ' ' . ucfirst($this->lastname) . ' viens d’envoyer son inscription pour le club de ' . ucfirst($this->club))
             ->from($this->email, ucfirst($this->firstname) . ' ' . ucfirst($this->lastname));
     }
 }
