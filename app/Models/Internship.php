@@ -29,10 +29,16 @@ class Internship extends Model
         'endDay',
         'startHour',
         'endHour',
-        'content'
+        'content',
+        'isFinish'
     );
     // protected $hidden = [];
     // protected $dates = [];
+
+    protected $casts = array(
+        'date' => 'startDay',
+        'date' => 'endDay'
+    );
 
     /**
      * Return the sluggable configuration array for this model.

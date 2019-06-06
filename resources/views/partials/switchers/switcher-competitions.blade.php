@@ -31,7 +31,7 @@
                 <div class="switcher__select-box">
                     <select name="isFinish" id="isFinish" class="switcher__select">
                         <option <?php echo (Request::get('isFinish') == '') ? 'selected' : '';?> value="all">Tous</option>
-                        <option <?php echo (Request::get('isFinish') == 'finish') ? 'selected' : '';?> value="finish">Terminé
+                        <option <?php echo (Request::get('isFinish') == 'finish') ? 'selected' : '';?> value="finish">Terminée
                         </option>
                         <option
                             <?php echo (Request::get('isFinish') == 'not-finish') ? 'selected' : '';?> value="not-finish">Pas terminée

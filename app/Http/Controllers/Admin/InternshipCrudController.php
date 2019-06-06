@@ -78,7 +78,8 @@ class InternshipCrudController extends CrudController
             [
                 'name' => 'title',
                 'type' => 'text',
-                'label' => 'Nom du stage'
+                'label' => 'Nom du stage',
+                'tab' => 'Informations générales'
             ]
         );
 
@@ -87,7 +88,8 @@ class InternshipCrudController extends CrudController
             [
                 'name' => 'startHour',
                 'type' => 'time',
-                'label' => 'Heure de début'
+                'label' => 'Heure de début',
+                'tab' => 'Informations générales'
             ]
         );
 
@@ -96,7 +98,8 @@ class InternshipCrudController extends CrudController
             [
                 'name' => 'endHour',
                 'type' => 'time',
-                'label' => 'Heure de fin'
+                'label' => 'Heure de fin',
+                'tab' => 'Informations générales'
             ]
         );
 
@@ -112,6 +115,7 @@ class InternshipCrudController extends CrudController
                     'format' => 'dd-mm-yyyy',
                     'language' => 'fr'
                 ],
+                'tab' => 'Informations générales'
             ]
         );
 
@@ -127,6 +131,7 @@ class InternshipCrudController extends CrudController
                     'format' => 'dd-mm-yyyy',
                     'language' => 'fr'
                 ],
+                'tab' => 'Informations générales'
             ]
         );
 
@@ -136,7 +141,24 @@ class InternshipCrudController extends CrudController
                 'name' => 'content',
                 'type' => 'textarea',
                 'label' => 'Informations supplémentaires',
-                'hint' => 'Par exemple : les tarifs, les transports,...'
+                'hint' => 'Par exemple : les tarifs, les transports,...',
+                'tab' => 'Informations générales'
+            ]
+        );
+
+        // isFinish Field
+        $this->crud->addField(
+            [
+                'name' => 'isFinish',
+                'type' => 'select_from_array',
+                'options' => [
+                    'not-finish' => 'Pas terminé',
+                    'finish' => 'Terminé',
+                ],
+                'allows_null' => false,
+                'default' => ' not-finish',
+                'label' => 'Statut du stage',
+                'tab' => 'Statut'
             ]
         );
 
@@ -145,7 +167,8 @@ class InternshipCrudController extends CrudController
             'name' => 'slug',
             'label' => "Slug (URL)",
             'type' => 'text',
-            'hint' => 'Est automatiquement généré à partir du nom-genre si pas remplit.'
+            'hint' => 'Est automatiquement généré à partir du nom-genre si pas remplit.',
+            'tab' => 'Informations générales'
         ]);
 
 
