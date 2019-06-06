@@ -11,7 +11,10 @@
   <component name="ChangeListManager">
     <list default="true" id="b0b97a5d-6dca-40c8-a8f7-cc4d5e556a82" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/InternshipController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/InternshipController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partials/switchers/switcher-internships.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/switchers/switcher-internships.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/internships/internships-filter.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/internships/internships-filter.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/listing/listing-internships.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/listing/listing-internships.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/single/internship/form_internship.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/single/internship/form_internship.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/single/internship/item_internship.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/single/internship/item_internship.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,11 +29,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CompetitionController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CompetitionController.php">
+      <file leaf-file-name="InternshipController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/InternshipController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="110" column="5" lean-forward="true" selection-start-line="110" selection-start-column="5" selection-end-line="112" selection-end-column="9" />
+            <state relative-caret-position="483">
+              <caret line="21" column="59" lean-forward="true" selection-start-line="21" selection-start-column="59" selection-end-line="21" selection-end-column="59" />
               <folding>
                 <element signature="e#40#68#0#PHP" expanded="true" />
               </folding>
@@ -38,47 +41,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InternshipController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/InternshipController.php">
+      <file leaf-file-name="form_internship.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/partials/single/internship/form_internship.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="123" column="9" lean-forward="true" selection-start-line="123" selection-start-column="9" selection-end-line="123" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Internship.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Models/Internship.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
-              <caret line="39" column="25" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Competition.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Models/Competition.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
-              <caret line="48" column="7" selection-start-line="48" selection-start-column="7" selection-end-line="48" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InternshipCrudController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/InternshipCrudController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="914">
-              <caret line="121" column="23" lean-forward="true" selection-start-line="121" selection-start-column="23" selection-end-line="121" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CompetitionCrudController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/CompetitionCrudController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="129" column="17" selection-start-line="128" selection-start-column="67" selection-end-line="129" selection-end-column="17" />
+            <state relative-caret-position="763">
+              <caret line="61" column="73" selection-start-line="61" selection-start-column="73" selection-end-line="61" selection-end-column="73" />
             </state>
           </provider>
         </entry>
@@ -86,17 +53,35 @@
       <file leaf-file-name="switcher-competitions.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/partials/switchers/switcher-competitions.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="40" selection-end-column="18" />
+            <state relative-caret-position="345">
+              <caret line="27" column="18" lean-forward="true" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="switcher-internships.blade.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/partials/switchers/switcher-internships.blade.php">
+      <file leaf-file-name="internships-filter.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/pages/internships/internships-filter.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
-              <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+            <state relative-caret-position="230">
+              <caret line="10" column="106" selection-start-line="10" selection-start-column="106" selection-end-line="10" selection-end-column="106" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="listing-internships.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/partials/listing/listing-internships.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="69">
+              <caret line="3" column="45" lean-forward="true" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AthleteController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AthleteController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1334">
+              <caret line="38" selection-start-line="38" selection-end-line="38" />
             </state>
           </provider>
         </entry>
@@ -166,9 +151,6 @@
         <option value="$PROJECT_DIR$/resources/views/partials/single/competition/infos_competition.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/partials/single/competition/resultats_competiton.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/partials/single/competition/intro_competition.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/pages/internships/internships-filter.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/partials/single/internship/item_internship.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/partials/listing/listing-internships.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/pages/internships/internships_index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/partials/contact/contact-intro.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/partials/single/internship/intro_internship.blade.php" />
@@ -177,7 +159,6 @@
         <option value="$PROJECT_DIR$/resources/views/mails/contactForm.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/mails/joinForm.blade.php" />
         <option value="$PROJECT_DIR$/app/Mail/InternshipForm.php" />
-        <option value="$PROJECT_DIR$/resources/views/partials/single/internship/form_internship.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/mails/internshipForm.blade.php" />
         <option value="$PROJECT_DIR$/app/PageTemplates.php" />
         <option value="$PROJECT_DIR$/resources/views/partials/contact/contact-person.blade.php" />
@@ -191,8 +172,12 @@
         <option value="$PROJECT_DIR$/resources/views/partials/switchers/switcher-competitions.blade.php" />
         <option value="$PROJECT_DIR$/app/Models/Internship.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/InternshipCrudController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/InternshipController.php" />
         <option value="$PROJECT_DIR$/resources/views/partials/switchers/switcher-internships.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/pages/internships/internships-filter.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/partials/listing/listing-internships.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/partials/single/internship/item_internship.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/partials/single/internship/form_internship.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/InternshipController.php" />
       </list>
     </option>
   </component>
@@ -461,6 +446,14 @@
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
               <item name="competitions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hf" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hf" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="internships" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="hf" type="b2602c69:ProjectViewProjectNode" />
@@ -747,12 +740,12 @@
       <workItem from="1559122030565" duration="19684000" />
       <workItem from="1559206392615" duration="21131000" />
       <workItem from="1559377476546" duration="223000" />
-      <workItem from="1559810056703" duration="2121000" />
+      <workItem from="1559810056703" duration="3512000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="552854000" />
+    <option name="totallyTimeSpent" value="554245000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -884,31 +877,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/pages/internships/internships-filter.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" column="134" selection-start-line="13" selection-start-column="134" selection-end-line="13" selection-end-column="134" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/pages/internships/internships_index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
           <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/partials/listing/listing-internships.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="20" column="212" selection-start-line="20" selection-start-column="212" selection-end-line="20" selection-end-column="212" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/partials/single/internship/item_internship.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" column="204" selection-start-line="13" selection-start-column="204" selection-end-line="13" selection-end-column="204" />
         </state>
       </provider>
     </entry>
@@ -979,13 +951,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Mail/JoinForm.php">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/partials/single/internship/form_internship.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="57" column="26" lean-forward="true" selection-start-line="57" selection-start-column="26" selection-end-line="57" selection-end-column="26" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/mails/internshipForm.blade.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -1092,13 +1057,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AthleteController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/CompetitionCrudController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
@@ -1134,34 +1092,72 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/partials/switchers/switcher-internships.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CompetitionController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="110" column="5" lean-forward="true" selection-start-line="110" selection-start-column="5" selection-end-line="112" selection-end-column="9" />
+        <state relative-caret-position="2346">
+          <caret line="102" column="39" lean-forward="true" selection-start-line="102" selection-start-column="39" selection-end-line="102" selection-end-column="39" />
           <folding>
             <element signature="e#40#68#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/InternshipController.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AthleteController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="123" column="9" lean-forward="true" selection-start-line="123" selection-start-column="9" selection-end-line="123" selection-end-column="9" />
+        <state relative-caret-position="-1334">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/partials/switchers/switcher-competitions.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="40" selection-end-column="18" />
+        <state relative-caret-position="345">
+          <caret line="27" column="18" lean-forward="true" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/partials/switchers/switcher-internships.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/internships/internships-filter.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+        <state relative-caret-position="230">
+          <caret line="10" column="106" selection-start-line="10" selection-start-column="106" selection-end-line="10" selection-end-column="106" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/partials/single/internship/form_internship.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="763">
+          <caret line="61" column="73" selection-start-line="61" selection-start-column="73" selection-end-line="61" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/partials/listing/listing-internships.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="45" lean-forward="true" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/partials/single/internship/item_internship.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="106" selection-start-line="10" selection-start-column="106" selection-end-line="10" selection-end-column="106" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/InternshipController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="21" column="59" lean-forward="true" selection-start-line="21" selection-start-column="59" selection-end-line="21" selection-end-column="59" />
+          <folding>
+            <element signature="e#40#68#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

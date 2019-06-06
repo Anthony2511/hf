@@ -58,9 +58,13 @@
                     </div>
                 </div>
                 <div class="floating-label">
-                    <input class="single-stage__form-input" placeholder="Inscrivez le nom du stage*"
-                           type="text" name="title" id="title" autocomplete="off" required>
-                    <label for="title">Inscrivez le nom du stage *</label>
+                    <select name="title" id="title" class="single-stage__form-input" required>
+                        <option value="" selected disabled>Choix du stage</option>
+                        @foreach($allStages as $stage)
+                            <option value="{{$stage->title}}">{{$stage->title}}</option>
+                        @endforeach
+                    </select>
+                    <label for="title">Affilié</label>
                     @if($errors->has('title'))
                         <span class="form-error">{{$errors->first('title')}}</span>
                     @endif

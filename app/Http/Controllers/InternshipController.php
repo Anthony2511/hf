@@ -16,7 +16,7 @@ class InternshipController extends Controller
     public function index(Request $request)
     {
         $page = Page::where('template', 'internships_index')->firstOrFail();
-        $this->data['internships'] = Internship::orderBy('startDay')->get();
+        $this->data['internships'] = Internship::orderBy('startDay')->where('isFinish','not-finish')->get();
 
         $this->data['title']          = $page->title;
         $this->data['page']           = $page->withFakes();
@@ -110,8 +110,11 @@ class InternshipController extends Controller
 
     public function show(Internship $internship)
     {
+        $allStages = Internship::where('isFinish', 'not-finish')->get();
+
         return view('pages.internships.internships_show', [
-            'internship' => $internship
+            'internship' => $internship,
+            'allStages' => $allStages
         ]);
     }
 
