@@ -29,7 +29,7 @@ class ContactController extends Controller
             'firstname' => 'required|min:2|max:255',
             'lastname'  => 'required|min:2|max:255',
             'email'     => 'required|email',
-            'bodyMessage'   => 'required|min:30|max:5000',
+            'bodyMessage'   => 'required|min:5|max:5000',
             'subject'   => 'required|min:2|max:50'
         ]);
 

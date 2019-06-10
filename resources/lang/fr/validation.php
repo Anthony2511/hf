@@ -173,5 +173,8 @@ return [
         'time'                  => 'heure',
         'available'             => 'disponible',
         'size'                  => 'taille',
+        'bodyMessage'           => 'message',
+        'childs'                => 'enfants',
+        'subject'               => 'sujet'
     ],
 ];

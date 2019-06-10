@@ -1,6 +1,6 @@
 <section class="single-stage__bloc-form wrap">
     <h2 aria-level="2" class="title title__blue title__center">Formulaire de préinscription</h2>
-    {{ Form::open([ 'method' => 'POST', 'class' => 'single-stage__form', 'route' =>['mail-internship-form']]) }}
+    {{ Form::open([ 'method' => 'POST', 'class' => 'single-stage__form', 'route' =>['mail-internship-form'], 'id' =>'formerror']) }}
     <div class="single-stage__form-container">
         <fieldset>
             <legend class="single-stage__form-legend">Tous les champs suivis d'un (*) sont obligatoires</legend>
@@ -53,11 +53,11 @@
                     <div class="floating-label floating-label__width">
                         <select name="affil" id="affil" class="single-stage__form-input" required
                                 value="{{ $internship->setValueInternshipForm('affil') }}">
-                            <option value="" selected disabled>Affilié</option>
+                            <option value="" selected disabled>Affilié (au moins 1)</option>
                             <option value="oui">Oui</option>
                             <option value="non">Non</option>
                         </select>
-                        <label for="affil" class="postComment__label {{ old('childs') ? ' active' : '' }}">Affilié</label>
+                        <label for="affil" class="postComment__label {{ old('affil') ? ' active' : '' }}">Affilié (au moins 1)</label>
                         @if($errors->has('affil'))
                             <span class="form-error">{{$errors->first('affil')}}</span>
                         @endif
@@ -71,7 +71,7 @@
                             <option value="{{$stage->title}}">{{$stage->title}}</option>
                         @endforeach
                     </select>
-                    <label for="title" class="postComment__label {{ old('title') ? ' active' : '' }}">Affilié</label>
+                    <label for="title" class="postComment__label {{ old('title') ? ' active' : '' }}">Choix du stage</label>
                     @if($errors->has('title'))
                         <span class="form-error">{{$errors->first('title')}}</span>
                     @endif
