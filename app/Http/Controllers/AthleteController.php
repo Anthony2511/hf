@@ -44,7 +44,7 @@ class AthleteController extends Controller
         }
 
 
-        $this->data['athletes'] = $query->paginate(3);
+        $this->data['athletes'] = $query->paginate(6);
 
         if ($request->ajax()) {
             return [

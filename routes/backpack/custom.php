@@ -34,7 +34,7 @@ Route::group([
 //ROLE TRAINER
 Route::group([
     'prefix' => config('backpack.base.route_prefix', 'admin'),
-    'middleware' => ['web', config('backpack.base.middleware_key', 'admin'), 'role:entraineur'],
+    'middleware' => ['web', config('backpack.base.middleware_key', 'admin'), 'role:administrateur|entraineur'],
     'namespace' => 'App\Http\Controllers\Admin',
 ], function () { // custom admin routes
     CRUD::resource('athlete', 'AthleteCrudController');
@@ -51,7 +51,7 @@ Route::group([
 //ROLE ATHLETE
 Route::group([
     'prefix' => config('backpack.base.route_prefix', 'admin'),
-    'middleware' => ['web', config('backpack.base.middleware_key', 'admin'), 'role:athlète'],
+    'middleware' => ['web', config('backpack.base.middleware_key', 'admin'), 'role:administrateur|entraineur|athlète'],
     'namespace' => 'App\Http\Controllers\Admin',
 ], function () { // custom admin routes
     CRUD::resource('athlete', 'AthleteCrudController');

@@ -62,6 +62,29 @@
   &__button
     position relative
     top s(18)
+  &__button + &__button
+    margin-left s(50)
+  &__reset
+    background-color $cDarkOrange
+    display flex
+    justify-content center
+    align-items center
+    padding s(15)
+    border-radius 10px
+    height s(53)
+    &:hover
+      &:before
+        transform rotate(90deg)
+        transition .5s ease-in-out
+    &:before
+      icon('refresh')
+      color $cWhite
+      transition .5s ease-in-out
+  &__bloc-button
+    display flex
+    flex-flow row wrap
+    justify-content flex-start
+    align-items center
 
 //MEDIA QUERIES
 

@@ -3,7 +3,7 @@
     <div class="footer__bloc-container" itemscope itemtype="http://schema.org/Organization">
         <div class="footer__container wrap">
             <section class="footer__bloc">
-                <h2 aria-level="2" class="footer__title">Nous contactez</h2>
+                <h2 aria-level="2" class="footer__title">Nous contacter</h2>
                 <ul class="footer__contact-list">
                     <li class="footer__contact-item"><a href="mailto:philippe.devel@unamur.be"
                                                         itemprop="email">Verviers

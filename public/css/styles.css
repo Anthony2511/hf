@@ -4400,6 +4400,43 @@ input[type="search"]::-webkit-search-decoration {
   position: relative;
   top: 1.125em;
 }
+.switcher__button + .switcher__button {
+  margin-left: 3.125em;
+}
+.switcher__reset {
+  background-color: #fe712a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.9375em;
+  border-radius: 10px;
+  height: 3.3125em;
+}
+.switcher__reset:hover:before {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  transition: 0.5s ease-in-out;
+}
+.switcher__reset:before {
+  font-family: 'iconfont';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\E916";
+  color: #fff;
+  transition: 0.5s ease-in-out;
+}
+.switcher__bloc-button {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
 @media screen and (max-width: 1300px) {
   .switcher {
     padding: 3.125em 1.25em 0;

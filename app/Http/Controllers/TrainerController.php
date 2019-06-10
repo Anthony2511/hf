@@ -93,7 +93,7 @@ class TrainerController extends Controller
 
     public function show(Trainer $trainer)
     {
-        $this->data['competitions'] = Competition::orderBy('startDate', 'ASC')->limit(2)->get();
+        $this->data['competitions'] = Competition::orderBy('startDate', 'ASC')->where('isFinish', 'not-finish')->limit(2)->get();
 
         return view('pages.trainers.trainers_show', [
             'trainer' => $trainer,
