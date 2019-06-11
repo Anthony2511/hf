@@ -602,5 +602,195 @@ trait PageTemplates
             'tab' => 'Pupilles'
         ]);
 
+        // Records Minimes Garcons Field
+        $this->crud->addField
+        ([
+            'name' => 'record_minimeshommes',
+            'label' => 'Minimes Garçons',
+            'type' => 'table',
+            'fake' => true,
+            'store_in' => 'extras',
+            'entity_singular' => 'un record', // used on the "Add X" button
+            'columns' => [
+                'discipline' => 'Discipline',
+                'record' => 'Record',
+                'athlete' => 'Athlète',
+                'lieu' => 'Lieu',
+                'date' => 'Date'
+            ],
+            'tab' => 'Minimes'
+        ]);
+
+        // Records Minimes Filles Field
+        $this->crud->addField
+        ([
+            'name' => 'record_minimesfilles',
+            'label' => 'Minimes Filles',
+            'type' => 'table',
+            'fake' => true,
+            'store_in' => 'extras',
+            'entity_singular' => 'un record', // used on the "Add X" button
+            'columns' => [
+                'discipline' => 'Discipline',
+                'record' => 'Record',
+                'athlete' => 'Athlète',
+                'lieu' => 'Lieu',
+                'date' => 'Date'
+            ],
+            'tab' => 'Minimes'
+        ]);
+
+        // Records Cadets Hommes Field
+        $this->crud->addField
+        ([
+            'name' => 'record_cadetshommes',
+            'label' => 'Cadets Hommes',
+            'type' => 'table',
+            'fake' => true,
+            'store_in' => 'extras',
+            'entity_singular' => 'un record', // used on the "Add X" button
+            'columns' => [
+                'discipline' => 'Discipline',
+                'record' => 'Record',
+                'athlete' => 'Athlète',
+                'lieu' => 'Lieu',
+                'date' => 'Date'
+            ],
+            'tab' => 'Cadets'
+        ]);
+
+        // Records Cadettes Femmes Field
+        $this->crud->addField
+        ([
+            'name' => 'record_cadettesfilles',
+            'label' => 'Cadettes Femmes',
+            'type' => 'table',
+            'fake' => true,
+            'store_in' => 'extras',
+            'entity_singular' => 'un record', // used on the "Add X" button
+            'columns' => [
+                'discipline' => 'Discipline',
+                'record' => 'Record',
+                'athlete' => 'Athlète',
+                'lieu' => 'Lieu',
+                'date' => 'Date'
+            ],
+            'tab' => 'Cadets'
+        ]);
+
+        // Records Scolaires Hommes Field
+        $this->crud->addField
+        ([
+            'name' => 'record_scolaireshommes',
+            'label' => 'Scolaires Hommes',
+            'type' => 'table',
+            'fake' => true,
+            'store_in' => 'extras',
+            'entity_singular' => 'un record', // used on the "Add X" button
+            'columns' => [
+                'discipline' => 'Discipline',
+                'record' => 'Record',
+                'athlete' => 'Athlète',
+                'lieu' => 'Lieu',
+                'date' => 'Date'
+            ],
+            'tab' => 'Scolaires'
+        ]);
+
+        // Records Scolaires Femmes Field
+        $this->crud->addField
+        ([
+            'name' => 'record_scolairesfilles',
+            'label' => 'Scolaires Femmes',
+            'type' => 'table',
+            'fake' => true,
+            'store_in' => 'extras',
+            'entity_singular' => 'un record', // used on the "Add X" button
+            'columns' => [
+                'discipline' => 'Discipline',
+                'record' => 'Record',
+                'athlete' => 'Athlète',
+                'lieu' => 'Lieu',
+                'date' => 'Date'
+            ],
+            'tab' => 'Scolaires'
+        ]);
+
+        // Records Juniors Hommes Field
+        $this->crud->addField
+        ([
+            'name' => 'record_juniorshommes',
+            'label' => 'Juniors Hommes',
+            'type' => 'table',
+            'fake' => true,
+            'store_in' => 'extras',
+            'entity_singular' => 'un record', // used on the "Add X" button
+            'columns' => [
+                'discipline' => 'Discipline',
+                'record' => 'Record',
+                'athlete' => 'Athlète',
+                'lieu' => 'Lieu',
+                'date' => 'Date'
+            ],
+            'tab' => 'Juniors'
+        ]);
+
+        // Records Juniors Femmes Field
+        $this->crud->addField
+        ([
+            'name' => 'record_juniorsfilles',
+            'label' => 'Juniors Femmes',
+            'type' => 'table',
+            'fake' => true,
+            'store_in' => 'extras',
+            'entity_singular' => 'un record', // used on the "Add X" button
+            'columns' => [
+                'discipline' => 'Discipline',
+                'record' => 'Record',
+                'athlete' => 'Athlète',
+                'lieu' => 'Lieu',
+                'date' => 'Date'
+            ],
+            'tab' => 'Juniors'
+        ]);
+
+        // Records Seniors Hommes Field
+        $this->crud->addField
+        ([
+            'name' => 'record_seniorshommes',
+            'label' => 'Seniors Hommes',
+            'type' => 'table',
+            'fake' => true,
+            'store_in' => 'extras',
+            'entity_singular' => 'un record', // used on the "Add X" button
+            'columns' => [
+                'discipline' => 'Discipline',
+                'record' => 'Record',
+                'athlete' => 'Athlète',
+                'lieu' => 'Lieu',
+                'date' => 'Date'
+            ],
+            'tab' => 'Seniors'
+        ]);
+
+        // Records Seniors Femmes Field
+        $this->crud->addField
+        ([
+            'name' => 'record_seniorsfilles',
+            'label' => 'Seniors Femmes',
+            'type' => 'table',
+            'fake' => true,
+            'store_in' => 'extras',
+            'entity_singular' => 'un record', // used on the "Add X" button
+            'columns' => [
+                'discipline' => 'Discipline',
+                'record' => 'Record',
+                'athlete' => 'Athlète',
+                'lieu' => 'Lieu',
+                'date' => 'Date'
+            ],
+            'tab' => 'Seniors'
+        ]);
+
     }
 }

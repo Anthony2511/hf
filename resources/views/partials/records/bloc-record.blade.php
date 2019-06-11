@@ -58,7 +58,7 @@
             </tr>
         </tbody>
     </table>
-    <table class="record-intro__table">
+    <table class="record-intro__table" id="myTableThree">
         <caption class="athlete-intro__title-infos record-intro__margin">Pupilles Garçons</caption>
         <thead>
         <tr class="athlete-record__table-legend">
@@ -84,7 +84,7 @@
             </tr>
         </tbody>
     </table>
-    <table class="record-intro__table">
+    <table class="record-intro__table" id="myTableFour">
         <caption class="athlete-intro__title-infos record-intro__margin">Pupilles Filles</caption>
         <thead>
         <tr class="athlete-record__table-legend">
@@ -98,6 +98,266 @@
         <tbody class="athlete-record__table-tbody">
         <tr class="athlete-record__table-row">
         <?php $records = json_decode($page->record_pupillesfilles, true); ?>
+        @foreach($records as $row)
+            <tr class="athlete-record__table-row">
+                <td>{{ $row['discipline'] }}</td>
+                <td>{{ $row['record'] }}</td>
+                <td>{{ $row['athlete'] }}</td>
+                <td>{{ $row['lieu'] }}</td>
+                <td>{{ $row['date'] }}</td>
+            </tr>
+            @endforeach
+            </tr>
+        </tbody>
+    </table>
+    <table class="record-intro__table" id="myTableFive">
+        <caption class="athlete-intro__title-infos record-intro__margin">Minimes Garçons</caption>
+        <thead>
+        <tr class="athlete-record__table-legend">
+            <th class="record-intro__table-title">Discipline</th>
+            <th class="record-intro__table-title">Record</th>
+            <th class="record-intro__table-title">Athlète</th>
+            <th class="record-intro__table-title">Lieu</th>
+            <th class="record-intro__table-title">Date</th>
+        </tr>
+        </thead>
+        <tbody class="athlete-record__table-tbody">
+        <tr class="athlete-record__table-row">
+        <?php $records = json_decode($page->record_minimeshommes, true); ?>
+        @foreach($records as $row)
+            <tr class="athlete-record__table-row">
+                <td>{{ $row['discipline'] }}</td>
+                <td>{{ $row['record'] }}</td>
+                <td>{{ $row['athlete'] }}</td>
+                <td>{{ $row['lieu'] }}</td>
+                <td>{{ $row['date'] }}</td>
+            </tr>
+            @endforeach
+            </tr>
+        </tbody>
+    </table>
+    <table class="record-intro__table" id="myTableSix">
+        <caption class="athlete-intro__title-infos record-intro__margin">Minimes Filles</caption>
+        <thead>
+        <tr class="athlete-record__table-legend">
+            <th class="record-intro__table-title">Discipline</th>
+            <th class="record-intro__table-title">Record</th>
+            <th class="record-intro__table-title">Athlète</th>
+            <th class="record-intro__table-title">Lieu</th>
+            <th class="record-intro__table-title">Date</th>
+        </tr>
+        </thead>
+        <tbody class="athlete-record__table-tbody">
+        <tr class="athlete-record__table-row">
+        <?php $records = json_decode($page->record_minimesfilles, true); ?>
+        @foreach($records as $row)
+            <tr class="athlete-record__table-row">
+                <td>{{ $row['discipline'] }}</td>
+                <td>{{ $row['record'] }}</td>
+                <td>{{ $row['athlete'] }}</td>
+                <td>{{ $row['lieu'] }}</td>
+                <td>{{ $row['date'] }}</td>
+            </tr>
+            @endforeach
+            </tr>
+        </tbody>
+    </table>
+    <table class="record-intro__table" id="myTableSeven">
+        <caption class="athlete-intro__title-infos record-intro__margin">Cadets Hommes</caption>
+        <thead>
+        <tr class="athlete-record__table-legend">
+            <th class="record-intro__table-title">Discipline</th>
+            <th class="record-intro__table-title">Record</th>
+            <th class="record-intro__table-title">Athlète</th>
+            <th class="record-intro__table-title">Lieu</th>
+            <th class="record-intro__table-title">Date</th>
+        </tr>
+        </thead>
+        <tbody class="athlete-record__table-tbody">
+        <tr class="athlete-record__table-row">
+        <?php $records = json_decode($page->record_cadetshommes, true); ?>
+        @foreach($records as $row)
+            <tr class="athlete-record__table-row">
+                <td>{{ $row['discipline'] }}</td>
+                <td>{{ $row['record'] }}</td>
+                <td>{{ $row['athlete'] }}</td>
+                <td>{{ $row['lieu'] }}</td>
+                <td>{{ $row['date'] }}</td>
+            </tr>
+            @endforeach
+            </tr>
+        </tbody>
+    </table>
+    <table class="record-intro__table" id="myTableEight">
+        <caption class="athlete-intro__title-infos record-intro__margin">Cadettes Femmes</caption>
+        <thead>
+        <tr class="athlete-record__table-legend">
+            <th class="record-intro__table-title">Discipline</th>
+            <th class="record-intro__table-title">Record</th>
+            <th class="record-intro__table-title">Athlète</th>
+            <th class="record-intro__table-title">Lieu</th>
+            <th class="record-intro__table-title">Date</th>
+        </tr>
+        </thead>
+        <tbody class="athlete-record__table-tbody">
+        <tr class="athlete-record__table-row">
+        <?php $records = json_decode($page->record_cadettesfilles, true); ?>
+        @foreach($records as $row)
+            <tr class="athlete-record__table-row">
+                <td>{{ $row['discipline'] }}</td>
+                <td>{{ $row['record'] }}</td>
+                <td>{{ $row['athlete'] }}</td>
+                <td>{{ $row['lieu'] }}</td>
+                <td>{{ $row['date'] }}</td>
+            </tr>
+            @endforeach
+            </tr>
+        </tbody>
+    </table>
+    <table class="record-intro__table" id="myTableNine">
+        <caption class="athlete-intro__title-infos record-intro__margin">Scolaires Hommes</caption>
+        <thead>
+        <tr class="athlete-record__table-legend">
+            <th class="record-intro__table-title">Discipline</th>
+            <th class="record-intro__table-title">Record</th>
+            <th class="record-intro__table-title">Athlète</th>
+            <th class="record-intro__table-title">Lieu</th>
+            <th class="record-intro__table-title">Date</th>
+        </tr>
+        </thead>
+        <tbody class="athlete-record__table-tbody">
+        <tr class="athlete-record__table-row">
+        <?php $records = json_decode($page->record_scolaireshommes, true); ?>
+        @foreach($records as $row)
+            <tr class="athlete-record__table-row">
+                <td>{{ $row['discipline'] }}</td>
+                <td>{{ $row['record'] }}</td>
+                <td>{{ $row['athlete'] }}</td>
+                <td>{{ $row['lieu'] }}</td>
+                <td>{{ $row['date'] }}</td>
+            </tr>
+            @endforeach
+            </tr>
+        </tbody>
+    </table>
+    <table class="record-intro__table" id="myTableTen">
+        <caption class="athlete-intro__title-infos record-intro__margin">Scolaires Femmes</caption>
+        <thead>
+        <tr class="athlete-record__table-legend">
+            <th class="record-intro__table-title">Discipline</th>
+            <th class="record-intro__table-title">Record</th>
+            <th class="record-intro__table-title">Athlète</th>
+            <th class="record-intro__table-title">Lieu</th>
+            <th class="record-intro__table-title">Date</th>
+        </tr>
+        </thead>
+        <tbody class="athlete-record__table-tbody">
+        <tr class="athlete-record__table-row">
+        <?php $records = json_decode($page->record_scolairesfilles, true); ?>
+        @foreach($records as $row)
+            <tr class="athlete-record__table-row">
+                <td>{{ $row['discipline'] }}</td>
+                <td>{{ $row['record'] }}</td>
+                <td>{{ $row['athlete'] }}</td>
+                <td>{{ $row['lieu'] }}</td>
+                <td>{{ $row['date'] }}</td>
+            </tr>
+            @endforeach
+            </tr>
+        </tbody>
+    </table>
+    <table class="record-intro__table" id="myTableEleven">
+        <caption class="athlete-intro__title-infos record-intro__margin">Juniors Hommes</caption>
+        <thead>
+        <tr class="athlete-record__table-legend">
+            <th class="record-intro__table-title">Discipline</th>
+            <th class="record-intro__table-title">Record</th>
+            <th class="record-intro__table-title">Athlète</th>
+            <th class="record-intro__table-title">Lieu</th>
+            <th class="record-intro__table-title">Date</th>
+        </tr>
+        </thead>
+        <tbody class="athlete-record__table-tbody">
+        <tr class="athlete-record__table-row">
+        <?php $records = json_decode($page->record_juniorshommes, true); ?>
+        @foreach($records as $row)
+            <tr class="athlete-record__table-row">
+                <td>{{ $row['discipline'] }}</td>
+                <td>{{ $row['record'] }}</td>
+                <td>{{ $row['athlete'] }}</td>
+                <td>{{ $row['lieu'] }}</td>
+                <td>{{ $row['date'] }}</td>
+            </tr>
+            @endforeach
+            </tr>
+        </tbody>
+    </table>
+    <table class="record-intro__table" id="myTableTwelve">
+        <caption class="athlete-intro__title-infos record-intro__margin">Juniors Femmes</caption>
+        <thead>
+        <tr class="athlete-record__table-legend">
+            <th class="record-intro__table-title">Discipline</th>
+            <th class="record-intro__table-title">Record</th>
+            <th class="record-intro__table-title">Athlète</th>
+            <th class="record-intro__table-title">Lieu</th>
+            <th class="record-intro__table-title">Date</th>
+        </tr>
+        </thead>
+        <tbody class="athlete-record__table-tbody">
+        <tr class="athlete-record__table-row">
+        <?php $records = json_decode($page->record_juniorsfilles, true); ?>
+        @foreach($records as $row)
+            <tr class="athlete-record__table-row">
+                <td>{{ $row['discipline'] }}</td>
+                <td>{{ $row['record'] }}</td>
+                <td>{{ $row['athlete'] }}</td>
+                <td>{{ $row['lieu'] }}</td>
+                <td>{{ $row['date'] }}</td>
+            </tr>
+            @endforeach
+            </tr>
+        </tbody>
+    </table>
+    <table class="record-intro__table" id="myTableThirteen">
+        <caption class="athlete-intro__title-infos record-intro__margin">Seniors Hommes</caption>
+        <thead>
+        <tr class="athlete-record__table-legend">
+            <th class="record-intro__table-title">Discipline</th>
+            <th class="record-intro__table-title">Record</th>
+            <th class="record-intro__table-title">Athlète</th>
+            <th class="record-intro__table-title">Lieu</th>
+            <th class="record-intro__table-title">Date</th>
+        </tr>
+        </thead>
+        <tbody class="athlete-record__table-tbody">
+        <tr class="athlete-record__table-row">
+        <?php $records = json_decode($page->record_seniorshommes, true); ?>
+        @foreach($records as $row)
+            <tr class="athlete-record__table-row">
+                <td>{{ $row['discipline'] }}</td>
+                <td>{{ $row['record'] }}</td>
+                <td>{{ $row['athlete'] }}</td>
+                <td>{{ $row['lieu'] }}</td>
+                <td>{{ $row['date'] }}</td>
+            </tr>
+            @endforeach
+            </tr>
+        </tbody>
+    </table>
+    <table class="record-intro__table" id="myTableFourtheen">
+        <caption class="athlete-intro__title-infos record-intro__margin">Seniors Femmes</caption>
+        <thead>
+        <tr class="athlete-record__table-legend">
+            <th class="record-intro__table-title">Discipline</th>
+            <th class="record-intro__table-title">Record</th>
+            <th class="record-intro__table-title">Athlète</th>
+            <th class="record-intro__table-title">Lieu</th>
+            <th class="record-intro__table-title">Date</th>
+        </tr>
+        </thead>
+        <tbody class="athlete-record__table-tbody">
+        <tr class="athlete-record__table-row">
+        <?php $records = json_decode($page->record_seniorsfilles, true); ?>
         @foreach($records as $row)
             <tr class="athlete-record__table-row">
                 <td>{{ $row['discipline'] }}</td>
