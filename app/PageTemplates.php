@@ -526,13 +526,81 @@ trait PageTemplates
 
     private function record_index()
     {
-        $this->crud->addField(
-            [
-                'name' => 'content_text',
-                'type' => 'wysiwyg',
-                'label' => 'Texte d\'introduction',
-                'tab' => 'Section d\'introduction'
-            ]
-        );
+        // Records Benjamin Garcons Field
+        $this->crud->addField
+        ([
+            'name' => 'record_benjaminhommes',
+            'label' => 'Benjamins Garçons',
+            'type' => 'table',
+            'fake' => true,
+            'store_in' => 'extras',
+            'entity_singular' => 'un record', // used on the "Add X" button
+            'columns' => [
+                'discipline' => 'Discipline',
+                'record' => 'Record',
+                'athlete' => 'Athlète',
+                'lieu' => 'Lieu',
+                'date' => 'Date'
+            ],
+            'tab' => 'Benjamins'
+        ]);
+
+        // Records Benjamin Filles Field
+        $this->crud->addField
+        ([
+            'name' => 'record_benjaminfilles',
+            'label' => 'Benjamins Filles',
+            'type' => 'table',
+            'fake' => true,
+            'store_in' => 'extras',
+            'entity_singular' => 'un record', // used on the "Add X" button
+            'columns' => [
+                'discipline' => 'Discipline',
+                'record' => 'Record',
+                'athlete' => 'Athlète',
+                'lieu' => 'Lieu',
+                'date' => 'Date'
+            ],
+            'tab' => 'Benjamins'
+        ]);
+
+        // Records Pupilles Garcons Field
+        $this->crud->addField
+        ([
+            'name' => 'record_pupilleshommes',
+            'label' => 'Pupilles Garçons',
+            'type' => 'table',
+            'fake' => true,
+            'store_in' => 'extras',
+            'entity_singular' => 'un record', // used on the "Add X" button
+            'columns' => [
+                'discipline' => 'Discipline',
+                'record' => 'Record',
+                'athlete' => 'Athlète',
+                'lieu' => 'Lieu',
+                'date' => 'Date'
+            ],
+            'tab' => 'Pupilles'
+        ]);
+
+        // Records Pupilles Filles Field
+        $this->crud->addField
+        ([
+            'name' => 'record_pupillesfilles',
+            'label' => 'Pupilles Filles',
+            'type' => 'table',
+            'fake' => true,
+            'store_in' => 'extras',
+            'entity_singular' => 'un record', // used on the "Add X" button
+            'columns' => [
+                'discipline' => 'Discipline',
+                'record' => 'Record',
+                'athlete' => 'Athlète',
+                'lieu' => 'Lieu',
+                'date' => 'Date'
+            ],
+            'tab' => 'Pupilles'
+        ]);
+
     }
 }

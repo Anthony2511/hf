@@ -4699,3 +4699,18 @@ input[type="search"]::-webkit-search-decoration {
 .record-intro {
   padding: 3.125em 1.25em;
 }
+.record-intro__table {
+  margin-top: 1.875em;
+  font-family: 'opensans';
+  color: #34495e;
+  width: 100%;
+}
+.record-intro__table-title {
+  font-weight: 700;
+  font-size: 1.125em;
+  text-align: center;
+  padding: 0.555555555555556em 1.111111111111111em;
+}
+.record-intro__margin {
+  margin-bottom: 0.8em;
+}
