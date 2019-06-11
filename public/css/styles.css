@@ -4711,6 +4711,24 @@ input[type="search"]::-webkit-search-decoration {
   text-align: center;
   padding: 0.555555555555556em 1.111111111111111em;
 }
+.record-intro__table-title:after {
+  font-family: 'iconfont';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\E910";
+  display: inline-block;
+  font-size: 0.4375em;
+  margin-left: 5px;
+}
 .record-intro__margin {
   margin-bottom: 0.8em;
+}
+.tablesorter-header-inner {
+  display: inline-block;
 }

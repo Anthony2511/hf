@@ -11,6 +11,7 @@
 <script src="{{ asset('js/jquery-accessibleMegaMenu.js') }}"></script>
 <script src="{{ asset('js/configAccessibleMegaMenu.js') }}"></script>
 <script src="{{ asset('js/nav.js') }}"></script>
+<script src="{{ asset('js/app.js') }}"></script>
 <script src="{{ asset('js/ajaxAthletes.js') }}"></script>
 <script src="{{ asset('js/ajaxTrainers.js') }}"></script>
 <script src="{{ asset('js/ajaxTrainings.js') }}"></script>
@@ -18,5 +19,6 @@
 <script src="{{ asset('js/ajaxInternships.js') }}"></script>
 <script src="{{ asset('js/ajaxAmenities.js') }}"></script>
 <script src="{{ asset('js/ajaxArticles.js') }}"></script>
+<script src="{{ asset('js/tableSorter.js') }}"></script>
 </body>
 </html>

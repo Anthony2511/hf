@@ -6,7 +6,7 @@
         lorem. Praesent porttitor tellus id sapien pellentesque sagittis. Mauris at aliquet
         dui. Fusce in magna ac ex ultrices iaculis non at ex.
     </p>
-    <table class="record-intro__table">
+    <table class="record-intro__table" id="myTable">
         <caption class="athlete-intro__title-infos record-intro__margin">Benjamin garçons</caption>
         <thead>
         <tr class="athlete-record__table-legend">
@@ -32,7 +32,7 @@
             </tr>
         </tbody>
     </table>
-    <table class="record-intro__table">
+    <table class="record-intro__table" id="myTableTwo">
         <caption class="athlete-intro__title-infos record-intro__margin">Benjamin filles</caption>
         <thead>
         <tr class="athlete-record__table-legend">

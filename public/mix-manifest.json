@@ -10,5 +10,6 @@
     "/js/app.js": "/js/app.js",
     "/js/configAccessibleMegaMenu.js": "/js/configAccessibleMegaMenu.js",
     "/js/jquery-accessibleMegaMenu.js": "/js/jquery-accessibleMegaMenu.js",
-    "/js/nav.js": "/js/nav.js"
+    "/js/nav.js": "/js/nav.js",
+    "/js/tableSorter.js": "/js/tableSorter.js"
 }
