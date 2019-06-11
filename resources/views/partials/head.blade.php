@@ -5,5 +5,5 @@
     @yield('styles')
     <link rel="stylesheet" href="{{ asset('css/styles.css') }}" type="text/css">
     @yield('highlightJS')
-    <title>L'union Athlétique des Hautes-Fagnes - Titre de la page</title>
+    <title>L'union Athlétique des Hautes-Fagnes - @yield('pageTitle')</title>
 </head>

@@ -39,7 +39,7 @@ class TrainingController extends Controller
         }
 
 
-        $this->data['trainings'] = $query->paginate(3);
+        $this->data['trainings'] = $query->paginate(6);
 
         if ($request->ajax()) {
             return [

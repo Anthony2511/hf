@@ -11,5 +11,6 @@
     "/js/configAccessibleMegaMenu.js": "/js/configAccessibleMegaMenu.js",
     "/js/jquery-accessibleMegaMenu.js": "/js/jquery-accessibleMegaMenu.js",
     "/js/nav.js": "/js/nav.js",
-    "/js/tableSorter.js": "/js/tableSorter.js"
+    "/js/tableSorter.js": "/js/tableSorter.js",
+    "/js/records.js": "/js/records.js"
 }

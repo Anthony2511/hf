@@ -5,7 +5,7 @@
 @endsection
 
 @section('class', 'home')
-
+@section('pageTitle', 'Accueil')
 @section('content')
     @include('partials.home.athletes-home')
     @include('partials.home.competitions-home')

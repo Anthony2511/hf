@@ -5,7 +5,7 @@
 @endsection
 
 @section('class', 'show_athletes')
-
+@section('pageTitle', 'Stages' . ' - ' . $internship->title)
 @section('content')
     <div class="wrap">
         <div class="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList">

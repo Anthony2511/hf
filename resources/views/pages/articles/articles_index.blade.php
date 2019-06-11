@@ -5,7 +5,7 @@
 @endsection
 
 @section('class', 'index_athletes')
-
+@section('pageTitle', 'Actualités')
 @section('content')
     @include('partials.intros.intro-article')
     <div class="wrap">

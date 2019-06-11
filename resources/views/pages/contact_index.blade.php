@@ -5,7 +5,7 @@
 @endsection
 
 @section('class', 'index_about')
-
+@section('pageTitle', 'Contact')
 @section('content')
     <div class="about__background">
         @include('partials.contact.contact-intro')

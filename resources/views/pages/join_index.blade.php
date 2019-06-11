@@ -5,7 +5,7 @@
 @endsection
 
 @section('class', 'index_about')
-
+@section('pageTitle', 'Nous rejoindre')
 @section('content')
     <div class="about__background">
         @include('partials.join.join_intro')

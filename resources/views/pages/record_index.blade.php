@@ -5,7 +5,7 @@
 @endsection
 
 @section('class', 'index_about')
-
+@section('pageTitle', 'Records')
 @section('content')
     <div class="about__background">
         @include('partials.records.bloc-record')
