@@ -11,7 +11,7 @@ class ArticleController extends Controller
     public function index(Request $request)
     {
         $page = Page::where('template', 'articles_index')->firstOrFail();
-        $this->data['articles'] = Article::published();
+        $this->data['articles'] = Article::orderBy('date', 'DESC')->get();
 
         $this->data['title'] = $page->title;
         $this->data['page'] = $page->withFakes();

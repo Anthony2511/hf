@@ -19,6 +19,7 @@ Route::get('stages', 'InternshipController@index')->name('stages');
 Route::get('entrainements', 'TrainingController@index')->name('entrainements');
 Route::get('competitions', 'CompetitionController@index')->name('competitions');
 Route::get('a-propos', 'AboutController@index')->name('a-propos');
+Route::get('records', 'RecordController@index')->name('records');
 Route::get('articles', 'ArticleController@index')->name('articles');
 Route::get('equipements', 'AmenitieController@index')->name('equipements');
 Route::get('contact', 'ContactController@index')->name('contact');

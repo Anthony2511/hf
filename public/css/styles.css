@@ -4696,3 +4696,6 @@ input[type="search"]::-webkit-search-decoration {
   width: 60%;
   line-height: 1.5;
 }
+.record-intro {
+  padding: 3.125em 1.25em;
+}

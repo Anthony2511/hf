@@ -5,7 +5,7 @@
         <p class="about__record-text">
             {{ $page->text_threeIntro }}
         </p>
-        <a href="{{ url('/') . '/uploads/record.xls'}}" class="button" title="Vers les records du club">
+        <a href="{{route('records')}}" class="button" title="Vers les records du club">
             <span class="button-white__left">Consulter</span>
             <i class="button-white__right-document"></i>
         </a>
