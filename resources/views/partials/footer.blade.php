@@ -40,13 +40,13 @@
                 <h2 aria-level="2" class="footer__title">Nous suivre</h2>
                 <ul class="footer__social">
                     <li class="footer__social-list">
-                        <a href="{{ Config::get('settings.link_fcb') }}" class="footer__social footer__social--facebook"
+                        <a href="https://www.facebook.com/" class="footer__social footer__social--facebook"
                            target="_blank" itemprop="url"
                            title="Vers notre page Facebook"><span
                                     class="hidden">Facebook</span></a>
                     </li>
                     <li class="footer__social-list">
-                        <a href="{{ Config::get('settings.link_insta') }}"
+                        <a href="https://www.instagram.com/"
                            class="footer__social footer__social--instagram" target="_blank" itemprop="url"
                            title="Vers notre page Instagram"><span class="hidden">Instagram</span></a>
                     </li>

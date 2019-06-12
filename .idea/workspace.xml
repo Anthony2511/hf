@@ -10,11 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b0b97a5d-6dca-40c8-a8f7-cc4d5e556a82" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/InternshipController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/InternshipController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/PageTemplates.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/PageTemplates.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partials/listing/listing-internships.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/listing/listing-internships.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partials/records/bloc-record.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/records/bloc-record.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/footer.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -59,20 +56,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bloc-record.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="bloc-record.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/partials/records/bloc-record.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="444">
-              <caret line="215" column="12" selection-start-line="215" selection-start-column="12" selection-end-line="215" selection-end-column="12" />
+            <state relative-caret-position="950">
+              <caret line="201" column="51" selection-start-line="201" selection-start-column="51" selection-end-line="201" selection-end-column="51" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PageTemplates.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/PageTemplates.php">
+      <file leaf-file-name="footer.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/partials/footer.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="398">
-              <caret line="678" column="11" selection-start-line="678" selection-start-column="11" selection-end-line="678" selection-end-column="11" />
+            <state relative-caret-position="352">
+              <caret line="48" column="59" selection-start-line="48" selection-start-column="59" selection-end-line="48" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -106,9 +103,9 @@
       <find>article_id</find>
       <find>role</find>
       <find>span</find>
-      <find>255</find>
       <find>comment</find>
       <find>ajaxInternships</find>
+      <find>255</find>
     </findStrings>
     <replaceStrings>
       <replace>http://pfe.beaumecker.be</replace>
@@ -125,8 +122,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/views/partials/switchers/switcher-amenities.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/partials/switchers/switcher-articles.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/partials/switchers/switcher-competitions.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/partials/switchers/switcher-internships.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/partials/switchers/switcher-trainers.blade.php" />
@@ -176,6 +171,8 @@
         <option value="$PROJECT_DIR$/resources/views/partials/listing/listing-articles.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/partials/records/bloc-record.blade.php" />
         <option value="$PROJECT_DIR$/app/PageTemplates.php" />
+        <option value="$USER_HOME$/Desktop/hf.sql" />
+        <option value="$PROJECT_DIR$/resources/views/partials/footer.blade.php" />
       </list>
     </option>
   </component>
@@ -582,12 +579,12 @@
       <workItem from="1560178622643" duration="12000" />
       <workItem from="1560240035371" duration="595000" />
       <workItem from="1560244650794" duration="11785000" />
-      <workItem from="1560335188702" duration="6010000" />
+      <workItem from="1560335188702" duration="7061000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="594812000" />
+    <option name="totallyTimeSpent" value="595863000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -660,20 +657,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/views/layout.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/pages/athletes/athletes_index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/pages/amenities/amenities_index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
@@ -987,10 +970,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Desktop/hf.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="61" column="59" lean-forward="true" selection-start-line="61" selection-start-column="59" selection-end-line="61" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/partials/records/bloc-record.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="215" column="12" selection-start-line="215" selection-start-column="12" selection-end-line="215" selection-end-column="12" />
+        <state relative-caret-position="950">
+          <caret line="201" column="51" selection-start-line="201" selection-start-column="51" selection-end-line="201" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/partials/footer.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="48" column="59" selection-start-line="48" selection-start-column="59" selection-end-line="48" selection-end-column="59" />
         </state>
       </provider>
     </entry>
