@@ -7,10 +7,9 @@
     "/js/ajaxInternships.js": "/js/ajaxInternships.js",
     "/js/ajaxTrainers.js": "/js/ajaxTrainers.js",
     "/js/ajaxTrainings.js": "/js/ajaxTrainings.js",
-    "/js/app.js": "/js/app.js",
     "/js/configAccessibleMegaMenu.js": "/js/configAccessibleMegaMenu.js",
     "/js/jquery-accessibleMegaMenu.js": "/js/jquery-accessibleMegaMenu.js",
     "/js/nav.js": "/js/nav.js",
-    "/js/tableSorter.js": "/js/tableSorter.js",
-    "/js/records.js": "/js/records.js"
+    "/js/records.js": "/js/records.js",
+    "/js/tableSorter.js": "/js/tableSorter.js"
 }

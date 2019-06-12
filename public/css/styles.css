@@ -388,6 +388,7 @@ input[type="search"]::-webkit-search-decoration {
 }
 .home-athletes__figure {
   position: relative;
+  z-index: 15;
 }
 .home-athletes__figure:before {
   content: '';
@@ -452,6 +453,7 @@ input[type="search"]::-webkit-search-decoration {
   display: block;
   transition: 0.3s 0s ease-in-out;
   text-align: center;
+  z-index: 20;
 }
 .home-athletes__link:hover {
   background-color: rgba(52,73,94,0.8);
