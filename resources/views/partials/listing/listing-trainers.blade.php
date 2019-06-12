@@ -1,4 +1,4 @@
-<p class="switcher__result">Résultat de la recherche : {{ $trainers->count() }}</p>
+<p class="switcher__result">Résultat de la recherche : {{ $trainers->total() }}</p>
 <div class="home-athletes__container" id="container-ajax">
     @if($trainers->count() > 0)
         @foreach($trainers as $trainer)

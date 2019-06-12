@@ -1,4 +1,4 @@
-<p class="switcher__result">Résultat de la recherche : {{$trainings->count()}}</p>
+<p class="switcher__result">Résultat de la recherche : {{$trainings->total()}}</p>
 <div class="trainings">
     <div class="trainigs__container">
         <div class="trainings__bloc" id="container-ajax">

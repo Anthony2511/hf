@@ -1,4 +1,4 @@
-<p class="switcher__result">Résultat de la recherche : {{ $internships->count() }}</p>
+<p class="switcher__result">Résultat de la recherche : {{ $internships->total() }}</p>
 <div class="stage__container" id="container-ajax">
     @if($internships->count() > 0)
         @foreach($internships as $internship)

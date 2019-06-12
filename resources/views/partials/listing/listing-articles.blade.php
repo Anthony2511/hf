@@ -1,4 +1,4 @@
-<p class="switcher__result">Résultat de la recherche : {{ $articles->count() }}</p>
+<p class="switcher__result">Résultat de la recherche : {{ $articles->total() }}</p>
 <div class="news-home listing-news">
     <div class="news-home__container news-home__container--single" id="container-ajax">
         @if($articles->count() > 0)

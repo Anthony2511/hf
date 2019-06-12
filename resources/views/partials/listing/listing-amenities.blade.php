@@ -1,4 +1,4 @@
-<p class="switcher__result">Résultat de la recherche : {{$amenities->count()}}</p>
+<p class="switcher__result">Résultat de la recherche : {{$amenities->total()}}</p>
 <div class="equipement__container" id="container-ajax">
     @if($amenities->count() > 0)
         @foreach($amenities as $amenity)

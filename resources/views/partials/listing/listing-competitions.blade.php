@@ -1,4 +1,4 @@
-<p class="switcher__result">Résultat de la recherche : {{$competitions->count()}}</p>
+<p class="switcher__result">Résultat de la recherche : {{$competitions->total()}}</p>
 <div class="listing-compet__container" id="container-ajax">
     @if($competitions->count() > 0)
         @foreach($competitions as $competition)
