@@ -3684,6 +3684,9 @@ input[type="search"]::-webkit-search-decoration {
   transition: 0.5s ease-in-out;
   height: 2.9375em;
 }
+.button-blue__right--size {
+  height: 3.3125em;
+}
 .button-blue__right:before {
   font-family: 'iconfont';
   speak: none;
@@ -3857,6 +3860,9 @@ input[type="search"]::-webkit-search-decoration {
   .button-blue__right {
     height: 2.9375em;
   }
+  .button-blue__right--size {
+    height: 2.875em;
+  }
   .button-orange__left {
     font-size: 0.875em;
     padding: 0.9375em 1.25em;
@@ -3908,6 +3914,9 @@ input[type="search"]::-webkit-search-decoration {
   }
   .button-blue__right {
     height: 2.4375em;
+  }
+  .button-blue__right--size {
+    height: 2.8125em;
   }
   .button-white__left {
     padding: 1.142857142857143em;

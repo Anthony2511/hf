@@ -34,7 +34,7 @@
                             <div>
                                 <button type="submit" class="button" title="Se connecter">
                                     <span class="button-blue__left"> {{ trans('backpack::base.login') }}</span>
-                                    <i class="button-blue__right"></i>
+                                    <i class="button-blue__right button-blue__right--size"></i>
                                 </button>
                             </div>
                         </div>
