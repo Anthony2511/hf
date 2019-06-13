@@ -86,8 +86,7 @@ class InternshipController extends Controller
             'name' => 'required|min:2|max:255',
             'email'     => 'required|email',
             'childs' => 'required|integer',
-            'affil' => 'required',
-            'bodyMessage'   => 'required|min:5|max:5000'
+            'affil' => 'required'
         ]);
 
         if ($validator->fails()) {

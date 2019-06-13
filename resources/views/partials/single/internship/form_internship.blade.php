@@ -78,7 +78,7 @@
                 </div>
                 <div class="floating-label">
                 <textarea class="single-stage__form-textarea" name="bodyMessage" id="bodyMessage" cols="30" rows="10"
-                          required placeholder="Éventuelles questions ?"  value="{{ $internship->setValueInternshipForm('bodyMessage') }}"></textarea>
+                          placeholder="Éventuelles questions ?"  value="{{ $internship->setValueInternshipForm('bodyMessage') }}"></textarea>
                     <label for="bodyMessage" class="floating-label__label {{ old('bodyMessage') ? ' active' : '' }}">Éventuelles questions ?</label>
                     @if($errors->has('bodyMessage'))
                         <span class="form-error">{{$errors->first('bodyMessage')}}</span>
