@@ -15,8 +15,8 @@
                 <h2 aria-level="2" class="article-intro__title">{{$article->title}}</h2>
                 <div class="article-intro__author">
                     <figure class="article-intro__author-figure">
-                        <img src="../img/author.jpg"
-                             srcset="../img/author.jpg 2x"
+                        <img src="{{ $article->author->getImageProfile('_profile.jpg') }}"
+                             srcset="{{ $article->author->getImageProfile('_profile.jpg') }}"
                              alt="Photo de l'auteur : {{ $article->author->fullname }}"
                              width="30"
                              height="30">

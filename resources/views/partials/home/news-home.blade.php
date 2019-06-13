@@ -18,8 +18,8 @@
                         <section class="news-home__sub-bloc">
                             <div class="news-home__author">
                                 <figure class="news-home__author-figure">
-                                    <img src="../img/author.jpg"
-                                         srcset="../img/author.jpg 2x"
+                                    <img src="{{ $article->author->getImageProfile('_profile.jpg') }}"
+                                         srcset="{{ $article->author->getImageProfile('_profile.jpg') }}"
                                          alt="Photo de l'auteur : {{ $article->author->fullname }}"
                                          width="30"
                                          height="30">
