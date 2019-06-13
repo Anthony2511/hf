@@ -26,7 +26,7 @@
                 <div class="single-stage__form-width">
                     <div class="floating-label floating-label__width">
                         <input class="single-stage__form-input" placeholder="Votre téléphone"
-                               type="tel" name="phone" id="phone" autocomplete="off" required
+                               type="tel" name="phone" id="phone" autocomplete="off"
                                value="{{ $internship->setValueInternshipForm('phone') }}">
                         <label for="phone" class="postComment__label {{ old('phone') ? ' active' : '' }}">Votre téléphone</label>
                         @if($errors->has('phone'))
@@ -84,6 +84,10 @@
                         <span class="form-error">{{$errors->first('bodyMessage')}}</span>
                     @endif
                 </div>
+                {!! NoCaptcha::display() !!}
+                @if($errors->has('g-recaptcha-response'))
+                    <span class="form-error">{{ $errors->first('g-recaptcha-response') }}</span>
+                @endif
                 <button type="submit" class="button" id="#internship">
                     <span class="button-orange__left">Envoyez votre message</span>
                     <i class="button-orange__right-send"></i>

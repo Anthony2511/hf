@@ -11,7 +11,11 @@
   <component name="ChangeListManager">
     <list default="true" id="b0b97a5d-6dca-40c8-a8f7-cc4d5e556a82" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ContactController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ContactController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/InternshipController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/InternshipController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/JoinController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/JoinController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/contact/contact-form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/contact/contact-form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/join/join_contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/join/join_contact.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/partials/single/internship/form_internship.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/single/internship/form_internship.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,42 +31,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="athlete-record.styl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/assets/stylus/components/single/athlete/athlete-record.styl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="69" selection-start-line="69" selection-end-line="74" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bloc-record.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/partials/records/bloc-record.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="19" column="51" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="record.styl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/assets/stylus/components/record.styl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="559">
-              <caret line="45" column="22" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="button.styl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/assets/stylus/components/button.styl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="246" column="14" selection-start-line="246" selection-start-column="14" selection-end-line="246" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="InternshipForm.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Mail/InternshipForm.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -70,47 +38,65 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="comment_article.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/partials/single/article/comment_article.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="73" column="18" lean-forward="true" selection-start-line="73" selection-start-column="18" selection-end-line="76" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="InternshipController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/InternshipController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="88" column="33" lean-forward="true" selection-start-line="88" selection-start-column="33" selection-end-line="88" selection-end-column="33" />
+            <state relative-caret-position="414">
+              <caret line="89" column="12" selection-start-line="89" selection-start-column="12" selection-end-line="89" selection-end-column="56" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="form_internship.blade.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/partials/single/internship/form_internship.blade.php">
+      <file leaf-file-name="JoinController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/JoinController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="460">
+              <caret line="34" column="12" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="join_contact.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/partials/join/join_contact.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="77" column="10" selection-start-line="77" selection-start-column="10" selection-end-line="80" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contact-form.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/partials/contact/contact-form.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="368">
-              <caret line="80" column="26" lean-forward="true" selection-start-line="80" selection-start-column="26" selection-end-line="80" selection-end-column="26" />
+              <caret line="76" column="22" selection-start-line="76" selection-start-column="22" selection-end-line="76" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/vendor/backpack/base/auth/login.blade.php">
+      <file leaf-file-name="ContactController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ContactController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="407">
-              <caret line="36" column="89" selection-start-line="36" selection-start-column="89" selection-end-line="36" selection-end-column="89" />
+            <state relative-caret-position="437">
+              <caret line="33" column="56" selection-start-line="33" selection-start-column="56" selection-end-line="33" selection-end-column="56" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="records_athlete.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/partials/single/athlete/records_athlete.blade.php">
+      <file leaf-file-name="form_internship.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/partials/single/internship/form_internship.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="colors.styl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/assets/stylus/settings/colors.styl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="20" />
+            <state relative-caret-position="299">
+              <caret line="89" column="22" selection-start-line="89" selection-start-column="22" selection-end-line="89" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -158,10 +144,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/views/pages/contact_index.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/pages/home_index.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/pages/join_index.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/pages/record_index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/partials/listing/listing-amenities.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/partials/listing/listing-competitions.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/partials/listing/listing-trainings.blade.php" />
@@ -209,6 +191,10 @@
         <option value="$USER_HOME$/Desktop/hf.sql" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/InternshipController.php" />
         <option value="$PROJECT_DIR$/resources/views/partials/single/internship/form_internship.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/JoinController.php" />
+        <option value="$PROJECT_DIR$/resources/views/partials/join/join_contact.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/ContactController.php" />
+        <option value="$PROJECT_DIR$/resources/views/partials/contact/contact-form.blade.php" />
       </list>
     </option>
   </component>
@@ -406,6 +392,12 @@
             <path>
               <item name="hf" type="b2602c69:ProjectViewProjectNode" />
               <item name="hf" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Mail" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hf" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hf" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -518,6 +510,22 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="partials" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hf" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hf" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="partials" type="462c0819:PsiDirectoryNode" />
+              <item name="contact" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hf" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hf" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="partials" type="462c0819:PsiDirectoryNode" />
+              <item name="join" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="hf" type="b2602c69:ProjectViewProjectNode" />
@@ -686,12 +694,12 @@
       <workItem from="1560240035371" duration="595000" />
       <workItem from="1560244650794" duration="11785000" />
       <workItem from="1560335188702" duration="9844000" />
-      <workItem from="1560415571194" duration="13973000" />
+      <workItem from="1560415571194" duration="15006000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="612619000" />
+    <option name="totallyTimeSpent" value="613652000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -764,27 +772,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/views/pages/trainers/trainers-filter.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/partials/listing/listing-trainers.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="559">
-          <caret line="26" column="30" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/partials/single/trainer/item_trainer.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AthleteController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="583">
@@ -892,13 +879,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/partials/contact/contact-form.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="27" column="11" selection-start-line="27" selection-start-column="11" selection-end-line="35" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/partials/home/news-home.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="40">
@@ -978,13 +958,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CommentController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.editorconfig">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1019,13 +992,6 @@
     <entry file="file://$PROJECT_DIR$/resources/lang/en/passwords.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/partials/single/article/comment_article.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="76" column="26" selection-start-line="76" selection-start-column="26" selection-end-line="76" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/assets/stylus/components/validation-form.styl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="536">
@@ -1047,13 +1013,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/partials/single/athlete/records_athlete.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/partials/records/bloc-record.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
@@ -1065,13 +1024,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="559">
           <caret line="45" column="22" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/vendor/backpack/base/auth/login.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="36" column="89" selection-start-line="36" selection-start-column="89" selection-end-line="36" selection-end-column="89" />
         </state>
       </provider>
     </entry>
@@ -1094,17 +1046,73 @@
         <state relative-caret-position="-522" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/InternshipController.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/partials/single/athlete/records_athlete.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="88" column="33" lean-forward="true" selection-start-line="88" selection-start-column="33" selection-end-line="88" selection-end-column="33" />
+        <state relative-caret-position="253">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/vendor/backpack/base/auth/login.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="828">
+          <caret line="36" column="89" selection-start-line="36" selection-start-column="89" selection-end-line="36" selection-end-column="89" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/partials/single/internship/form_internship.blade.php">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="89" column="22" selection-start-line="89" selection-start-column="22" selection-end-line="89" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CommentController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/InternshipController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="89" column="12" selection-start-line="89" selection-start-column="12" selection-end-line="89" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/partials/single/article/comment_article.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="73" column="18" lean-forward="true" selection-start-line="73" selection-start-column="18" selection-end-line="76" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/JoinController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="34" column="12" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ContactController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="33" column="56" selection-start-line="33" selection-start-column="56" selection-end-line="33" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/partials/join/join_contact.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="77" column="10" selection-start-line="77" selection-start-column="10" selection-end-line="80" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/partials/contact/contact-form.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
-          <caret line="80" column="26" lean-forward="true" selection-start-line="80" selection-start-column="26" selection-end-line="80" selection-end-column="26" />
+          <caret line="76" column="22" selection-start-line="76" selection-start-column="22" selection-end-line="76" selection-end-column="22" />
         </state>
       </provider>
     </entry>

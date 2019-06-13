@@ -31,7 +31,8 @@ class JoinController extends Controller
             'email'     => 'required|email',
             'phone'       =>'required',
             'date'   => 'required|date',
-            'club' => 'required'
+            'club' => 'required',
+            'g-recaptcha-response' => 'required|captcha'
         ]);
 
         if ($validator->fails()) {

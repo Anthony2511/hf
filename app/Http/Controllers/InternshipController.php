@@ -86,7 +86,8 @@ class InternshipController extends Controller
             'name' => 'required|min:2|max:255',
             'email'     => 'required|email',
             'childs' => 'required|integer',
-            'affil' => 'required'
+            'affil' => 'required',
+            'g-recaptcha-response' => 'required|captcha'
         ]);
 
         if ($validator->fails()) {

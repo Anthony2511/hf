@@ -71,6 +71,10 @@
                         <span class="form-error">{{$errors->first('bodyMessage')}}</span>
                     @endif
                 </div>
+                {!! NoCaptcha::display() !!}
+                @if($errors->has('g-recaptcha-response'))
+                    <span class="form-error">{{ $errors->first('g-recaptcha-response') }}</span>
+                @endif
                 <button type="submit" class="button">
                     <span class="button-orange__left">Envoyez votre message</span>
                     <i class="button-orange__right-send"></i>

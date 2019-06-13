@@ -30,7 +30,8 @@ class ContactController extends Controller
             'lastname'  => 'required|min:2|max:255',
             'email'     => 'required|email',
             'bodyMessage'   => 'required|min:5|max:5000',
-            'subject'   => 'required|min:2|max:50'
+            'subject'   => 'required|min:2|max:50',
+            'g-recaptcha-response' => 'required|captcha'
         ]);
 
         if ($validator->fails()) {
