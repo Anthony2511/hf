@@ -74,6 +74,7 @@
     padding 0 s($paddingSmallButton,16)
     color $cWhite
     transition .5s ease-in-out
+    height s(53)
     &:before
       icon('arrowRight')
       transition .5s ease-in-out
@@ -196,6 +197,8 @@
     &__left
       font-size s(14)
       padding s($paddingSmallButton, 16) s(20,16)
+    &__right
+      height s(47)
   .button-orange
     &__left
       font-size s(14)
@@ -212,6 +215,9 @@
       height s(46)
     &__right-send
       height s(46)
+  .button-blue
+    &__right
+      height s(46)
 
 //400PX
 @media screen and (max-width:400px)
@@ -222,6 +228,8 @@
   .button-blue
     &__left
       font-size s(12)
+    &__right
+      height s(40)
   .button-orange
     &__left
       font-size s(12)
@@ -235,6 +243,8 @@
   .button-blue
     &__left
       padding s(16,14)
+    &__right
+      height s(39)
   .button-white
     &__left
       padding s(16,14)

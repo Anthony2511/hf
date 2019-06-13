@@ -3682,6 +3682,7 @@ input[type="search"]::-webkit-search-decoration {
   padding: 0 0.9375em;
   color: #fff;
   transition: 0.5s ease-in-out;
+  height: 3.3125em;
 }
 .button-blue__right:before {
   font-family: 'iconfont';
@@ -3853,6 +3854,9 @@ input[type="search"]::-webkit-search-decoration {
     font-size: 0.875em;
     padding: 0.9375em 1.25em;
   }
+  .button-blue__right {
+    height: 2.9375em;
+  }
   .button-orange__left {
     font-size: 0.875em;
     padding: 0.9375em 1.25em;
@@ -3871,6 +3875,9 @@ input[type="search"]::-webkit-search-decoration {
   .button-orange__right-send {
     height: 2.875em;
   }
+  .button-blue__right {
+    height: 2.875em;
+  }
 }
 @media screen and (max-width: 400px) {
   .button-simple {
@@ -3881,6 +3888,9 @@ input[type="search"]::-webkit-search-decoration {
   }
   .button-blue__left {
     font-size: 0.75em;
+  }
+  .button-blue__right {
+    height: 2.5em;
   }
   .button-orange__left {
     font-size: 0.75em;
@@ -3895,6 +3905,9 @@ input[type="search"]::-webkit-search-decoration {
 @media screen and (max-width: 320px) {
   .button-blue__left {
     padding: 1.142857142857143em;
+  }
+  .button-blue__right {
+    height: 2.4375em;
   }
   .button-white__left {
     padding: 1.142857142857143em;
