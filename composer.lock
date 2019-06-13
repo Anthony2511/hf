@@ -4,19 +4,19 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "65978e38161dea2f420b6ed7b72abf58",
+    "content-hash": "42edbef7bf6118b5a7b35cd9a348f0a1",
     "packages": [
         {
             "name": "almasaeed2010/adminlte",
             "version": "v2.4.3",
             "source": {
                 "type": "git",
-                "url": "https://github.com/almasaeed2010/AdminLTE.git",
+                "url": "https://github.com/ColorlibHQ/AdminLTE.git",
                 "reference": "b3acb63ac56b13eb45b36e628b384a9a2507b50e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/almasaeed2010/AdminLTE/zipball/b3acb63ac56b13eb45b36e628b384a9a2507b50e",
+                "url": "https://api.github.com/repos/ColorlibHQ/AdminLTE/zipball/b3acb63ac56b13eb45b36e628b384a9a2507b50e",
                 "reference": "b3acb63ac56b13eb45b36e628b384a9a2507b50e",
                 "shasum": ""
             },
@@ -699,16 +699,16 @@
         },
         {
             "name": "creativeorange/gravatar",
-            "version": "v1.0.11",
+            "version": "v1.0.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/creativeorange/gravatar.git",
-                "reference": "4459b68a853ffdb1c2abbf9419214df46371889b"
+                "reference": "865c8f20b1a20c5de105f90deeea596f7e060e25"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/creativeorange/gravatar/zipball/4459b68a853ffdb1c2abbf9419214df46371889b",
-                "reference": "4459b68a853ffdb1c2abbf9419214df46371889b",
+                "url": "https://api.github.com/repos/creativeorange/gravatar/zipball/865c8f20b1a20c5de105f90deeea596f7e060e25",
+                "reference": "865c8f20b1a20c5de105f90deeea596f7e060e25",
                 "shasum": ""
             },
             "require": {
@@ -749,7 +749,7 @@
                 "gravatar",
                 "laravel"
             ],
-            "time": "2018-03-29T22:10:58+00:00"
+            "time": "2019-06-03T08:45:09+00:00"
         },
         {
             "name": "cviebrock/eloquent-sluggable",

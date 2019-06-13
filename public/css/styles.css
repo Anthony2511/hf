@@ -2259,11 +2259,16 @@ input[type="search"]::-webkit-search-decoration {
   flex-direction: column;
 }
 .article-comment__author-figure {
-  margin-right: 0.625em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
 }
 .article-comment__author-figure img {
   border-radius: 50%;
   display: inline-block;
+  margin-right: 0.625em;
 }
 .article-comment__author-name {
   font-weight: 600;

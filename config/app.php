@@ -166,6 +166,7 @@ return [
          * Package Service Providers...
          */
         Collective\Html\HtmlServiceProvider::class,
+        Creativeorange\Gravatar\GravatarServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -228,6 +229,7 @@ return [
         'Html' => Collective\Html\HtmlFacade::class,
         'Role' => Backpack\PermissionManager\app\Models\Role::class,
         'Permission' => Backpack\PermissionManager\app\Models\Permission::class,
+        'Gravatar' => Creativeorange\Gravatar\Facades\Gravatar::class,
     ],
 
 ];

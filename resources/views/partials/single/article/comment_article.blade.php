@@ -7,12 +7,11 @@
                     <div class="article-comment__author">
                         <div class="article-comment__author-bloc">
                             <figure class="article-comment__author-figure">
-                                <img src="../img/author.jpg"
-                                     srcset="../img/author.jpg 2x"
+                                <img src="{{Gravatar::get($comment->email, 'small-secure')}}"
+                                     srcset="{{Gravatar::get($comment->email, 'small-secure')}}"
                                      alt="Photo de l'auteur"
                                      width="30"
                                      height="30">
-                            </figure>
                             <div class="article-comment__author-infos">
                                 <span class="article-comment__author-name">{{$comment->user_name}}</span>
                                 <time class="article-comment__date-author"
