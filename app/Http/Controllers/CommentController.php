@@ -17,7 +17,8 @@ class CommentController extends Controller
         $validator = Validator::make($request->all(), [
             'user_name' => 'required|min:2|max:255',
             'email' => 'required|email',
-            'content' => 'required|min:2|max:4000'
+            'content' => 'required|min:2|max:4000',
+            'g-recaptcha-response' => 'required|captcha'
         ]);
 
         $article = Article::find($post_id);

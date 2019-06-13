@@ -51,7 +51,7 @@
                                placeholder="Adresse email (ne sera pas publiée)*"
                                id="email" class="single-stage__form-input" required
                                value="{{ $article->setValueCommentForm('email') }}">
-                        @if($errors->has('subject'))
+                        @if($errors->has('email'))
                             <span class="form-error">{{ $errors->first('email') }}</span>
                         @endif
                         <label for="email" class="postComment__label {{ old('email') ? ' active' : '' }}">Adresse email
@@ -75,6 +75,10 @@
                         <span class="button-orange__left">Poster le commentaire</span>
                         <i class="button-orange__right-send"></i>
                     </button>
+                    {!! NoCaptcha::display() !!}
+                    @if($errors->has('g-recaptcha-response'))
+                        <span class="form-error">{{ $errors->first('g-recaptcha-response') }}</span>
+                    @endif
                     @if((session('success')))
                         <p class="form-success">{!! session('success') !!}</p>
                     @else

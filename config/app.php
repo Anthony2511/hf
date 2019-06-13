@@ -167,6 +167,7 @@ return [
          */
         Collective\Html\HtmlServiceProvider::class,
         Creativeorange\Gravatar\GravatarServiceProvider::class,
+        Anhskohbo\NoCaptcha\NoCaptchaServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -230,6 +231,7 @@ return [
         'Role' => Backpack\PermissionManager\app\Models\Role::class,
         'Permission' => Backpack\PermissionManager\app\Models\Permission::class,
         'Gravatar' => Creativeorange\Gravatar\Facades\Gravatar::class,
+        'NoCaptcha' => Anhskohbo\NoCaptcha\Facades\NoCaptcha::class,
     ],
 
 ];
