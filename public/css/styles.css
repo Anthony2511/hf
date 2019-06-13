@@ -4716,6 +4716,12 @@ input[type="search"]::-webkit-search-decoration {
   width: 60%;
   line-height: 1.5;
 }
+.g-recaptcha {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 1.875em;
+}
 .record-intro {
   padding: 3.125em 1.25em;
 }
@@ -4753,4 +4759,37 @@ input[type="search"]::-webkit-search-decoration {
 }
 .tablesorter-header-inner {
   display: inline-block;
+}
+@media screen and (max-width: 1300px) {
+  .record-intro__table-title {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .record-intro__table-title {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .record-intro__table-title {
+    font-size: 0.875em;
+  }
+  .record-intro__table-title:after {
+    font-size: 0.3125em;
+  }
+}
+@media screen and (max-width: 500px) {
+  .record-intro__table-title {
+    padding: 0.357142857142857em 0.714285714285714em;
+  }
+}
+@media screen and (max-width: 400px) {
+  .record-intro__table-title {
+    font-size: 0.75em;
+  }
+}
+@media screen and (max-width: 350px) {
+  .record-intro__table-title {
+    font-size: 0.75em;
+  }
 }

@@ -22,3 +22,43 @@
 
 .tablesorter-header-inner
   display inline-block
+
+//MEDIA QUERIES
+
+//1300PX
+@media screen and (max-width: 1300px)
+  .record-intro
+    &__table-title
+      font-size s(16)
+
+//1024PX
+@media screen and (max-width: 1024px)
+  .record-intro
+    &__table-title
+      text-align center
+
+//768PX
+@media screen and (max-width: 768px)
+  .record-intro
+    &__table-title
+      font-size s(14)
+      &:after
+        font-size s(5)
+
+//500PX
+@media screen and (max-width: 500px)
+  .record-intro
+    &__table-title
+      padding s(5,14) s(10,14)
+
+//400PX
+@media screen and (max-width: 400px)
+  .record-intro
+    &__table-title
+      font-size s(12)
+
+//350PX
+@media screen and (max-width: 350px)
+  .record-intro
+    &__table-title
+      font-size s(12)

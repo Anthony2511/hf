@@ -71,14 +71,14 @@
                                class="postComment__label {{ old('content') ? ' active' : '' }}">Votre
                             commentaire*</label>
                     </div>
-                    <button type="submit" class="button">
-                        <span class="button-orange__left">Poster le commentaire</span>
-                        <i class="button-orange__right-send"></i>
-                    </button>
                     {!! NoCaptcha::display() !!}
                     @if($errors->has('g-recaptcha-response'))
                         <span class="form-error">{{ $errors->first('g-recaptcha-response') }}</span>
                     @endif
+                    <button type="submit" class="button">
+                        <span class="button-orange__left">Poster le commentaire</span>
+                        <i class="button-orange__right-send"></i>
+                    </button>
                     @if((session('success')))
                         <p class="form-success">{!! session('success') !!}</p>
                     @else
